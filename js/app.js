@@ -29,7 +29,19 @@
     canteen: "Столовые и фуд-холлы"
   };
 
-  var state = { q: "", type: "Все", kitchen: "", sort: "rating" };
+  var FEATURES = {
+    kids: "Детская комната",
+    namaz: "Намазхана",
+    halal: "Халал",
+    veranda: "Летняя веранда",
+    music: "Живая музыка",
+    allday: "Круглосуточно",
+    pets: "Можно с питомцами"
+  };
+
+  var PRICE_MAX = 35000;
+
+  var state = { q: "", type: "Все", kitchen: "", sort: "rating", maxCheck: PRICE_MAX, feats: [] };
 
   var $ = function (id) { return document.getElementById(id); };
   var grid = $("grid"), modal = $("modal"), mBody = $("mBody");
@@ -55,6 +67,14 @@
 
   function votesText(c) {
     return c.votes ? num(c.votes) + " " + plural(c.votes, "оценка", "оценки", "оценок") : "число оценок уточняется";
+  }
+
+  function checkText(c) { return (c.checkApprox ? "≈ " : "") + num(c.check) + " ₸"; }
+
+  function tags(c, limit) {
+    var list = c.features.slice(0, limit || 99);
+    if (!list.length) return "";
+    return '<div class="tags">' + list.map(function (f) { return '<span class="tag">' + esc(FEATURES[f]) + "</span>"; }).join("") + "</div>";
   }
 
   function openedText(c) {
@@ -89,6 +109,29 @@
     $("cuisine").addEventListener("change", function () { state.kitchen = this.value; render(); });
     $("sort").addEventListener("change", function () { state.sort = this.value; render(); });
 
+    var price = $("price");
+    price.value = PRICE_MAX;
+    var showPrice = function () {
+      $("priceOut").textContent = state.maxCheck >= PRICE_MAX ? "любой" : num(state.maxCheck) + " ₸";
+    };
+    showPrice();
+    price.addEventListener("input", function () { state.maxCheck = Number(this.value); showPrice(); render(); });
+
+    var featCount = {};
+    CAFES.forEach(function (c) { c.features.forEach(function (f) { featCount[f] = (featCount[f] || 0) + 1; }); });
+    $("feats").innerHTML = Object.keys(FEATURES).filter(function (f) { return featCount[f]; }).map(function (f) {
+      return '<button class="chip" type="button" data-feat="' + f + '" aria-pressed="false">' + esc(FEATURES[f]) + "<small>" + featCount[f] + "</small></button>";
+    }).join("");
+    $("feats").addEventListener("click", function (e) {
+      var b = e.target.closest(".chip");
+      if (!b) return;
+      var on = b.getAttribute("aria-pressed") !== "true";
+      b.setAttribute("aria-pressed", on);
+      state.feats = [].filter.call(this.children, function (x) { return x.getAttribute("aria-pressed") === "true"; })
+        .map(function (x) { return x.dataset.feat; });
+      render();
+    });
+
     var t;
     $("q").addEventListener("input", function () {
       var v = this.value;
@@ -100,6 +143,7 @@
   function haystack(c) {
     if (!c._hay) {
       c._hay = [c.name, c.type, c.cuisine, c.address, c.about, KITCHENS[c.kitchen]]
+        .concat(c.features.map(function (f) { return FEATURES[f]; }))
         .concat(c.menu.map(function (m) { return m.name; }))
         .join(" ").toLowerCase();
     }
@@ -111,11 +155,14 @@
       if (state.type !== "Все" && c.type !== state.type) return false;
       if (state.kitchen && c.kitchen !== state.kitchen) return false;
       if (state.q && haystack(c).indexOf(state.q) === -1) return false;
+      if (state.maxCheck < PRICE_MAX && c.check > state.maxCheck) return false;
+      for (var i = 0; i < state.feats.length; i++) if (c.features.indexOf(state.feats[i]) === -1) return false;
       return true;
     });
     var by = {
       rating: function (a, b) { return b.rating - a.rating || (b.votes || 0) - (a.votes || 0); },
       votes: function (a, b) { return (b.votes || 0) - (a.votes || 0); },
+      cheap: function (a, b) { return a.check - b.check || b.rating - a.rating; },
       new: function (a, b) { return (b.opened || 0) - (a.opened || 0) || b.rating - a.rating; },
       old: function (a, b) { return (a.opened || 9999) - (b.opened || 9999) || b.rating - a.rating; },
       name: function (a, b) { return a.name.localeCompare(b.name, "ru"); }
@@ -134,8 +181,9 @@
       '<div class="card__body">' +
         '<h2 class="card__name">' + esc(c.name) + "</h2>" +
         '<div class="card__cuisine">' + esc(c.cuisine) + "</div>" +
-        '<div class="card__meta"><span>' + votesText(c) + "</span><span>Открыто: " + openedText(c) + "</span></div>" +
+        '<div class="card__meta"><span>Чек <b>' + checkText(c) + "</b></span><span>" + votesText(c) + "</span><span>Открыто: " + openedText(c) + "</span></div>" +
         '<div class="card__addr">📍 ' + esc(c.address) + "</div>" +
+        tags(c, 3) +
       "</div></button>";
   }
 
@@ -183,9 +231,10 @@
             '</div><div class="fact__note">' + votesText(c) + (c.ratingApprox ? ", значение приблизительное" : "") + "</div></div>" +
           '<div class="fact"><div class="fact__label">Год открытия</div><div class="fact__value">' + openedText(c) +
             '</div><div class="fact__note">' + esc(c.openedNote || "в открытых источниках не нашли — уточните у заведения") + "</div></div>" +
-          (c.check ? '<div class="fact"><div class="fact__label">Средний чек</div><div class="fact__value">' + num(c.check) +
-            ' ₸</div><div class="fact__note">по данным 2ГИС</div></div>' : "") +
+          '<div class="fact"><div class="fact__label">Средний чек</div><div class="fact__value">' + checkText(c) +
+            '</div><div class="fact__note">' + (c.checkApprox ? "оценка по типу заведения, в 2ГИС не указан" : "по данным 2ГИС") + "</div></div>" +
         "</div>" +
+        (c.features.length ? '<div class="m__section"><h3>Удобства</h3>' + tags(c) + "</div>" : "") +
         '<div class="m__section"><h3>Адрес</h3><p class="m__about">📍 ' + esc(c.address) + ", Алматы</p></div>" +
         (c.about ? '<div class="m__section"><h3>О заведении</h3><p class="m__about">' + esc(c.about) + "</p></div>" : "") +
         '<div class="m__section"><h3>Меню</h3><ul class="menu">' + menu + "</ul>" +
@@ -261,6 +310,18 @@
       (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     setTheme(cur === "dark" ? "light" : "dark");
   });
+
+  // ——— кофейные зёрна в hero ———
+  (function beans() {
+    var box = $("beans");
+    if (!box) return;
+    var spots = [[58, 12, 18, 110], [64, 34, 24, 15], [56, 62, 30, -40], [72, 86, 26, 160], [80, 52, 18, -75],
+      [90, 76, 32, 50], [68, 8, 14, 200], [50, 88, 16, -120], [2, 92, 22, 35]];
+    box.innerHTML = spots.map(function (s, i) {
+      return '<svg class="bean" viewBox="0 0 60 80" style="left:' + s[0] + "%;top:" + s[1] + "%;width:" + s[2] +
+        "px;--r:" + s[3] + "deg;animation-delay:-" + (i * 1.3) + 's"><use href="#coffee-bean"/></svg>';
+    }).join("");
+  })();
 
   initControls();
   renderStats();

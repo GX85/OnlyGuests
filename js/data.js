@@ -1,4 +1,4 @@
-// OnlyGuests — данные о 100 заведениях Алматы.
+// OnlyGuests — данные о 150 заведениях Алматы.
 // Рейтинги и число оценок — по карточкам 2ГИС на октябрь 2026 г. (могут меняться).
 // opened — год открытия, если его удалось подтвердить источником; openedNote — пояснение.
 // menu — популярные позиции с ориентировочными ценами (₸); фото — иллюстративные (Unsplash).
@@ -17,7 +17,9 @@ window.CAFES = [
   "opened": 2017,
   "openedApprox": false,
   "openedNote": "сеть чайхан Navat работает с 2017 года",
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Сеть чайхан с узбекской и казахской кухней, один из самых оценённых филиалов в 2ГИС.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -72,6 +74,11 @@ window.CAFES = [
   "openedApprox": true,
   "openedNote": "алматинский ресторан работает не позднее 2025 г.",
   "check": 20000,
+  "checkApprox": false,
+  "features": [
+   "halal",
+   "veranda"
+  ],
   "about": "Ресторан национальной кухни в современном прочтении, с экскурсиями по залу. Номинант премии 2ГИС 2026.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
@@ -126,6 +133,8 @@ window.CAFES = [
   "openedApprox": true,
   "openedNote": "открыт около 2022 г. (по данным forbes.kz)",
   "check": 20000,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан Аскара Байтасова в Медеуском ущелье. Попал в рейтинг La Liste.",
   "photos": [
    "img/1529692236671-f1f6cf9683ba.jpg",
@@ -180,6 +189,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 14000,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан национальной кухни на вершине Кок-Тобе.",
   "photos": [
    "img/1544025162-d76694265947.jpg",
@@ -232,7 +243,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Восточный ресторан с колоритным интерьером и залами на любой формат.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -286,6 +299,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 10000,
+  "checkApprox": false,
+  "features": [],
   "about": "Уютное кафе в казахском стиле: бешпармак, куырдак, манты и национальная музыка.",
   "photos": [
    "img/1600891964092-4316c288032e.jpg",
@@ -340,6 +355,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 6000,
+  "checkApprox": false,
+  "features": [],
   "about": "Сеть заведений казахской кухни.",
   "photos": [
    "img/1504674900247-0877df9cc836.jpg",
@@ -393,6 +410,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8000,
+  "checkApprox": false,
+  "features": [
+   "music"
+  ],
   "about": "Чайхана сети Palladium Family: плов, манты, шашлык, живая музыка.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -445,7 +466,12 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "music",
+   "veranda"
+  ],
   "about": "Ресторан с VIP-залом, верандой и живой музыкой, популярен для торжеств.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -498,7 +524,11 @@ window.CAFES = [
   "opened": 2015,
   "openedApprox": false,
   "openedNote": "первый ресторан Rumi открыт летом 2015 г. (kursiv.media)",
-  "check": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
   "about": "Центр вкусного плова — казахстанская сеть.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -552,7 +582,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "kids"
+  ],
   "about": "Лагманхана с уйгурской кухней.",
   "photos": [
    "img/1617093727343-374698b1b08d.jpg",
@@ -602,6 +636,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 2000,
+  "checkApprox": false,
+  "features": [
+   "allday",
+   "halal"
+  ],
   "about": "Сеть халал-столовых с домашней едой, часть точек работает круглосуточно.",
   "photos": [
    "img/1512621776951-a57141f2eefd.jpg",
@@ -654,7 +693,11 @@ window.CAFES = [
   "opened": 2023,
   "openedApprox": true,
   "openedNote": "алматинская кофейня работает не позднее 2023 г.",
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "allday"
+  ],
   "about": "Казахская этно-кофейня сети Tary.",
   "photos": [
    "img/1442512595331-e89e73853f31.jpg",
@@ -709,6 +752,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8000,
+  "checkApprox": false,
+  "features": [
+   "halal"
+  ],
   "about": "Халал-ресторан с ланчами и кальянной зоной.",
   "photos": [
    "img/1600565193348-f74bd3c7ccdf.jpg",
@@ -762,6 +809,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": "«Открытие года» премии «Меню&Счет-2012»",
   "check": 8000,
+  "checkApprox": false,
+  "features": [
+   "music",
+   "veranda"
+  ],
   "about": "Сеть грузинских ресторанов с летней верандой.",
   "photos": [
    "img/1563245372-f21724e3856d.jpg",
@@ -815,6 +867,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 6000,
+  "checkApprox": false,
+  "features": [],
   "about": "Кафе грузинской кухни. Номинант премии 2ГИС 2026.",
   "photos": [
    "img/1496116218417-1a781b1c416c.jpg",
@@ -868,6 +922,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "music",
+   "veranda"
+  ],
   "about": "Грузинский ресторан с живой музыкой.",
   "photos": [
    "img/1534422298391-e4f8c172dddb.jpg",
@@ -921,6 +980,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8500,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан грузинской кухни.",
   "photos": [
    "img/1563245372-f21724e3856d.jpg",
@@ -973,7 +1034,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Грузинский ресторан, гости хвалят хинкали и сервис.",
   "photos": [
    "img/1496116218417-1a781b1c416c.jpg",
@@ -1022,7 +1085,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Ресторан грузинской кухни.",
   "photos": [
    "img/1534422298391-e4f8c172dddb.jpg",
@@ -1076,6 +1141,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 6000,
+  "checkApprox": false,
+  "features": [],
   "about": "Небольшая хинкальная.",
   "photos": [
    "img/1563245372-f21724e3856d.jpg",
@@ -1123,7 +1190,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Шашлык, хинкали и европейская кухня.",
   "photos": [
    "img/1496116218417-1a781b1c416c.jpg",
@@ -1176,7 +1245,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
   "about": "Грузинский ресторан в урочище Медеу: веранда и панорамный вид.",
   "photos": [
    "img/1534422298391-e4f8c172dddb.jpg",
@@ -1229,7 +1302,9 @@ window.CAFES = [
   "opened": 2010,
   "openedApprox": false,
   "openedNote": "первый Del Papa открылся в Алматы в 2010 г. (forbes.kz)",
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Семейная итальянская сеть холдинга ABR.",
   "photos": [
    "img/1574071318508-1cdbab80d002.jpg",
@@ -1283,6 +1358,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 7000,
+  "checkApprox": false,
+  "features": [],
   "about": "Семейная итальянская сеть с домашней атмосферой.",
   "photos": [
    "img/1513104890138-7c749659a591.jpg",
@@ -1336,6 +1413,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 25000,
+  "checkApprox": false,
+  "features": [
+   "music",
+   "veranda"
+  ],
   "about": "Премиальный итальянский ресторан Line Group с террасой и живой музыкой.",
   "photos": [
    "img/1565299624946-b28f40a0ae38.jpg",
@@ -1389,6 +1471,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": "сеть основана в Алматы в 1998 г.",
   "check": 7000,
+  "checkApprox": false,
+  "features": [],
   "about": "Сеть ресторанов китайской кухни, знаменита уткой по-пекински.",
   "photos": [
    "img/1563245372-f21724e3856d.jpg",
@@ -1442,6 +1526,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5000,
+  "checkApprox": false,
+  "features": [],
   "about": "Аутентичная северокитайская кухня, большие порции.",
   "photos": [
    "img/1496116218417-1a781b1c416c.jpg",
@@ -1494,7 +1580,9 @@ window.CAFES = [
   "opened": 2019,
   "openedApprox": true,
   "openedNote": "ориентировочно 2019 г. (sxodim.com)",
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Китайско-паназиатский ресторан.",
   "photos": [
    "img/1569718212165-3a8278d5f624.jpg",
@@ -1548,6 +1636,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": "первый ресторан в Казахстане открыт в августе 2022 г.",
   "check": 10000,
+  "checkApprox": false,
+  "features": [],
   "about": "Американская сеть азиатской кухни.",
   "photos": [
    "img/1563245372-f21724e3856d.jpg",
@@ -1601,6 +1691,10 @@ window.CAFES = [
   "openedApprox": true,
   "openedNote": "ориентировочно 2018 г. (retail.ru, habr)",
   "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "kids"
+  ],
   "about": "Японский ресторан с детской комнатой и доставкой.",
   "photos": [
    "img/1611143669185-af224c5e3252.jpg",
@@ -1654,6 +1748,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8700,
+  "checkApprox": false,
+  "features": [],
   "about": "Флагманский японский ресторан сети Manga.",
   "photos": [
    "img/1579871494447-9811cf80d66c.jpg",
@@ -1707,6 +1803,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8000,
+  "checkApprox": false,
+  "features": [],
   "about": "Паназиатская кухня: рамен, вок, поке, гёдза.",
   "photos": [
    "img/1569718212165-3a8278d5f624.jpg",
@@ -1760,6 +1858,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5000,
+  "checkApprox": false,
+  "features": [],
   "about": "Суши и лапша по доступным ценам.",
   "photos": [
    "img/1615361200141-f45040f367be.jpg",
@@ -1813,6 +1913,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 10000,
+  "checkApprox": false,
+  "features": [],
   "about": "Паназиатский бар с кальянами.",
   "photos": [
    "img/1617093727343-374698b1b08d.jpg",
@@ -1866,6 +1968,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 4000,
+  "checkApprox": false,
+  "features": [],
   "about": "Суши, рамен и бизнес-ланчи.",
   "photos": [
    "img/1579871494447-9811cf80d66c.jpg",
@@ -1919,6 +2023,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 3000,
+  "checkApprox": false,
+  "features": [],
   "about": "Демократичное кафе, особенно хвалят том-ям и порции.",
   "photos": [
    "img/1569718212165-3a8278d5f624.jpg",
@@ -1971,7 +2077,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Индийский ресторан: самоса, бирьяни, корма.",
   "photos": [
    "img/1589302168068-964664d93dc0.jpg",
@@ -2025,6 +2133,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5500,
+  "checkApprox": false,
+  "features": [
+   "halal",
+   "namaz"
+  ],
   "about": "Турецкие завтраки, пахлава и знаменитое мороженое.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
@@ -2079,6 +2192,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "halal"
+  ],
   "about": "Турецкий ресторан: мясо, домашний айран, большие порции.",
   "photos": [
    "img/1603360946369-dc9bb6258143.jpg",
@@ -2132,6 +2249,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
   "about": "Турецкая кухня, на части филиалов — круглосуточно.",
   "photos": [
    "img/1599487488170-d11ec9c172f0.jpg",
@@ -2185,6 +2306,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 2500,
+  "checkApprox": false,
+  "features": [],
   "about": "Сеть турецкого фастфуда.",
   "photos": [
    "img/1600565193348-f74bd3c7ccdf.jpg",
@@ -2239,6 +2362,11 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 15000,
+  "checkApprox": false,
+  "features": [
+   "music",
+   "veranda"
+  ],
   "about": "Ресторан Line Group со своей пивоварней, живой музыкой и летней верандой.",
   "photos": [
    "img/1504674900247-0877df9cc836.jpg",
@@ -2292,7 +2420,11 @@ window.CAFES = [
   "opened": 2021,
   "openedApprox": false,
   "openedNote": "открылся в сентябре 2021 г.",
-  "check": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "music"
+  ],
   "about": "Баварский ресторан-пивоварня. «Лучший бар 2025» по версии 2ГИС.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
@@ -2347,6 +2479,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 6000,
+  "checkApprox": false,
+  "features": [
+   "music"
+  ],
   "about": "Пивной ресторан с живой музыкой.",
   "photos": [
    "img/1529692236671-f1f6cf9683ba.jpg",
@@ -2399,7 +2535,9 @@ window.CAFES = [
   "opened": 2012,
   "openedApprox": true,
   "openedNote": "работает не позднее 2012 г. (входил в AB Restaurants)",
-  "check": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [],
   "about": "Ресто-бар: шашлыки, стейки, креветки.",
   "photos": [
    "img/1544025162-d76694265947.jpg",
@@ -2453,6 +2591,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 10000,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан чешской кухни.",
   "photos": [
    "img/1558030006-450675393462.jpg",
@@ -2505,7 +2645,9 @@ window.CAFES = [
   "opened": 2017,
   "openedApprox": true,
   "openedNote": "ориентировочно ноябрь 2017 г. (sxodim.com)",
-  "check": null,
+  "check": 15000,
+  "checkApprox": true,
+  "features": [],
   "about": "Гастрономический мясной ресторан.",
   "photos": [
    "img/1600891964092-4316c288032e.jpg",
@@ -2558,7 +2700,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
   "about": "Мясной бар: всё с мангала.",
   "photos": [
    "img/1599487488170-d11ec9c172f0.jpg",
@@ -2611,7 +2755,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
   "about": "Рыба и мясо на углях.",
   "photos": [
    "img/1600565193348-f74bd3c7ccdf.jpg",
@@ -2665,6 +2811,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5500,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
   "about": "Легендарная алматинская шашлычная сеть. Номинант 2026.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
@@ -2714,6 +2864,12 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 8000,
+  "checkApprox": false,
+  "features": [
+   "allday",
+   "kids",
+   "veranda"
+  ],
   "about": "Ресторан с детской зоной, VIP-залом и верандой.",
   "photos": [
    "img/1544025162-d76694265947.jpg",
@@ -2767,6 +2923,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 15000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
   "about": "Ресторан Аскара Байтасова, признан лучшим в стране и вошёл в La Liste.",
   "photos": [
    "img/1558030006-450675393462.jpg",
@@ -2820,7 +2980,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Бургерная.",
   "photos": [
    "img/1568901346375-23c9450c58cd.jpg",
@@ -2873,7 +3035,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
   "about": "Казахстанская сеть халал-бургеров, 50+ точек по стране.",
   "photos": [
    "img/1466978913421-dad2ebd01d17.jpg",
@@ -2927,6 +3093,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 1500,
+  "checkApprox": false,
+  "features": [],
   "about": "Американская сеть бургеров.",
   "photos": [
    "img/1550547660-d9450f859349.jpg",
@@ -2979,7 +3147,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Сеть бургерных.",
   "photos": [
    "img/1568901346375-23c9450c58cd.jpg",
@@ -3032,7 +3202,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Сеть бургерных.",
   "photos": [
    "img/1466978913421-dad2ebd01d17.jpg",
@@ -3085,7 +3257,9 @@ window.CAFES = [
   "opened": 2016,
   "openedApprox": false,
   "openedNote": "первая пиццерия в Алматы — декабрь 2016 г.",
-  "check": null,
+  "check": 3000,
+  "checkApprox": true,
+  "features": [],
   "about": "Международная сеть пиццерий.",
   "photos": [
    "img/1565299624946-b28f40a0ae38.jpg",
@@ -3134,6 +3308,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": "сеть в Казахстане с 2016 г. (первый — в Астане)",
   "check": 12000,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан морепродуктов.",
   "photos": [
    "img/1544025162-d76694265947.jpg",
@@ -3187,6 +3363,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 20000,
+  "checkApprox": false,
+  "features": [],
   "about": "Авторская греческая кухня.",
   "photos": [
    "img/1473093295043-cdd812d0e601.jpg",
@@ -3239,7 +3417,9 @@ window.CAFES = [
   "opened": 2013,
   "openedApprox": true,
   "openedNote": "в отеле The Ritz-Carlton, открытом в 2013 г.",
-  "check": null,
+  "check": 12000,
+  "checkApprox": true,
+  "features": [],
   "about": "Ресторан The Ritz-Carlton на 30-м этаже.",
   "photos": [
    "img/1546069901-ba9599a7e63c.jpg",
@@ -3292,7 +3472,9 @@ window.CAFES = [
   "opened": 2013,
   "openedApprox": true,
   "openedNote": "в отеле The Ritz-Carlton, открытом в 2013 г.",
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Бар-ресторан The Ritz-Carlton.",
   "photos": [
    "img/1529692236671-f1f6cf9683ba.jpg",
@@ -3345,7 +3527,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 12000,
+  "checkApprox": true,
+  "features": [],
   "about": "Испанский винный ресторан с грилем, тапас и винилом.",
   "photos": [
    "img/1512621776951-a57141f2eefd.jpg",
@@ -3399,7 +3583,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Винный ресторан.",
   "photos": [
    "img/1558030006-450675393462.jpg",
@@ -3452,7 +3638,9 @@ window.CAFES = [
   "opened": 2012,
   "openedApprox": true,
   "openedNote": "работает не позднее 2012 г. (входил в AB Restaurants)",
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "Ресторан холдинга ABR в центре города.",
   "photos": [
    "img/1600891964092-4316c288032e.jpg",
@@ -3506,6 +3694,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 10000,
+  "checkApprox": false,
+  "features": [
+   "music"
+  ],
   "about": "Ресторан-музей русской культуры с живой музыкой.",
   "photos": [
    "img/1496116218417-1a781b1c416c.jpg",
@@ -3554,7 +3746,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2000,
+  "checkApprox": true,
+  "features": [],
   "about": "«Территория вкусной еды»: блюда разных кухонь без добавок.",
   "photos": [
    "img/1512621776951-a57141f2eefd.jpg",
@@ -3603,6 +3797,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 15000,
+  "checkApprox": false,
+  "features": [],
   "about": "Ресторан на курорте Шымбулак.",
   "photos": [
    "img/1529692236671-f1f6cf9683ba.jpg",
@@ -3656,6 +3852,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 15000,
+  "checkApprox": false,
+  "features": [],
   "about": "Бар на Шымбулаке.",
   "photos": [
    "img/1544025162-d76694265947.jpg",
@@ -3708,7 +3906,9 @@ window.CAFES = [
   "opened": 2014,
   "openedApprox": false,
   "openedNote": "сеть работает с 2014 г.",
-  "check": null,
+  "check": 4000,
+  "checkApprox": true,
+  "features": [],
   "about": "Городское кафе-сеть. Премия 2ГИС 2018.",
   "photos": [
    "img/1525351484163-7529414344d8.jpg",
@@ -3762,6 +3962,8 @@ window.CAFES = [
   "openedApprox": true,
   "openedNote": "работает не позднее мая 2021 г. (weproject.media)",
   "check": 5000,
+  "checkApprox": false,
+  "features": [],
   "about": "Завтраки, ремесленный хлеб и десерты.",
   "photos": [
    "img/1484723091739-30a097e8f929.jpg",
@@ -3816,6 +4018,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 3000,
+  "checkApprox": false,
+  "features": [],
   "about": "Кафе в торговом центре.",
   "photos": [
    "img/1424847651672-bf20a4b0982b.jpg",
@@ -3864,6 +4068,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 10000,
+  "checkApprox": false,
+  "features": [],
   "about": "Кафе с завтраками, винной картой и бизнес-ланчем.",
   "photos": [
    "img/1567620905732-2d1ec7ab7445.jpg",
@@ -3916,7 +4122,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
   "about": "«Лучшее кафе 2023» по версии 2ГИС.",
   "photos": [
    "img/1529692236671-f1f6cf9683ba.jpg",
@@ -3969,7 +4177,9 @@ window.CAFES = [
   "opened": 2003,
   "openedApprox": false,
   "openedNote": "по данным OpenStreetMap — 2003 г.",
-  "check": null,
+  "check": 4000,
+  "checkApprox": true,
+  "features": [],
   "about": "Одна из старейших кофеен центра.",
   "photos": [
    "img/1504754524776-8f4f37790ca0.jpg",
@@ -4022,7 +4232,9 @@ window.CAFES = [
   "opened": 2010,
   "openedApprox": false,
   "openedNote": "сеть основана в 2010 г. (первая кофейня — в Астане)",
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Казахстанская сеть кофеен.",
   "photos": [
    "img/1509042239860-f550ce710b93.jpg",
@@ -4071,6 +4283,10 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": "в Казахстане с 2015 г.",
   "check": 2500,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
   "about": "Круглосуточная кофейня в Esentai Tower.",
   "photos": [
    "img/1511920170033-f8396924c348.jpg",
@@ -4123,7 +4339,9 @@ window.CAFES = [
   "opened": 2018,
   "openedApprox": false,
   "openedNote": "первая кофейня сети — декабрь 2018 г., Астана",
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Казахстанская сеть экспресс-кофеен.",
   "photos": [
    "img/1442512595331-e89e73853f31.jpg",
@@ -4171,7 +4389,11 @@ window.CAFES = [
   "opened": 2017,
   "openedApprox": false,
   "openedNote": "первая кофейня — 2017 г., бренд Urbo с 2018 г.",
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "allday"
+  ],
   "about": "Казахстанская сеть, ~40–50 точек.",
   "photos": [
    "img/1461023058943-07fcbe16d735.jpg",
@@ -4219,7 +4441,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Городские кафе в «золотом квадрате».",
   "photos": [
    "img/1495474472287-4d71bcdd2085.jpg",
@@ -4272,7 +4496,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Алматинская сеть кофеен.",
   "photos": [
    "img/1498804103079-a6351b050096.jpg",
@@ -4321,6 +4547,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 5000,
+  "checkApprox": false,
+  "features": [],
   "about": "Сеть кофеен с полноценной кухней.",
   "photos": [
    "img/1509042239860-f550ce710b93.jpg",
@@ -4368,7 +4596,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Технологичная кофейня от Dodo Brands.",
   "photos": [
    "img/1511920170033-f8396924c348.jpg",
@@ -4421,7 +4651,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Британская сеть кофеен.",
   "photos": [
    "img/1442512595331-e89e73853f31.jpg",
@@ -4469,7 +4701,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Обжарщики и кофейня specialty.",
   "photos": [
    "img/1461023058943-07fcbe16d735.jpg",
@@ -4522,7 +4756,9 @@ window.CAFES = [
   "opened": 2019,
   "openedApprox": false,
   "openedNote": "в Алматы с 2019 г. (europeancoffeetrip.com)",
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Specialty-кофейня, основанная выходцем из Южной Кореи.",
   "photos": [
    "img/1495474472287-4d71bcdd2085.jpg",
@@ -4570,7 +4806,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "pets"
+  ],
   "about": "Specialty-кофейня.",
   "photos": [
    "img/1498804103079-a6351b050096.jpg",
@@ -4618,7 +4858,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "pets"
+  ],
   "about": "Кофейня и винный бар в сталинском доме, пять залов «от утра к вечеру».",
   "photos": [
    "img/1509042239860-f550ce710b93.jpg",
@@ -4666,7 +4910,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Кофейня в «Доме учёных».",
   "photos": [
    "img/1511920170033-f8396924c348.jpg",
@@ -4715,6 +4961,8 @@ window.CAFES = [
   "openedApprox": false,
   "openedNote": null,
   "check": 4500,
+  "checkApprox": false,
+  "features": [],
   "about": "Городское кафе.",
   "photos": [
    "img/1424847651672-bf20a4b0982b.jpg",
@@ -4762,7 +5010,11 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "pets"
+  ],
   "about": "Pet-friendly specialty-кофейня.",
   "photos": [
    "img/1461023058943-07fcbe16d735.jpg",
@@ -4810,7 +5062,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 4000,
+  "checkApprox": true,
+  "features": [],
   "about": "Кофейня с завтраками.",
   "photos": [
    "img/1528207776546-365bb710ee93.jpg",
@@ -4858,7 +5112,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Coffee & Wine.",
   "photos": [
    "img/1498804103079-a6351b050096.jpg",
@@ -4906,7 +5162,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Французская пекарня-кафе.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -4960,7 +5218,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Сеть пекарен-кондитерских. «Лучшая кондитерская 2026» по версии 2GIS Awards.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -5008,7 +5268,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Кондитерская, отмечена 2GIS Awards 2026.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -5056,7 +5318,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Пончики и синнабоны.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -5110,7 +5374,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Торты на заказ и десерты.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -5158,7 +5424,9 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
   "about": "Кондитерский дом, ~60 точек в городе.",
   "photos": [
    "img/1488477181946-6428a0291777.jpg",
@@ -5189,6 +5457,2662 @@ window.CAFES = [
    {
     "name": "Чизкейк",
     "price": 1900
+   }
+  ]
+ },
+ {
+  "id": "lepim-i-varim",
+  "name": "Лепим и Варим",
+  "type": "Кафе",
+  "cuisine": "Пельменная",
+  "kitchen": "russian",
+  "rating": 4.8,
+  "votes": 1817,
+  "ratingApprox": false,
+  "address": "ТРЦ Mega Center Alma-Ata, ул. Розыбакиева, 247а",
+  "gis": "https://2gis.kz/almaty/firm/70000001041006918",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Пельменная сеть: пельмени и вареники ручной лепки.",
+  "photos": [
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Пельмени с говядиной",
+    "price": 2400,
+    "signature": true
+   },
+   {
+    "name": "Блины с икрой",
+    "price": 3250
+   },
+   {
+    "name": "Пельмени домашние",
+    "price": 1750
+   },
+   {
+    "name": "Холодец",
+    "price": 1450
+   },
+   {
+    "name": "Борщ со сметаной",
+    "price": 1300
+   },
+   {
+    "name": "Котлета по-киевски",
+    "price": 2100
+   },
+   {
+    "name": "Наливка, 50 мл",
+    "price": 850
+   }
+  ]
+ },
+ {
+  "id": "coffee-original",
+  "name": "Coffee Original",
+  "type": "Кофейня",
+  "cuisine": "Кофе, завтраки",
+  "kitchen": "breakfast",
+  "rating": 4.8,
+  "votes": 2703,
+  "ratingApprox": false,
+  "address": "ул. Гоголя, 75",
+  "gis": "https://2gis.kz/almaty/firm/70000001069165616",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 4000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Кофейня с завтраками в центре.",
+  "photos": [
+   "img/1528207776546-365bb710ee93.jpg",
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Сырники со сметаной",
+    "price": 2600
+   },
+   {
+    "name": "Яйца Бенедикт",
+    "price": 3400
+   },
+   {
+    "name": "Авокадо-тост",
+    "price": 3200
+   },
+   {
+    "name": "Шакшука",
+    "price": 3000
+   },
+   {
+    "name": "Овсяная каша с ягодами",
+    "price": 2100
+   },
+   {
+    "name": "Капучино",
+    "price": 1400
+   }
+  ]
+ },
+ {
+  "id": "qrupa",
+  "name": "Qrupa",
+  "type": "Кафе",
+  "cuisine": "Бистро",
+  "kitchen": "breakfast",
+  "rating": 4.8,
+  "votes": 743,
+  "ratingApprox": false,
+  "address": "ул. Байтурсынова, 17",
+  "gis": "https://2gis.kz/almaty/search/Qrupa",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 1500,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Бистро и кофе с собой, летняя веранда.",
+  "photos": [
+   "img/1504754524776-8f4f37790ca0.jpg",
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Сырники со сметаной",
+    "price": 1450
+   },
+   {
+    "name": "Яйца Бенедикт",
+    "price": 1850
+   },
+   {
+    "name": "Авокадо-тост",
+    "price": 1750
+   },
+   {
+    "name": "Шакшука",
+    "price": 1650
+   },
+   {
+    "name": "Овсяная каша с ягодами",
+    "price": 1150
+   },
+   {
+    "name": "Капучино",
+    "price": 750
+   }
+  ]
+ },
+ {
+  "id": "capito",
+  "name": "Capito",
+  "type": "Кофейня",
+  "cuisine": "Кофе, завтраки",
+  "kitchen": "coffee",
+  "rating": 4.9,
+  "votes": 4002,
+  "ratingApprox": false,
+  "address": "пр. Серкебаева, 136",
+  "gis": "https://2gis.kz/almaty/firm/70000001074434988",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
+  "about": "Кофейня, гости особенно хвалят фирменный кофе «Тэдди».",
+  "photos": [
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Кофе «Тэдди»",
+    "price": 1900,
+    "signature": true
+   },
+   {
+    "name": "Капучино",
+    "price": 1300
+   },
+   {
+    "name": "Флэт уайт",
+    "price": 1500
+   },
+   {
+    "name": "Раф",
+    "price": 1700
+   },
+   {
+    "name": "Матча латте",
+    "price": 1900
+   },
+   {
+    "name": "Круассан",
+    "price": 1200
+   },
+   {
+    "name": "Сырники",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "paco-coffee-pastry",
+  "name": "Paco coffee & pastry",
+  "type": "Кофейня",
+  "cuisine": "Кофе и выпечка",
+  "kitchen": "bakery",
+  "rating": 4.9,
+  "votes": 589,
+  "ratingApprox": false,
+  "address": "ул. Желтоксан, 75",
+  "gis": "https://2gis.kz/almaty/firm/70000001035126651",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3500,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Кофейня-пекарня с террасой, удобна для работы с ноутбуком.",
+  "photos": [
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Круассан классический",
+    "price": 650
+   },
+   {
+    "name": "Синнабон",
+    "price": 750
+   },
+   {
+    "name": "Медовик, кусок",
+    "price": 1050
+   },
+   {
+    "name": "Наполеон, кусок",
+    "price": 1000
+   },
+   {
+    "name": "Капучино",
+    "price": 700
+   },
+   {
+    "name": "Чизкейк",
+    "price": 1100
+   }
+  ]
+ },
+ {
+  "id": "harissa",
+  "name": "Harissa",
+  "type": "Ресторан",
+  "cuisine": "Ливанская",
+  "kitchen": "mediterranean",
+  "rating": 4.6,
+  "votes": 1126,
+  "ratingApprox": false,
+  "address": "ул. Кабанбай батыра, 68",
+  "gis": "https://2gis.kz/almaty/firm/70000001035045231",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 6000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Ресторан ливанской кухни.",
+  "photos": [
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1559847844-5315695dadae.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хумус с бараниной",
+    "price": 3400,
+    "signature": true
+   },
+   {
+    "name": "Греческий салат",
+    "price": 4200
+   },
+   {
+    "name": "Хумус с питой",
+    "price": 3200
+   },
+   {
+    "name": "Кальмар на гриле",
+    "price": 7900
+   },
+   {
+    "name": "Сибас на гриле",
+    "price": 9900
+   },
+   {
+    "name": "Мусака",
+    "price": 5400
+   },
+   {
+    "name": "Пахлава",
+    "price": 2600
+   }
+  ]
+ },
+ {
+  "id": "afisha",
+  "name": "Афиша",
+  "type": "Ресторан",
+  "cuisine": "Авторская кухня",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": 2309,
+  "ratingApprox": false,
+  "address": "ул. Кабанбай батыра, 83",
+  "gis": "https://2gis.kz/almaty/firm/70000001030988696",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Ресторан авторской кухни с летней верандой.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 14850
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 8100
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 5400
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 3900
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 6450
+   },
+   {
+    "name": "Чизкейк",
+    "price": 3600
+   }
+  ]
+ },
+ {
+  "id": "traktir-medved",
+  "name": "Трактиръ Медведь",
+  "type": "Ресторан",
+  "cuisine": "Русская",
+  "kitchen": "russian",
+  "rating": 4.7,
+  "votes": 801,
+  "ratingApprox": false,
+  "address": "ул. Щепеткова, 137",
+  "gis": "https://2gis.kz/almaty/firm/9429940000797838",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Ресторан русской кухни.",
+  "photos": [
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Пельмени по-сибирски",
+    "price": 3400,
+    "signature": true
+   },
+   {
+    "name": "Блины с икрой",
+    "price": 7850
+   },
+   {
+    "name": "Пельмени домашние",
+    "price": 4250
+   },
+   {
+    "name": "Холодец",
+    "price": 3450
+   },
+   {
+    "name": "Борщ со сметаной",
+    "price": 3200
+   },
+   {
+    "name": "Котлета по-киевски",
+    "price": 5050
+   },
+   {
+    "name": "Наливка, 50 мл",
+    "price": 2000
+   }
+  ]
+ },
+ {
+  "id": "masisso",
+  "name": "Masisso",
+  "type": "Ресторан",
+  "cuisine": "Корейская",
+  "kitchen": "korean",
+  "rating": 4.9,
+  "votes": 837,
+  "ratingApprox": false,
+  "address": "пр. Сейфуллина, 183а",
+  "gis": "https://2gis.kz/almaty/firm/70000001039954088",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Ресторан корейской кухни, 3 филиала в городе.",
+  "photos": [
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Корейское барбекю",
+    "price": 7900,
+    "signature": true
+   },
+   {
+    "name": "Кимчи-чиге",
+    "price": 4250
+   },
+   {
+    "name": "Пибимпап",
+    "price": 4400
+   },
+   {
+    "name": "Ттокпокки",
+    "price": 3750
+   },
+   {
+    "name": "Курица по-корейски",
+    "price": 5200
+   },
+   {
+    "name": "Кимпаб",
+    "price": 3050
+   },
+   {
+    "name": "Корейский чай",
+    "price": 1350
+   }
+  ]
+ },
+ {
+  "id": "kuldzha-hogo",
+  "name": "Кульджа Хого",
+  "type": "Кафе",
+  "cuisine": "Китайская, хого",
+  "kitchen": "chinese",
+  "rating": 4.9,
+  "votes": 3613,
+  "ratingApprox": false,
+  "address": "ул. Розыбакиева, 33Б",
+  "gis": "https://2gis.kz/almaty/firm/70000001056395205",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "kids"
+  ],
+  "about": "Китайский самовар хого и лагман.",
+  "photos": [
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хого на двоих",
+    "price": 7900,
+    "signature": true
+   },
+   {
+    "name": "Утка по-пекински (1/2)",
+    "price": 8250
+   },
+   {
+    "name": "Баоцзы на пару",
+    "price": 2150
+   },
+   {
+    "name": "Курица гунбао",
+    "price": 3000
+   },
+   {
+    "name": "Жареная лапша с говядиной",
+    "price": 2650
+   },
+   {
+    "name": "Баклажаны в кисло-сладком",
+    "price": 2350
+   },
+   {
+    "name": "Китайский чай",
+    "price": 1250
+   }
+  ]
+ },
+ {
+  "id": "de-zhuang",
+  "name": "De Zhuang",
+  "type": "Ресторан",
+  "cuisine": "Китайская, хого",
+  "kitchen": "chinese",
+  "rating": 4.8,
+  "votes": 246,
+  "ratingApprox": false,
+  "address": "ул. Ескараева, 3",
+  "gis": "https://2gis.kz/almaty/search/De%20Zhuang",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 15000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Ресторан китайской кухни с верандой.",
+  "photos": [
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1585032226651-759b368d7246.jpg",
+   "img/1559339352-11d035aa65de.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хого De Zhuang",
+    "price": 14900,
+    "signature": true
+   },
+   {
+    "name": "Утка по-пекински (1/2)",
+    "price": 24750
+   },
+   {
+    "name": "Баоцзы на пару",
+    "price": 6500
+   },
+   {
+    "name": "Курица гунбао",
+    "price": 9000
+   },
+   {
+    "name": "Жареная лапша с говядиной",
+    "price": 8000
+   },
+   {
+    "name": "Баклажаны в кисло-сладком",
+    "price": 7000
+   },
+   {
+    "name": "Китайский чай",
+    "price": 3750
+   }
+  ]
+ },
+ {
+  "id": "okadzaki",
+  "name": "Okadzaki",
+  "type": "Кафе",
+  "cuisine": "Японская, пицца",
+  "kitchen": "japanese",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": true,
+  "address": "Dial Residence, пр. Сейфуллина, 533 блок 2",
+  "gis": "https://2gis.kz/almaty/firm/70000001085672485",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 4000,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
+  "about": "Сеть суши-кафе, часть точек работает круглосуточно.",
+  "photos": [
+   "img/1579871494447-9811cf80d66c.jpg",
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Филадельфия ролл",
+    "price": 2600
+   },
+   {
+    "name": "Рамен тонкоцу",
+    "price": 2350
+   },
+   {
+    "name": "Гёдза (6 шт.)",
+    "price": 1600
+   },
+   {
+    "name": "Том-ям",
+    "price": 2400
+   },
+   {
+    "name": "Сет «Хит»",
+    "price": 6600
+   },
+   {
+    "name": "Моти",
+    "price": 750
+   }
+  ]
+ },
+ {
+  "id": "perla-di-roma",
+  "name": "Perla di Roma",
+  "type": "Кафе",
+  "cuisine": "Итальянская пиццерия",
+  "kitchen": "italian",
+  "rating": 4.6,
+  "votes": 377,
+  "ratingApprox": false,
+  "address": "ул. Пушкина, 100",
+  "gis": "https://2gis.kz/almaty/search/Perla%20di%20Roma",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Итальянская пиццерия.",
+  "photos": [
+   "img/1565299624946-b28f40a0ae38.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Пицца римская",
+    "price": 3600,
+    "signature": true
+   },
+   {
+    "name": "Пицца Маргарита",
+    "price": 3600
+   },
+   {
+    "name": "Паста карбонара",
+    "price": 3900
+   },
+   {
+    "name": "Ризотто с грибами",
+    "price": 4100
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3300
+   },
+   {
+    "name": "Тирамису",
+    "price": 2400
+   },
+   {
+    "name": "Лимонад",
+    "price": 1500
+   }
+  ]
+ },
+ {
+  "id": "unapasta",
+  "name": "Unapasta",
+  "type": "Кафе",
+  "cuisine": "Итальянская, паста",
+  "kitchen": "italian",
+  "rating": 4.8,
+  "votes": 287,
+  "ratingApprox": false,
+  "address": "пр. Абылай хана, 123",
+  "gis": "https://2gis.kz/almaty/firm/70000001097377032",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшое кафе со свежей пастой.",
+  "photos": [
+   "img/1574071318508-1cdbab80d002.jpg",
+   "img/1621996346565-e3dbc646d9a9.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Паста дня",
+    "price": 3400,
+    "signature": true
+   },
+   {
+    "name": "Пицца Маргарита",
+    "price": 3600
+   },
+   {
+    "name": "Паста карбонара",
+    "price": 3900
+   },
+   {
+    "name": "Ризотто с грибами",
+    "price": 4100
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3300
+   },
+   {
+    "name": "Тирамису",
+    "price": 2400
+   },
+   {
+    "name": "Лимонад",
+    "price": 1500
+   }
+  ]
+ },
+ {
+  "id": "line-brew-reserve",
+  "name": "Line Brew Reserve",
+  "type": "Бар",
+  "cuisine": "Европейская, своё пиво",
+  "kitchen": "pub",
+  "rating": 4.6,
+  "votes": 2142,
+  "ratingApprox": false,
+  "address": "ТРЦ Dostyk Plaza, Самал-2, 111",
+  "gis": "https://2gis.kz/almaty/firm/70000001059505489",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "music",
+   "veranda"
+  ],
+  "about": "Ресто-бар Line Group с живой музыкой.",
+  "photos": [
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ]
+ },
+ {
+  "id": "cicek-mangal",
+  "name": "Cicek Мангал",
+  "type": "Ресторан",
+  "cuisine": "Турецкая",
+  "kitchen": "turkish",
+  "rating": 4.1,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "МФК Samal Mall, пр. Назарбаева, 226",
+  "gis": "https://2gis.kz/almaty/firm/70000001031174070",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Турецкий ресторан с мангалом.",
+  "photos": [
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1567620905732-2d1ec7ab7445.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Турецкий завтрак на двоих",
+    "price": 9200
+   },
+   {
+    "name": "Искендер-кебаб",
+    "price": 5350
+   },
+   {
+    "name": "Адана-кебаб",
+    "price": 4900
+   },
+   {
+    "name": "Лахмаджун",
+    "price": 2550
+   },
+   {
+    "name": "Пахлава",
+    "price": 2200
+   },
+   {
+    "name": "Айран",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "mangal-house",
+  "name": "Mangal house",
+  "type": "Кафе",
+  "cuisine": "Мясо на мангале",
+  "kitchen": "grill",
+  "rating": 4.6,
+  "votes": 559,
+  "ratingApprox": false,
+  "address": "ул. Баянаульская, 30",
+  "gis": "https://2gis.kz/almaty/search/Mangal%20house",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Кафе с блюдами на мангале.",
+  "photos": [
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1550966871-3ed3cdb5ed0c.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Шашлык из баранины",
+    "price": 3800
+   },
+   {
+    "name": "Шашлык из курицы",
+    "price": 2600
+   },
+   {
+    "name": "Люля-кебаб",
+    "price": 2900
+   },
+   {
+    "name": "Овощи на мангале",
+    "price": 1900
+   },
+   {
+    "name": "Лепёшка из тандыра",
+    "price": 500
+   },
+   {
+    "name": "Компот",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "tal",
+  "name": "Tal",
+  "type": "Ресторан",
+  "cuisine": "Восточная, европейская",
+  "kitchen": "uzbek",
+  "rating": 4.9,
+  "votes": 3650,
+  "ratingApprox": false,
+  "address": "ул. Навои, 200 блок 3",
+  "gis": "https://2gis.kz/almaty/firm/70000001082899580",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "kids",
+   "namaz"
+  ],
+  "about": "Семейный ресторан с молельной комнатой. Номинант премии 2ГИС 2026.",
+  "photos": [
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1414235077428-338989a2e8c0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Плов праздничный",
+    "price": 3750
+   },
+   {
+    "name": "Лагман",
+    "price": 3150
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 3250
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 4200
+   },
+   {
+    "name": "Самса",
+    "price": 1050
+   },
+   {
+    "name": "Чай чайником",
+    "price": 950
+   }
+  ]
+ },
+ {
+  "id": "ziyafet-steak-house",
+  "name": "Ziyafet Steak House",
+  "type": "Ресторан",
+  "cuisine": "Стейки, халал",
+  "kitchen": "steak",
+  "rating": 4.5,
+  "votes": 1045,
+  "ratingApprox": false,
+  "address": "ул. Желтоксан, 172",
+  "gis": "https://2gis.kz/almaty/firm/70000001021119686",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 10000,
+  "checkApprox": false,
+  "features": [
+   "halal",
+   "namaz"
+  ],
+  "about": "Халал стейк-хаус с молельной комнатой.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1544148103-0773bf10d330.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк рибай",
+    "price": 24850
+   },
+   {
+    "name": "Стриплойн",
+    "price": 21500
+   },
+   {
+    "name": "Тартар из говядины",
+    "price": 9850
+   },
+   {
+    "name": "Бургер с мраморной говядиной",
+    "price": 9000
+   },
+   {
+    "name": "Цезарь",
+    "price": 7000
+   },
+   {
+    "name": "Бокал вина",
+    "price": 5850
+   }
+  ]
+ },
+ {
+  "id": "grano",
+  "name": "GRANO",
+  "type": "Ресторан",
+  "cuisine": "Европейская, сыроварня",
+  "kitchen": "italian",
+  "rating": 4.7,
+  "votes": 2536,
+  "ratingApprox": false,
+  "address": "ул. Айтеке би, 83",
+  "gis": "https://2gis.kz/almaty/firm/70000001080765510",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "kids",
+   "namaz"
+  ],
+  "about": "Ресторан-сыроварня, пицца на дровах.",
+  "photos": [
+   "img/1574071318508-1cdbab80d002.jpg",
+   "img/1608897013039-887f21d8c804.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Пицца на дровах",
+    "price": 3600,
+    "signature": true
+   },
+   {
+    "name": "Пицца Маргарита",
+    "price": 3000
+   },
+   {
+    "name": "Паста карбонара",
+    "price": 3250
+   },
+   {
+    "name": "Ризотто с грибами",
+    "price": 3400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 2750
+   },
+   {
+    "name": "Тирамису",
+    "price": 2000
+   },
+   {
+    "name": "Лимонад",
+    "price": 1250
+   }
+  ]
+ },
+ {
+  "id": "karima",
+  "name": "KaRima",
+  "type": "Кафе",
+  "cuisine": "Узбекская, плов",
+  "kitchen": "uzbek",
+  "rating": 4.7,
+  "votes": 1750,
+  "ratingApprox": false,
+  "address": "ул. Ауэзова, 56в",
+  "gis": "https://2gis.kz/almaty/search/KaRima",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "kids",
+   "namaz"
+  ],
+  "about": "Центр плова с молельной комнатой и доставкой 24/7.",
+  "photos": [
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Плов KaRima",
+    "price": 2900,
+    "signature": true
+   },
+   {
+    "name": "Плов праздничный",
+    "price": 3200
+   },
+   {
+    "name": "Лагман",
+    "price": 2700
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 2800
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 3600
+   },
+   {
+    "name": "Самса",
+    "price": 900
+   },
+   {
+    "name": "Чай чайником",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "malenkiy-prints",
+  "name": "Маленький принц",
+  "type": "Кафе",
+  "cuisine": "Европейская, казахская",
+  "kitchen": "european",
+  "rating": 4.7,
+  "votes": 981,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 265",
+  "gis": "https://2gis.kz/almaty/search/Маленький%20принц",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "kids",
+   "veranda"
+  ],
+  "about": "Семейное кафе: детская комната, аниматоры, мастер-классы.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 11550
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 6300
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 4200
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 3050
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 5000
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2800
+   }
+  ]
+ },
+ {
+  "id": "nomad-grill",
+  "name": "Nomad Grill",
+  "type": "Кафе",
+  "cuisine": "Гриль, семейная",
+  "kitchen": "grill",
+  "rating": 4.8,
+  "votes": 480,
+  "ratingApprox": false,
+  "address": "ТРК Atakent Mall, ул. Тимирязева, 42 к3",
+  "gis": "https://2gis.kz/almaty/firm/70000001090736814",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "kids"
+  ],
+  "about": "Семейное кафе с детской комнатой и аниматорами.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Шашлык из баранины",
+    "price": 3800
+   },
+   {
+    "name": "Шашлык из курицы",
+    "price": 2600
+   },
+   {
+    "name": "Люля-кебаб",
+    "price": 2900
+   },
+   {
+    "name": "Овощи на мангале",
+    "price": 1900
+   },
+   {
+    "name": "Лепёшка из тандыра",
+    "price": 500
+   },
+   {
+    "name": "Компот",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "chingu",
+  "name": "Чингу",
+  "type": "Кафе",
+  "cuisine": "Корейская",
+  "kitchen": "korean",
+  "rating": 4.9,
+  "votes": 1203,
+  "ratingApprox": false,
+  "address": "ул. Майбороды, 26",
+  "gis": "https://2gis.kz/almaty/search/Чингу",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 6000,
+  "checkApprox": false,
+  "features": [
+   "kids",
+   "veranda"
+  ],
+  "about": "Семейное кафе корейской кухни с детской комнатой.",
+  "photos": [
+   "img/1585032226651-759b368d7246.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Кимчи-чиге",
+    "price": 3200
+   },
+   {
+    "name": "Пибимпап",
+    "price": 3300
+   },
+   {
+    "name": "Ттокпокки",
+    "price": 2800
+   },
+   {
+    "name": "Курица по-корейски",
+    "price": 3900
+   },
+   {
+    "name": "Кимпаб",
+    "price": 2300
+   },
+   {
+    "name": "Корейский чай",
+    "price": 1000
+   }
+  ]
+ },
+ {
+  "id": "laureate-grand-cafe",
+  "name": "Laureate Grand Cafe",
+  "type": "Ресторан",
+  "cuisine": "Европейская",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": 1256,
+  "ratingApprox": false,
+  "address": "ул. Богенбай батыра, 85",
+  "gis": "https://2gis.kz/almaty/branches/70000001045667677",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "kids"
+  ],
+  "about": "Ресторан с VIP-кабинами и шоу-программой.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "shashlykoff",
+  "name": "Шашлыкоff",
+  "type": "Бар",
+  "cuisine": "Гриль-бар",
+  "kitchen": "grill",
+  "rating": 4.4,
+  "votes": 6242,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 89",
+  "gis": "https://2gis.kz/almaty/firm/70000001028901146",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "allday",
+   "music"
+  ],
+  "about": "Круглосуточный гриль-бар, по выходным живая музыка.",
+  "photos": [
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1559339352-11d035aa65de.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Шашлык из баранины",
+    "price": 3800
+   },
+   {
+    "name": "Шашлык из курицы",
+    "price": 2600
+   },
+   {
+    "name": "Люля-кебаб",
+    "price": 2900
+   },
+   {
+    "name": "Овощи на мангале",
+    "price": 1900
+   },
+   {
+    "name": "Лепёшка из тандыра",
+    "price": 500
+   },
+   {
+    "name": "Компот",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "ezo",
+  "name": "Ezo",
+  "type": "Ресторан",
+  "cuisine": "Современная грузинская",
+  "kitchen": "georgian",
+  "rating": 4.8,
+  "votes": 1410,
+  "ratingApprox": false,
+  "address": "ул. Богенбай батыра, 128",
+  "gis": "https://2gis.kz/almaty/search/Ezo",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 10000,
+  "checkApprox": false,
+  "features": [
+   "music",
+   "veranda"
+  ],
+  "about": "Живая музыка с четверга по воскресенье.",
+  "photos": [
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хинкали (5 шт.)",
+    "price": 4350
+   },
+   {
+    "name": "Хачапури по-аджарски",
+    "price": 6000
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 7500
+   },
+   {
+    "name": "Пхали ассорти",
+    "price": 5350
+   },
+   {
+    "name": "Харчо",
+    "price": 4500
+   },
+   {
+    "name": "Лимонад тархун",
+    "price": 2500
+   }
+  ]
+ },
+ {
+  "id": "mad-murphy-s-irish-pub",
+  "name": "Mad Murphy's Irish Pub",
+  "type": "Бар",
+  "cuisine": "Ирландский паб",
+  "kitchen": "pub",
+  "rating": 4.8,
+  "votes": 1185,
+  "ratingApprox": false,
+  "address": "ул. Казыбек би, 65",
+  "gis": "https://2gis.kz/almaty/firm/70000001061561947",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "music"
+  ],
+  "about": "Ирландский паб: живой кельтский рок по выходным, футбол на экранах.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ]
+ },
+ {
+  "id": "sybaga-ethno-restaurant",
+  "name": "Sybaga Ethno Restaurant",
+  "type": "Ресторан",
+  "cuisine": "Казахская, этно",
+  "kitchen": "kazakh",
+  "rating": 4.9,
+  "votes": 5239,
+  "ratingApprox": false,
+  "address": "мкр Шугыла, 340/52",
+  "gis": "https://2gis.kz/almaty/firm/70000001092756446",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Этно-ресторан. Номинант премии 2ГИС 2026.",
+  "photos": [
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Бешбармак",
+    "price": 5900,
+    "signature": true
+   },
+   {
+    "name": "Куырдак",
+    "price": 4300
+   },
+   {
+    "name": "Казы-карта",
+    "price": 4800
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 3000
+   },
+   {
+    "name": "Бауырсаки",
+    "price": 1200
+   },
+   {
+    "name": "Шубат / кумыс",
+    "price": 1500
+   }
+  ]
+ },
+ {
+  "id": "shafran",
+  "name": "Shafran",
+  "type": "Кафе",
+  "cuisine": "Восточная, халал",
+  "kitchen": "uzbek",
+  "rating": 4.9,
+  "votes": 3742,
+  "ratingApprox": false,
+  "address": "ул. Байтурсынова, 152",
+  "gis": "https://2gis.kz/almaty/search/Shafran",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "halal",
+   "kids",
+   "veranda"
+  ],
+  "about": "Халал-кафе с верандой и детской комнатой.",
+  "photos": [
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1554118811-1e0d58224f24.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Плов праздничный",
+    "price": 3200
+   },
+   {
+    "name": "Лагман",
+    "price": 2700
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 2800
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 3600
+   },
+   {
+    "name": "Самса",
+    "price": 900
+   },
+   {
+    "name": "Чай чайником",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "megafish",
+  "name": "Megafish",
+  "type": "Кафе",
+  "cuisine": "Рыба, европейская",
+  "kitchen": "seafood",
+  "rating": 4.7,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "пр. Абая, 30а",
+  "gis": "https://2gis.kz/almaty/search/Megafish",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Рыбное кафе с летней верандой.",
+  "photos": [
+   "img/1553621042-f6e147245754.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Ассорти морепродуктов на двоих",
+    "price": 10950
+   },
+   {
+    "name": "Креветки на гриле",
+    "price": 3800
+   },
+   {
+    "name": "Филе лосося",
+    "price": 3600
+   },
+   {
+    "name": "Мидии в сливочном соусе",
+    "price": 2950
+   },
+   {
+    "name": "Греческий салат",
+    "price": 1750
+   },
+   {
+    "name": "Лимонад",
+    "price": 900
+   }
+  ]
+ },
+ {
+  "id": "myata-vyshka",
+  "name": "Мята Вышка",
+  "type": "Бар",
+  "cuisine": "Лаунж-бар",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Ауэзова, 14а",
+  "gis": "https://2gis.kz/almaty/search/Мята%20Вышка",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Лаунж-бар с верандой.",
+  "photos": [
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1550966871-3ed3cdb5ed0c.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "sansara-lounge",
+  "name": "Sansara Lounge",
+  "type": "Бар",
+  "cuisine": "Ресто-бар",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Наурызбай батыра, 85",
+  "gis": "https://2gis.kz/almaty/search/Sansara%20Lounge",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "music",
+   "pets",
+   "veranda"
+  ],
+  "about": "Ресто-бар с летней террасой и живой музыкой, можно с собакой.",
+  "photos": [
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1414235077428-338989a2e8c0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "iman-bbq-steak-house",
+  "name": "Iman BBQ Steak House",
+  "type": "Ресторан",
+  "cuisine": "Стейки, халал",
+  "kitchen": "steak",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Иштвана Коныра, 19",
+  "gis": "https://2gis.kz/almaty/search/Iman%20BBQ",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 15000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Халал стейк-хаус: стейки, шашлык, бургеры.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1544148103-0773bf10d330.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк рибай",
+    "price": 14900
+   },
+   {
+    "name": "Стриплойн",
+    "price": 12900
+   },
+   {
+    "name": "Тартар из говядины",
+    "price": 5900
+   },
+   {
+    "name": "Бургер с мраморной говядиной",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь",
+    "price": 4200
+   },
+   {
+    "name": "Бокал вина",
+    "price": 3500
+   }
+  ]
+ },
+ {
+  "id": "orta",
+  "name": "Orta",
+  "type": "Ресторан",
+  "cuisine": "Узбекская, халал",
+  "kitchen": "uzbek",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "мкр Мамыр-4",
+  "gis": "https://2gis.kz/almaty/search/Orta",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "halal",
+   "veranda"
+  ],
+  "about": "Узбекская халал-кухня с летней верандой.",
+  "photos": [
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Плов праздничный",
+    "price": 3200
+   },
+   {
+    "name": "Лагман",
+    "price": 2700
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 2800
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 3600
+   },
+   {
+    "name": "Самса",
+    "price": 900
+   },
+   {
+    "name": "Чай чайником",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "tabanan",
+  "name": "Tabanan",
+  "type": "Ресторан",
+  "cuisine": "Казахская, халал",
+  "kitchen": "kazakh",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ЖК Наурыз 2",
+  "gis": "https://2gis.kz/almaty/search/Tabanan",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 14000,
+  "checkApprox": false,
+  "features": [
+   "halal"
+  ],
+  "about": "Казахская кухня, бизнес-ланч по будням.",
+  "photos": [
+   "img/1544025162-d76694265947.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Бешбармак",
+    "price": 12150
+   },
+   {
+    "name": "Куырдак",
+    "price": 10050
+   },
+   {
+    "name": "Казы-карта",
+    "price": 11200
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 7000
+   },
+   {
+    "name": "Бауырсаки",
+    "price": 2800
+   },
+   {
+    "name": "Шубат / кумыс",
+    "price": 3500
+   }
+  ]
+ },
+ {
+  "id": "aspandiyar",
+  "name": "Aspandiyar",
+  "type": "Кафе",
+  "cuisine": "Восточная, халал",
+  "kitchen": "uzbek",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Розыбакиева, 49",
+  "gis": "https://2gis.kz/almaty/firm/70000001034057115",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Халал-кафе, открыто с 08:00 до 03:00.",
+  "photos": [
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Плов праздничный",
+    "price": 3200
+   },
+   {
+    "name": "Лагман",
+    "price": 2700
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 2800
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 3600
+   },
+   {
+    "name": "Самса",
+    "price": 900
+   },
+   {
+    "name": "Чай чайником",
+    "price": 800
+   }
+  ]
+ },
+ {
+  "id": "alani",
+  "name": "Alani",
+  "type": "Ресторан",
+  "cuisine": "Европейская, халал",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Луганского, 19",
+  "gis": "https://2gis.kz/almaty/search/Alani",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Халал-ресторан.",
+  "photos": [
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "abadan-alash",
+  "name": "Abadan alash",
+  "type": "Ресторан",
+  "cuisine": "Казахская, этно",
+  "kitchen": "kazakh",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Мынбаева, 115",
+  "gis": "https://2gis.kz/almaty/search/Abadan%20alash",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Этно-ресторан.",
+  "photos": [
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Бешбармак",
+    "price": 5200
+   },
+   {
+    "name": "Куырдак",
+    "price": 4300
+   },
+   {
+    "name": "Казы-карта",
+    "price": 4800
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 3000
+   },
+   {
+    "name": "Бауырсаки",
+    "price": 1200
+   },
+   {
+    "name": "Шубат / кумыс",
+    "price": 1500
+   }
+  ]
+ },
+ {
+  "id": "m-te",
+  "name": "MÖTE",
+  "type": "Ресторан",
+  "cuisine": "Европейская, авторская",
+  "kitchen": "european",
+  "rating": 4.9,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "пр. Достык, 50",
+  "gis": "https://2gis.kz/almaty/search/MÖTE",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 12000,
+  "checkApprox": false,
+  "features": [
+   "music"
+  ],
+  "about": "Ресторан авторской кухни с живой музыкой.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 19800
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 10800
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 7200
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 5200
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 8600
+   },
+   {
+    "name": "Чизкейк",
+    "price": 4800
+   }
+  ]
+ },
+ {
+  "id": "littles",
+  "name": "Littles",
+  "type": "Кафе",
+  "cuisine": "Детское кафе",
+  "kitchen": "european",
+  "rating": 4.7,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Розыбакиева, 320",
+  "gis": "https://2gis.kz/almaty/search/Littles",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "kids"
+  ],
+  "about": "Детское кафе с игровой площадкой.",
+  "photos": [
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1559339352-11d035aa65de.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 8250
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 4500
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3000
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2150
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 3600
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2000
+   }
+  ]
+ },
+ {
+  "id": "fish-fried",
+  "name": "Fish Fried",
+  "type": "Кафе",
+  "cuisine": "Жареная рыба, халал",
+  "kitchen": "seafood",
+  "rating": 4.9,
+  "votes": 5800,
+  "ratingApprox": false,
+  "address": "3-й микрорайон, 16а",
+  "gis": "https://2gis.kz/almaty/branches/70000001080969960",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3000,
+  "checkApprox": false,
+  "features": [
+   "halal"
+  ],
+  "about": "Сеть рыбных кафе, готовят больше тонны рыбы в день.",
+  "photos": [
+   "img/1559847844-5315695dadae.jpg",
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Ассорти морепродуктов на двоих",
+    "price": 10950
+   },
+   {
+    "name": "Креветки на гриле",
+    "price": 3800
+   },
+   {
+    "name": "Филе лосося",
+    "price": 3600
+   },
+   {
+    "name": "Мидии в сливочном соусе",
+    "price": 2950
+   },
+   {
+    "name": "Греческий салат",
+    "price": 1750
+   },
+   {
+    "name": "Лимонад",
+    "price": 900
+   }
+  ]
+ },
+ {
+  "id": "naryn",
+  "name": "Naryn",
+  "type": "Кафе",
+  "cuisine": "Казахская, халал",
+  "kitchen": "kazakh",
+  "rating": 4.8,
+  "votes": 2522,
+  "ratingApprox": false,
+  "address": "ЖК Жайлы, ул. Толе би, 273/4",
+  "gis": "https://2gis.kz/almaty/firm/70000001099760957",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [
+   "halal"
+  ],
+  "about": "Семейное халал-кафе у парка Сайран.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Нарын",
+    "price": 3400,
+    "signature": true
+   },
+   {
+    "name": "Бешбармак",
+    "price": 5200
+   },
+   {
+    "name": "Куырдак",
+    "price": 4300
+   },
+   {
+    "name": "Казы-карта",
+    "price": 4800
+   },
+   {
+    "name": "Манты (4 шт.)",
+    "price": 3000
+   },
+   {
+    "name": "Бауырсаки",
+    "price": 1200
+   },
+   {
+    "name": "Шубат / кумыс",
+    "price": 1500
+   }
+  ]
+ },
+ {
+  "id": "del-cappuccino",
+  "name": "Del Cappuccino",
+  "type": "Кофейня",
+  "cuisine": "Кофейня, завтраки",
+  "kitchen": "breakfast",
+  "rating": 4.8,
+  "votes": 2702,
+  "ratingApprox": false,
+  "address": "ЖК Комфорт Сити, пр. Серкебаева, 146",
+  "gis": "https://2gis.kz/almaty/firm/70000001080784248",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "allday",
+   "halal",
+   "kids",
+   "veranda"
+  ],
+  "about": "Семейная кофейня, работает круглосуточно, завтраки весь день.",
+  "photos": [
+   "img/1484723091739-30a097e8f929.jpg",
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Сырники со сметаной",
+    "price": 2150
+   },
+   {
+    "name": "Яйца Бенедикт",
+    "price": 2850
+   },
+   {
+    "name": "Авокадо-тост",
+    "price": 2650
+   },
+   {
+    "name": "Шакшука",
+    "price": 2500
+   },
+   {
+    "name": "Овсяная каша с ягодами",
+    "price": 1750
+   },
+   {
+    "name": "Капучино",
+    "price": 1150
+   }
+  ]
+ },
+ {
+  "id": "alazani",
+  "name": "Алазани",
+  "type": "Ресторан",
+  "cuisine": "Грузинская, азербайджанская",
+  "kitchen": "georgian",
+  "rating": 4.6,
+  "votes": 1716,
+  "ratingApprox": false,
+  "address": "ул. Акан Серы, 20/5",
+  "gis": "https://2gis.kz/almaty/firm/9429940000913724",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": false,
+  "features": [
+   "music"
+  ],
+  "about": "Грузинская и азербайджанская кухня, живая музыка.",
+  "photos": [
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1554118811-1e0d58224f24.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хинкали (5 шт.)",
+    "price": 3450
+   },
+   {
+    "name": "Хачапури по-аджарски",
+    "price": 4800
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 6000
+   },
+   {
+    "name": "Пхали ассорти",
+    "price": 4250
+   },
+   {
+    "name": "Харчо",
+    "price": 3600
+   },
+   {
+    "name": "Лимонад тархун",
+    "price": 2000
+   }
+  ]
+ },
+ {
+  "id": "sumakh",
+  "name": "Sumakh",
+  "type": "Кафе",
+  "cuisine": "Кавказская",
+  "kitchen": "georgian",
+  "rating": 4.9,
+  "votes": 1224,
+  "ratingApprox": false,
+  "address": "пр. Суюнбая, 485",
+  "gis": "https://2gis.kz/almaty/firm/70000001036387779",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": false,
+  "features": [
+   "kids"
+  ],
+  "about": "Кавказская кухня: шашлык, хинкали, стейки.",
+  "photos": [
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хинкали (5 шт.)",
+    "price": 2150
+   },
+   {
+    "name": "Хачапури по-аджарски",
+    "price": 3000
+   },
+   {
+    "name": "Шашлык из баранины",
+    "price": 3750
+   },
+   {
+    "name": "Пхали ассорти",
+    "price": 2650
+   },
+   {
+    "name": "Харчо",
+    "price": 2250
+   },
+   {
+    "name": "Лимонад тархун",
+    "price": 1250
+   }
+  ]
+ },
+ {
+  "id": "presso",
+  "name": "Presso",
+  "type": "Кафе",
+  "cuisine": "Городское кафе",
+  "kitchen": "european",
+  "rating": 4.8,
+  "votes": 1905,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 50-54",
+  "gis": "https://2gis.kz/almaty/firm/9429940001695197",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [
+   "kids"
+  ],
+  "about": "Городское кафе с детской игровой зоной и бизнес-ланчем.",
+  "photos": [
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1550966871-3ed3cdb5ed0c.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ]
+ },
+ {
+  "id": "yug22",
+  "name": "Юг22",
+  "type": "Ресторан",
+  "cuisine": "Греческая, европейская",
+  "kitchen": "mediterranean",
+  "rating": 4.6,
+  "votes": 325,
+  "ratingApprox": false,
+  "address": "ул. Оспанова, 22а",
+  "gis": "https://2gis.kz/almaty/firm/70000001110644042",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 35000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Ресторан в Тау-Самале с летней верандой.",
+  "photos": [
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1559847844-5315695dadae.jpg",
+   "img/1414235077428-338989a2e8c0.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Греческий салат",
+    "price": 10900
+   },
+   {
+    "name": "Хумус с питой",
+    "price": 8300
+   },
+   {
+    "name": "Кальмар на гриле",
+    "price": 20550
+   },
+   {
+    "name": "Сибас на гриле",
+    "price": 25750
+   },
+   {
+    "name": "Мусака",
+    "price": 14050
+   },
+   {
+    "name": "Пахлава",
+    "price": 6750
+   }
+  ]
+ },
+ {
+  "id": "chalet",
+  "name": "Chalet",
+  "type": "Ресторан",
+  "cuisine": "Европейская, альпийская",
+  "kitchen": "european",
+  "rating": 4.1,
+  "votes": 344,
+  "ratingApprox": false,
+  "address": "Shymbulak Mountain Resort",
+  "gis": "https://2gis.kz/almaty/search/Chalet%20Shymbulak",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 15000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Ресторан на горнолыжном курорте Шымбулак.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1544148103-0773bf10d330.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 24750
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 13500
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 9000
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 6500
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 10750
+   },
+   {
+    "name": "Чизкейк",
+    "price": 6000
+   }
+  ]
+ },
+ {
+  "id": "chechil",
+  "name": "Chechil",
+  "type": "Бар",
+  "cuisine": "Пивной ресторан",
+  "kitchen": "pub",
+  "rating": 4.6,
+  "votes": 3769,
+  "ratingApprox": false,
+  "address": "ТРК Forum, пр. Сейфуллина, 617",
+  "gis": "https://2gis.kz/almaty/firm/70000001055319350",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "music"
+  ],
+  "about": "Пивной ресторан, по выходным живая музыка.",
+  "photos": [
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
    }
   ]
  }

@@ -85,8 +85,8 @@ def T(s): return s
 
 # Поля: name, type, kitchen(ключ меню/фото), cuisine(текст), rating, votes, approx, address, gis, year, yearNote, check, sig(фирменные позиции), about
 V = []
-def add(name, typ, kitchen, cuisine, rating, votes, address, gis, check=None, year=None, yearNote=None, approx=False, sig=(), about="", yearApprox=False):
-    V.append(dict(name=name, type=typ, kitchen=kitchen, cuisine=cuisine, rating=rating, votes=votes, approx=approx,
+def add(name, typ, kitchen, cuisine, rating, votes, address, gis, check=None, year=None, yearNote=None, approx=False, sig=(), about="", yearApprox=False, feat=()):
+    V.append(dict(feat=list(feat), name=name, type=typ, kitchen=kitchen, cuisine=cuisine, rating=rating, votes=votes, approx=approx,
                   address=address, gis=gis, check=check, year=year, yearNote=yearNote, sig=list(sig), about=about, yearApprox=yearApprox))
 
 F = "https://2gis.kz/almaty/firm/"; B = "https://2gis.kz/almaty/branches/"; S = "https://2gis.kz/almaty/search/"
@@ -211,8 +211,80 @@ add("Tattisin","Кондитерская","bakery","Кафе-кондитерс�
 add("Lalu Cake","Кондитерская","bakery","Кондитерская",4.9,None,"ЖК Жайлы, ул. Толе би, 273а блок 5",F+"70000001084149669",about="Торты на заказ и десерты.")
 add("Kulikov","Кондитерская","bakery","Кондитерская",4.8,382,"ул. Наманганская, 35а",B+"9429948591078755",about="Кондитерский дом, ~60 точек в городе.")
 
-if len(V) != 100:
-    print("COUNT", len(V), file=sys.stderr)
+
+# ——— Добавлены во второй волне (октябрь 2026), рейтинги — из карточек 2ГИС ———
+add("Лепим и Варим","Кафе","russian","Пельменная",4.8,1817,"ТРЦ Mega Center Alma-Ata, ул. Розыбакиева, 247а",F+"70000001041006918",check=3000,sig=[("Пельмени с говядиной",2400)],about="Пельменная сеть: пельмени и вареники ручной лепки.")
+add("Coffee Original","Кофейня","breakfast","Кофе, завтраки",4.8,2703,"ул. Гоголя, 75",F+"70000001069165616",about="Кофейня с завтраками в центре.")
+add("Qrupa","Кафе","breakfast","Бистро",4.8,743,"ул. Байтурсынова, 17",S+"Qrupa",check=1500,feat=["veranda"],about="Бистро и кофе с собой, летняя веранда.")
+add("Capito","Кофейня","coffee","Кофе, завтраки",4.9,4002,"пр. Серкебаева, 136",F+"70000001074434988",sig=[("Кофе «Тэдди»",1900)],about="Кофейня, гости особенно хвалят фирменный кофе «Тэдди».")
+add("Paco coffee & pastry","Кофейня","bakery","Кофе и выпечка",4.9,589,"ул. Желтоксан, 75",F+"70000001035126651",check=3500,feat=["veranda"],about="Кофейня-пекарня с террасой, удобна для работы с ноутбуком.")
+add("Harissa","Ресторан","mediterranean","Ливанская",4.6,1126,"ул. Кабанбай батыра, 68",F+"70000001035045231",check=6000,sig=[("Хумус с бараниной",3400)],about="Ресторан ливанской кухни.")
+add("Афиша","Ресторан","european","Авторская кухня",4.9,2309,"ул. Кабанбай батыра, 83",F+"70000001030988696",check=9000,feat=["veranda"],about="Ресторан авторской кухни с летней верандой.")
+add("Трактиръ Медведь","Ресторан","russian","Русская",4.7,801,"ул. Щепеткова, 137",F+"9429940000797838",check=8000,sig=[("Пельмени по-сибирски",3400)],about="Ресторан русской кухни.")
+add("Masisso","Ресторан","korean","Корейская",4.9,837,"пр. Сейфуллина, 183а",F+"70000001039954088",check=8000,sig=[("Корейское барбекю",7900)],about="Ресторан корейской кухни, 3 филиала в городе.")
+add("Кульджа Хого","Кафе","chinese","Китайская, хого",4.9,3613,"ул. Розыбакиева, 33Б",F+"70000001056395205",check=5000,feat=["kids"],sig=[("Хого на двоих",7900)],about="Китайский самовар хого и лагман.")
+add("De Zhuang","Ресторан","chinese","Китайская, хого",4.8,246,"ул. Ескараева, 3",S+"De%20Zhuang",check=15000,feat=["veranda"],sig=[("Хого De Zhuang",14900)],about="Ресторан китайской кухни с верандой.")
+add("Okadzaki","Кафе","japanese","Японская, пицца",4.8,None,"Dial Residence, пр. Сейфуллина, 533 блок 2",F+"70000001085672485",check=4000,approx=True,feat=["allday"],about="Сеть суши-кафе, часть точек работает круглосуточно.")
+add("Perla di Roma","Кафе","italian","Итальянская пиццерия",4.6,377,"ул. Пушкина, 100",S+"Perla%20di%20Roma",sig=[("Пицца римская",3600)],about="Итальянская пиццерия.")
+add("Unapasta","Кафе","italian","Итальянская, паста",4.8,287,"пр. Абылай хана, 123",F+"70000001097377032",sig=[("Паста дня",3400)],about="Небольшое кафе со свежей пастой.")
+add("Line Brew Reserve","Бар","pub","Европейская, своё пиво",4.6,2142,"ТРЦ Dostyk Plaza, Самал-2, 111",F+"70000001059505489",feat=["music","veranda"],about="Ресто-бар Line Group с живой музыкой.")
+add("Cicek Мангал","Ресторан","turkish","Турецкая",4.1,None,"МФК Samal Mall, пр. Назарбаева, 226",F+"70000001031174070",check=7000,about="Турецкий ресторан с мангалом.")
+add("Mangal house","Кафе","grill","Мясо на мангале",4.6,559,"ул. Баянаульская, 30",S+"Mangal%20house",about="Кафе с блюдами на мангале.")
+add("Tal","Ресторан","uzbek","Восточная, европейская",4.9,3650,"ул. Навои, 200 блок 3",F+"70000001082899580",check=7000,feat=["kids","namaz"],about="Семейный ресторан с молельной комнатой. Номинант премии 2ГИС 2026.")
+add("Ziyafet Steak House","Ресторан","steak","Стейки, халал",4.5,1045,"ул. Желтоксан, 172",F+"70000001021119686",check=10000,feat=["namaz","halal"],about="Халал стейк-хаус с молельной комнатой.")
+add("GRANO","Ресторан","italian","Европейская, сыроварня",4.7,2536,"ул. Айтеке би, 83",F+"70000001080765510",check=5000,feat=["namaz","kids"],sig=[("Пицца на дровах",3600)],about="Ресторан-сыроварня, пицца на дровах.")
+add("KaRima","Кафе","uzbek","Узбекская, плов",4.7,1750,"ул. Ауэзова, 56в",S+"KaRima",feat=["namaz","kids"],sig=[("Плов KaRima",2900)],about="Центр плова с молельной комнатой и доставкой 24/7.")
+add("Маленький принц","Кафе","european","Европейская, казахская",4.7,981,"ул. Толе би, 265",S+"Маленький%20принц",check=7000,feat=["kids","veranda"],about="Семейное кафе: детская комната, аниматоры, мастер-классы.")
+add("Nomad Grill","Кафе","grill","Гриль, семейная",4.8,480,"ТРК Atakent Mall, ул. Тимирязева, 42 к3",F+"70000001090736814",feat=["kids"],about="Семейное кафе с детской комнатой и аниматорами.")
+add("Чингу","Кафе","korean","Корейская",4.9,1203,"ул. Майбороды, 26",S+"Чингу",check=6000,feat=["kids","veranda"],about="Семейное кафе корейской кухни с детской комнатой.")
+add("Laureate Grand Cafe","Ресторан","european","Европейская",4.9,1256,"ул. Богенбай батыра, 85",B+"70000001045667677",feat=["kids"],about="Ресторан с VIP-кабинами и шоу-программой.")
+add("Шашлыкоff","Бар","grill","Гриль-бар",4.4,6242,"ул. Толе би, 89",F+"70000001028901146",feat=["allday","music"],about="Круглосуточный гриль-бар, по выходным живая музыка.")
+add("Ezo","Ресторан","georgian","Современная грузинская",4.8,1410,"ул. Богенбай батыра, 128",S+"Ezo",check=10000,feat=["music","veranda"],about="Живая музыка с четверга по воскресенье.")
+add("Mad Murphy's Irish Pub","Бар","pub","Ирландский паб",4.8,1185,"ул. Казыбек би, 65",F+"70000001061561947",feat=["music"],about="Ирландский паб: живой кельтский рок по выходным, футбол на экранах.")
+add("Sybaga Ethno Restaurant","Ресторан","kazakh","Казахская, этно",4.9,5239,"мкр Шугыла, 340/52",F+"70000001092756446",feat=["halal"],sig=[("Бешбармак",5900)],about="Этно-ресторан. Номинант премии 2ГИС 2026.")
+add("Shafran","Кафе","uzbek","Восточная, халал",4.9,3742,"ул. Байтурсынова, 152",S+"Shafran",feat=["halal","veranda","kids"],about="Халал-кафе с верандой и детской комнатой.")
+add("Megafish","Кафе","seafood","Рыба, европейская",4.7,None,"пр. Абая, 30а",S+"Megafish",check=3000,feat=["veranda"],about="Рыбное кафе с летней верандой.")
+add("Мята Вышка","Бар","european","Лаунж-бар",4.9,None,"ул. Ауэзова, 14а",S+"Мята%20Вышка",feat=["veranda"],about="Лаунж-бар с верандой.")
+add("Sansara Lounge","Бар","european","Ресто-бар",4.9,None,"ул. Наурызбай батыра, 85",S+"Sansara%20Lounge",feat=["music","veranda","pets"],about="Ресто-бар с летней террасой и живой музыкой, можно с собакой.")
+add("Iman BBQ Steak House","Ресторан","steak","Стейки, халал",4.8,None,"ул. Иштвана Коныра, 19",S+"Iman%20BBQ",feat=["halal"],about="Халал стейк-хаус: стейки, шашлык, бургеры.")
+add("Orta","Ресторан","uzbek","Узбекская, халал",4.9,None,"мкр Мамыр-4",S+"Orta",feat=["halal","veranda"],about="Узбекская халал-кухня с летней верандой.")
+add("Tabanan","Ресторан","kazakh","Казахская, халал",4.9,None,"ЖК Наурыз 2",S+"Tabanan",check=14000,feat=["halal"],about="Казахская кухня, бизнес-ланч по будням.")
+add("Aspandiyar","Кафе","uzbek","Восточная, халал",4.8,None,"ул. Розыбакиева, 49",F+"70000001034057115",feat=["halal"],about="Халал-кафе, открыто с 08:00 до 03:00.")
+add("Alani","Ресторан","european","Европейская, халал",4.9,None,"ул. Луганского, 19",S+"Alani",feat=["halal"],about="Халал-ресторан.")
+add("Abadan alash","Ресторан","kazakh","Казахская, этно",4.8,None,"ул. Мынбаева, 115",S+"Abadan%20alash",feat=["halal"],about="Этно-ресторан.")
+add("MÖTE","Ресторан","european","Европейская, авторская",4.9,None,"пр. Достык, 50",S+"MÖTE",check=12000,feat=["music"],about="Ресторан авторской кухни с живой музыкой.")
+add("Littles","Кафе","european","Детское кафе",4.7,None,"ул. Розыбакиева, 320",S+"Littles",check=5000,feat=["kids"],about="Детское кафе с игровой площадкой.")
+add("Fish Fried","Кафе","seafood","Жареная рыба, халал",4.9,5800,"3-й микрорайон, 16а",B+"70000001080969960",check=3000,feat=["halal"],about="Сеть рыбных кафе, готовят больше тонны рыбы в день.")
+add("Naryn","Кафе","kazakh","Казахская, халал",4.8,2522,"ЖК Жайлы, ул. Толе би, 273/4",F+"70000001099760957",feat=["halal"],sig=[("Нарын",3400)],about="Семейное халал-кафе у парка Сайран.")
+add("Del Cappuccino","Кофейня","breakfast","Кофейня, завтраки",4.8,2702,"ЖК Комфорт Сити, пр. Серкебаева, 146",F+"70000001080784248",check=5000,feat=["allday","halal","kids","veranda"],about="Семейная кофейня, работает круглосуточно, завтраки весь день.")
+add("Алазани","Ресторан","georgian","Грузинская, азербайджанская",4.6,1716,"ул. Акан Серы, 20/5",F+"9429940000913724",check=8000,feat=["music"],about="Грузинская и азербайджанская кухня, живая музыка.")
+add("Sumakh","Кафе","georgian","Кавказская",4.9,1224,"пр. Суюнбая, 485",F+"70000001036387779",check=5000,feat=["kids"],about="Кавказская кухня: шашлык, хинкали, стейки.")
+add("Presso","Кафе","european","Городское кафе",4.8,1905,"ул. Толе би, 50-54",F+"9429940001695197",feat=["kids"],about="Городское кафе с детской игровой зоной и бизнес-ланчем.")
+add("Юг22","Ресторан","mediterranean","Греческая, европейская",4.6,325,"ул. Оспанова, 22а",F+"70000001110644042",check=35000,feat=["veranda"],about="Ресторан в Тау-Самале с летней верандой.")
+add("Chalet","Ресторан","european","Европейская, альпийская",4.1,344,"Shymbulak Mountain Resort",S+"Chalet%20Shymbulak",check=15000,about="Ресторан на горнолыжном курорте Шымбулак.")
+add("Chechil","Бар","pub","Пивной ресторан",4.6,3769,"ТРК Forum, пр. Сейфуллина, 617",F+"70000001055319350",feat=["music"],about="Пивной ресторан, по выходным живая музыка.")
+
+# Удобства у заведений первой волны — по карточкам и подборкам 2ГИС, которые встречались при поиске
+FEAT = {
+ "Tanuki":["kids"], "Теплица":["kids","veranda","allday"], "Mado":["namaz","halal"], "Starbucks":["allday"],
+ "Urbo Coffee":["allday"], "Line Brew":["music","veranda"], "Кишлак":["music","veranda"], "Тюбетейка":["music"],
+ "Paulaner Bräuhaus":["music"], "Pinta":["music"], "Villa dei Fiori":["music","veranda"], "Марьина Роща":["music"],
+ "Suli da Guli":["music","veranda"], "Дареджани":["music","veranda"], "Gogra":["veranda"], "Musaka":["halal"],
+ "Qaganat":["halal","allday"], "Bahandi":["halal"], "Tary":["allday"], "Ichi Specialty Coffee":["pets"],
+ "Six Coffee+Wine":["pets"], "Do.star coffee":["pets"], "Shipudim":["allday"], "Sandyq":["veranda","halal"],
+ "Мармарис":["allday"], "Огонёк":["veranda"], "Лагманхана №1 Sabro":["kids"], "Rumi":["halal"],
+ "Ozyurt":["halal"], "Paco coffee & pastry":["veranda"],
+}
+for v in V:
+    v["feat"] = sorted(set(v["feat"]) | set(FEAT.get(v["name"], [])))
+
+# Ориентировочный чек, если 2ГИС его не показал (помечается как оценка)
+EST = {"coffee":2500,"bakery":2500,"breakfast":4000,"burger":2500,"pizza":3000,"canteen":2000,"steak":15000,
+       "pub":7000,"seafood":10000,"mediterranean":12000,"european":8000,"grill":5000}
+for v in V:
+    v["checkApprox"] = v["check"] is None
+    if v["check"] is None:
+        v["check"] = EST.get(v["kitchen"], 5000 if v["type"] in ("Кафе","Фастфуд") else 8000)
 
 import re
 def slug(s):
@@ -232,7 +304,7 @@ def photos(i, kitchen):
     return out
 
 def menu(v):
-    scale = (v["check"] or 6000) / 6000
+    scale = (6000 if v["checkApprox"] else v["check"]) / 6000
     scale = max(0.55, min(scale, 2.6)) if v["kitchen"] not in ("canteen",) else 1
     def r(x): return int(round(x * scale / 50.0) * 50) if x * scale > 600 else int(round(x * scale / 10.0) * 10)
     base = [(n, r(p)) for n, p in MENU[v["kitchen"]]]
@@ -252,12 +324,12 @@ for i, v in enumerate(V):
         "rating": v["rating"], "votes": v["votes"], "ratingApprox": v["approx"],
         "address": v["address"], "gis": v["gis"],
         "opened": v["year"], "openedApprox": v["yearApprox"], "openedNote": v["yearNote"],
-        "check": v["check"], "about": v["about"],
+        "check": v["check"], "checkApprox": v["checkApprox"], "features": v["feat"], "about": v["about"],
         "photos": [U + p + ".jpg" for p in photos(i, v["kitchen"])],
         "menu": menu(v),
     })
 
-js = "// OnlyGuests — данные о 100 заведениях Алматы.\n" \
+js = "// OnlyGuests — данные о %d заведениях Алматы.\n" % len(out) + \
      "// Рейтинги и число оценок — по карточкам 2ГИС на октябрь 2026 г. (могут меняться).\n" \
      "// opened — год открытия, если его удалось подтвердить источником; openedNote — пояснение.\n" \
      "// menu — популярные позиции с ориентировочными ценами (₸); фото — иллюстративные (Unsplash).\n" \
