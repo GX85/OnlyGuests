@@ -311,18 +311,6 @@
     setTheme(cur === "dark" ? "light" : "dark");
   });
 
-  // ——— кофейные зёрна в hero ———
-  (function beans() {
-    var box = $("beans");
-    if (!box) return;
-    var spots = [[58, 12, 18, 110], [64, 34, 24, 15], [56, 62, 30, -40], [72, 86, 26, 160], [80, 52, 18, -75],
-      [90, 76, 32, 50], [68, 8, 14, 200], [50, 88, 16, -120], [2, 92, 22, 35]];
-    box.innerHTML = spots.map(function (s, i) {
-      return '<svg class="bean" viewBox="0 0 60 80" style="left:' + s[0] + "%;top:" + s[1] + "%;width:" + s[2] +
-        "px;--r:" + s[3] + "deg;animation-delay:-" + (i * 1.3) + 's"><use href="#coffee-bean"/></svg>';
-    }).join("");
-  })();
-
   initControls();
   renderStats();
   render();

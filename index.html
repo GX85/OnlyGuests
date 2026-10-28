@@ -5,84 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>OnlyGuests — кафе и рестораны Алматы</title>
   <meta name="description" content="OnlyGuests — справочник 150 кафе, кофеен и ресторанов Алматы: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1b12'/%3E%3Cpath d='M32 54C29 44 25 41 19 40C12 41 7 37 6 30C11 30 13 28 12 24C7 21 6 15 9 11C14 13 17 12 18 8C20 4 26 1 32 1C38 1 44 4 46 8C47 12 50 13 55 11C58 15 57 21 52 24C51 28 53 30 58 30C57 37 52 41 45 40C39 41 35 44 32 54Z' fill='%236f8f4a'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1b12'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-weight='700' font-size='30' text-anchor='middle' fill='%23d9b07a'%3EOG%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Рисованные элементы: лист лозы, лоза, кофейное зерно и фильтр «мазка кистью» -->
-  <svg class="defs" aria-hidden="true" focusable="false">
-    <defs>
-      <filter id="paint" x="-10%" y="-10%" width="120%" height="120%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="warp"/>
-        <feDisplacementMap in="SourceGraphic" in2="warp" scale="5" xChannelSelector="R" yChannelSelector="G" result="rough"/>
-        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="3" result="grain"/>
-        <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.3 1.1" result="grainA"/>
-        <feComposite in="rough" in2="grainA" operator="in" result="textured"/>
-        <feBlend in="textured" in2="rough" mode="multiply"/>
-      </filter>
-      <linearGradient id="leafA" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#a7b85c"/>
-        <stop offset=".45" stop-color="#5f7d36"/>
-        <stop offset="1" stop-color="#2f4a22"/>
-      </linearGradient>
-      <linearGradient id="leafB" x1="1" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#c9b04f"/>
-        <stop offset=".5" stop-color="#7d8a3a"/>
-        <stop offset="1" stop-color="#3d5226"/>
-      </linearGradient>
-      <radialGradient id="bean" cx=".35" cy=".3" r=".8">
-        <stop offset="0" stop-color="#9a6a45"/>
-        <stop offset=".55" stop-color="#5b371f"/>
-        <stop offset="1" stop-color="#2a170c"/>
-      </radialGradient>
-      <symbol id="leaf" viewBox="0 0 100 100">
-        <path fill="inherit" d="M50 96C47 82 41 75 31 73C19 75 8 69 6 57C14 57 18 52 16 46C8 41 5 31 11 22C19 26 26 24 28 18C30 9 40 3 50 2C60 3 70 9 72 18C74 24 81 26 89 22C95 31 92 41 84 46C82 52 86 57 94 57C92 69 81 75 69 73C59 75 53 82 50 96Z"/>
-        <g fill="none" stroke="#e9e3a6" stroke-linecap="round" opacity=".55">
-          <path stroke-width="1.6" d="M50 92C50 64 50 36 50 8"/>
-          <path stroke-width="1.2" d="M50 62C38 56 26 54 12 54M50 62C62 56 74 54 88 54"/>
-          <path stroke-width="1.1" d="M50 44C42 36 34 30 22 24M50 44C58 36 66 30 78 24"/>
-          <path stroke-width=".8" opacity=".7" d="M30 55C28 62 24 66 20 68M70 55C72 62 76 66 80 68M36 34C32 30 31 24 32 18M64 34C68 30 69 24 68 18"/>
-        </g>
-        <g fill="none" stroke="#1f2f15" stroke-linecap="round" opacity=".35">
-          <path stroke-width="2.5" d="M22 70C30 66 38 66 46 70"/>
-          <path stroke-width="2" d="M60 20C64 28 70 32 80 34"/>
-        </g>
-        <g fill="none" stroke="#f4efc0" stroke-linecap="round" opacity=".35">
-          <path stroke-width="3" d="M30 30C34 26 40 22 44 20"/>
-          <path stroke-width="2" d="M58 66C64 64 70 64 76 62"/>
-        </g>
-      </symbol>
-      <symbol id="vine" viewBox="0 0 120 120">
-        <path fill="none" stroke="#6b4a2e" stroke-width="4.5" stroke-linecap="round" d="M14 112C30 96 34 78 48 66C62 54 80 56 92 40C100 30 102 20 98 10"/>
-        <path fill="none" stroke="#8a6440" stroke-width="1.6" stroke-linecap="round" opacity=".8" d="M16 108C30 94 36 78 49 68M62 58C76 52 86 50 94 36"/>
-        <path fill="none" stroke="#7d8a3a" stroke-width="2" stroke-linecap="round" d="M48 66C40 60 38 52 44 48C49 45 52 50 49 53C47 55 44 54 45 51"/>
-        <path fill="none" stroke="#7d8a3a" stroke-width="2" stroke-linecap="round" d="M92 40C100 44 108 42 108 34C108 28 101 28 101 33C101 36 105 37 106 34"/>
-        <use href="#leaf" x="40" y="16" width="44" height="44" fill="url(#leafA)" transform="rotate(-18 62 38)"/>
-        <use href="#leaf" x="6" y="44" width="38" height="38" fill="url(#leafB)" transform="rotate(-48 25 63)"/>
-        <use href="#leaf" x="68" y="54" width="32" height="32" fill="url(#leafA)" transform="rotate(32 84 70)"/>
-        <g fill="#4a2a4f">
-          <circle cx="56" cy="80" r="5"/><circle cx="64" cy="82" r="5"/><circle cx="60" cy="89" r="5"/>
-          <circle cx="52" cy="88" r="4.6"/><circle cx="57" cy="96" r="4.4"/>
-        </g>
-        <g fill="#c9a6d4" opacity=".55">
-          <circle cx="54.6" cy="78.4" r="1.4"/><circle cx="62.6" cy="80.4" r="1.4"/><circle cx="58.6" cy="87.4" r="1.4"/><circle cx="50.8" cy="86.6" r="1.2"/>
-        </g>
-      </symbol>
-      <symbol id="coffee-bean" viewBox="0 0 60 80">
-        <ellipse cx="30" cy="40" rx="26" ry="36" fill="url(#bean)"/>
-        <path d="M30 6C20 22 40 36 30 52C24 62 30 70 30 74" fill="none" stroke="#1a0d06" stroke-width="4.5" stroke-linecap="round"/>
-        <path d="M22 14C16 24 14 36 18 48" fill="none" stroke="#c99a70" stroke-width="2" stroke-linecap="round" opacity=".45"/>
-      </symbol>
-    </defs>
-  </svg>
-
   <header class="top">
     <div class="wrap top__row">
       <a class="logo" href="#" aria-label="OnlyGuests — на главную">
-        <svg class="logo__vine" viewBox="0 0 120 120" aria-hidden="true"><use href="#vine" filter="url(#paint)"/></svg>
+        <img class="logo__mark" src="img/art/vangogh-oleanders-logo.jpg" alt="" width="44" height="44">
         <span class="logo__text">Only<i>Guests</i></span>
       </a>
       <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему">
@@ -95,13 +28,6 @@
     <div class="hero__art" aria-hidden="true">
       <div class="fog fog--1"></div>
       <div class="fog fog--2"></div>
-      <div class="fog fog--3"></div>
-      <svg class="leaf leaf--1" viewBox="0 0 100 100"><use href="#leaf" fill="url(#leafA)" filter="url(#paint)"/></svg>
-      <svg class="leaf leaf--2" viewBox="0 0 100 100"><use href="#leaf" fill="url(#leafB)" filter="url(#paint)"/></svg>
-      <svg class="leaf leaf--3" viewBox="0 0 100 100"><use href="#leaf" fill="url(#leafA)" filter="url(#paint)"/></svg>
-      <svg class="leaf leaf--4" viewBox="0 0 100 100"><use href="#leaf" fill="url(#leafB)" filter="url(#paint)"/></svg>
-      <svg class="hero__vine" viewBox="0 0 120 120"><use href="#vine" filter="url(#paint)"/></svg>
-      <div class="beans" id="beans"></div>
     </div>
     <div class="wrap hero__content">
       <p class="hero__kicker">Алматы · справочник заведений</p>
@@ -109,6 +35,7 @@
       <p class="hero__lead">150 кафе, кофеен и ресторанов: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.</p>
       <div class="stats" id="stats"></div>
     </div>
+    <p class="hero__credit">Камиль Писсарро. «Бульвар Монмартр зимним утром», 1897. The Met, Open Access</p>
     <div class="hero__fade" aria-hidden="true"></div>
   </section>
 
@@ -154,10 +81,15 @@
     <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте изменить запрос, чек или удобства.</p>
   </main>
 
+  <figure class="band">
+    <img src="img/art/vangogh-irises-band.jpg" alt="Фрагмент картины Ван Гога «Ирисы»" loading="lazy">
+    <figcaption>Винсент Ван Гог. «Ирисы», 1890 (фрагмент). The Met, Open Access</figcaption>
+  </figure>
+
   <footer class="foot">
     <div class="wrap">
       <p><b>OnlyGuests</b> — независимый справочник. Рейтинги и число оценок взяты из карточек 2ГИС (октябрь 2026) и со временем меняются — актуальные цифры по кнопке «Открыть в 2ГИС».</p>
-      <p>Средний чек — по данным 2ГИС; «≈» значит, что чек не указан и посчитан примерно по типу заведения. Удобства отмечены по карточкам и подборкам 2ГИС и могут быть неполными. Год открытия указан, только если его удалось подтвердить. Меню — популярные позиции с ориентировочными ценами. Фото еды иллюстративные (Unsplash).</p>
+      <p>Средний чек — по данным 2ГИС; «≈» значит, что чек не указан и посчитан примерно по типу заведения. Удобства отмечены по карточкам и подборкам 2ГИС и могут быть неполными. Год открытия указан, только если его удалось подтвердить. Меню — популярные позиции с ориентировочными ценами. Фото еды иллюстративные (Unsplash). Живопись: Писсарро и Ван Гог из открытой коллекции Метрополитен-музея (CC0); в логотипе — фрагмент «Олеандров» Ван Гога (1888).</p>
     </div>
   </footer>
 
