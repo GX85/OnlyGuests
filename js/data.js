@@ -20,9 +20,9 @@ window.CAFES = [
   "check": null,
   "about": "Сеть чайхан с узбекской и казахской кухней, один из самых оценённых филиалов в 2ГИС.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1521017432531-fbd92d768814"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
   ],
   "menu": [
    {
@@ -74,9 +74,9 @@ window.CAFES = [
   "check": 20000,
   "about": "Ресторан национальной кухни в современном прочтении, с экскурсиями по залу. Номинант премии 2ГИС 2026.",
   "photos": [
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
-   "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
   ],
   "menu": [
    {
@@ -128,9 +128,9 @@ window.CAFES = [
   "check": 20000,
   "about": "Ресторан Аскара Байтасова в Медеуском ущелье. Попал в рейтинг La Liste.",
   "photos": [
-   "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -182,9 +182,9 @@ window.CAFES = [
   "check": 14000,
   "about": "Ресторан национальной кухни на вершине Кок-Тобе.",
   "photos": [
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+   "img/1544025162-d76694265947.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
   ],
   "menu": [
    {
@@ -235,9 +235,9 @@ window.CAFES = [
   "check": null,
   "about": "Восточный ресторан с колоритным интерьером и залами на любой формат.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -288,9 +288,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Уютное кафе в казахском стиле: бешпармак, куырдак, манты и национальная музыка.",
   "photos": [
-   "https://images.unsplash.com/photo-1600891964092-4316c288032e",
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1559339352-11d035aa65de.jpg"
   ],
   "menu": [
    {
@@ -342,9 +342,9 @@ window.CAFES = [
   "check": 6000,
   "about": "Сеть заведений казахской кухни.",
   "photos": [
-   "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
   ],
   "menu": [
    {
@@ -395,9 +395,9 @@ window.CAFES = [
   "check": 8000,
   "about": "Чайхана сети Palladium Family: плов, манты, шашлык, живая музыка.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
   ],
   "menu": [
    {
@@ -448,9 +448,9 @@ window.CAFES = [
   "check": null,
   "about": "Ресторан с VIP-залом, верандой и живой музыкой, популярен для торжеств.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1453614512568-c4024d13c247"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
   ],
   "menu": [
    {
@@ -501,9 +501,9 @@ window.CAFES = [
   "check": null,
   "about": "Центр вкусного плова — казахстанская сеть.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1554118811-1e0d58224f24.jpg"
   ],
   "menu": [
    {
@@ -555,9 +555,9 @@ window.CAFES = [
   "check": null,
   "about": "Лагманхана с уйгурской кухней.",
   "photos": [
-   "https://images.unsplash.com/photo-1617093727343-374698b1b08d",
-   "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
-   "https://images.unsplash.com/photo-1445116572660-236099ec97a0"
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
   ],
   "menu": [
    {
@@ -604,9 +604,9 @@ window.CAFES = [
   "check": 2000,
   "about": "Сеть халал-столовых с домашней едой, часть точек работает круглосуточно.",
   "photos": [
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -657,9 +657,9 @@ window.CAFES = [
   "check": null,
   "about": "Казахская этно-кофейня сети Tary.",
   "photos": [
-   "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
-   "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1442512595331-e89e73853f31.jpg",
+   "img/1533089860892-a7c6f0a88666.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -711,9 +711,9 @@ window.CAFES = [
   "check": 8000,
   "about": "Халал-ресторан с ланчами и кальянной зоной.",
   "photos": [
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1525351484163-7529414344d8",
-   "https://images.unsplash.com/photo-1544148103-0773bf10d330"
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1544148103-0773bf10d330.jpg"
   ],
   "menu": [
    {
@@ -764,9 +764,9 @@ window.CAFES = [
   "check": 8000,
   "about": "Сеть грузинских ресторанов с летней верандой.",
   "photos": [
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -817,9 +817,9 @@ window.CAFES = [
   "check": 6000,
   "about": "Кафе грузинской кухни. Номинант премии 2ГИС 2026.",
   "photos": [
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-   "https://images.unsplash.com/photo-1521017432531-fbd92d768814"
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
   ],
   "menu": [
    {
@@ -870,9 +870,9 @@ window.CAFES = [
   "check": 7000,
   "about": "Грузинский ресторан с живой музыкой.",
   "photos": [
-   "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
   ],
   "menu": [
    {
@@ -923,9 +923,9 @@ window.CAFES = [
   "check": 8500,
   "about": "Ресторан грузинской кухни.",
   "photos": [
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -976,9 +976,9 @@ window.CAFES = [
   "check": null,
   "about": "Грузинский ресторан, гости хвалят хинкали и сервис.",
   "photos": [
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
-   "https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
   ],
   "menu": [
    {
@@ -1025,9 +1025,9 @@ window.CAFES = [
   "check": null,
   "about": "Ресторан грузинской кухни.",
   "photos": [
-   "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
-   "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -1078,9 +1078,9 @@ window.CAFES = [
   "check": 6000,
   "about": "Небольшая хинкальная.",
   "photos": [
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1559339352-11d035aa65de.jpg"
   ],
   "menu": [
    {
@@ -1126,9 +1126,9 @@ window.CAFES = [
   "check": null,
   "about": "Шашлык, хинкали и европейская кухня.",
   "photos": [
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
   ],
   "menu": [
    {
@@ -1179,9 +1179,9 @@ window.CAFES = [
   "check": null,
   "about": "Грузинский ресторан в урочище Медеу: веранда и панорамный вид.",
   "photos": [
-   "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
-   "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
-   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
   ],
   "menu": [
    {
@@ -1232,9 +1232,9 @@ window.CAFES = [
   "check": null,
   "about": "Семейная итальянская сеть холдинга ABR.",
   "photos": [
-   "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
-   "https://images.unsplash.com/photo-1608897013039-887f21d8c804",
-   "https://images.unsplash.com/photo-1453614512568-c4024d13c247"
+   "img/1574071318508-1cdbab80d002.jpg",
+   "img/1608897013039-887f21d8c804.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
   ],
   "menu": [
    {
@@ -1285,9 +1285,9 @@ window.CAFES = [
   "check": 7000,
   "about": "Семейная итальянская сеть с домашней атмосферой.",
   "photos": [
-   "https://images.unsplash.com/photo-1513104890138-7c749659a591",
-   "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
-   "https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+   "img/1513104890138-7c749659a591.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1554118811-1e0d58224f24.jpg"
   ],
   "menu": [
    {
@@ -1338,9 +1338,9 @@ window.CAFES = [
   "check": 25000,
   "about": "Премиальный итальянский ресторан Line Group с террасой и живой музыкой.",
   "photos": [
-   "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
-   "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9",
-   "https://images.unsplash.com/photo-1445116572660-236099ec97a0"
+   "img/1565299624946-b28f40a0ae38.jpg",
+   "img/1621996346565-e3dbc646d9a9.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
   ],
   "menu": [
    {
@@ -1391,9 +1391,9 @@ window.CAFES = [
   "check": 7000,
   "about": "Сеть ресторанов китайской кухни, знаменита уткой по-пекински.",
   "photos": [
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1585032226651-759b368d7246",
-   "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c"
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1585032226651-759b368d7246.jpg",
+   "img/1550966871-3ed3cdb5ed0c.jpg"
   ],
   "menu": [
    {
@@ -1444,9 +1444,9 @@ window.CAFES = [
   "check": 5000,
   "about": "Аутентичная северокитайская кухня, большие порции.",
   "photos": [
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1414235077428-338989a2e8c0.jpg"
   ],
   "menu": [
    {
@@ -1497,9 +1497,9 @@ window.CAFES = [
   "check": null,
   "about": "Китайско-паназиатский ресторан.",
   "photos": [
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1615361200141-f45040f367be",
-   "https://images.unsplash.com/photo-1544148103-0773bf10d330"
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1615361200141-f45040f367be.jpg",
+   "img/1544148103-0773bf10d330.jpg"
   ],
   "menu": [
    {
@@ -1550,9 +1550,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Американская сеть азиатской кухни.",
   "photos": [
-   "https://images.unsplash.com/photo-1563245372-f21724e3856d",
-   "https://images.unsplash.com/photo-1617093727343-374698b1b08d",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -1603,9 +1603,9 @@ window.CAFES = [
   "check": 7000,
   "about": "Японский ресторан с детской комнатой и доставкой.",
   "photos": [
-   "https://images.unsplash.com/photo-1611143669185-af224c5e3252",
-   "https://images.unsplash.com/photo-1585032226651-759b368d7246",
-   "https://images.unsplash.com/photo-1521017432531-fbd92d768814"
+   "img/1611143669185-af224c5e3252.jpg",
+   "img/1585032226651-759b368d7246.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
   ],
   "menu": [
    {
@@ -1656,9 +1656,9 @@ window.CAFES = [
   "check": 8700,
   "about": "Флагманский японский ресторан сети Manga.",
   "photos": [
-   "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+   "img/1579871494447-9811cf80d66c.jpg",
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
   ],
   "menu": [
    {
@@ -1709,9 +1709,9 @@ window.CAFES = [
   "check": 8000,
   "about": "Паназиатская кухня: рамен, вок, поке, гёдза.",
   "photos": [
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1615361200141-f45040f367be",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1615361200141-f45040f367be.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -1762,9 +1762,9 @@ window.CAFES = [
   "check": 5000,
   "about": "Суши и лапша по доступным ценам.",
   "photos": [
-   "https://images.unsplash.com/photo-1615361200141-f45040f367be",
-   "https://images.unsplash.com/photo-1617093727343-374698b1b08d",
-   "https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+   "img/1615361200141-f45040f367be.jpg",
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
   ],
   "menu": [
    {
@@ -1815,9 +1815,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Паназиатский бар с кальянами.",
   "photos": [
-   "https://images.unsplash.com/photo-1617093727343-374698b1b08d",
-   "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1579871494447-9811cf80d66c.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -1868,9 +1868,9 @@ window.CAFES = [
   "check": 4000,
   "about": "Суши, рамен и бизнес-ланчи.",
   "photos": [
-   "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+   "img/1579871494447-9811cf80d66c.jpg",
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1559339352-11d035aa65de.jpg"
   ],
   "menu": [
    {
@@ -1921,9 +1921,9 @@ window.CAFES = [
   "check": 3000,
   "about": "Демократичное кафе, особенно хвалят том-ям и порции.",
   "photos": [
-   "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
-   "https://images.unsplash.com/photo-1615361200141-f45040f367be",
-   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1615361200141-f45040f367be.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
   ],
   "menu": [
    {
@@ -1974,9 +1974,9 @@ window.CAFES = [
   "check": null,
   "about": "Индийский ресторан: самоса, бирьяни, корма.",
   "photos": [
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1617093727343-374698b1b08d",
-   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
   ],
   "menu": [
    {
@@ -2027,9 +2027,9 @@ window.CAFES = [
   "check": 5500,
   "about": "Турецкие завтраки, пахлава и знаменитое мороженое.",
   "photos": [
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1608039829572-78524f79c4c7",
-   "https://images.unsplash.com/photo-1453614512568-c4024d13c247"
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1608039829572-78524f79c4c7.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
   ],
   "menu": [
    {
@@ -2081,9 +2081,9 @@ window.CAFES = [
   "check": 7000,
   "about": "Турецкий ресторан: мясо, домашний айран, большие порции.",
   "photos": [
-   "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
-   "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
-   "https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1533089860892-a7c6f0a88666.jpg",
+   "img/1554118811-1e0d58224f24.jpg"
   ],
   "menu": [
    {
@@ -2134,9 +2134,9 @@ window.CAFES = [
   "check": 5000,
   "about": "Турецкая кухня, на части филиалов — круглосуточно.",
   "photos": [
-   "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-   "https://images.unsplash.com/photo-1525351484163-7529414344d8",
-   "https://images.unsplash.com/photo-1445116572660-236099ec97a0"
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1445116572660-236099ec97a0.jpg"
   ],
   "menu": [
    {
@@ -2187,9 +2187,9 @@ window.CAFES = [
   "check": 2500,
   "about": "Сеть турецкого фастфуда.",
   "photos": [
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
-   "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c"
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1484723091739-30a097e8f929.jpg",
+   "img/1550966871-3ed3cdb5ed0c.jpg"
   ],
   "menu": [
    {
@@ -2241,9 +2241,9 @@ window.CAFES = [
   "check": 15000,
   "about": "Ресторан Line Group со своей пивоварней, живой музыкой и летней верандой.",
   "photos": [
-   "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-   "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -2295,9 +2295,9 @@ window.CAFES = [
   "check": null,
   "about": "Баварский ресторан-пивоварня. «Лучший бар 2025» по версии 2ГИС.",
   "photos": [
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1497534446932-c925b458314e",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -2349,9 +2349,9 @@ window.CAFES = [
   "check": 6000,
   "about": "Пивной ресторан с живой музыкой.",
   "photos": [
-   "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-   "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
-   "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
   ],
   "menu": [
    {
@@ -2402,9 +2402,9 @@ window.CAFES = [
   "check": null,
   "about": "Ресто-бар: шашлыки, стейки, креветки.",
   "photos": [
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
-   "https://images.unsplash.com/photo-1572116469696-31de0f17cc34"
+   "img/1544025162-d76694265947.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
   ],
   "menu": [
    {
@@ -2455,9 +2455,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Ресторан чешской кухни.",
   "photos": [
-   "https://images.unsplash.com/photo-1558030006-450675393462",
-   "https://images.unsplash.com/photo-1497534446932-c925b458314e",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1558030006-450675393462.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -2508,9 +2508,9 @@ window.CAFES = [
   "check": null,
   "about": "Гастрономический мясной ресторан.",
   "photos": [
-   "https://images.unsplash.com/photo-1600891964092-4316c288032e",
-   "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -2561,9 +2561,9 @@ window.CAFES = [
   "check": null,
   "about": "Мясной бар: всё с мангала.",
   "photos": [
-   "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1544025162-d76694265947.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
   ],
   "menu": [
    {
@@ -2614,9 +2614,9 @@ window.CAFES = [
   "check": null,
   "about": "Рыба и мясо на углях.",
   "photos": [
-   "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf",
-   "https://images.unsplash.com/photo-1558030006-450675393462",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1558030006-450675393462.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -2667,9 +2667,9 @@ window.CAFES = [
   "check": 5500,
   "about": "Легендарная алматинская шашлычная сеть. Номинант 2026.",
   "photos": [
-   "https://images.unsplash.com/photo-1529042410759-befb1204b468",
-   "https://images.unsplash.com/photo-1600891964092-4316c288032e",
-   "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1559339352-11d035aa65de.jpg"
   ],
   "menu": [
    {
@@ -2716,9 +2716,9 @@ window.CAFES = [
   "check": 8000,
   "about": "Ресторан с детской зоной, VIP-залом и верандой.",
   "photos": [
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
-   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+   "img/1544025162-d76694265947.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
   ],
   "menu": [
    {
@@ -2769,9 +2769,9 @@ window.CAFES = [
   "check": 15000,
   "about": "Ресторан Аскара Байтасова, признан лучшим в стране и вошёл в La Liste.",
   "photos": [
-   "https://images.unsplash.com/photo-1558030006-450675393462",
-   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
-   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+   "img/1558030006-450675393462.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1555396273-367ea4eb4db5.jpg"
   ],
   "menu": [
    {
@@ -2823,9 +2823,9 @@ window.CAFES = [
   "check": null,
   "about": "Бургерная.",
   "photos": [
-   "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
-   "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -2876,9 +2876,9 @@ window.CAFES = [
   "check": null,
   "about": "Казахстанская сеть халал-бургеров, 50+ точек по стране.",
   "photos": [
-   "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17",
-   "https://images.unsplash.com/photo-1550547660-d9450f859349",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -2929,9 +2929,9 @@ window.CAFES = [
   "check": 1500,
   "about": "Американская сеть бургеров.",
   "photos": [
-   "https://images.unsplash.com/photo-1550547660-d9450f859349",
-   "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1550547660-d9450f859349.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -2982,9 +2982,9 @@ window.CAFES = [
   "check": null,
   "about": "Сеть бургерных.",
   "photos": [
-   "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
-   "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3035,9 +3035,9 @@ window.CAFES = [
   "check": null,
   "about": "Сеть бургерных.",
   "photos": [
-   "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17",
-   "https://images.unsplash.com/photo-1550547660-d9450f859349",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3088,9 +3088,9 @@ window.CAFES = [
   "check": null,
   "about": "Международная сеть пиццерий.",
   "photos": [
-   "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
-   "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1565299624946-b28f40a0ae38.jpg",
+   "img/1574071318508-1cdbab80d002.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3136,9 +3136,9 @@ window.CAFES = [
   "check": 12000,
   "about": "Ресторан морепродуктов.",
   "photos": [
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1544025162-d76694265947.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3189,9 +3189,9 @@ window.CAFES = [
   "check": 20000,
   "about": "Авторская греческая кухня.",
   "photos": [
-   "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
-   "https://images.unsplash.com/photo-1559847844-5315695dadae",
-   "https://images.unsplash.com/photo-1521017432531-fbd92d768814"
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1559847844-5315695dadae.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
   ],
   "menu": [
    {
@@ -3242,9 +3242,9 @@ window.CAFES = [
   "check": null,
   "about": "Ресторан The Ritz-Carlton на 30-м этаже.",
   "photos": [
-   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
-   "https://images.unsplash.com/photo-1553621042-f6e147245754",
-   "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d"
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1553621042-f6e147245754.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
   ],
   "menu": [
    {
@@ -3295,9 +3295,9 @@ window.CAFES = [
   "check": null,
   "about": "Бар-ресторан The Ritz-Carlton.",
   "photos": [
-   "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
   ],
   "menu": [
    {
@@ -3348,9 +3348,9 @@ window.CAFES = [
   "check": null,
   "about": "Испанский винный ресторан с грилем, тапас и винилом.",
   "photos": [
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1559847844-5315695dadae",
-   "https://images.unsplash.com/photo-1559925393-8be0ec4767c8"
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1559847844-5315695dadae.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
   ],
   "menu": [
    {
@@ -3402,9 +3402,9 @@ window.CAFES = [
   "check": null,
   "about": "Винный ресторан.",
   "photos": [
-   "https://images.unsplash.com/photo-1558030006-450675393462",
-   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
-   "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+   "img/1558030006-450675393462.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
   ],
   "menu": [
    {
@@ -3455,9 +3455,9 @@ window.CAFES = [
   "check": null,
   "about": "Ресторан холдинга ABR в центре города.",
   "photos": [
-   "https://images.unsplash.com/photo-1600891964092-4316c288032e",
-   "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
-   "https://images.unsplash.com/photo-1559339352-11d035aa65de"
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1559339352-11d035aa65de.jpg"
   ],
   "menu": [
    {
@@ -3508,9 +3508,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Ресторан-музей русской культуры с живой музыкой.",
   "photos": [
-   "https://images.unsplash.com/photo-1496116218417-1a781b1c416c",
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
   ],
   "menu": [
    {
@@ -3557,9 +3557,9 @@ window.CAFES = [
   "check": null,
   "about": "«Территория вкусной еды»: блюда разных кухонь без добавок.",
   "photos": [
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3605,9 +3605,9 @@ window.CAFES = [
   "check": 15000,
   "about": "Ресторан на курорте Шымбулак.",
   "photos": [
-   "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
-   "https://images.unsplash.com/photo-1453614512568-c4024d13c247"
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1453614512568-c4024d13c247.jpg"
   ],
   "menu": [
    {
@@ -3658,9 +3658,9 @@ window.CAFES = [
   "check": 15000,
   "about": "Бар на Шымбулаке.",
   "photos": [
-   "https://images.unsplash.com/photo-1544025162-d76694265947",
-   "https://images.unsplash.com/photo-1470337458703-46ad1756a187",
-   "https://images.unsplash.com/photo-1572116469696-31de0f17cc34"
+   "img/1544025162-d76694265947.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
   ],
   "menu": [
    {
@@ -3711,9 +3711,9 @@ window.CAFES = [
   "check": null,
   "about": "Городское кафе-сеть. Премия 2ГИС 2018.",
   "photos": [
-   "https://images.unsplash.com/photo-1525351484163-7529414344d8",
-   "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3764,9 +3764,9 @@ window.CAFES = [
   "check": 5000,
   "about": "Завтраки, ремесленный хлеб и десерты.",
   "photos": [
-   "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
-   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1484723091739-30a097e8f929.jpg",
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3818,9 +3818,9 @@ window.CAFES = [
   "check": 3000,
   "about": "Кафе в торговом центре.",
   "photos": [
-   "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b",
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1424847651672-bf20a4b0982b.jpg",
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3866,9 +3866,9 @@ window.CAFES = [
   "check": 10000,
   "about": "Кафе с завтраками, винной картой и бизнес-ланчем.",
   "photos": [
-   "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
-   "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1567620905732-2d1ec7ab7445.jpg",
+   "img/1509042239860-f550ce710b93.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3919,9 +3919,9 @@ window.CAFES = [
   "check": null,
   "about": "«Лучшее кафе 2023» по версии 2ГИС.",
   "photos": [
-   "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -3972,9 +3972,9 @@ window.CAFES = [
   "check": null,
   "about": "Одна из старейших кофеен центра.",
   "photos": [
-   "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
-   "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1504754524776-8f4f37790ca0.jpg",
+   "img/1442512595331-e89e73853f31.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4025,9 +4025,9 @@ window.CAFES = [
   "check": null,
   "about": "Казахстанская сеть кофеен.",
   "photos": [
-   "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-   "https://images.unsplash.com/photo-1525351484163-7529414344d8",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1509042239860-f550ce710b93.jpg",
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4073,9 +4073,9 @@ window.CAFES = [
   "check": 2500,
   "about": "Круглосуточная кофейня в Esentai Tower.",
   "photos": [
-   "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-   "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1484723091739-30a097e8f929.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4126,9 +4126,9 @@ window.CAFES = [
   "check": null,
   "about": "Казахстанская сеть экспресс-кофеен.",
   "photos": [
-   "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
-   "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1442512595331-e89e73853f31.jpg",
+   "img/1424847651672-bf20a4b0982b.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4174,9 +4174,9 @@ window.CAFES = [
   "check": null,
   "about": "Казахстанская сеть, ~40–50 точек.",
   "photos": [
-   "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
-   "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1567620905732-2d1ec7ab7445.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4222,9 +4222,9 @@ window.CAFES = [
   "check": null,
   "about": "Городские кафе в «золотом квадрате».",
   "photos": [
-   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
-   "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1528207776546-365bb710ee93.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4275,9 +4275,9 @@ window.CAFES = [
   "check": null,
   "about": "Алматинская сеть кофеен.",
   "photos": [
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1504754524776-8f4f37790ca0.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4323,9 +4323,9 @@ window.CAFES = [
   "check": 5000,
   "about": "Сеть кофеен с полноценной кухней.",
   "photos": [
-   "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-   "https://images.unsplash.com/photo-1482049016688-2d3e1b311543",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1509042239860-f550ce710b93.jpg",
+   "img/1482049016688-2d3e1b311543.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4371,9 +4371,9 @@ window.CAFES = [
   "check": null,
   "about": "Технологичная кофейня от Dodo Brands.",
   "photos": [
-   "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-   "https://images.unsplash.com/photo-1608039829572-78524f79c4c7",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1608039829572-78524f79c4c7.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4424,9 +4424,9 @@ window.CAFES = [
   "check": null,
   "about": "Британская сеть кофеен.",
   "photos": [
-   "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
-   "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1442512595331-e89e73853f31.jpg",
+   "img/1533089860892-a7c6f0a88666.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4472,9 +4472,9 @@ window.CAFES = [
   "check": null,
   "about": "Обжарщики и кофейня specialty.",
   "photos": [
-   "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
-   "https://images.unsplash.com/photo-1525351484163-7529414344d8",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1525351484163-7529414344d8.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4525,9 +4525,9 @@ window.CAFES = [
   "check": null,
   "about": "Specialty-кофейня, основанная выходцем из Южной Кореи.",
   "photos": [
-   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
-   "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1484723091739-30a097e8f929.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4573,9 +4573,9 @@ window.CAFES = [
   "check": null,
   "about": "Specialty-кофейня.",
   "photos": [
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1424847651672-bf20a4b0982b.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4621,9 +4621,9 @@ window.CAFES = [
   "check": null,
   "about": "Кофейня и винный бар в сталинском доме, пять залов «от утра к вечеру».",
   "photos": [
-   "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-   "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1509042239860-f550ce710b93.jpg",
+   "img/1567620905732-2d1ec7ab7445.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4669,9 +4669,9 @@ window.CAFES = [
   "check": null,
   "about": "Кофейня в «Доме учёных».",
   "photos": [
-   "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-   "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1528207776546-365bb710ee93.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4717,9 +4717,9 @@ window.CAFES = [
   "check": 4500,
   "about": "Городское кафе.",
   "photos": [
-   "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b",
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1424847651672-bf20a4b0982b.jpg",
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4765,9 +4765,9 @@ window.CAFES = [
   "check": null,
   "about": "Pet-friendly specialty-кофейня.",
   "photos": [
-   "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
-   "https://images.unsplash.com/photo-1482049016688-2d3e1b311543",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1482049016688-2d3e1b311543.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4813,9 +4813,9 @@ window.CAFES = [
   "check": null,
   "about": "Кофейня с завтраками.",
   "photos": [
-   "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
-   "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1528207776546-365bb710ee93.jpg",
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4861,9 +4861,9 @@ window.CAFES = [
   "check": null,
   "about": "Coffee & Wine.",
   "photos": [
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1533089860892-a7c6f0a88666.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4909,9 +4909,9 @@ window.CAFES = [
   "check": null,
   "about": "Французская пекарня-кафе.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1461023058943-07fcbe16d735.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -4963,9 +4963,9 @@ window.CAFES = [
   "check": null,
   "about": "Сеть пекарен-кондитерских. «Лучшая кондитерская 2026» по версии 2GIS Awards.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1495474472287-4d71bcdd2085.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -5011,9 +5011,9 @@ window.CAFES = [
   "check": null,
   "about": "Кондитерская, отмечена 2GIS Awards 2026.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1498804103079-a6351b050096.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -5059,9 +5059,9 @@ window.CAFES = [
   "check": null,
   "about": "Пончики и синнабоны.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1509042239860-f550ce710b93.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -5113,9 +5113,9 @@ window.CAFES = [
   "check": null,
   "about": "Торты на заказ и десерты.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1511920170033-f8396924c348",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1511920170033-f8396924c348.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -5161,9 +5161,9 @@ window.CAFES = [
   "check": null,
   "about": "Кондитерский дом, ~60 точек в городе.",
   "photos": [
-   "https://images.unsplash.com/photo-1488477181946-6428a0291777",
-   "https://images.unsplash.com/photo-1442512595331-e89e73853f31",
-   "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56"
+   "img/1488477181946-6428a0291777.jpg",
+   "img/1442512595331-e89e73853f31.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {

@@ -51,15 +51,29 @@ body {
 
 img { display: block; max-width: 100%; }
 
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; z-index: 10;
+  height: env(safe-area-inset-top, 0px); background: var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+  .card:hover { transform: none; }
+}
+
 a { color: inherit; }
 
 button, input, select { font: inherit; color: inherit; }
 
-.wrap { width: min(1200px, 100%); margin: 0 auto; padding: 0 16px; }
+.wrap {
+  width: min(1200px, 100%); margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
 
 /* ——— шапка ——— */
 .top {
-  position: sticky; top: 0; z-index: 10;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);

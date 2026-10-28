@@ -49,7 +49,7 @@
     return many;
   }
 
-  function img(url, w) { return url + "?auto=format&fit=crop&w=" + w + "&q=70"; }
+  function img(url) { return url; }
 
   function ratingText(c) { return (c.ratingApprox ? "≈ " : "") + c.rating.toFixed(1); }
 
@@ -127,7 +127,7 @@
   function card(c) {
     return '<button class="card" type="button" data-id="' + esc(c.id) + '">' +
       '<div class="card__media">' +
-        '<img src="' + esc(img(c.photos[0], 640)) + '" alt="" loading="lazy" decoding="async">' +
+        '<img src="' + esc(img(c.photos[0])) + '" alt="" loading="lazy" decoding="async">' +
         '<span class="card__type">' + esc(c.type) + "</span>" +
         '<span class="card__rating" title="Рейтинг 2ГИС"><span class="star">★</span>' + ratingText(c) + "</span>" +
       "</div>" +
@@ -167,12 +167,12 @@
         '</span><span class="menu__price">' + num(m.price) + " ₸</span></li>";
     }).join("");
     var thumbs = c.photos.map(function (p, i) {
-      return '<button class="thumb" type="button" data-src="' + esc(img(p, 1200)) + '" aria-current="' + (i === 0) + '" aria-label="Фото ' + (i + 1) + '">' +
-        '<img src="' + esc(img(p, 320)) + '" alt="" loading="lazy"></button>';
+      return '<button class="thumb" type="button" data-src="' + esc(img(p)) + '" aria-current="' + (i === 0) + '" aria-label="Фото ' + (i + 1) + '">' +
+        '<img src="' + esc(img(p)) + '" alt="" loading="lazy"></button>';
     }).join("");
 
     return '<div class="gallery">' +
-        '<div class="gallery__main"><img id="mMain" src="' + esc(img(c.photos[0], 1200)) + '" alt="' + esc(c.name) + '"></div>' +
+        '<div class="gallery__main"><img id="mMain" src="' + esc(img(c.photos[0])) + '" alt="' + esc(c.name) + '"></div>' +
         '<div class="gallery__thumbs">' + thumbs + "</div>" +
         '<p class="photo-note">Фото иллюстративные — реальные снимки заведения смотрите в 2ГИС.</p>' +
       "</div>" +
@@ -197,13 +197,12 @@
       "</div>";
   }
 
-  function openCafe(id, push) {
+  function openCafe(id) {
     var c = CAFES.find(function (x) { return x.id === id; });
     if (!c) return;
     mBody.innerHTML = detail(c);
     if (!modal.open) modal.showModal();
     modal.scrollTop = 0;
-    if (push && location.hash !== "#" + id) history.pushState(null, "", "#" + id);
     document.title = c.name + " — OnlyGuests";
   }
 
@@ -213,12 +212,14 @@
 
   modal.addEventListener("close", function () {
     document.title = "OnlyGuests — кафе и рестораны Алматы";
-    if (location.hash) history.pushState(null, "", location.pathname + location.search);
+    if (location.hash.length > 1) location.hash = "";
   });
 
   grid.addEventListener("click", function (e) {
     var b = e.target.closest(".card");
-    if (b) openCafe(b.dataset.id, true);
+    if (!b) return;
+    if (location.hash === "#" + b.dataset.id) openCafe(b.dataset.id);
+    else location.hash = b.dataset.id;
   });
 
   mBody.addEventListener("click", function (e) {
@@ -231,17 +232,19 @@
     if (e.target.id === "mShare") {
       var btn = e.target;
       var done = function () { btn.textContent = "Ссылка скопирована ✓"; };
-      if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(done, done);
-      else done();
+      var fail = function () { btn.textContent = location.href; };
+      try {
+        navigator.clipboard.writeText(location.href).then(done, fail);
+      } catch (err) { fail(); }
     }
   });
 
   $("mClose").addEventListener("click", closeCafe);
   modal.addEventListener("click", function (e) { if (e.target === modal) closeCafe(); });
 
-  window.addEventListener("popstate", function () {
+  window.addEventListener("hashchange", function () {
     var id = location.hash.slice(1);
-    if (id) openCafe(decodeURIComponent(id), false); else closeCafe();
+    if (id) openCafe(decodeURIComponent(id)); else closeCafe();
   });
 
   // ——— тема ———
@@ -262,5 +265,5 @@
   initControls();
   renderStats();
   render();
-  if (location.hash.length > 1) openCafe(decodeURIComponent(location.hash.slice(1)), false);
+  if (location.hash.length > 1) openCafe(decodeURIComponent(location.hash.slice(1)));
 })();

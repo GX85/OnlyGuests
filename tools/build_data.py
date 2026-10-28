@@ -4,7 +4,7 @@
 # Меню — популярные позиции по кухне заведения с ориентировочными ценами.
 import json, sys
 
-U = "https://images.unsplash.com/photo-"
+U = "img/"  # фото лежат в img/, исходники — Unsplash (images.unsplash.com/photo-<id>)
 P = {  # пулы проверенных фото Unsplash по темам
  "interior": ["1414235077428-338989a2e8c0","1445116572660-236099ec97a0","1453614512568-c4024d13c247","1501339847302-ac426a4a7cbb","1514933651103-005eec06c04b","1517248135467-4c7edcad34c4","1521017432531-fbd92d768814","1544148103-0773bf10d330","1550966871-3ed3cdb5ed0c","1554118811-1e0d58224f24","1555396273-367ea4eb4db5","1559339352-11d035aa65de","1559925393-8be0ec4767c8","1590846406792-0adc7f938f1d","1600093463592-8e36ae95ef56"],
  "cafeint": ["1445116572660-236099ec97a0","1453614512568-c4024d13c247","1501339847302-ac426a4a7cbb","1521017432531-fbd92d768814","1554118811-1e0d58224f24","1559925393-8be0ec4767c8","1600093463592-8e36ae95ef56"],
@@ -253,7 +253,7 @@ for i, v in enumerate(V):
         "address": v["address"], "gis": v["gis"],
         "opened": v["year"], "openedApprox": v["yearApprox"], "openedNote": v["yearNote"],
         "check": v["check"], "about": v["about"],
-        "photos": [U + p for p in photos(i, v["kitchen"])],
+        "photos": [U + p + ".jpg" for p in photos(i, v["kitchen"])],
         "menu": menu(v),
     })
 
