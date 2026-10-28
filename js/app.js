@@ -2,6 +2,21 @@
   "use strict";
 
   var CAFES = window.CAFES || [];
+  var LIVE = window.LIVE || {}, LIVE_META = window.LIVE_META || null;
+  var DEV = { phone: "+77006830247", phoneText: "+7 700 683 02 47", email: "ItsTeamSwift@proton.me" };
+
+  // Свежие значения от ИИ-агентов (js/live.js) поверх базовых данных
+  CAFES.forEach(function (c) {
+    var l = LIVE[c.id];
+    if (!l) return;
+    c.checkedAt = l.confirmedAt || null;
+    if (l.rating == null) return;
+    if (l.prev != null && l.prev !== l.rating) { c.prevRating = l.prev; c.changedAt = l.changedAt; }
+    c.rating = l.rating;
+    c.ratingApprox = false;
+    if (l.votes) c.votes = l.votes;
+    c.closed = !!l.closed;
+  });
 
   var KITCHENS = {
     kazakh: "Казахская",
@@ -64,6 +79,18 @@
   function img(url) { return url; }
 
   function ratingText(c) { return (c.ratingApprox ? "≈ " : "") + c.rating.toFixed(1); }
+
+  function dateText(iso) {
+    var d = new Date(iso);
+    return isNaN(d) ? "" : d.toLocaleDateString("ru-RU", { day: "numeric", month: "long" });
+  }
+
+  function trendBadge(c) {
+    if (c.prevRating == null) return "";
+    var up = c.rating > c.prevRating;
+    return '<span class="trend trend--' + (up ? "up" : "down") + '" title="Было ' + c.prevRating.toFixed(1) + '">' +
+      (up ? "▲" : "▼") + " было " + c.prevRating.toFixed(1) + "</span>";
+  }
 
   function votesText(c) {
     return c.votes ? num(c.votes) + " " + plural(c.votes, "оценка", "оценки", "оценок") : "число оценок уточняется";
@@ -176,7 +203,8 @@
       '<div class="card__media">' +
         '<img src="' + esc(img(c.photos[0])) + '" alt="" loading="lazy" decoding="async">' +
         '<span class="card__type">' + esc(c.type) + "</span>" +
-        '<span class="card__rating" title="Рейтинг 2ГИС"><span class="star">★</span>' + ratingText(c) + "</span>" +
+        '<span class="card__rating" title="Рейтинг 2ГИС"><span class="star">★</span>' + ratingText(c) + trendBadge(c) + "</span>" +
+        (c.closed ? '<span class="card__closed">Возможно, закрыто</span>' : "") +
       "</div>" +
       '<div class="card__body">' +
         '<h2 class="card__name">' + esc(c.name) + "</h2>" +
@@ -228,7 +256,8 @@
         '<div class="m__head"><h2 id="mTitle">' + esc(c.name) + "</h2><p>" + esc(c.type) + " · " + esc(c.cuisine) + "</p></div>" +
         '<div class="facts">' +
           '<div class="fact"><div class="fact__label">Рейтинг 2ГИС</div><div class="fact__value"><span class="star">★</span> ' + ratingText(c) +
-            '</div><div class="fact__note">' + votesText(c) + (c.ratingApprox ? ", значение приблизительное" : "") + "</div></div>" +
+            trendBadge(c) + '</div><div class="fact__note">' + votesText(c) + (c.ratingApprox ? ", значение приблизительное" : "") +
+            (c.checkedAt ? "<br>Проверено ИИ-агентами " + dateText(c.checkedAt) : "") + "</div></div>" +
           '<div class="fact"><div class="fact__label">Год открытия</div><div class="fact__value">' + openedText(c) +
             '</div><div class="fact__note">' + esc(c.openedNote || "в открытых источниках не нашли — уточните у заведения") + "</div></div>" +
           '<div class="fact"><div class="fact__label">Средний чек</div><div class="fact__value">' + checkText(c) +
@@ -242,8 +271,14 @@
         '<div class="actions">' +
           '<a class="btn" href="' + esc(c.gis) + '" target="_blank" rel="noopener">Открыть в 2ГИС ↗</a>' +
           '<button class="btn btn--ghost" type="button" id="mShare">Скопировать ссылку</button>' +
+          '<a class="btn btn--ghost" href="' + reportLink(c) + '" target="_blank" rel="noopener">Сообщить о неточности</a>' +
         "</div>" +
       "</div>";
+  }
+
+  function reportLink(c) {
+    var text = "Здравствуйте! В OnlyGuests неточность у «" + c.name + "» (" + c.address + "): ";
+    return "https://wa.me/" + DEV.phone.slice(1) + "?text=" + encodeURIComponent(text);
   }
 
   function openCafe(id) {
@@ -311,7 +346,30 @@
     setTheme(cur === "dark" ? "light" : "dark");
   });
 
+  // ——— ИИ-агенты и контакты ———
+  function renderAgents() {
+    var el = $("agentsStatus");
+    if (!el) return;
+    if (!LIVE_META) {
+      el.textContent = "Агенты ещё не запускались: первая проверка пройдёт после подключения ключа модели.";
+      return;
+    }
+    var moved = CAFES.filter(function (c) { return c.prevRating != null; }).length;
+    el.textContent = "Последняя проверка: " + dateText(LIVE_META.updatedAt) + ". Подтверждено " + LIVE_META.checked +
+      ", рейтинг изменился у " + moved + " " + plural(moved, "заведения", "заведений", "заведений") + ". Модель: " + LIVE_META.model + ".";
+  }
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (!b) return;
+    var label = b.textContent, val = b.dataset.copy;
+    var done = function () { b.textContent = "Скопировано ✓"; setTimeout(function () { b.textContent = label; }, 1800); };
+    var fail = function () { b.textContent = val; };
+    try { navigator.clipboard.writeText(val).then(done, fail); } catch (err) { fail(); }
+  });
+
   initControls();
+  renderAgents();
   renderStats();
   render();
   if (location.hash.length > 1) openCafe(decodeURIComponent(location.hash.slice(1)));

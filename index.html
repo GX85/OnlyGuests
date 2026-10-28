@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>OnlyGuests — кафе и рестораны Алматы</title>
-  <meta name="description" content="OnlyGuests — справочник 150 кафе, кофеен и ресторанов Алматы: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.">
+  <meta name="description" content="OnlyGuests — справочник 200 кафе, кофеен и ресторанов Алматы: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1b12'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-weight='700' font-size='30' text-anchor='middle' fill='%23d9b07a'%3EOG%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,12 @@
         <img class="logo__mark" src="img/art/vangogh-oleanders-logo.jpg" alt="" width="44" height="44">
         <span class="logo__text">Only<i>Guests</i></span>
       </a>
+      <div class="top__actions">
+      <a class="top__link" href="#contact">Написать разработчику</a>
       <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2v14a7 7 0 0 1 0-14Z"/></svg>
       </button>
+      </div>
     </div>
   </header>
 
@@ -32,7 +35,7 @@
     <div class="wrap hero__content">
       <p class="hero__kicker">Алматы · справочник заведений</p>
       <h1 class="hero__title">Где пить кофе<br><i>и ужинать</i> в Алматы</h1>
-      <p class="hero__lead">150 кафе, кофеен и ресторанов: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.</p>
+      <p class="hero__lead">200 кафе, кофеен и ресторанов: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото. Рейтинги регулярно перепроверяют ИИ-агенты.</p>
       <div class="stats" id="stats"></div>
     </div>
     <p class="hero__credit">Камиль Писсарро. «Бульвар Монмартр зимним утром», 1897. The Met, Open Access</p>
@@ -81,6 +84,38 @@
     <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте изменить запрос, чек или удобства.</p>
   </main>
 
+  <section class="wrap duo">
+    <div class="panel" id="agents">
+      <p class="panel__kicker">ИИ-агенты</p>
+      <h2 class="panel__title">Рейтинги проверяются сами</h2>
+      <p>Каждые 6 часов два агента на бесплатной модели Gemini с поиском Google заново проверяют рейтинг 2ГИС и число оценок. «Искатель» находит цифры, «Проверяющий» перепроверяет их отдельным запросом. Рейтинг обновляется, только если агенты сошлись, а подозрительно резкие скачки отбрасываются. Если рейтинг изменился, на карточке видно, каким он был.</p>
+      <p class="panel__status" id="agentsStatus"></p>
+    </div>
+    <div class="panel" id="contact">
+      <p class="panel__kicker">Связь</p>
+      <h2 class="panel__title">Написать разработчику</h2>
+      <p>Нашли ошибку, хотите добавить своё заведение или предложить идею — пишите.</p>
+      <ul class="contacts">
+        <li>
+          <span class="contacts__label">Телефон и WhatsApp</span>
+          <a class="contacts__value" href="tel:+77006830247">+7 700 683 02 47</a>
+          <span class="contacts__actions">
+            <a class="btn" href="https://wa.me/77006830247" target="_blank" rel="noopener">WhatsApp ↗</a>
+            <button class="btn btn--ghost" type="button" data-copy="+77006830247">Скопировать</button>
+          </span>
+        </li>
+        <li>
+          <span class="contacts__label">Почта</span>
+          <a class="contacts__value" href="mailto:ItsTeamSwift@proton.me?subject=OnlyGuests">ItsTeamSwift@proton.me</a>
+          <span class="contacts__actions">
+            <a class="btn" href="mailto:ItsTeamSwift@proton.me?subject=OnlyGuests">Написать письмо</a>
+            <button class="btn btn--ghost" type="button" data-copy="ItsTeamSwift@proton.me">Скопировать</button>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <figure class="band">
     <img src="img/art/vangogh-irises-band.jpg" alt="Фрагмент картины Ван Гога «Ирисы»" loading="lazy">
     <figcaption>Винсент Ван Гог. «Ирисы», 1890 (фрагмент). The Met, Open Access</figcaption>
@@ -88,7 +123,7 @@
 
   <footer class="foot">
     <div class="wrap">
-      <p><b>OnlyGuests</b> — независимый справочник. Рейтинги и число оценок взяты из карточек 2ГИС (октябрь 2026) и со временем меняются — актуальные цифры по кнопке «Открыть в 2ГИС».</p>
+      <p><b>OnlyGuests</b> — независимый справочник. Рейтинги и число оценок взяты из карточек 2ГИС (октябрь 2026) и регулярно перепроверяются ИИ-агентами. Агенты могут ошибаться, поэтому самые точные цифры — по кнопке «Открыть в 2ГИС». Разработчик: <a href="#contact">+7 700 683 02 47, ItsTeamSwift@proton.me</a>.</p>
       <p>Средний чек — по данным 2ГИС; «≈» значит, что чек не указан и посчитан примерно по типу заведения. Удобства отмечены по карточкам и подборкам 2ГИС и могут быть неполными. Год открытия указан, только если его удалось подтвердить. Меню — популярные позиции с ориентировочными ценами. Фото еды иллюстративные (Unsplash). Живопись: Писсарро и Ван Гог из открытой коллекции Метрополитен-музея (CC0); в логотипе — фрагмент «Олеандров» Ван Гога (1888).</p>
     </div>
   </footer>
@@ -99,6 +134,7 @@
   </dialog>
 
   <script src="js/data.js"></script>
+  <script src="js/live.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

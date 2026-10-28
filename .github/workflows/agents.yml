@@ -1,0 +1,45 @@
+# ИИ-агенты OnlyGuests: каждые 6 часов перепроверяют рейтинги 2ГИС и коммитят js/live.js в main.
+# Vercel пересобирает сайт после каждого такого коммита.
+# Нужен секрет GEMINI_API_KEY (бесплатный ключ Google AI Studio); DGIS_API_KEY — по желанию.
+name: AI agents
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Сколько заведений проверить за запуск"
+        default: "40"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agents
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run agents
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DGIS_API_KEY: ${{ secrets.DGIS_API_KEY }}
+        run: python3 tools/agent_update.py --limit "${{ github.event.inputs.limit || '40' }}"
+      - name: Commit fresh ratings
+        run: |
+          git diff --quiet js/live.js && { echo "Без изменений"; exit 0; }
+          git config user.name "OnlyGuests agents"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/live.js
+          git commit -m "Agents: refresh 2GIS ratings"
+          git push origin HEAD:main
