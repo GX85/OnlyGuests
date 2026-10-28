@@ -3,26 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>OnlyGuests — кафе и рестораны Алматы</title>
-  <meta name="description" content="OnlyGuests — справочник 200 кафе, кофеен и ресторанов Алматы: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото.">
+  <title>OnlyGuests — кафе, бары и магазины Алматы</title>
+  <meta name="description" content="OnlyGuests — справочник кафе, баров, донерных, ресторанов и магазинов Алматы: рейтинг 2ГИС, год открытия, средний чек, часы работы, карта, меню и фото. Рейтинги перепроверяют ИИ-агенты.">
+  <meta name="og-api" content="/api">
+  <link rel="canonical" href="https://onlyguests.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OnlyGuests — кафе, бары и магазины Алматы">
+  <meta property="og:description" content="Рейтинг 2ГИС, часы работы, карта, меню и ИИ-помощник «Куда пойти?».">
+  <meta property="og:image" content="https://onlyguests.vercel.app/img/art/pissarro-boulevard-montmartre.jpg">
+  <meta property="og:url" content="https://onlyguests.vercel.app/">
+  <link rel="alternate" hreflang="ru" href="https://onlyguests.vercel.app/">
+  <link rel="alternate" hreflang="kk" href="https://onlyguests.vercel.app/?lang=kk">
+  <link rel="alternate" hreflang="en" href="https://onlyguests.vercel.app/?lang=en">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1b12'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-weight='700' font-size='30' text-anchor='middle' fill='%23d9b07a'%3EOG%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"OnlyGuests","url":"https://onlyguests.vercel.app/","inLanguage":["ru","kk","en"],
+   "description":"Справочник кафе, баров, ресторанов и магазинов Алматы","potentialAction":{"@type":"SearchAction","target":"https://onlyguests.vercel.app/?q={query}","query-input":"required name=query"}}
+  </script>
 </head>
 <body>
   <header class="top">
     <div class="wrap top__row">
-      <a class="logo" href="#" aria-label="OnlyGuests — на главную">
+      <a class="logo" href="#" aria-label="OnlyGuests">
         <img class="logo__mark" src="img/art/vangogh-oleanders-logo.jpg" alt="" width="44" height="44">
         <span class="logo__text">Only<i>Guests</i></span>
       </a>
       <div class="top__actions">
-      <a class="top__link" href="#contact">Написать разработчику</a>
-      <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2v14a7 7 0 0 1 0-14Z"/></svg>
-      </button>
+        <a class="top__link" href="#contact" data-i18n="nav.contact">Написать разработчику</a>
+        <div class="lang" role="group" aria-label="Язык / Тіл / Language">
+          <button type="button" data-lang="ru" aria-pressed="true">RU</button><button type="button" data-lang="kk" aria-pressed="false">KZ</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему" data-i18n-aria="nav.theme">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2v14a7 7 0 0 1 0-14Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -33,83 +50,138 @@
       <div class="fog fog--2"></div>
     </div>
     <div class="wrap hero__content">
-      <p class="hero__kicker">Алматы · справочник заведений</p>
-      <h1 class="hero__title">Где пить кофе<br><i>и ужинать</i> в Алматы</h1>
-      <p class="hero__lead">200 кафе, кофеен и ресторанов: рейтинг 2ГИС, год открытия, средний чек, удобства, меню и фото. Рейтинги регулярно перепроверяют ИИ-агенты.</p>
+      <p class="hero__kicker" data-i18n="hero.kicker">Алматы · справочник заведений</p>
+      <h1 class="hero__title" data-i18n-html="hero.title">Где пить кофе<br><i>и ужинать</i> в Алматы</h1>
+      <p class="hero__lead" id="heroLead">Кафе, бары, донерные и магазины: рейтинг 2ГИС, год открытия, средний чек, часы работы, меню и фото.</p>
       <div class="stats" id="stats"></div>
     </div>
-    <p class="hero__credit">Камиль Писсарро. «Бульвар Монмартр зимним утром», 1897. The Met, Open Access</p>
+    <p class="hero__credit" data-i18n="hero.credit">Камиль Писсарро. «Бульвар Монмартр зимним утром», 1897. The Met, Open Access</p>
     <div class="hero__fade" aria-hidden="true"></div>
   </section>
 
   <main class="wrap">
+    <form class="panel ask" id="ask" autocomplete="off">
+      <p class="panel__kicker" data-i18n="ask.kicker">ИИ-помощник</p>
+      <h2 class="panel__title" data-i18n="ask.title">Куда пойти?</h2>
+      <div class="ask__row">
+        <label class="search ask__input">
+          <span class="search__icon" aria-hidden="true">✦</span>
+          <input id="askQ" type="text" placeholder="Например: грузинская кухня с детской комнатой до 8000 ₸ рядом со мной" data-i18n-ph="ask.placeholder" aria-label="Куда пойти?">
+        </label>
+        <button class="btn" type="submit" id="askBtn" data-i18n="ask.button">Подобрать</button>
+      </div>
+      <p class="ask__examples" id="askExamples"></p>
+      <div class="ask__out" id="askOut" aria-live="polite"></div>
+    </form>
+
     <div class="controls">
       <label class="search">
         <span class="search__icon" aria-hidden="true">⌕</span>
-        <input id="q" type="search" placeholder="Название, кухня, блюдо или улица…" autocomplete="off">
+        <input id="q" type="search" placeholder="Название, кухня, блюдо или улица…" data-i18n-ph="search.placeholder" autocomplete="off">
       </label>
       <div class="chips" id="types" role="tablist" aria-label="Тип заведения"></div>
 
       <div class="filters">
         <div class="price">
-          <label for="price">Средний чек до <output id="priceOut" for="price"></output></label>
-          <input id="price" type="range" min="1500" max="35000" step="500">
-          <div class="price__scale" aria-hidden="true"><span>1 500 ₸</span><span>35 000 ₸</span></div>
+          <label for="price"><span data-i18n="price.label">Средний чек до</span> <output id="priceOut" for="price"></output></label>
+          <input id="price" type="range" min="1000" max="35000" step="500">
+          <div class="price__scale" aria-hidden="true"><span>1 000 ₸</span><span>35 000 ₸</span></div>
         </div>
         <div class="selects">
-          <label>Кухня
+          <label><span data-i18n="sel.cuisine">Кухня</span>
             <select id="cuisine"></select>
           </label>
-          <label>Сортировка
-            <select id="sort">
-              <option value="rating">По рейтингу</option>
-              <option value="votes">По числу оценок</option>
-              <option value="cheap">Сначала недорогие</option>
-              <option value="new">Сначала новые</option>
-              <option value="old">Сначала старые</option>
-              <option value="name">По названию</option>
-            </select>
+          <label><span data-i18n="sel.district">Район</span>
+            <select id="district"></select>
+          </label>
+          <label><span data-i18n="sel.sort">Сортировка</span>
+            <select id="sort"></select>
+          </label>
+          <label><span data-i18n="sel.show">Показать</span>
+            <select id="show"></select>
           </label>
         </div>
       </div>
 
       <div class="feats">
-        <span class="feats__label">Удобства</span>
+        <span class="feats__label" data-i18n="feats.label">Удобства</span>
         <div class="chips chips--feat" id="feats" aria-label="Удобства"></div>
+      </div>
+      <div class="feats">
+        <span class="feats__label" data-i18n="coll.label">Подборки</span>
+        <div class="chips chips--feat" id="colls" aria-label="Подборки"></div>
       </div>
     </div>
 
-    <p class="count" id="count"></p>
+    <div class="toolbar">
+      <p class="count" id="count"></p>
+      <div class="toolbar__btns">
+        <button class="btn btn--ghost btn--sm" type="button" id="nearBtn" data-i18n="tools.near">📍 Рядом со мной</button>
+        <button class="btn btn--ghost btn--sm" type="button" id="luckyBtn" data-i18n="tools.lucky">🎲 Мне повезёт</button>
+        <div class="seg" role="group">
+          <button type="button" id="viewList" aria-pressed="true" data-i18n="tools.list">Список</button><button type="button" id="viewMap" aria-pressed="false" data-i18n="tools.map">Карта</button>
+        </div>
+      </div>
+    </div>
+    <p class="note" id="nearNote" hidden></p>
+    <div class="map" id="map" hidden></div>
+    <p class="note" id="mapNote" hidden></p>
     <div class="grid" id="grid"></div>
-    <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте изменить запрос, чек или удобства.</p>
+    <p class="empty" id="empty" hidden data-i18n="empty">Ничего не нашлось. Попробуйте изменить запрос, чек или удобства.</p>
   </main>
 
   <section class="wrap duo">
+    <div class="panel" id="week">
+      <p class="panel__kicker" data-i18n="week.kicker">Рейтинг недели</p>
+      <h2 class="panel__title" data-i18n="week.title">Кто вырос и кто упал</h2>
+      <div id="weekBody"></div>
+    </div>
+    <div class="panel" id="scout">
+      <p class="panel__kicker" data-i18n="scout.kicker">Разведчик</p>
+      <h2 class="panel__title" data-i18n="scout.title">Новые места на радаре</h2>
+      <div id="scoutBody"></div>
+    </div>
+  </section>
+
+  <section class="wrap duo">
     <div class="panel" id="agents">
-      <p class="panel__kicker">ИИ-агенты</p>
-      <h2 class="panel__title">Рейтинги проверяются сами</h2>
-      <p>Каждые 6 часов два агента на бесплатной модели Gemini с поиском Google заново проверяют рейтинг 2ГИС и число оценок. «Искатель» находит цифры, «Проверяющий» перепроверяет их отдельным запросом. Рейтинг обновляется, только если агенты сошлись, а подозрительно резкие скачки отбрасываются. Если рейтинг изменился, на карточке видно, каким он был.</p>
+      <p class="panel__kicker" data-i18n="agents.kicker">ИИ-агенты</p>
+      <h2 class="panel__title" data-i18n="agents.title">Рейтинги проверяются сами</h2>
+      <p data-i18n="agents.text"></p>
       <p class="panel__status" id="agentsStatus"></p>
     </div>
+    <div class="panel" id="partner">
+      <p class="panel__kicker" data-i18n="partner.kicker">Для владельцев</p>
+      <h2 class="panel__title" data-i18n="partner.title">Партнёрство — 10 000 ₸</h2>
+      <p data-i18n="partner.text"></p>
+      <ul class="checks" id="partnerList"></ul>
+      <div class="actions">
+        <button class="btn" type="button" data-owner="partner" data-i18n="partner.cta">Стать партнёром</button>
+        <button class="btn btn--ghost" type="button" data-owner="" data-i18n="partner.owner">Я владелец — обновить данные</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap duo duo--one">
     <div class="panel" id="contact">
-      <p class="panel__kicker">Связь</p>
-      <h2 class="panel__title">Написать разработчику</h2>
-      <p>Нашли ошибку, хотите добавить своё заведение или предложить идею — пишите.</p>
+      <p class="panel__kicker" data-i18n="contact.kicker">Связь</p>
+      <h2 class="panel__title" data-i18n="contact.title">Написать разработчику</h2>
+      <p data-i18n="contact.text">Нашли ошибку, хотите добавить своё заведение или предложить идею — пишите.</p>
       <ul class="contacts">
         <li>
-          <span class="contacts__label">Телефон и WhatsApp</span>
+          <span class="contacts__label" data-i18n="contact.phone">Телефон и WhatsApp</span>
           <a class="contacts__value" href="tel:+77006830247">+7 700 683 02 47</a>
           <span class="contacts__actions">
             <a class="btn" href="https://wa.me/77006830247" target="_blank" rel="noopener">WhatsApp ↗</a>
-            <button class="btn btn--ghost" type="button" data-copy="+77006830247">Скопировать</button>
+            <button class="btn btn--ghost" type="button" data-copy="+77006830247" data-i18n="copy">Скопировать</button>
           </span>
         </li>
         <li>
-          <span class="contacts__label">Почта</span>
+          <span class="contacts__label" data-i18n="contact.email">Почта</span>
           <a class="contacts__value" href="mailto:ItsTeamSwift@proton.me?subject=OnlyGuests">ItsTeamSwift@proton.me</a>
           <span class="contacts__actions">
-            <a class="btn" href="mailto:ItsTeamSwift@proton.me?subject=OnlyGuests">Написать письмо</a>
-            <button class="btn btn--ghost" type="button" data-copy="ItsTeamSwift@proton.me">Скопировать</button>
+            <a class="btn" href="mailto:ItsTeamSwift@proton.me?subject=OnlyGuests" data-i18n="contact.write">Написать письмо</a>
+            <button class="btn btn--ghost" type="button" data-copy="ItsTeamSwift@proton.me" data-i18n="copy">Скопировать</button>
           </span>
         </li>
       </ul>
@@ -117,24 +189,331 @@
   </section>
 
   <figure class="band">
-    <img src="img/art/vangogh-irises-band.jpg" alt="Фрагмент картины Ван Гога «Ирисы»" loading="lazy">
-    <figcaption>Винсент Ван Гог. «Ирисы», 1890 (фрагмент). The Met, Open Access</figcaption>
+    <img src="img/art/vangogh-irises-band.jpg" alt="" loading="lazy">
+    <figcaption data-i18n="band.caption">Винсент Ван Гог. «Ирисы», 1890 (фрагмент). The Met, Open Access</figcaption>
   </figure>
 
   <footer class="foot">
     <div class="wrap">
-      <p><b>OnlyGuests</b> — независимый справочник. Рейтинги и число оценок взяты из карточек 2ГИС (октябрь 2026) и регулярно перепроверяются ИИ-агентами. Агенты могут ошибаться, поэтому самые точные цифры — по кнопке «Открыть в 2ГИС». Разработчик: <a href="#contact">+7 700 683 02 47, ItsTeamSwift@proton.me</a>.</p>
-      <p>Средний чек — по данным 2ГИС; «≈» значит, что чек не указан и посчитан примерно по типу заведения. Удобства отмечены по карточкам и подборкам 2ГИС и могут быть неполными. Год открытия указан, только если его удалось подтвердить. Меню — популярные позиции с ориентировочными ценами. Фото еды иллюстративные (Unsplash). Живопись: Писсарро и Ван Гог из открытой коллекции Метрополитен-музея (CC0); в логотипе — фрагмент «Олеандров» Ван Гога (1888).</p>
+      <p data-i18n-html="foot.about"></p>
+      <p data-i18n="foot.notes"></p>
+      <details class="allplaces">
+        <summary data-i18n="foot.all">Все места справочника</summary>
+        <nav>
+        <!-- places:start -->
+        <a href="place/127-1">127.1</a>
+        <a href="place/abadan-alash">Abadan alash</a>
+        <a href="place/abay-kok-tobe">Abay (Кок-Тобе)</a>
+        <a href="place/aiza-neo-bistro">Aiza Neo Bistro</a>
+        <a href="place/alani">Alani</a>
+        <a href="place/all-saints">All Saints</a>
+        <a href="place/ami">Ami</a>
+        <a href="place/amici">Amici</a>
+        <a href="place/arabica-city-cafe">Arabica city cafe</a>
+        <a href="place/arabica-coffee-house">Arabica Coffee House</a>
+        <a href="place/aspandiyar">Aspandiyar</a>
+        <a href="place/ata-doner">Ata Doner</a>
+        <a href="place/atlas-cafe">Atlas cafe</a>
+        <a href="place/auyl">Auyl</a>
+        <a href="place/bahandi">Bahandi</a>
+        <a href="place/baharat">Baharat</a>
+        <a href="place/bao-sushi-noodles-bar">Bao sushi &amp; noodles bar</a>
+        <a href="place/barakat-burger">Barakat Burger</a>
+        <a href="place/basilic">Basilic</a>
+        <a href="place/baursak-city">Baursak City</a>
+        <a href="place/beefeater">Beefeater</a>
+        <a href="place/beerday">BeerDay</a>
+        <a href="place/bella-ciao">Bella Ciao</a>
+        <a href="place/bereket">Bereket</a>
+        <a href="place/big-apple-coffee-shop">Big Apple coffee shop</a>
+        <a href="place/bistro-130">Bistro 130</a>
+        <a href="place/blanca">Blanca</a>
+        <a href="place/bon-bon">Bon Bon</a>
+        <a href="place/bukhara-kz">Bukhara.kz</a>
+        <a href="place/burger-king">Burger King</a>
+        <a href="place/cafeteria">Cafeteria</a>
+        <a href="place/capito">Capito</a>
+        <a href="place/casablanca">Casablanca</a>
+        <a href="place/chalet">Chalet</a>
+        <a href="place/chechil">Chechil</a>
+        <a href="place/cicada">Cicada</a>
+        <a href="place/cicek-mangal">Cicek Мангал</a>
+        <a href="place/coffee-boom">Coffee BOOM</a>
+        <a href="place/coffee-original">Coffee Original</a>
+        <a href="place/coffeedelia">Coffeedelia</a>
+        <a href="place/coffeeroom">Coffeeroom</a>
+        <a href="place/coffeevarka">CoffeeVarka</a>
+        <a href="place/collab">Collab</a>
+        <a href="place/costa-coffee">Costa Coffee</a>
+        <a href="place/cu-abaya">CU · Абая</a>
+        <a href="place/cu-bogenbay-batyra">CU · Богенбай батыра</a>
+        <a href="place/cu-zhibek-zholy">CU · Жибек Жолы</a>
+        <a href="place/dddoner">Dddoner</a>
+        <a href="place/de-zhuang">De Zhuang</a>
+        <a href="place/degirmen">Degirmen</a>
+        <a href="place/del-cappuccino">Del Cappuccino</a>
+        <a href="place/del-papa">Del Papa</a>
+        <a href="place/do-star-coffee">Do.star coffee</a>
+        <a href="place/dodo-pizza">Dodo Pizza</a>
+        <a href="place/dom-hogo">DOM HOGO</a>
+        <a href="place/doner-na-abaya">Doner na Abaya</a>
+        <a href="place/doner-na-makataeva">Doner na Makataeva</a>
+        <a href="place/doner-na-satpayeva">Doner na Satpayeva</a>
+        <a href="place/donerzade">Donerzade</a>
+        <a href="place/drinkit">Drinkit</a>
+        <a href="place/durum">DURUM</a>
+        <a href="place/east-cuisine">East Cuisine</a>
+        <a href="place/esentai-gourmet-coffee">Esentai Gourmet Coffee</a>
+        <a href="place/esperanza-terrace">Esperanza Terrace</a>
+        <a href="place/eywa-terrace">EYWA Terrace</a>
+        <a href="place/ezo">Ezo</a>
+        <a href="place/fish-fried">Fish Fried</a>
+        <a href="place/flask-specialty-coffee">Flask specialty coffee</a>
+        <a href="place/french-42">French 42</a>
+        <a href="place/friendly">Friendly</a>
+        <a href="place/friends-bar-terrace">Friends bar &amp; terrace</a>
+        <a href="place/gogra">Gogra</a>
+        <a href="place/grano">GRANO</a>
+        <a href="place/han-qauap">Han Qauap</a>
+        <a href="place/hanok">Hanok</a>
+        <a href="place/hanok-family">Hanok Family</a>
+        <a href="place/harbin">Harbin</a>
+        <a href="place/hardee-s">Hardee&#x27;s</a>
+        <a href="place/harissa">Harissa</a>
+        <a href="place/ichi-specialty-coffee">Ichi Specialty Coffee</a>
+        <a href="place/iman-bbq-steak-house">Iman BBQ Steak House</a>
+        <a href="place/jinau">Jinau</a>
+        <a href="place/julius">Julius</a>
+        <a href="place/jump-in-goat-coffee">Jump In Goat Coffee</a>
+        <a href="place/karima">KaRima</a>
+        <a href="place/kefa">Kefa</a>
+        <a href="place/kish-mish">Kish-Mish</a>
+        <a href="place/kulikov">Kulikov</a>
+        <a href="place/kumano">Kumano</a>
+        <a href="place/la-skala">La Skala</a>
+        <a href="place/la-vanilla">La Vanilla</a>
+        <a href="place/lalu-cake">Lalu Cake</a>
+        <a href="place/lanzhou">Lanzhou</a>
+        <a href="place/late-night-show">Late night show</a>
+        <a href="place/laureate-grand-cafe">Laureate Grand Cafe</a>
+        <a href="place/lenore-pub">Lenore pub</a>
+        <a href="place/line-brew">Line Brew</a>
+        <a href="place/line-brew-reserve">Line Brew Reserve</a>
+        <a href="place/littles">Littles</a>
+        <a href="place/luckee-yu">Luckee Yu</a>
+        <a href="place/lapsha-bar-wok">Lапша Bar &amp; Wok</a>
+        <a href="place/mad-murphy-s-irish-pub">Mad Murphy&#x27;s Irish Pub</a>
+        <a href="place/mado">Mado</a>
+        <a href="place/magnum-cash-carry-aksuat">Magnum Cash &amp; Carry · Аксуат</a>
+        <a href="place/magnum-hyper-zhetysu-3">Magnum Hyper · Жетысу-3</a>
+        <a href="place/magnum-hyper-han-shatyr">Magnum Hyper · Хан Шатыр</a>
+        <a href="place/mai-qazan">Mai Qazan</a>
+        <a href="place/mamma-mia">Mamma Mia</a>
+        <a href="place/manga-japanese-restaurant">Manga Japanese Restaurant</a>
+        <a href="place/mangal-fish">Mangal Fish</a>
+        <a href="place/mangal-house">Mangal house</a>
+        <a href="place/masisso">Masisso</a>
+        <a href="place/massimo-coffee-roasters">Massimo Coffee Roasters</a>
+        <a href="place/master-coffee">Master Coffee</a>
+        <a href="place/may-bistro">May bistro</a>
+        <a href="place/medeu-visit-center">Medeu Visit Center</a>
+        <a href="place/medovic">Medovic</a>
+        <a href="place/megafish">Megafish</a>
+        <a href="place/megata-doner">MegAta Doner</a>
+        <a href="place/miterra-lounge">Miterra lounge</a>
+        <a href="place/munchen-pub">Munchen pub</a>
+        <a href="place/musaka">Musaka</a>
+        <a href="place/m-te">MÖTE</a>
+        <a href="place/namaste">Namaste</a>
+        <a href="place/naryn">Naryn</a>
+        <a href="place/navat">Navat</a>
+        <a href="place/nomad-grill">Nomad Grill</a>
+        <a href="place/noni">Noni</a>
+        <a href="place/noodles">Noodles</a>
+        <a href="place/nuala">Nuala</a>
+        <a href="place/oblako-lounge-bar">Oblako lounge bar</a>
+        <a href="place/ocean-basket">Ocean Basket</a>
+        <a href="place/okadzaki">Okadzaki</a>
+        <a href="place/olovo-cocktail-bar">Olovo cocktail bar</a>
+        <a href="place/orient-lagman">Orient lagman</a>
+        <a href="place/orta">Orta</a>
+        <a href="place/ozyurt">Ozyurt</a>
+        <a href="place/p-f-chang-s">P.F. Chang&#x27;s</a>
+        <a href="place/paco-coffee-pastry">Paco coffee &amp; pastry</a>
+        <a href="place/palomar">Palomar</a>
+        <a href="place/paul">Paul</a>
+        <a href="place/paulaner-br-uhaus">Paulaner Bräuhaus</a>
+        <a href="place/pelmen">Pelmen</a>
+        <a href="place/perla-di-roma">Perla di Roma</a>
+        <a href="place/petit-chocolate-coffee">Petit chocolate &amp; coffee</a>
+        <a href="place/pinta">Pinta</a>
+        <a href="place/praha">Praha</a>
+        <a href="place/presso">Presso</a>
+        <a href="place/pro-hinkali">Pro.Хинкали</a>
+        <a href="place/qaganat">Qaganat</a>
+        <a href="place/qauap-food">Qauap_food</a>
+        <a href="place/qazy">Qazy</a>
+        <a href="place/qrupa">Qrupa</a>
+        <a href="place/qulpynai">Qulpynai</a>
+        <a href="place/rafinad">Rafinad</a>
+        <a href="place/red-beer-bar">Red beer bar</a>
+        <a href="place/riviera">Riviera</a>
+        <a href="place/rumi">Rumi</a>
+        <a href="place/sagamo">Sagamo</a>
+        <a href="place/salam-bro">Salam Bro</a>
+        <a href="place/samurai-sushi">Samurai sushi</a>
+        <a href="place/sandyq">Sandyq</a>
+        <a href="place/sansara-lounge">Sansara Lounge</a>
+        <a href="place/satori">Satori</a>
+        <a href="place/seven">Seven</a>
+        <a href="place/shafran">Shafran</a>
+        <a href="place/shipudim">Shipudim</a>
+        <a href="place/six-coffee-wine">Six Coffee+Wine</a>
+        <a href="place/small-food-panfilova">Small Food · Панфилова</a>
+        <a href="place/small-asia-park">SMALL · Asia Park</a>
+        <a href="place/smug-burger-bbq-bar">Smug Burger BBQ Bar</a>
+        <a href="place/spiros">Spiros</a>
+        <a href="place/starbucks">Starbucks</a>
+        <a href="place/stories">Stories</a>
+        <a href="place/suli-da-guli">Suli da Guli</a>
+        <a href="place/sumakh">Sumakh</a>
+        <a href="place/svaneti">Svaneti</a>
+        <a href="place/sybaga-ethno-restaurant">Sybaga Ethno Restaurant</a>
+        <a href="place/tabanan">Tabanan</a>
+        <a href="place/tal">Tal</a>
+        <a href="place/tangiers-lounge">Tangiers lounge</a>
+        <a href="place/tanuki">Tanuki</a>
+        <a href="place/tary">Tary</a>
+        <a href="place/tattisin">Tattisin</a>
+        <a href="place/tave">Tave</a>
+        <a href="place/tereze">Tereze</a>
+        <a href="place/the-doner-na-uglyah">The Doner на углях</a>
+        <a href="place/the-mangal-meat-bar">The Mangal Meat Bar</a>
+        <a href="place/the-banka-bar">The Банка Bar</a>
+        <a href="place/toimart-barys-iv">TOIMART · Барыс IV</a>
+        <a href="place/toimart-zhandosova">TOIMART · Жандосова</a>
+        <a href="place/tok-burger">Tok burger</a>
+        <a href="place/tok-poki">Tok poki</a>
+        <a href="place/tomchi">Tomchi</a>
+        <a href="place/top-barista">Top Barista</a>
+        <a href="place/traveler-s-coffee">Traveler&#x27;s Coffee</a>
+        <a href="place/turandot">Turandot</a>
+        <a href="place/unapasta">Unapasta</a>
+        <a href="place/urbo-coffee">Urbo Coffee</a>
+        <a href="place/vanilla">Vanilla</a>
+        <a href="place/villa-dei-fiori">Villa dei Fiori</a>
+        <a href="place/vinil-bar">Vinil Bar</a>
+        <a href="place/vista">Vista</a>
+        <a href="place/wendy-s">Wendy&#x27;s</a>
+        <a href="place/wok-wok">Wok Wok</a>
+        <a href="place/zebra-coffee">Zebra Coffee</a>
+        <a href="place/zere">Zere</a>
+        <a href="place/ziyafet-steak-house">Ziyafet Steak House</a>
+        <a href="place/abo-burger">Або Бургер</a>
+        <a href="place/akzhol">Акжол</a>
+        <a href="place/alazani">Алазани</a>
+        <a href="place/alasha">Алаша</a>
+        <a href="place/apelsinovyy-gus">Апельсиновый гусь</a>
+        <a href="place/afisha">Афиша</a>
+        <a href="place/ahi-doner">Ахи Донер</a>
+        <a href="place/barmaglot">Бармаглот</a>
+        <a href="place/bochka">Бочка</a>
+        <a href="place/bochonok">Бочонок</a>
+        <a href="place/vahtanguri">Вахтангури</a>
+        <a href="place/daredzhani">Дареджани</a>
+        <a href="place/domashniy">Домашний</a>
+        <a href="place/zhiguli">Жигули</a>
+        <a href="place/kausar">Каусар</a>
+        <a href="place/kishlak">Кишлак</a>
+        <a href="place/krasnodarskiy-paren">Краснодарский парень</a>
+        <a href="place/kuldzha-hogo">Кульджа Хого</a>
+        <a href="place/lagmanhana-alatau">Лагманхана «Алатау»</a>
+        <a href="place/lagmanhana-1-sabro">Лагманхана №1 Sabro</a>
+        <a href="place/lali-hinkali">Лали-Хинкали</a>
+        <a href="place/lepim-i-varim">Лепим и Варим</a>
+        <a href="place/leto">Лето</a>
+        <a href="place/malenkiy-prints">Маленький принц</a>
+        <a href="place/marmaris">Мармарис</a>
+        <a href="place/marina-roscha">Марьина Роща</a>
+        <a href="place/myata-vyshka">Мята Вышка</a>
+        <a href="place/nashi-lyudi">Наши люди</a>
+        <a href="place/nedelka">Неделька</a>
+        <a href="place/ogonek">Огонёк</a>
+        <a href="place/privychki">Привычки</a>
+        <a href="place/saray-bar">Сарай-Бар</a>
+        <a href="place/suhoy-zakon">Сухой закон</a>
+        <a href="place/se-se">Сё-сё</a>
+        <a href="place/tagam">Тагам</a>
+        <a href="place/teplitsa">Теплица</a>
+        <a href="place/traktir-medved">Трактиръ Медведь</a>
+        <a href="place/tyubeteyka">Тюбетейка</a>
+        <a href="place/urumchi">Урумчи</a>
+        <a href="place/hachapuri-hinkalevich">Хачапури Хинкальевич</a>
+        <a href="place/hinkalnaya">Хинкальная</a>
+        <a href="place/horoshiy-god">Хороший год</a>
+        <a href="place/chingu">Чингу</a>
+        <a href="place/shashlykoff">Шашлыкоff</a>
+        <a href="place/shashlychnyy-dvor">Шашлычный двор</a>
+        <a href="place/schuka-bistro">Щука bistro</a>
+        <a href="place/yug22">Юг22</a>
+        <!-- places:end -->
+        </nav>
+      </details>
     </div>
   </footer>
 
+  <div class="cmpbar" id="cmpbar" hidden>
+    <button class="btn" type="button" id="cmpOpen"></button>
+    <button class="btn btn--ghost" type="button" id="cmpClear" data-i18n="compare.clear">Очистить</button>
+  </div>
+
   <dialog class="modal" id="modal" aria-labelledby="mTitle">
-    <button class="modal__close" id="mClose" type="button" aria-label="Закрыть">×</button>
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
     <div class="modal__body" id="mBody"></div>
   </dialog>
 
+  <dialog class="modal modal--wide" id="cmpModal" aria-labelledby="cmpTitle">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+    <div class="m" id="cmpBody"></div>
+  </dialog>
+
+  <dialog class="modal modal--narrow" id="ownerModal" aria-labelledby="ownerTitle">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+    <form class="m owner" id="ownerForm">
+      <div class="m__head"><h2 id="ownerTitle" data-i18n="owner.title">Кабинет владельца</h2><p data-i18n="owner.text"></p></div>
+      <label><span data-i18n="owner.place">Заведение</span><select id="oPlace"></select></label>
+      <label id="oNewWrap" hidden><span data-i18n="owner.newName">Название и адрес нового места</span><input id="oNew" type="text"></label>
+      <label><span data-i18n="owner.name">Ваше имя</span><input id="oName" type="text" autocomplete="name"></label>
+      <label><span data-i18n="owner.phone">Телефон для связи</span><input id="oPhone" type="tel" autocomplete="tel"></label>
+      <fieldset><legend data-i18n="owner.what">Что изменить</legend><div class="chips" id="oWhat"></div></fieldset>
+      <label><span data-i18n="owner.msg">Комментарий</span><textarea id="oMsg" rows="3"></textarea></label>
+      <label class="check"><input id="oPartner" type="checkbox"> <span data-i18n="owner.partner">Хочу партнёрство за 10 000 ₸</span></label>
+      <div class="actions">
+        <button class="btn" type="submit" data-i18n="owner.sendWa">Отправить в WhatsApp</button>
+        <button class="btn btn--ghost" type="button" id="oMail" data-i18n="owner.sendMail">Отправить на почту</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal modal--narrow" id="luckyModal" aria-labelledby="luckyTitle">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+    <div class="m lucky">
+      <p class="panel__kicker" id="luckyTitle" data-i18n="lucky.title">Мне повезёт!</p>
+      <div class="lucky__reel" id="luckyReel"></div>
+      <div class="actions">
+        <button class="btn" type="button" id="luckyGo" data-i18n="lucky.go">Открыть</button>
+        <button class="btn btn--ghost" type="button" id="luckyAgain" data-i18n="lucky.again">Ещё раз</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/core.js"></script>
   <script src="js/data.js"></script>
   <script src="js/live.js"></script>
+  <script src="js/insights.js"></script>
+  <script src="js/scout.js"></script>
+  <script src="js/i18n-data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

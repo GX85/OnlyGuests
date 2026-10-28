@@ -1,4 +1,4 @@
-// OnlyGuests — данные о 200 заведениях Алматы.
+// OnlyGuests — данные о 255 заведениях Алматы.
 // Рейтинги и число оценок — по карточкам 2ГИС на октябрь 2026 г. (могут меняться).
 // opened — год открытия, если его удалось подтвердить источником; openedNote — пояснение.
 // menu — популярные позиции с ориентировочными ценами (₸); фото — иллюстративные (Unsplash).
@@ -57,7 +57,11 @@ window.CAFES = [
     "name": "Самса",
     "price": 900
    }
-  ]
+  ],
+  "lat": 43.246372,
+  "lon": 76.95705,
+  "district": "Медеуский",
+  "hours": "Mo-Su 10:00-24:00"
  },
  {
   "id": "sandyq",
@@ -116,7 +120,10 @@ window.CAFES = [
     "name": "Бауырсаки",
     "price": 3100
    }
-  ]
+  ],
+  "lat": 43.263067,
+  "lon": 76.939809,
+  "district": "Алмалинский"
  },
  {
   "id": "auyl",
@@ -172,7 +179,11 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 3900
    }
-  ]
+  ],
+  "lat": 43.162327,
+  "lon": 77.059845,
+  "district": "Медеуский",
+  "hours": "Mo-Fr 12:00-24:00; Sa 11:00-24:00; Su 11:00-23:00"
  },
  {
   "id": "abay-kok-tobe",
@@ -227,7 +238,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 3500
    }
-  ]
+  ],
+  "lat": 43.233753,
+  "lon": 76.975139,
+  "district": "Медеуский"
  },
  {
   "id": "alasha",
@@ -282,7 +296,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.202157,
+  "lon": 76.976295,
+  "district": "Медеуский"
  },
  {
   "id": "baursak-city",
@@ -338,7 +355,11 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 2500
    }
-  ]
+  ],
+  "lat": 43.250884,
+  "lon": 76.919324,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-00:00"
  },
  {
   "id": "qazy",
@@ -393,7 +414,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.252292,
+  "lon": 76.915843,
+  "district": "Алмалинский"
  },
  {
   "id": "tyubeteyka",
@@ -450,7 +474,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 1050
    }
-  ]
+  ],
+  "lat": 43.236296,
+  "lon": 76.921246,
+  "district": "Бостандыкский"
  },
  {
   "id": "kishlak",
@@ -508,7 +535,11 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.240769,
+  "lon": 76.934859,
+  "district": "Бостандыкский",
+  "hours": "12:00-02:00"
  },
  {
   "id": "rumi",
@@ -566,7 +597,10 @@ window.CAFES = [
     "name": "Самса",
     "price": 900
    }
-  ]
+  ],
+  "lat": 43.245222,
+  "lon": 76.942679,
+  "district": "Алмалинский"
  },
  {
   "id": "lagmanhana-1-sabro",
@@ -619,7 +653,10 @@ window.CAFES = [
     "name": "Чай с молоком",
     "price": 600
    }
-  ]
+  ],
+  "lat": 43.233706,
+  "lon": 76.850357,
+  "district": "Ауэзовский"
  },
  {
   "id": "qaganat",
@@ -677,7 +714,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 350
    }
-  ]
+  ],
+  "lat": 43.239638,
+  "lon": 76.899774,
+  "district": "Алмалинский"
  },
  {
   "id": "tary",
@@ -735,7 +775,10 @@ window.CAFES = [
     "name": "Круассан",
     "price": 1200
    }
-  ]
+  ],
+  "lat": 43.235682,
+  "lon": 76.921703,
+  "district": "Бостандыкский"
  },
  {
   "id": "musaka",
@@ -792,7 +835,10 @@ window.CAFES = [
     "name": "Айран",
     "price": 950
    }
-  ]
+  ],
+  "lat": 43.208232,
+  "lon": 76.895805,
+  "district": "Бостандыкский"
  },
  {
   "id": "daredzhani",
@@ -850,7 +896,11 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.245465,
+  "lon": 76.956233,
+  "district": "Медеуский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-00:00"
  },
  {
   "id": "hachapuri-hinkalevich",
@@ -905,7 +955,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.239395,
+  "lon": 76.907893,
+  "district": "Бостандыкский"
  },
  {
   "id": "suli-da-guli",
@@ -963,7 +1016,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.207379,
+  "lon": 76.898332,
+  "district": "Бостандыкский"
  },
  {
   "id": "vahtanguri",
@@ -1018,7 +1074,11 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 2100
    }
-  ]
+  ],
+  "lat": 43.258657,
+  "lon": 76.922914,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-01:00"
  },
  {
   "id": "lali-hinkali",
@@ -1069,7 +1129,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "district": "Бостандыкский"
  },
  {
   "id": "pro-hinkali",
@@ -1124,7 +1187,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "district": "Бостандыкский"
  },
  {
   "id": "hinkalnaya",
@@ -1174,7 +1240,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.212972,
+  "lon": 76.876689,
+  "district": "Ауэзовский"
  },
  {
   "id": "tave",
@@ -1229,7 +1298,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.229524,
+  "lon": 76.890643,
+  "district": "Бостандыкский"
  },
  {
   "id": "gogra",
@@ -1286,7 +1358,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.157,
+  "lon": 77.056,
+  "district": "Медеуский"
  },
  {
   "id": "del-papa",
@@ -1341,7 +1416,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.222919,
+  "lon": 76.96323,
+  "district": "Медеуский"
  },
  {
   "id": "mamma-mia",
@@ -1396,7 +1474,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.252117,
+  "lon": 76.899457,
+  "district": "Алмалинский"
  },
  {
   "id": "villa-dei-fiori",
@@ -1454,7 +1535,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 3900
    }
-  ]
+  ],
+  "lat": 43.211025,
+  "lon": 76.920168,
+  "district": "Бостандыкский"
  },
  {
   "id": "turandot",
@@ -1509,7 +1593,10 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.239052,
+  "lon": 76.890952,
+  "district": "Алмалинский"
  },
  {
   "id": "harbin",
@@ -1564,7 +1651,10 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 1250
    }
-  ]
+  ],
+  "lat": 43.260966,
+  "lon": 76.960545,
+  "district": "Медеуский"
  },
  {
   "id": "luckee-yu",
@@ -1619,7 +1709,11 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 1800
    }
-  ]
+  ],
+  "lat": 43.24557,
+  "lon": 76.956295,
+  "district": "Медеуский",
+  "hours": "Fr-Sa 11:00-01:00; Mo-Th,Su 11:00-00:00"
  },
  {
   "id": "p-f-chang-s",
@@ -1674,7 +1768,11 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 2500
    }
-  ]
+  ],
+  "lat": 43.212217,
+  "lon": 76.921318,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-22:00"
  },
  {
   "id": "tanuki",
@@ -1731,7 +1829,11 @@ window.CAFES = [
     "name": "Моти",
     "price": 1300
    }
-  ]
+  ],
+  "lat": 43.224697,
+  "lon": 76.962521,
+  "district": "Медеуский",
+  "hours": "Mo-Su 12:00-24:00"
  },
  {
   "id": "manga-japanese-restaurant",
@@ -1786,7 +1888,10 @@ window.CAFES = [
     "name": "Моти",
     "price": 1600
    }
-  ]
+  ],
+  "lat": 43.249043,
+  "lon": 76.942636,
+  "district": "Алмалинский"
  },
  {
   "id": "satori",
@@ -1841,7 +1946,10 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.29365,
+  "lon": 76.886012,
+  "district": "Алатауский"
  },
  {
   "id": "bao-sushi-noodles-bar",
@@ -1896,7 +2004,10 @@ window.CAFES = [
     "name": "Моти",
     "price": 900
    }
-  ]
+  ],
+  "lat": 43.252143,
+  "lon": 76.901719,
+  "district": "Алмалинский"
  },
  {
   "id": "lapsha-bar-wok",
@@ -1951,7 +2062,11 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 3000
    }
-  ]
+  ],
+  "lat": 43.217498,
+  "lon": 76.929948,
+  "district": "Медеуский",
+  "hours": "Mo-Su 12:00-02:00"
  },
  {
   "id": "samurai-sushi",
@@ -2006,7 +2121,10 @@ window.CAFES = [
     "name": "Моти",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.213819,
+  "lon": 76.869845,
+  "district": "Ауэзовский"
  },
  {
   "id": "kish-mish",
@@ -2061,7 +2179,10 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 1000
    }
-  ]
+  ],
+  "lat": 43.237558,
+  "lon": 76.937947,
+  "district": "Бостандыкский"
  },
  {
   "id": "namaste",
@@ -2116,7 +2237,10 @@ window.CAFES = [
     "name": "Масала-чай",
     "price": 1000
    }
-  ]
+  ],
+  "lat": 43.258898,
+  "lon": 76.923322,
+  "district": "Алмалинский"
  },
  {
   "id": "mado",
@@ -2175,7 +2299,11 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.233904,
+  "lon": 76.95824,
+  "district": "Медеуский",
+  "hours": "Mo-Su 09:00-00:00"
  },
  {
   "id": "ozyurt",
@@ -2232,7 +2360,10 @@ window.CAFES = [
     "name": "Айран",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.247545,
+  "lon": 76.949517,
+  "district": "Медеуский"
  },
  {
   "id": "marmaris",
@@ -2289,7 +2420,10 @@ window.CAFES = [
     "name": "Айран",
     "price": 580
    }
-  ]
+  ],
+  "lat": 43.248645,
+  "lon": 76.942254,
+  "district": "Алмалинский"
  },
  {
   "id": "degirmen",
@@ -2345,7 +2479,11 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 1050
    }
-  ]
+  ],
+  "lat": 43.250166,
+  "lon": 76.92554,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:00-24:00"
  },
  {
   "id": "line-brew",
@@ -2404,7 +2542,10 @@ window.CAFES = [
     "name": "Пиво 0,5 л",
     "price": 5500
    }
-  ]
+  ],
+  "lat": 43.241107,
+  "lon": 76.948169,
+  "district": "Бостандыкский"
  },
  {
   "id": "paulaner-br-uhaus",
@@ -2462,7 +2603,10 @@ window.CAFES = [
     "name": "Пиво 0,5 л",
     "price": 2200
    }
-  ]
+  ],
+  "lat": 43.247894,
+  "lon": 76.916013,
+  "district": "Алмалинский"
  },
  {
   "id": "pinta",
@@ -2519,7 +2663,11 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1700
    }
-  ]
+  ],
+  "lat": 43.264334,
+  "lon": 76.947552,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 09:00-02:00"
  },
  {
   "id": "bochonok",
@@ -2574,7 +2722,11 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1700
    }
-  ]
+  ],
+  "lat": 43.231594,
+  "lon": 76.899507,
+  "district": "Бостандыкский",
+  "hours": "Mo-Th 12:00-01:00, Fr 12:00-03:00, Sa 14:00-03:00, Su 14:00-01:00"
  },
  {
   "id": "praha",
@@ -2629,7 +2781,10 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 2850
    }
-  ]
+  ],
+  "lat": 43.222919,
+  "lon": 76.96323,
+  "district": "Медеуский"
  },
  {
   "id": "beefeater",
@@ -2684,7 +2839,10 @@ window.CAFES = [
     "name": "Бокал вина",
     "price": 3500
    }
-  ]
+  ],
+  "lat": 43.251432,
+  "lon": 76.955428,
+  "district": "Медеуский"
  },
  {
   "id": "the-mangal-meat-bar",
@@ -2739,7 +2897,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.254896,
+  "lon": 76.914655,
+  "district": "Алмалинский"
  },
  {
   "id": "mangal-fish",
@@ -2794,7 +2955,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.286384,
+  "lon": 76.994957,
+  "district": "Медеуский"
  },
  {
   "id": "shipudim",
@@ -2847,7 +3011,11 @@ window.CAFES = [
     "name": "Компот",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.270418,
+  "lon": 76.939848,
+  "district": "Жетысуский",
+  "hours": "24/7. Su 9:00-11:00 - Cleaning"
  },
  {
   "id": "teplitsa",
@@ -2906,7 +3074,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 3200
    }
-  ]
+  ],
+  "lat": 43.332654,
+  "lon": 77.018275,
+  "district": "Турксибский"
  },
  {
   "id": "ogonek",
@@ -2964,12 +3135,16 @@ window.CAFES = [
     "name": "Бургер фирменный",
     "price": 10750
    }
-  ]
+  ],
+  "lat": 43.252799,
+  "lon": 76.944869,
+  "district": "Алмалинский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-24:00"
  },
  {
   "id": "tok-burger",
   "name": "Tok burger",
-  "type": "Фастфуд",
+  "type": "Бургерная",
   "cuisine": "Бургеры",
   "kitchen": "burger",
   "rating": 4.7,
@@ -3019,12 +3194,15 @@ window.CAFES = [
     "name": "Комбо обед",
     "price": 3300
    }
-  ]
+  ],
+  "lat": 43.244872,
+  "lon": 76.891266,
+  "district": "Алмалинский"
  },
  {
   "id": "bahandi",
   "name": "Bahandi",
-  "type": "Фастфуд",
+  "type": "Бургерная",
   "cuisine": "Бургеры, халал",
   "kitchen": "burger",
   "rating": 4.7,
@@ -3076,12 +3254,15 @@ window.CAFES = [
     "name": "Комбо обед",
     "price": 3300
    }
-  ]
+  ],
+  "lat": 43.253691,
+  "lon": 76.945142,
+  "district": "Алмалинский"
  },
  {
   "id": "wendy-s",
   "name": "Wendy's",
-  "type": "Фастфуд",
+  "type": "Бургерная",
   "cuisine": "Бургеры",
   "kitchen": "burger",
   "rating": 4.8,
@@ -3131,12 +3312,15 @@ window.CAFES = [
     "name": "Комбо обед",
     "price": 1800
    }
-  ]
+  ],
+  "lat": 43.262044,
+  "lon": 76.941408,
+  "district": "Алмалинский"
  },
  {
   "id": "burger-king",
   "name": "Burger King",
-  "type": "Фастфуд",
+  "type": "Бургерная",
   "cuisine": "Бургеры",
   "kitchen": "burger",
   "rating": 4.5,
@@ -3186,12 +3370,15 @@ window.CAFES = [
     "name": "Комбо обед",
     "price": 3300
    }
-  ]
+  ],
+  "lat": 43.252303,
+  "lon": 76.91306,
+  "district": "Алмалинский"
  },
  {
   "id": "hardee-s",
   "name": "Hardee's",
-  "type": "Фастфуд",
+  "type": "Бургерная",
   "cuisine": "Бургеры",
   "kitchen": "burger",
   "rating": 4.5,
@@ -3241,7 +3428,10 @@ window.CAFES = [
     "name": "Комбо обед",
     "price": 3300
    }
-  ]
+  ],
+  "lat": 43.270185,
+  "lon": 76.930775,
+  "district": "Жетысуский"
  },
  {
   "id": "dodo-pizza",
@@ -3291,7 +3481,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1300
    }
-  ]
+  ],
+  "lat": 43.263463,
+  "lon": 76.948808,
+  "district": "Медеуский",
+  "hours": "09:00-24:00"
  },
  {
   "id": "ocean-basket",
@@ -3346,7 +3540,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 3200
    }
-  ]
+  ],
+  "lat": 43.261043,
+  "lon": 76.942821,
+  "district": "Алмалинский"
  },
  {
   "id": "spiros",
@@ -3401,7 +3598,11 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 6750
    }
-  ]
+  ],
+  "lat": 43.222154,
+  "lon": 76.962629,
+  "district": "Медеуский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-24:00"
  },
  {
   "id": "vista",
@@ -3456,7 +3657,10 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 2600
    }
-  ]
+  ],
+  "lat": 43.219275,
+  "lon": 76.929277,
+  "district": "Бостандыкский"
  },
  {
   "id": "seven",
@@ -3511,7 +3715,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.190349,
+  "lon": 76.907092,
+  "district": "Бостандыкский"
  },
  {
   "id": "palomar",
@@ -3567,7 +3774,11 @@ window.CAFES = [
     "name": "Мусака",
     "price": 5400
    }
-  ]
+  ],
+  "lat": 43.250382,
+  "lon": 76.942459,
+  "district": "Алмалинский",
+  "hours": "Mo-Th 17:00-01:00, Fr-Sa 17:00-03:00, Su 14:00-01:00"
  },
  {
   "id": "horoshiy-god",
@@ -3622,7 +3833,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.246838,
+  "lon": 76.955683,
+  "district": "Медеуский",
+  "hours": "Mo-Su 09:00-23:00"
  },
  {
   "id": "cafeteria",
@@ -3677,7 +3892,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.244147,
+  "lon": 76.944902,
+  "district": "Алмалинский"
  },
  {
   "id": "marina-roscha",
@@ -3730,7 +3948,10 @@ window.CAFES = [
     "name": "Наливка, 50 мл",
     "price": 2500
    }
-  ]
+  ],
+  "lat": 43.256673,
+  "lon": 76.95032,
+  "district": "Медеуский"
  },
  {
   "id": "basilic",
@@ -3780,7 +4001,11 @@ window.CAFES = [
     "name": "Компот",
     "price": 350
    }
-  ]
+  ],
+  "lat": 43.252869,
+  "lon": 76.938548,
+  "district": "Алмалинский",
+  "hours": "24/7"
  },
  {
   "id": "la-skala",
@@ -3835,7 +4060,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 6000
    }
-  ]
+  ],
+  "lat": 43.1284,
+  "lon": 77.0794,
+  "district": "Медеуский"
  },
  {
   "id": "saray-bar",
@@ -3890,7 +4118,11 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 4250
    }
-  ]
+  ],
+  "lat": 43.12851,
+  "lon": 77.082353,
+  "district": "Медеуский",
+  "hours": "08:00-24:00"
  },
  {
   "id": "nedelka",
@@ -3945,7 +4177,11 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.244439,
+  "lon": 76.923113,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:30-22:00"
  },
  {
   "id": "medovic",
@@ -4001,7 +4237,10 @@ window.CAFES = [
     "name": "Овсяная каша с ягодами",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.241628,
+  "lon": 76.936982,
+  "district": "Бостандыкский"
  },
  {
   "id": "apelsinovyy-gus",
@@ -4051,7 +4290,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.200951,
+  "lon": 76.89255,
+  "district": "Бостандыкский"
  },
  {
   "id": "leto",
@@ -4106,7 +4348,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 2350
    }
-  ]
+  ],
+  "lat": 43.219806,
+  "lon": 76.921693,
+  "district": "Бостандыкский"
  },
  {
   "id": "rafinad",
@@ -4161,7 +4406,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.212336,
+  "lon": 76.773728,
+  "district": "Наурызбайский"
  },
  {
   "id": "bon-bon",
@@ -4216,7 +4464,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.248331,
+  "lon": 76.94199,
+  "district": "Алмалинский"
  },
  {
   "id": "coffee-boom",
@@ -4266,7 +4517,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.233832,
+  "lon": 76.88461,
+  "district": "Бостандыкский"
  },
  {
   "id": "starbucks",
@@ -4323,7 +4577,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 1300
    }
-  ]
+  ],
+  "lat": 43.218905,
+  "lon": 76.929306,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-24:00"
  },
  {
   "id": "zebra-coffee",
@@ -4373,7 +4631,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.232049,
+  "lon": 76.875629,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-23:00"
  },
  {
   "id": "urbo-coffee",
@@ -4425,7 +4687,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.263437,
+  "lon": 76.933202,
+  "district": "Алмалинский"
  },
  {
   "id": "vanilla",
@@ -4480,7 +4745,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.248655,
+  "lon": 76.951386,
+  "district": "Медеуский"
  },
  {
   "id": "big-apple-coffee-shop",
@@ -4530,7 +4798,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.244061,
+  "lon": 76.942548,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:30-22:00"
  },
  {
   "id": "traveler-s-coffee",
@@ -4580,7 +4852,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.244871,
+  "lon": 76.946621,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:00-24:00"
  },
  {
   "id": "drinkit",
@@ -4635,7 +4911,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.236682,
+  "lon": 76.915542,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 07:30-21:00"
  },
  {
   "id": "costa-coffee",
@@ -4685,7 +4965,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.202637,
+  "lon": 76.892107,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-24:00"
  },
  {
   "id": "massimo-coffee-roasters",
@@ -4740,7 +5024,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.244237,
+  "lon": 76.937208,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:30-17:30"
  },
  {
   "id": "flask-specialty-coffee",
@@ -4790,7 +5078,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.244302,
+  "lon": 76.945487,
+  "district": "Алмалинский"
  },
  {
   "id": "ichi-specialty-coffee",
@@ -4842,7 +5133,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.249656,
+  "lon": 76.950592,
+  "district": "Медеуский"
  },
  {
   "id": "six-coffee-wine",
@@ -4894,7 +5188,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.227897,
+  "lon": 76.863075,
+  "district": "Ауэзовский"
  },
  {
   "id": "tereze",
@@ -4944,7 +5241,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.262121,
+  "lon": 76.951664,
+  "district": "Медеуский"
  },
  {
   "id": "arabica-city-cafe",
@@ -4994,7 +5294,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1050
    }
-  ]
+  ],
+  "lat": 43.236427,
+  "lon": 76.937795,
+  "district": "Бостандыкский"
  },
  {
   "id": "do-star-coffee",
@@ -5046,7 +5349,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.246443,
+  "lon": 76.950913,
+  "district": "Медеуский"
  },
  {
   "id": "coffeevarka",
@@ -5096,7 +5402,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.201663,
+  "lon": 76.910272,
+  "district": "Бостандыкский"
  },
  {
   "id": "coffeedelia",
@@ -5146,7 +5455,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.200425,
+  "lon": 76.89227,
+  "district": "Бостандыкский"
  },
  {
   "id": "paul",
@@ -5202,7 +5514,11 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1200
    }
-  ]
+  ],
+  "lat": 43.218933,
+  "lon": 76.928281,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-22:00"
  },
  {
   "id": "qulpynai",
@@ -5252,7 +5568,9 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.211774,
+  "lon": 76.764295
  },
  {
   "id": "la-vanilla",
@@ -5302,7 +5620,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.213166,
+  "lon": 76.858302,
+  "district": "Ауэзовский"
  },
  {
   "id": "tattisin",
@@ -5358,7 +5679,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.242014,
+  "lon": 76.934808,
+  "district": "Алмалинский"
  },
  {
   "id": "lalu-cake",
@@ -5408,7 +5732,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.249527,
+  "lon": 76.868021,
+  "district": "Алмалинский"
  },
  {
   "id": "kulikov",
@@ -5458,7 +5785,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.348279,
+  "lon": 76.989112,
+  "district": "Турксибский"
  },
  {
   "id": "lepim-i-varim",
@@ -5513,7 +5843,11 @@ window.CAFES = [
     "name": "Наливка, 50 мл",
     "price": 850
    }
-  ]
+  ],
+  "lat": 43.202443,
+  "lon": 76.891798,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-24:00"
  },
  {
   "id": "coffee-original",
@@ -5563,7 +5897,11 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.260354,
+  "lon": 76.948468,
+  "district": "Медеуский",
+  "hours": "24/7"
  },
  {
   "id": "qrupa",
@@ -5615,7 +5953,11 @@ window.CAFES = [
     "name": "Капучино",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.257501,
+  "lon": 76.92491,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:00-21:00"
  },
  {
   "id": "capito",
@@ -5670,7 +6012,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.199099,
+  "lon": 76.899268,
+  "district": "Бостандыкский"
  },
  {
   "id": "paco-coffee-pastry",
@@ -5722,7 +6067,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1100
    }
-  ]
+  ],
+  "lat": 43.259116,
+  "lon": 76.938876,
+  "district": "Алмалинский",
+  "hours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-21:00"
  },
  {
   "id": "harissa",
@@ -5777,7 +6126,10 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 2600
    }
-  ]
+  ],
+  "lat": 43.250337,
+  "lon": 76.957301,
+  "district": "Медеуский"
  },
  {
   "id": "afisha",
@@ -5829,7 +6181,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 3600
    }
-  ]
+  ],
+  "lat": 43.250005,
+  "lon": 76.945935,
+  "district": "Алмалинский"
  },
  {
   "id": "traktir-medved",
@@ -5884,7 +6239,10 @@ window.CAFES = [
     "name": "Наливка, 50 мл",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.232034,
+  "lon": 76.870158,
+  "district": "Ауэзовский"
  },
  {
   "id": "masisso",
@@ -5939,7 +6297,10 @@ window.CAFES = [
     "name": "Корейский чай",
     "price": 1350
    }
-  ]
+  ],
+  "lat": 43.304962,
+  "lon": 76.939164,
+  "district": "Турксибский"
  },
  {
   "id": "kuldzha-hogo",
@@ -5996,7 +6357,11 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 1250
    }
-  ]
+  ],
+  "lat": 43.241293,
+  "lon": 76.889048,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-00:00"
  },
  {
   "id": "de-zhuang",
@@ -6053,7 +6418,11 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 3750
    }
-  ]
+  ],
+  "lat": 43.207937,
+  "lon": 76.897447,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-00:00"
  },
  {
   "id": "okadzaki",
@@ -6105,7 +6474,10 @@ window.CAFES = [
     "name": "Моти",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.27129,
+  "lon": 76.930636,
+  "district": "Жетысуский"
  },
  {
   "id": "perla-di-roma",
@@ -6160,7 +6532,11 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.247161,
+  "lon": 76.954953,
+  "district": "Медеуский",
+  "hours": "Mo-Su 10:00-23:00"
  },
  {
   "id": "unapasta",
@@ -6215,7 +6591,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.248354,
+  "lon": 76.941935,
+  "district": "Алмалинский"
  },
  {
   "id": "line-brew-reserve",
@@ -6268,7 +6647,10 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1700
    }
-  ]
+  ],
+  "lat": 43.233335,
+  "lon": 76.956616,
+  "district": "Медеуский"
  },
  {
   "id": "cicek-mangal",
@@ -6318,7 +6700,10 @@ window.CAFES = [
     "name": "Айран",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.232912,
+  "lon": 76.950325,
+  "district": "Медеуский"
  },
  {
   "id": "mangal-house",
@@ -6368,7 +6753,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.286778,
+  "lon": 76.953391,
+  "district": "Жетысуский"
  },
  {
   "id": "tal",
@@ -6421,7 +6809,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 950
    }
-  ]
+  ],
+  "lat": 43.210532,
+  "lon": 76.884276,
+  "district": "Бостандыкский"
  },
  {
   "id": "ziyafet-steak-house",
@@ -6474,7 +6865,10 @@ window.CAFES = [
     "name": "Бокал вина",
     "price": 5850
    }
-  ]
+  ],
+  "lat": 43.238872,
+  "lon": 76.942066,
+  "district": "Бостандыкский"
  },
  {
   "id": "grano",
@@ -6532,7 +6926,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1250
    }
-  ]
+  ],
+  "lat": 43.257966,
+  "lon": 76.937401,
+  "district": "Алмалинский"
  },
  {
   "id": "karima",
@@ -6590,7 +6987,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.245984,
+  "lon": 76.903603,
+  "district": "Алмалинский"
  },
  {
   "id": "malenkiy-prints",
@@ -6643,7 +7043,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2800
    }
-  ]
+  ],
+  "lat": 43.249218,
+  "lon": 76.871028,
+  "district": "Алмалинский"
  },
  {
   "id": "nomad-grill",
@@ -6695,7 +7098,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.224822,
+  "lon": 76.909037,
+  "district": "Бостандыкский"
  },
  {
   "id": "chingu",
@@ -6748,7 +7154,10 @@ window.CAFES = [
     "name": "Корейский чай",
     "price": 1000
    }
-  ]
+  ],
+  "lat": 43.325045,
+  "lon": 76.951664,
+  "district": "Турксибский"
  },
  {
   "id": "laureate-grand-cafe",
@@ -6800,7 +7209,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.254141,
+  "lon": 76.956775,
+  "district": "Медеуский"
  },
  {
   "id": "shashlykoff",
@@ -6853,7 +7265,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.254174,
+  "lon": 76.931232,
+  "district": "Алмалинский"
  },
  {
   "id": "ezo",
@@ -6906,7 +7321,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 2500
    }
-  ]
+  ],
+  "lat": 43.253151,
+  "lon": 76.948056,
+  "district": "Медеуский"
  },
  {
   "id": "mad-murphy-s-irish-pub",
@@ -6958,7 +7376,10 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1700
    }
-  ]
+  ],
+  "lat": 43.256883,
+  "lon": 76.945877,
+  "district": "Алмалинский"
  },
  {
   "id": "sybaga-ethno-restaurant",
@@ -7011,7 +7432,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.213703,
+  "lon": 76.79035,
+  "district": "Наурызбайский"
  },
  {
   "id": "shafran",
@@ -7065,7 +7489,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.230686,
+  "lon": 76.935932,
+  "district": "Бостандыкский"
  },
  {
   "id": "megafish",
@@ -7117,7 +7544,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 900
    }
-  ]
+  ],
+  "lat": 43.222627,
+  "lon": 76.855698,
+  "district": "Ауэзовский"
  },
  {
   "id": "myata-vyshka",
@@ -7169,7 +7599,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.253519,
+  "lon": 76.90273,
+  "district": "Алмалинский"
  },
  {
   "id": "sansara-lounge",
@@ -7223,7 +7656,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.179861,
+  "lon": 76.854601,
+  "district": "Наурызбайский"
  },
  {
   "id": "iman-bbq-steak-house",
@@ -7275,7 +7711,10 @@ window.CAFES = [
     "name": "Бокал вина",
     "price": 3500
    }
-  ]
+  ],
+  "lat": 43.279099,
+  "lon": 76.984135,
+  "district": "Медеуский"
  },
  {
   "id": "orta",
@@ -7328,7 +7767,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.215713,
+  "lon": 76.852208,
+  "district": "Ауэзовский"
  },
  {
   "id": "tabanan",
@@ -7380,7 +7822,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 3500
    }
-  ]
+  ],
+  "lat": 43.194874,
+  "lon": 76.909897,
+  "district": "Бостандыкский"
  },
  {
   "id": "aspandiyar",
@@ -7432,7 +7877,11 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.237043,
+  "lon": 76.88953,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-03:00"
  },
  {
   "id": "alani",
@@ -7484,7 +7933,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.239188,
+  "lon": 76.960275,
+  "district": "Медеуский",
+  "hours": "24/7"
  },
  {
   "id": "abadan-alash",
@@ -7536,7 +7989,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.235759,
+  "lon": 76.882091,
+  "district": "Бостандыкский"
  },
  {
   "id": "m-te",
@@ -7588,7 +8044,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 4800
    }
-  ]
+  ],
+  "lat": 43.245794,
+  "lon": 76.957613,
+  "district": "Медеуский"
  },
  {
   "id": "littles",
@@ -7640,7 +8099,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.208232,
+  "lon": 76.895805,
+  "district": "Бостандыкский"
  },
  {
   "id": "fish-fried",
@@ -7692,7 +8154,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 900
    }
-  ]
+  ],
+  "lat": 43.215713,
+  "lon": 76.852208,
+  "district": "Ауэзовский"
  },
  {
   "id": "naryn",
@@ -7749,7 +8214,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.249218,
+  "lon": 76.866729,
+  "district": "Алмалинский"
  },
  {
   "id": "del-cappuccino",
@@ -7804,7 +8272,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1150
    }
-  ]
+  ],
+  "lat": 43.199869,
+  "lon": 76.901152,
+  "district": "Бостандыкский"
  },
  {
   "id": "alazani",
@@ -7856,7 +8327,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.30819,
+  "lon": 76.943285,
+  "district": "Турксибский"
  },
  {
   "id": "sumakh",
@@ -7908,7 +8382,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1250
    }
-  ]
+  ],
+  "lat": 43.357283,
+  "lon": 76.978896,
+  "district": "Турксибский"
  },
  {
   "id": "presso",
@@ -7960,7 +8437,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.251664,
+  "lon": 76.900638,
+  "district": "Алмалинский"
  },
  {
   "id": "yug22",
@@ -8012,7 +8492,10 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 6750
    }
-  ]
+  ],
+  "lat": 43.193343,
+  "lon": 76.96889,
+  "district": "Медеуский"
  },
  {
   "id": "chalet",
@@ -8062,7 +8545,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 6000
    }
-  ]
+  ],
+  "lat": 43.127968,
+  "lon": 77.080515,
+  "district": "Медеуский"
  },
  {
   "id": "chechil",
@@ -8114,7 +8600,10 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1700
    }
-  ]
+  ],
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "district": "Бостандыкский"
  },
  {
   "id": "bella-ciao",
@@ -8171,7 +8660,11 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.263322,
+  "lon": 76.932071,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 11:00-00:00"
  },
  {
   "id": "julius",
@@ -8221,7 +8714,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.250028,
+  "lon": 76.946794,
+  "district": "Алмалинский",
+  "hours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00"
  },
  {
   "id": "jump-in-goat-coffee",
@@ -8273,7 +8770,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.227247,
+  "lon": 76.86316,
+  "district": "Ауэзовский"
  },
  {
   "id": "se-se",
@@ -8326,7 +8826,10 @@ window.CAFES = [
     "name": "Масала-чай",
     "price": 1000
    }
-  ]
+  ],
+  "lat": 43.265036,
+  "lon": 76.955701,
+  "district": "Медеуский"
  },
  {
   "id": "dom-hogo",
@@ -8384,7 +8887,10 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.210231,
+  "lon": 76.852128,
+  "district": "Ауэзовский"
  },
  {
   "id": "lanzhou",
@@ -8441,7 +8947,11 @@ window.CAFES = [
     "name": "Китайский чай",
     "price": 850
    }
-  ]
+  ],
+  "lat": 43.233521,
+  "lon": 76.878461,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 00:00-00:00"
  },
  {
   "id": "urumchi",
@@ -8493,7 +9003,10 @@ window.CAFES = [
     "name": "Чай с молоком",
     "price": 330
    }
-  ]
+  ],
+  "lat": 43.2664,
+  "lon": 76.935294,
+  "district": "Алмалинский"
  },
  {
   "id": "lenore-pub",
@@ -8545,7 +9058,10 @@ window.CAFES = [
     "name": "Гренки с чесноком",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.238085,
+  "lon": 76.889468,
+  "district": "Бостандыкский"
  },
  {
   "id": "eywa-terrace",
@@ -8598,7 +9114,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.245267,
+  "lon": 76.927522,
+  "district": "Алмалинский"
  },
  {
   "id": "sagamo",
@@ -8650,7 +9169,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1750
    }
-  ]
+  ],
+  "lat": 43.255388,
+  "lon": 76.924134,
+  "district": "Алмалинский"
  },
  {
   "id": "riviera",
@@ -8707,7 +9229,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.246788,
+  "lon": 76.92838,
+  "district": "Алмалинский"
  },
  {
   "id": "noni",
@@ -8759,14 +9284,17 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 4000
    }
-  ]
+  ],
+  "lat": 43.214409,
+  "lon": 76.832324,
+  "district": "Ауэзовский"
  },
  {
   "id": "megata-doner",
   "name": "MegAta Doner",
-  "type": "Фастфуд",
+  "type": "Донерная",
   "cuisine": "Донер, фастфуд",
-  "kitchen": "turkish",
+  "kitchen": "doner",
   "rating": 4.8,
   "votes": 10550,
   "ratingApprox": false,
@@ -8783,8 +9311,8 @@ window.CAFES = [
   "about": "Донерная, работает круглосуточно. Больше 10 тысяч оценок в 2ГИС.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
-   "img/1504754524776-8f4f37790ca0.jpg",
-   "img/1414235077428-338989a2e8c0.jpg"
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
@@ -8793,30 +9321,33 @@ window.CAFES = [
     "signature": true
    },
    {
-    "name": "Турецкий завтрак на двоих",
-    "price": 4350
+    "name": "Донер классический",
+    "price": 1500
    },
    {
-    "name": "Искендер-кебаб",
-    "price": 2550
+    "name": "Донер сырный",
+    "price": 1800
    },
    {
-    "name": "Адана-кебаб",
-    "price": 2300
+    "name": "Дюрюм",
+    "price": 1900
    },
    {
-    "name": "Лахмаджун",
-    "price": 1200
+    "name": "Донер-тарелка",
+    "price": 2600
    },
    {
-    "name": "Пахлава",
-    "price": 1050
+    "name": "Картофель фри",
+    "price": 800
    },
    {
     "name": "Айран",
-    "price": 390
+    "price": 500
    }
-  ]
+  ],
+  "lat": 43.268518,
+  "lon": 76.940196,
+  "district": "Алмалинский"
  },
  {
   "id": "shashlychnyy-dvor",
@@ -8868,7 +9399,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 530
    }
-  ]
+  ],
+  "lat": 43.245705,
+  "lon": 76.92501,
+  "district": "Алмалинский"
  },
  {
   "id": "friendly",
@@ -8918,7 +9452,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.23748,
+  "lon": 76.956839,
+  "district": "Медеуский"
  },
  {
   "id": "top-barista",
@@ -8968,7 +9505,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 1300
    }
-  ]
+  ],
+  "lat": 43.234087,
+  "lon": 76.919134,
+  "district": "Бостандыкский"
  },
  {
   "id": "coffeeroom",
@@ -9018,7 +9558,11 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.239179,
+  "lon": 76.949785,
+  "district": "Медеуский",
+  "hours": "Mo-Fr 08:00-01:00, Sa,Su 09:00-01:00"
  },
  {
   "id": "pelmen",
@@ -9068,7 +9612,10 @@ window.CAFES = [
     "name": "Наливка, 50 мл",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.214578,
+  "lon": 76.940278,
+  "district": "Медеуский"
  },
  {
   "id": "bukhara-kz",
@@ -9118,7 +9665,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 470
    }
-  ]
+  ],
+  "lat": 43.232447,
+  "lon": 76.869302,
+  "district": "Ауэзовский"
  },
  {
   "id": "kausar",
@@ -9170,7 +9720,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.247764,
+  "lon": 76.937977,
+  "district": "Алмалинский"
  },
  {
   "id": "cicada",
@@ -9220,7 +9773,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 3000
    }
-  ]
+  ],
+  "lat": 43.213756,
+  "lon": 76.940302,
+  "district": "Медеуский"
  },
  {
   "id": "blanca",
@@ -9270,7 +9826,11 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 3750
    }
-  ]
+  ],
+  "lat": 43.246293,
+  "lon": 76.942127,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 09:00-24:00"
  },
  {
   "id": "ami",
@@ -9327,7 +9887,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 4400
    }
-  ]
+  ],
+  "lat": 43.250112,
+  "lon": 76.948476,
+  "district": "Медеуский",
+  "hours": "Fr-Sa 08:00-00:00; Mo-Th,Su 08:00-23:00"
  },
  {
   "id": "amici",
@@ -9377,7 +9941,10 @@ window.CAFES = [
     "name": "Лимонад",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.208123,
+  "lon": 76.896439,
+  "district": "Бостандыкский"
  },
  {
   "id": "jinau",
@@ -9427,7 +9994,11 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.200679,
+  "lon": 76.892163,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-00:00"
  },
  {
   "id": "aiza-neo-bistro",
@@ -9477,7 +10048,10 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 2600
    }
-  ]
+  ],
+  "lat": 43.270426,
+  "lon": 76.939525,
+  "district": "Жетысуский"
  },
  {
   "id": "nuala",
@@ -9529,7 +10103,11 @@ window.CAFES = [
     "name": "Пахлава",
     "price": 6750
    }
-  ]
+  ],
+  "lat": 43.252797,
+  "lon": 76.943062,
+  "district": "Алмалинский",
+  "hours": "Su-Th 11:00-24:00, Fr-Sa 11:00-01:00"
  },
  {
   "id": "tomchi",
@@ -9581,14 +10159,17 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 530
    }
-  ]
+  ],
+  "lat": 43.268453,
+  "lon": 76.940068,
+  "district": "Алмалинский"
  },
  {
   "id": "durum",
   "name": "DURUM",
-  "type": "Фастфуд",
+  "type": "Донерная",
   "cuisine": "Дюрюм, донер",
-  "kitchen": "turkish",
+  "kitchen": "doner",
   "rating": 4.8,
   "votes": 950,
   "ratingApprox": false,
@@ -9597,41 +10178,44 @@ window.CAFES = [
   "opened": null,
   "openedApprox": false,
   "openedNote": null,
-  "check": 5000,
+  "check": 2000,
   "checkApprox": true,
   "features": [],
   "about": "Донерная сеть.",
   "photos": [
    "img/1529042410759-befb1204b468.jpg",
-   "img/1567620905732-2d1ec7ab7445.jpg",
-   "img/1544148103-0773bf10d330.jpg"
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
   ],
   "menu": [
    {
-    "name": "Турецкий завтрак на двоих",
-    "price": 7900
+    "name": "Донер классический",
+    "price": 1500
    },
    {
-    "name": "Искендер-кебаб",
-    "price": 4600
+    "name": "Донер сырный",
+    "price": 1800
    },
    {
-    "name": "Адана-кебаб",
-    "price": 4200
-   },
-   {
-    "name": "Лахмаджун",
-    "price": 2200
-   },
-   {
-    "name": "Пахлава",
+    "name": "Дюрюм",
     "price": 1900
    },
    {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
     "name": "Айран",
-    "price": 700
+    "price": 500
    }
-  ]
+  ],
+  "lat": 43.227401,
+  "lon": 76.890348,
+  "district": "Бостандыкский"
  },
  {
   "id": "han-qauap",
@@ -9681,7 +10265,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.194953,
+  "lon": 76.906866,
+  "district": "Бостандыкский"
  },
  {
   "id": "qauap-food",
@@ -9731,7 +10318,10 @@ window.CAFES = [
     "name": "Компот",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.19179,
+  "lon": 76.82926,
+  "district": "Наурызбайский"
  },
  {
   "id": "noodles",
@@ -9784,7 +10374,10 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 1800
    }
-  ]
+  ],
+  "lat": 43.261638,
+  "lon": 76.954838,
+  "district": "Медеуский"
  },
  {
   "id": "hanok",
@@ -9834,7 +10427,10 @@ window.CAFES = [
     "name": "Корейский чай",
     "price": 750
    }
-  ]
+  ],
+  "lat": 43.239474,
+  "lon": 76.931367,
+  "district": "Бостандыкский"
  },
  {
   "id": "hanok-family",
@@ -9884,7 +10480,10 @@ window.CAFES = [
     "name": "Корейский чай",
     "price": 1000
    }
-  ]
+  ],
+  "lat": 43.260966,
+  "lon": 76.960545,
+  "district": "Медеуский"
  },
  {
   "id": "zere",
@@ -9936,7 +10535,10 @@ window.CAFES = [
     "name": "Шубат / кумыс",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.242044,
+  "lon": 76.947794,
+  "district": "Бостандыкский"
  },
  {
   "id": "casablanca",
@@ -9986,7 +10588,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 4000
    }
-  ]
+  ],
+  "lat": 43.30819,
+  "lon": 76.943285,
+  "district": "Турксибский"
  },
  {
   "id": "esentai-gourmet-coffee",
@@ -10036,7 +10641,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.218294,
+  "lon": 76.927449,
+  "district": "Бостандыкский"
  },
  {
   "id": "bereket",
@@ -10090,7 +10698,10 @@ window.CAFES = [
     "name": "Айран",
     "price": 700
    }
-  ]
+  ],
+  "lat": 43.232629,
+  "lon": 76.953672,
+  "district": "Медеуский"
  },
  {
   "id": "medeu-visit-center",
@@ -10142,7 +10753,10 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.1576,
+  "lon": 77.059,
+  "district": "Медеуский"
  },
  {
   "id": "tok-poki",
@@ -10192,7 +10806,10 @@ window.CAFES = [
     "name": "Корейский чай",
     "price": 550
    }
-  ]
+  ],
+  "lat": 43.314845,
+  "lon": 77.023976,
+  "district": "Медеуский"
  },
  {
   "id": "east-cuisine",
@@ -10242,7 +10859,10 @@ window.CAFES = [
     "name": "Чай чайником",
     "price": 800
    }
-  ]
+  ],
+  "lat": 43.213756,
+  "lon": 76.940302,
+  "district": "Медеуский"
  },
  {
   "id": "arabica-coffee-house",
@@ -10292,7 +10912,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 1800
    }
-  ]
+  ],
+  "lat": 43.263978,
+  "lon": 76.940687,
+  "district": "Алмалинский"
  },
  {
   "id": "collab",
@@ -10342,7 +10965,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2000
    }
-  ]
+  ],
+  "lat": 43.262252,
+  "lon": 76.944028,
+  "district": "Алмалинский"
  },
  {
   "id": "master-coffee",
@@ -10392,7 +11018,10 @@ window.CAFES = [
     "name": "Сырники",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.239978,
+  "lon": 76.93347,
+  "district": "Бостандыкский"
  },
  {
   "id": "kefa",
@@ -10442,7 +11071,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.251154,
+  "lon": 76.935264,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:00-22:00"
  },
  {
   "id": "wok-wok",
@@ -10492,7 +11125,11 @@ window.CAFES = [
     "name": "Бабл-ти",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.252449,
+  "lon": 76.941333,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 11:00-24:00"
  },
  {
   "id": "svaneti",
@@ -10542,7 +11179,10 @@ window.CAFES = [
     "name": "Лимонад тархун",
     "price": 1500
    }
-  ]
+  ],
+  "lat": 43.214828,
+  "lon": 76.931211,
+  "district": "Медеуский"
  },
  {
   "id": "petit-chocolate-coffee",
@@ -10592,7 +11232,11 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 1900
    }
-  ]
+  ],
+  "lat": 43.241058,
+  "lon": 76.944597,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-20:00"
  },
  {
   "id": "atlas-cafe",
@@ -10642,7 +11286,10 @@ window.CAFES = [
     "name": "Капучино",
     "price": 1400
    }
-  ]
+  ],
+  "lat": 43.266416,
+  "lon": 76.935771,
+  "district": "Алмалинский"
  },
  {
   "id": "esperanza-terrace",
@@ -10694,6 +11341,3006 @@ window.CAFES = [
     "name": "Чизкейк",
     "price": 2400
    }
-  ]
+  ],
+  "lat": 43.265689,
+  "lon": 76.930892,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "stories",
+  "name": "Stories",
+  "type": "Бар",
+  "cuisine": "Лаунж-бар, коктейли",
+  "kitchen": "cocktail",
+  "rating": 4.9,
+  "votes": 4351,
+  "ratingApprox": false,
+  "address": "пр. Жибек Жолы, 66",
+  "gis": "https://2gis.kz/almaty/search/Stories",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "music",
+   "veranda"
+  ],
+  "about": "Лаунж-бар с летней террасой и живой музыкой. «Лучший бар 2026» по версии 2ГИС.",
+  "photos": [
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.261118,
+  "lon": 76.933579,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "tangiers-lounge",
+  "name": "Tangiers lounge",
+  "type": "Бар",
+  "cuisine": "Лаунж-бар, кальяны",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 2267,
+  "ratingApprox": false,
+  "address": "ул. Сатпаева, 30/7",
+  "gis": "https://2gis.kz/almaty/firm/70000001068041924",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Лаунж-бар с кальянами, кухней и террасой. «Лучший бар 2025» по версии 2ГИС.",
+  "photos": [
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.236428,
+  "lon": 76.921729,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "french-42",
+  "name": "French 42",
+  "type": "Бар",
+  "cuisine": "Коктейльный бар, джин",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 888,
+  "ratingApprox": false,
+  "address": "ул. Богенбай батыра, 117",
+  "gis": "https://2gis.kz/almaty/firm/70000001067299138",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Первый джин-бар в Казахстане, в списке Tatler Best Bars 2025.",
+  "photos": [
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Френч 75",
+    "price": 4500,
+    "signature": true
+   },
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.25354,
+  "lon": 76.948034,
+  "district": "Медеуский"
+ },
+ {
+  "id": "privychki",
+  "name": "Привычки",
+  "type": "Бар",
+  "cuisine": "Пивной бар, крафт",
+  "kitchen": "pub",
+  "rating": 4.8,
+  "votes": 282,
+  "ratingApprox": false,
+  "address": "ул. Шевченко, 65",
+  "gis": "https://2gis.kz/almaty/firm/70000001062138915",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "pets"
+  ],
+  "about": "Пивной бар со своей пивоварней, можно с собакой.",
+  "photos": [
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.246266,
+  "lon": 76.941605,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "barmaglot",
+  "name": "Бармаглот",
+  "type": "Бар",
+  "cuisine": "Коктейльный бар",
+  "kitchen": "cocktail",
+  "rating": 4.6,
+  "votes": 1346,
+  "ratingApprox": true,
+  "address": "ТЦ Colibri, ул. Уалиханова, 170",
+  "gis": "https://2gis.kz/almaty/firm/70000001022395916",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Коктейльный бар, отмечен в The World's 50 Best Discovery.",
+  "photos": [
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.178166,
+  "lon": 76.830238,
+  "district": "Наурызбайский"
+ },
+ {
+  "id": "suhoy-zakon",
+  "name": "Сухой закон",
+  "type": "Бар",
+  "cuisine": "Коктейли, стейки",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 1178,
+  "ratingApprox": false,
+  "address": "ул. Ауэзова, 104а",
+  "gis": "https://2gis.kz/almaty/firm/70000001031757842",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Бар с коктейлями и стейками.",
+  "photos": [
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.235263,
+  "lon": 76.904865,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "olovo-cocktail-bar",
+  "name": "Olovo cocktail bar",
+  "type": "Бар",
+  "cuisine": "Коктейльный лаунж-бар",
+  "kitchen": "cocktail",
+  "rating": 4.9,
+  "votes": 1773,
+  "ratingApprox": false,
+  "address": "пр. Достык, 32",
+  "gis": "https://2gis.kz/almaty/firm/70000001069615865",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 12000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Коктейльный лаунж-бар. «Лучший бар 2025» по версии 2ГИС.",
+  "photos": [
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 11000
+   },
+   {
+    "name": "Негрони",
+    "price": 9000
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 8400
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 7600
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 6400
+   },
+   {
+    "name": "Бургер",
+    "price": 9200
+   }
+  ],
+  "lat": 43.254685,
+  "lon": 76.955936,
+  "district": "Медеуский",
+  "hours": "Mo-Su 12:00-02:00"
+ },
+ {
+  "id": "kumano",
+  "name": "Kumano",
+  "type": "Бар",
+  "cuisine": "Бар, электронная музыка",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 545,
+  "ratingApprox": false,
+  "address": "пр. Назарбаева, 124",
+  "gis": "https://2gis.kz/almaty/firm/70000001060020021",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "music"
+  ],
+  "about": "Бар с диджеями и живыми сетами.",
+  "photos": [
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.251396,
+  "lon": 76.947673,
+  "district": "Медеуский"
+ },
+ {
+  "id": "domashniy",
+  "name": "Домашний",
+  "type": "Бар",
+  "cuisine": "Коктейльный бар",
+  "kitchen": "cocktail",
+  "rating": 4.7,
+  "votes": 412,
+  "ratingApprox": false,
+  "address": "БЦ Altstadt, пр. Назарбаева, 120",
+  "gis": "https://2gis.kz/almaty/firm/70000001060843376",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "pets",
+   "veranda"
+  ],
+  "about": "Маленький коктейльный бар с танцполом, в списке Top 500 Bars 2026.",
+  "photos": [
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.250956,
+  "lon": 76.947723,
+  "district": "Медеуский"
+ },
+ {
+  "id": "oblako-lounge-bar",
+  "name": "Oblako lounge bar",
+  "type": "Бар",
+  "cuisine": "Лаунж-бар",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 1804,
+  "ratingApprox": false,
+  "address": "ЖК Central Avenue, пр. Сейфуллина, 574/1 к1",
+  "gis": "https://2gis.kz/almaty/firm/70000001074385760",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Лаунж-бар с верандой, работает до 4 утра.",
+  "photos": [
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.230335,
+  "lon": 76.939038,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-04:00"
+ },
+ {
+  "id": "friends-bar-terrace",
+  "name": "Friends bar & terrace",
+  "type": "Бар",
+  "cuisine": "Бар, терраса на крыше",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 3829,
+  "ratingApprox": false,
+  "address": "ТРК Forum, пр. Сейфуллина, 617",
+  "gis": "https://2gis.kz/almaty/firm/70000001038688037",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 15000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Бар с террасой на крыше и обзором 360°.",
+  "photos": [
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 13750
+   },
+   {
+    "name": "Негрони",
+    "price": 11250
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 10500
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 9500
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 8000
+   },
+   {
+    "name": "Бургер",
+    "price": 11500
+   }
+  ],
+  "lat": 43.233016,
+  "lon": 76.935302,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "nashi-lyudi",
+  "name": "Наши люди",
+  "type": "Бар",
+  "cuisine": "Коктейльный бар",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 164,
+  "ratingApprox": false,
+  "address": "пр. Назарбаева, 124",
+  "gis": "https://2gis.kz/almaty/firm/70000001096927951",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшой коктейльный бар в цоколе.",
+  "photos": [
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.251224,
+  "lon": 76.94771,
+  "district": "Медеуский"
+ },
+ {
+  "id": "munchen-pub",
+  "name": "Munchen pub",
+  "type": "Бар",
+  "cuisine": "Паб, немецкая",
+  "kitchen": "pub",
+  "rating": 4.8,
+  "votes": 2692,
+  "ratingApprox": true,
+  "address": "ул. Панфилова, 102",
+  "gis": "https://2gis.kz/almaty/search/Munchen%20pub",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "music",
+   "veranda"
+  ],
+  "about": "Паб с живой музыкой, летней верандой и танцполом.",
+  "photos": [
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.255248,
+  "lon": 76.945423,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "the-banka-bar",
+  "name": "The Банка Bar",
+  "type": "Бар",
+  "cuisine": "Пивной бар",
+  "kitchen": "pub",
+  "rating": 4.8,
+  "votes": 2160,
+  "ratingApprox": false,
+  "address": "ул. Макатаева, 81",
+  "gis": "https://2gis.kz/almaty/firm/70000001027409391",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Пивной бар с бизнес-ланчем.",
+  "photos": [
+   "img/1544025162-d76694265947.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.263989,
+  "lon": 76.941943,
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-02:00"
+ },
+ {
+  "id": "bochka",
+  "name": "Бочка",
+  "type": "Бар",
+  "cuisine": "Паб",
+  "kitchen": "pub",
+  "rating": 4.9,
+  "votes": 532,
+  "ratingApprox": false,
+  "address": "ул. Жандосова, 61г",
+  "gis": "https://2gis.kz/almaty/firm/70000001024863371",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшой паб.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.233443,
+  "lon": 76.903512,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "red-beer-bar",
+  "name": "Red beer bar",
+  "type": "Бар",
+  "cuisine": "Пивной бар",
+  "kitchen": "pub",
+  "rating": 4.9,
+  "votes": 782,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 45",
+  "gis": "https://2gis.kz/almaty/firm/70000001087687072",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Пивной бар с летней верандой и настольными играми.",
+  "photos": [
+   "img/1600891964092-4316c288032e.jpg",
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.255405,
+  "lon": 76.94793,
+  "district": "Медеуский"
+ },
+ {
+  "id": "all-saints",
+  "name": "All Saints",
+  "type": "Бар",
+  "cuisine": "Бар",
+  "kitchen": "pub",
+  "rating": 4.9,
+  "votes": 478,
+  "ratingApprox": false,
+  "address": "ул. Чайковского, 170",
+  "gis": "https://2gis.kz/almaty/firm/70000001030857390",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Бар в центре города.",
+  "photos": [
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.248483,
+  "lon": 76.939318,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "zhiguli",
+  "name": "Жигули",
+  "type": "Бар",
+  "cuisine": "Пивной ресторан",
+  "kitchen": "pub",
+  "rating": 4.8,
+  "votes": 3140,
+  "ratingApprox": false,
+  "address": "ул. Ауэзова, 8",
+  "gis": "https://2gis.kz/almaty/search/%D0%96%D0%B8%D0%B3%D1%83%D0%BB%D0%B8",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Пивной ресторан, номинант премии 2ГИС 2026.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 4800
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 8900
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 3900
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 4400
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2200
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 1700
+   }
+  ],
+  "lat": 43.255311,
+  "lon": 76.902979,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "vinil-bar",
+  "name": "Vinil Bar",
+  "type": "Бар",
+  "cuisine": "Коктейльный бар",
+  "kitchen": "cocktail",
+  "rating": 4.9,
+  "votes": 44,
+  "ratingApprox": true,
+  "address": "пр. Достык, 36",
+  "gis": "https://2gis.kz/almaty/firm/70000001117180580",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Коктейльный бар с танцполом, хвалят барменов и настойки.",
+  "photos": [
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.253691,
+  "lon": 76.955942,
+  "district": "Медеуский"
+ },
+ {
+  "id": "miterra-lounge",
+  "name": "Miterra lounge",
+  "type": "Бар",
+  "cuisine": "Ресто-бар, лаунж",
+  "kitchen": "cocktail",
+  "rating": 4.8,
+  "votes": 3084,
+  "ratingApprox": true,
+  "address": "ул. Богенбай батыра, 94",
+  "gis": "https://2gis.kz/almaty/firm/70000001106385705",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Лаунж с кальянами, коктейлями и футбольными трансляциями.",
+  "photos": [
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1517248135467-4c7edcad34c4.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.253702,
+  "lon": 76.956743,
+  "district": "Медеуский",
+  "hours": "Mo-Su 13:00-03:00"
+ },
+ {
+  "id": "beerday",
+  "name": "BeerDay",
+  "type": "Бар",
+  "cuisine": "Пивной бар",
+  "kitchen": "pub",
+  "rating": 4.9,
+  "votes": 1245,
+  "ratingApprox": false,
+  "address": "ЖК R-House, ул. Розыбакиева, 237",
+  "gis": "https://2gis.kz/almaty/firm/70000001053385356",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Пивной бар, работает до 2 ночи.",
+  "photos": [
+   "img/1558030006-450675393462.jpg",
+   "img/1497534446932-c925b458314e.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Баварские колбаски",
+    "price": 5600
+   },
+   {
+    "name": "Свиная рулька",
+    "price": 10400
+   },
+   {
+    "name": "Крылья BBQ",
+    "price": 4550
+   },
+   {
+    "name": "Фиш-энд-чипс",
+    "price": 5150
+   },
+   {
+    "name": "Пиво 0,5 л",
+    "price": 2550
+   },
+   {
+    "name": "Гренки с чесноком",
+    "price": 2000
+   }
+  ],
+  "lat": 43.205411,
+  "lon": 76.893795,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 11:00-02:00"
+ },
+ {
+  "id": "late-night-show",
+  "name": "Late night show",
+  "type": "Бар",
+  "cuisine": "Бар, танцпол",
+  "kitchen": "cocktail",
+  "rating": 4.9,
+  "votes": 1013,
+  "ratingApprox": true,
+  "address": "пр. Назарбаева, 118",
+  "gis": "https://2gis.kz/almaty/firm/70000001034777659",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 9000,
+  "checkApprox": true,
+  "features": [
+   "veranda"
+  ],
+  "about": "Ночной бар с танцполом и летней верандой.",
+  "photos": [
+   "img/1514362545857-3bc16c4c7d1b.jpg",
+   "img/1470337458703-46ad1756a187.jpg",
+   "img/1572116469696-31de0f17cc34.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Авторский коктейль",
+    "price": 5500
+   },
+   {
+    "name": "Негрони",
+    "price": 4500
+   },
+   {
+    "name": "Апероль шприц",
+    "price": 4200
+   },
+   {
+    "name": "Джин-тоник",
+    "price": 3800
+   },
+   {
+    "name": "Начос с соусами",
+    "price": 3200
+   },
+   {
+    "name": "Бургер",
+    "price": 4600
+   }
+  ],
+  "lat": 43.250728,
+  "lon": 76.947753,
+  "district": "Медеуский"
+ },
+ {
+  "id": "tagam",
+  "name": "Тагам",
+  "type": "Кафе",
+  "cuisine": "Столовая",
+  "kitchen": "canteen",
+  "rating": 4.9,
+  "votes": 6319,
+  "ratingApprox": false,
+  "address": "4-й микрорайон, 4/1",
+  "gis": "https://2gis.kz/almaty/search/%D0%A2%D0%B0%D0%B3%D0%B0%D0%BC",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2500,
+  "checkApprox": false,
+  "features": [],
+  "about": "Столовая, ланч от 1500 ₸.",
+  "photos": [
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Комплексный обед",
+    "price": 1900
+   },
+   {
+    "name": "Борщ",
+    "price": 900
+   },
+   {
+    "name": "Плов",
+    "price": 1300
+   },
+   {
+    "name": "Котлета с пюре",
+    "price": 1500
+   },
+   {
+    "name": "Салат овощной",
+    "price": 700
+   },
+   {
+    "name": "Компот",
+    "price": 350
+   }
+  ],
+  "lat": 43.217686,
+  "lon": 76.846351,
+  "district": "Ауэзовский"
+ },
+ {
+  "id": "mai-qazan",
+  "name": "Mai Qazan",
+  "type": "Кафе",
+  "cuisine": "Столовая",
+  "kitchen": "canteen",
+  "rating": 4.4,
+  "votes": 970,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 191",
+  "gis": "https://2gis.kz/almaty/search/Mai%20Qazan",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 1500,
+  "checkApprox": false,
+  "features": [],
+  "about": "Недорогая столовая.",
+  "photos": [
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1589302168068-964664d93dc0.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Комплексный обед",
+    "price": 1900
+   },
+   {
+    "name": "Борщ",
+    "price": 900
+   },
+   {
+    "name": "Плов",
+    "price": 1300
+   },
+   {
+    "name": "Котлета с пюре",
+    "price": 1500
+   },
+   {
+    "name": "Салат овощной",
+    "price": 700
+   },
+   {
+    "name": "Компот",
+    "price": 350
+   }
+  ],
+  "lat": 43.25123,
+  "lon": 76.887434,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "orient-lagman",
+  "name": "Orient lagman",
+  "type": "Кафе",
+  "cuisine": "Уйгурская, лагман",
+  "kitchen": "uyghur",
+  "rating": 4.8,
+  "votes": 2005,
+  "ratingApprox": false,
+  "address": "пр. Жандосова, 87",
+  "gis": "https://2gis.kz/almaty/search/Orient%20lagman",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Кафе с уйгурским лагманом.",
+  "photos": [
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1563245372-f21724e3856d.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Гуйру-лагман",
+    "price": 2400
+   },
+   {
+    "name": "Ганфан",
+    "price": 2600
+   },
+   {
+    "name": "Манты на пару",
+    "price": 2400
+   },
+   {
+    "name": "Шашлык-кебаб",
+    "price": 1600
+   },
+   {
+    "name": "Ашлянфу",
+    "price": 1500
+   },
+   {
+    "name": "Чай с молоком",
+    "price": 600
+   }
+  ],
+  "lat": 43.206661,
+  "lon": 76.856615,
+  "district": "Ауэзовский"
+ },
+ {
+  "id": "lagmanhana-alatau",
+  "name": "Лагманхана «Алатау»",
+  "type": "Кафе",
+  "cuisine": "Уйгурская, лагманхана",
+  "kitchen": "uyghur",
+  "rating": 5.0,
+  "votes": 255,
+  "ratingApprox": false,
+  "address": "ул. Казыбек Тауасарулы, 53",
+  "gis": "https://2gis.kz/almaty/search/%D0%90%D0%BB%D0%B0%D1%82%D0%B0%D1%83%20%D0%BB%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD%D1%85%D0%B0%D0%BD%D0%B0",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшая лагманхана.",
+  "photos": [
+   "img/1559847844-5315695dadae.jpg",
+   "img/1496116218417-1a781b1c416c.jpg",
+   "img/1521017432531-fbd92d768814.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Гуйру-лагман",
+    "price": 2400
+   },
+   {
+    "name": "Ганфан",
+    "price": 2600
+   },
+   {
+    "name": "Манты на пару",
+    "price": 2400
+   },
+   {
+    "name": "Шашлык-кебаб",
+    "price": 1600
+   },
+   {
+    "name": "Ашлянфу",
+    "price": 1500
+   },
+   {
+    "name": "Чай с молоком",
+    "price": 600
+   }
+  ],
+  "lat": 43.176328,
+  "lon": 76.898168,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "akzhol",
+  "name": "Акжол",
+  "type": "Кафе",
+  "cuisine": "Уйгурская, лагманхана",
+  "kitchen": "uyghur",
+  "rating": 4.9,
+  "votes": 189,
+  "ratingApprox": false,
+  "address": "ул. Толе би, 297з",
+  "gis": "https://2gis.kz/almaty/search/%D0%90%D0%BA%D0%B6%D0%BE%D0%BB%20%D0%BB%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD%D1%85%D0%B0%D0%BD%D0%B0",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 5000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшая лагманхана.",
+  "photos": [
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1534422298391-e4f8c172dddb.jpg",
+   "img/1590846406792-0adc7f938f1d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Гуйру-лагман",
+    "price": 2400
+   },
+   {
+    "name": "Ганфан",
+    "price": 2600
+   },
+   {
+    "name": "Манты на пару",
+    "price": 2400
+   },
+   {
+    "name": "Шашлык-кебаб",
+    "price": 1600
+   },
+   {
+    "name": "Ашлянфу",
+    "price": 1500
+   },
+   {
+    "name": "Чай с молоком",
+    "price": 600
+   }
+  ],
+  "lat": 43.247633,
+  "lon": 76.865691,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "doner-na-satpayeva",
+  "name": "Doner na Satpayeva",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.7,
+  "votes": 6818,
+  "ratingApprox": false,
+  "address": "ул. Байтурсынова, 106",
+  "gis": "https://2gis.kz/almaty/firm/70000001066773731",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2200,
+  "checkApprox": false,
+  "features": [],
+  "about": "Сеть донерных с одним из самых оценённых филиалов в городе.",
+  "photos": [
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.2543,
+  "lon": 76.925621,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "bistro-130",
+  "name": "Bistro 130",
+  "type": "Бистро",
+  "cuisine": "Европейская, завтраки",
+  "kitchen": "european",
+  "rating": 4.8,
+  "votes": 503,
+  "ratingApprox": false,
+  "address": "ул. Кунаева, 130",
+  "gis": "https://2gis.kz/almaty/firm/70000001096984071",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 7000,
+  "checkApprox": false,
+  "features": [
+   "veranda"
+  ],
+  "about": "Бистро с пиццей, бургерами, стейками и завтраками.",
+  "photos": [
+   "img/1504674900247-0877df9cc836.jpg",
+   "img/1546069901-ba9599a7e63c.jpg",
+   "img/1559925393-8be0ec4767c8.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 11550
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 6300
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 4200
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 3050
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 5000
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2800
+   }
+  ],
+  "lat": 43.248935,
+  "lon": 76.951313,
+  "district": "Медеуский"
+ },
+ {
+  "id": "may-bistro",
+  "name": "May bistro",
+  "type": "Бистро",
+  "cuisine": "Европейская",
+  "kitchen": "european",
+  "rating": 4.7,
+  "votes": 262,
+  "ratingApprox": false,
+  "address": "мкр Орбита-1, 6",
+  "gis": "https://2gis.kz/almaty/firm/70000001111187640",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Бистро в Орбите.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1540189549336-e6e99c3679fe.jpg",
+   "img/1514933651103-005eec06c04b.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ],
+  "lat": 43.200946,
+  "lon": 76.885929,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "127-1",
+  "name": "127.1",
+  "type": "Бистро",
+  "cuisine": "Бистро",
+  "kitchen": "european",
+  "rating": 4.8,
+  "votes": 80,
+  "ratingApprox": false,
+  "address": "ул. Кабанбай батыра, 112",
+  "gis": "https://2gis.kz/almaty/firm/70000001111804429",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 8000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Небольшое городское бистро.",
+  "photos": [
+   "img/1529692236671-f1f6cf9683ba.jpg",
+   "img/1512621776951-a57141f2eefd.jpg",
+   "img/1559339352-11d035aa65de.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Стейк из говядины",
+    "price": 9900
+   },
+   {
+    "name": "Паста с морепродуктами",
+    "price": 5400
+   },
+   {
+    "name": "Цезарь с курицей",
+    "price": 3600
+   },
+   {
+    "name": "Крем-суп из грибов",
+    "price": 2600
+   },
+   {
+    "name": "Бургер фирменный",
+    "price": 4300
+   },
+   {
+    "name": "Чизкейк",
+    "price": 2400
+   }
+  ],
+  "lat": 43.249333,
+  "lon": 76.943367,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "schuka-bistro",
+  "name": "Щука bistro",
+  "type": "Бистро",
+  "cuisine": "Рыба, бистро",
+  "kitchen": "seafood",
+  "rating": 4.8,
+  "votes": 185,
+  "ratingApprox": false,
+  "address": "пр. Абылай хана, 94",
+  "gis": "https://2gis.kz/almaty/search/Щука%20bistro",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 10000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Рыбное бистро.",
+  "photos": [
+   "img/1559847844-5315695dadae.jpg",
+   "img/1473093295043-cdd812d0e601.jpg",
+   "img/1501339847302-ac426a4a7cbb.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Ассорти морепродуктов на двоих",
+    "price": 19900
+   },
+   {
+    "name": "Креветки на гриле",
+    "price": 6900
+   },
+   {
+    "name": "Филе лосося",
+    "price": 6500
+   },
+   {
+    "name": "Мидии в сливочном соусе",
+    "price": 5400
+   },
+   {
+    "name": "Греческий салат",
+    "price": 3200
+   },
+   {
+    "name": "Лимонад",
+    "price": 1600
+   }
+  ],
+  "lat": 43.249043,
+  "lon": 76.942636,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "ahi-doner",
+  "name": "Ахи Донер",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.8,
+  "votes": 310,
+  "ratingApprox": false,
+  "address": "ул. Навои, 198",
+  "gis": "https://2gis.kz/almaty/firm/70000001104921740",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Донерная, работает до 2 ночи.",
+  "photos": [
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.196812,
+  "lon": 76.88761,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:30-02:00"
+ },
+ {
+  "id": "ata-doner",
+  "name": "Ata Doner",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.6,
+  "votes": 1724,
+  "ratingApprox": false,
+  "address": "ул. Щепкина, 35Б",
+  "gis": "https://2gis.kz/almaty/firm/70000001082837235",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Донерная, работает до 4 утра.",
+  "photos": [
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.204543,
+  "lon": 76.877893,
+  "district": "Ауэзовский",
+  "hours": "Mo-Su 10:00-04:00"
+ },
+ {
+  "id": "donerzade",
+  "name": "Donerzade",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.7,
+  "votes": 559,
+  "ratingApprox": false,
+  "address": "ул. Байтурсынова, 106",
+  "gis": "https://2gis.kz/almaty/branches/70000001111135724",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Сеть донерных.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.2543,
+  "lon": 76.925621,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "doner-na-makataeva",
+  "name": "Doner na Makataeva",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.4,
+  "votes": 771,
+  "ratingApprox": false,
+  "address": "ул. Макатаева, 137а",
+  "gis": "https://2gis.kz/almaty/firm/70000001089440972",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Донерная на Макатаева.",
+  "photos": [
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.262241,
+  "lon": 76.916348,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "dddoner",
+  "name": "Dddoner",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Бальзака, 47Б",
+  "gis": "https://2gis.kz/almaty/firm/70000001100391065",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 1800,
+  "checkApprox": false,
+  "features": [],
+  "about": "Небольшая донерная.",
+  "photos": [
+   "img/1599487488170-d11ec9c172f0.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.225402,
+  "lon": 76.932511,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "doner-na-abaya",
+  "name": "Doner na Abaya",
+  "type": "Донерная",
+  "cuisine": "Донер",
+  "kitchen": "doner",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": true,
+  "address": "ул. Ауэзова, 134",
+  "gis": "https://2gis.kz/almaty/search/Doner%20na%20Abaya",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Сеть донерных, номинант премии 2ГИС 2026.",
+  "photos": [
+   "img/1600565193348-f74bd3c7ccdf.jpg",
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.227415,
+  "lon": 76.905913,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "baharat",
+  "name": "Baharat",
+  "type": "Донерная",
+  "cuisine": "Донер, шаурма",
+  "kitchen": "doner",
+  "rating": 4.8,
+  "votes": 2800,
+  "ratingApprox": true,
+  "address": "ЖК Nur-ay Residence, ул. Шевченко, 94",
+  "gis": "https://2gis.kz/almaty/search/Baharat",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Донер и шаурма.",
+  "photos": [
+   "img/1529042410759-befb1204b468.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.245252,
+  "lon": 76.935293,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "the-doner-na-uglyah",
+  "name": "The Doner на углях",
+  "type": "Донерная",
+  "cuisine": "Донер на углях",
+  "kitchen": "doner",
+  "rating": 4.9,
+  "votes": 1000,
+  "ratingApprox": true,
+  "address": "пр. Серкебаева, 101",
+  "gis": "https://2gis.kz/almaty/search/The%20Doner",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Донер, который жарят на углях.",
+  "photos": [
+   "img/1603360946369-dc9bb6258143.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Донер классический",
+    "price": 1500
+   },
+   {
+    "name": "Донер сырный",
+    "price": 1800
+   },
+   {
+    "name": "Дюрюм",
+    "price": 1900
+   },
+   {
+    "name": "Донер-тарелка",
+    "price": 2600
+   },
+   {
+    "name": "Картофель фри",
+    "price": 800
+   },
+   {
+    "name": "Айран",
+    "price": 500
+   }
+  ],
+  "lat": 43.207379,
+  "lon": 76.898332,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "krasnodarskiy-paren",
+  "name": "Краснодарский парень",
+  "type": "Бургерная",
+  "cuisine": "Бургеры",
+  "kitchen": "burger",
+  "rating": 4.9,
+  "votes": 1797,
+  "ratingApprox": true,
+  "address": "пр. Абая, 12",
+  "gis": "https://2gis.kz/almaty/firm/70000001035455861",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 4500,
+  "checkApprox": false,
+  "features": [],
+  "about": "Бургерная, хвалят сочные котлеты и картофель фри.",
+  "photos": [
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Классический бургер",
+    "price": 1800
+   },
+   {
+    "name": "Чизбургер двойной",
+    "price": 2300
+   },
+   {
+    "name": "Картофель фри",
+    "price": 700
+   },
+   {
+    "name": "Наггетсы (6 шт.)",
+    "price": 1100
+   },
+   {
+    "name": "Молочный коктейль",
+    "price": 1050
+   },
+   {
+    "name": "Комбо обед",
+    "price": 2500
+   }
+  ],
+  "lat": 43.236201,
+  "lon": 76.884714,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-22:45"
+ },
+ {
+  "id": "smug-burger-bbq-bar",
+  "name": "Smug Burger BBQ Bar",
+  "type": "Бургерная",
+  "cuisine": "Бургеры, BBQ",
+  "kitchen": "burger",
+  "rating": 4.7,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "пр. Жибек Жолы, 68",
+  "gis": "https://2gis.kz/almaty/firm/70000001040186058",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 6000,
+  "checkApprox": false,
+  "features": [],
+  "about": "Бургеры и барбекю.",
+  "photos": [
+   "img/1550547660-d9450f859349.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Классический бургер",
+    "price": 2400
+   },
+   {
+    "name": "Чизбургер двойной",
+    "price": 3100
+   },
+   {
+    "name": "Картофель фри",
+    "price": 900
+   },
+   {
+    "name": "Наггетсы (6 шт.)",
+    "price": 1500
+   },
+   {
+    "name": "Молочный коктейль",
+    "price": 1400
+   },
+   {
+    "name": "Комбо обед",
+    "price": 3300
+   }
+  ],
+  "lat": 43.261118,
+  "lon": 76.933579,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "abo-burger",
+  "name": "Або Бургер",
+  "type": "Бургерная",
+  "cuisine": "Бургеры",
+  "kitchen": "burger",
+  "rating": 4.8,
+  "votes": null,
+  "ratingApprox": false,
+  "address": "ул. Радостовца, 292/9а",
+  "gis": "https://2gis.kz/almaty/firm/70000001112969934",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3500,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
+  "about": "Круглосуточная бургерная.",
+  "photos": [
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Классический бургер",
+    "price": 1400
+   },
+   {
+    "name": "Чизбургер двойной",
+    "price": 1800
+   },
+   {
+    "name": "Картофель фри",
+    "price": 520
+   },
+   {
+    "name": "Наггетсы (6 шт.)",
+    "price": 900
+   },
+   {
+    "name": "Молочный коктейль",
+    "price": 800
+   },
+   {
+    "name": "Комбо обед",
+    "price": 1950
+   }
+  ],
+  "lat": 43.206545,
+  "lon": 76.897855,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "barakat-burger",
+  "name": "Barakat Burger",
+  "type": "Бургерная",
+  "cuisine": "Бургеры",
+  "kitchen": "burger",
+  "rating": 4.9,
+  "votes": 221,
+  "ratingApprox": false,
+  "address": "ул. Жумабаева, 111/1",
+  "gis": "https://2gis.kz/almaty/firm/70000001041258118",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
+  "about": "Киоск с бургерами.",
+  "photos": [
+   "img/1466978913421-dad2ebd01d17.jpg",
+   "img/1550547660-d9450f859349.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Классический бургер",
+    "price": 2400
+   },
+   {
+    "name": "Чизбургер двойной",
+    "price": 3100
+   },
+   {
+    "name": "Картофель фри",
+    "price": 900
+   },
+   {
+    "name": "Наггетсы (6 шт.)",
+    "price": 1500
+   },
+   {
+    "name": "Молочный коктейль",
+    "price": 1400
+   },
+   {
+    "name": "Комбо обед",
+    "price": 3300
+   }
+  ],
+  "lat": 43.317741,
+  "lon": 76.926496,
+  "district": "Жетысуский"
+ },
+ {
+  "id": "salam-bro",
+  "name": "Salam Bro",
+  "type": "Бургерная",
+  "cuisine": "Бургеры, хот-доги",
+  "kitchen": "burger",
+  "rating": 4.7,
+  "votes": 3191,
+  "ratingApprox": false,
+  "address": "пр. Абая, 91а",
+  "gis": "https://2gis.kz/almaty/firm/70000001043984399",
+  "opened": null,
+  "openedApprox": false,
+  "openedNote": null,
+  "check": 3500,
+  "checkApprox": false,
+  "features": [
+   "allday"
+  ],
+  "about": "Сеть бургерных и хот-догов, работает круглосуточно. Номинант премии 2ГИС 2026.",
+  "photos": [
+   "img/1550547660-d9450f859349.jpg",
+   "img/1568901346375-23c9450c58cd.jpg",
+   "img/1600093463592-8e36ae95ef56.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Классический бургер",
+    "price": 1400
+   },
+   {
+    "name": "Чизбургер двойной",
+    "price": 1800
+   },
+   {
+    "name": "Картофель фри",
+    "price": 520
+   },
+   {
+    "name": "Наггетсы (6 шт.)",
+    "price": 900
+   },
+   {
+    "name": "Молочный коктейль",
+    "price": 800
+   },
+   {
+    "name": "Комбо обед",
+    "price": 1950
+   }
+  ],
+  "lat": 43.235582,
+  "lon": 76.874665,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "magnum-hyper-han-shatyr",
+  "name": "Magnum Hyper · Хан Шатыр",
+  "type": "Магазин",
+  "cuisine": "Гипермаркет",
+  "kitchen": "store",
+  "rating": 4.3,
+  "votes": 9929,
+  "ratingApprox": true,
+  "address": "ул. Хан Шатыр, 273",
+  "gis": "https://2gis.kz/almaty/firm/9429940001338828",
+  "opened": 2007,
+  "openedApprox": false,
+  "openedNote": "сеть Magnum основана в сентябре 2007 г., первый магазин открыт в Алматы",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [
+   "allday"
+  ],
+  "about": "Круглосуточный гипермаркет Magnum с кассами самообслуживания.",
+  "photos": [
+   "img/1579113800032-c38bd7635818.jpg",
+   "img/1543168256-418811576931.jpg",
+   "img/1578916171728-46686eac8d58.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.249692,
+  "lon": 76.823275,
+  "district": "Алатауский",
+  "hours": "24/7"
+ },
+ {
+  "id": "magnum-hyper-zhetysu-3",
+  "name": "Magnum Hyper · Жетысу-3",
+  "type": "Магазин",
+  "cuisine": "Гипермаркет",
+  "kitchen": "store",
+  "rating": 4.7,
+  "votes": 9907,
+  "ratingApprox": true,
+  "address": "мкр Жетысу-3, 1г",
+  "gis": "https://2gis.kz/almaty/firm/9429940000788550",
+  "opened": 2007,
+  "openedApprox": false,
+  "openedNote": "сеть Magnum основана в сентябре 2007 г., первый магазин открыт в Алматы",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [
+   "allday"
+  ],
+  "about": "Круглосуточный гипермаркет Magnum.",
+  "photos": [
+   "img/1516594798947-e65505dbb29d.jpg",
+   "img/1556767576-5ec41e3239ea.jpg",
+   "img/1534723452862-4c874018d66d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.218521,
+  "lon": 76.842711,
+  "district": "Ауэзовский",
+  "hours": "24/7"
+ },
+ {
+  "id": "magnum-cash-carry-aksuat",
+  "name": "Magnum Cash & Carry · Аксуат",
+  "type": "Магазин",
+  "cuisine": "Супермаркет",
+  "kitchen": "store",
+  "rating": 4.5,
+  "votes": 5900,
+  "ratingApprox": false,
+  "address": "ул. Аксуат, 128",
+  "gis": "https://2gis.kz/almaty/firm/70000001017606721",
+  "opened": 2007,
+  "openedApprox": false,
+  "openedNote": "сеть Magnum основана в сентябре 2007 г., первый магазин открыт в Алматы",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Супермаркет сети Magnum.",
+  "photos": [
+   "img/1542838132-92c53300491e.jpg",
+   "img/1621939514649-280e2ee25f60.jpg",
+   "img/1604719312566-8912e9227c6a.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.361639,
+  "lon": 76.943072,
+  "district": "Жетысуский"
+ },
+ {
+  "id": "small-food-panfilova",
+  "name": "Small Food · Панфилова",
+  "type": "Магазин",
+  "cuisine": "Супермаркет с фудкортом",
+  "kitchen": "store",
+  "rating": 4.9,
+  "votes": 137,
+  "ratingApprox": false,
+  "address": "ул. Панфилова, 99",
+  "gis": "https://2gis.kz/almaty/firm/70000001115289944",
+  "opened": 1999,
+  "openedApprox": false,
+  "openedNote": "сеть Small работает с 1999 г.",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Формат Small Food: продукты и фудкорт.",
+  "photos": [
+   "img/1550989460-0adf9ea622e2.jpg",
+   "img/1563636619-e9143da7973b.jpg",
+   "img/1601598851547-4302969d0614.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.261516,
+  "lon": 76.943902,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "small-asia-park",
+  "name": "SMALL · Asia Park",
+  "type": "Магазин",
+  "cuisine": "Супермаркет",
+  "kitchen": "store",
+  "rating": 4.3,
+  "votes": 1313,
+  "ratingApprox": false,
+  "address": "ТРК Asia Park, пр. Райымбека, 514а",
+  "gis": "https://2gis.kz/almaty/firm/70000001033558758",
+  "opened": 1999,
+  "openedApprox": false,
+  "openedNote": "сеть Small работает с 1999 г.",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Супермаркет сети SMALL.",
+  "photos": [
+   "img/1583258292688-d0213dc5a3a8.jpg",
+   "img/1588964895597-cfccd6e2dbf9.jpg",
+   "img/1578916171728-46686eac8d58.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.244419,
+  "lon": 76.836346,
+  "district": "Ауэзовский",
+  "hours": "Mo-Su 09:00-23:00"
+ },
+ {
+  "id": "toimart-barys-iv",
+  "name": "TOIMART · Барыс IV",
+  "type": "Магазин",
+  "cuisine": "Супермаркет",
+  "kitchen": "store",
+  "rating": 4.4,
+  "votes": 2736,
+  "ratingApprox": true,
+  "address": "ТК Барыс IV, ул. Розыбакиева, 4",
+  "gis": "https://2gis.kz/almaty/firm/9429940001630706",
+  "opened": 2014,
+  "openedApprox": false,
+  "openedNote": "первый TOIMART (дискаунтер напитков) открыт в Алматы в 2014 г.",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Супермаркет TOIMART, работает с 7:00 до 23:00.",
+  "photos": [
+   "img/1607349913338-fca6f7fc42d0.jpg",
+   "img/1543168256-418811576931.jpg",
+   "img/1534723452862-4c874018d66d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.225459,
+  "lon": 76.890904,
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 07:00-23:00"
+ },
+ {
+  "id": "toimart-zhandosova",
+  "name": "TOIMART · Жандосова",
+  "type": "Магазин",
+  "cuisine": "Супермаркет",
+  "kitchen": "store",
+  "rating": 4.8,
+  "votes": 1552,
+  "ratingApprox": false,
+  "address": "ул. Жандосова, 21",
+  "gis": "https://2gis.kz/almaty/firm/70000001029677939",
+  "opened": 2014,
+  "openedApprox": false,
+  "openedNote": "первый TOIMART (дискаунтер напитков) открыт в Алматы в 2014 г.",
+  "check": 6000,
+  "checkApprox": true,
+  "features": [],
+  "about": "Супермаркет TOIMART.",
+  "photos": [
+   "img/1579113800032-c38bd7635818.jpg",
+   "img/1556767576-5ec41e3239ea.jpg",
+   "img/1604719312566-8912e9227c6a.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Хлеб пшеничный",
+    "price": 250
+   },
+   {
+    "name": "Молоко 1 л",
+    "price": 650
+   },
+   {
+    "name": "Яйца, 10 шт.",
+    "price": 900
+   },
+   {
+    "name": "Курица охлаждённая, 1 кг",
+    "price": 1900
+   },
+   {
+    "name": "Сыр, 200 г",
+    "price": 1400
+   },
+   {
+    "name": "Вода 1,5 л",
+    "price": 280
+   },
+   {
+    "name": "Бананы, 1 кг",
+    "price": 900
+   }
+  ],
+  "lat": 43.341891,
+  "lon": 76.816623,
+  "district": "Алатауский"
+ },
+ {
+  "id": "cu-abaya",
+  "name": "CU · Абая",
+  "type": "Магазин",
+  "cuisine": "Корейский магазин у дома",
+  "kitchen": "konbini",
+  "rating": 4.8,
+  "votes": 520,
+  "ratingApprox": true,
+  "address": "пр. Абая, 160 к2",
+  "gis": "https://2gis.kz/almaty/branches/70000001084337867",
+  "opened": 2024,
+  "openedApprox": false,
+  "openedNote": "первый CU в Казахстане открыт в Алматы 6 марта 2024 г.",
+  "check": 2500,
+  "checkApprox": true,
+  "features": [
+   "allday"
+  ],
+  "about": "Корейский круглосуточный магазин у дома с готовой едой и зоной, где можно поесть.",
+  "photos": [
+   "img/1569718212165-3a8278d5f624.jpg",
+   "img/1621939514649-280e2ee25f60.jpg",
+   "img/1601598851547-4302969d0614.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Рамен в стакане",
+    "price": 900
+   },
+   {
+    "name": "Кимбап",
+    "price": 1500
+   },
+   {
+    "name": "Токпокки",
+    "price": 1700
+   },
+   {
+    "name": "Банановое молоко",
+    "price": 750
+   },
+   {
+    "name": "Онигири",
+    "price": 800
+   },
+   {
+    "name": "Кофе американо",
+    "price": 700
+   }
+  ],
+  "lat": 43.236335,
+  "lon": 76.881983,
+  "district": "Бостандыкский"
+ },
+ {
+  "id": "cu-bogenbay-batyra",
+  "name": "CU · Богенбай батыра",
+  "type": "Магазин",
+  "cuisine": "Корейский магазин у дома",
+  "kitchen": "konbini",
+  "rating": 4.6,
+  "votes": 576,
+  "ratingApprox": false,
+  "address": "ул. Богенбай батыра, 148",
+  "gis": "https://2gis.kz/almaty/firm/70000001089222765",
+  "opened": 2024,
+  "openedApprox": false,
+  "openedNote": "первый CU в Казахстане открыт в Алматы 6 марта 2024 г.",
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
+  "about": "Корейский магазин у дома с готовой едой.",
+  "photos": [
+   "img/1559847844-5315695dadae.jpg",
+   "img/1563636619-e9143da7973b.jpg",
+   "img/1578916171728-46686eac8d58.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Рамен в стакане",
+    "price": 900
+   },
+   {
+    "name": "Кимбап",
+    "price": 1500
+   },
+   {
+    "name": "Токпокки",
+    "price": 1700
+   },
+   {
+    "name": "Банановое молоко",
+    "price": 750
+   },
+   {
+    "name": "Онигири",
+    "price": 800
+   },
+   {
+    "name": "Кофе американо",
+    "price": 700
+   }
+  ],
+  "lat": 43.252218,
+  "lon": 76.935349,
+  "district": "Алмалинский"
+ },
+ {
+  "id": "cu-zhibek-zholy",
+  "name": "CU · Жибек Жолы",
+  "type": "Магазин",
+  "cuisine": "Корейский магазин у дома",
+  "kitchen": "konbini",
+  "rating": 4.4,
+  "votes": 885,
+  "ratingApprox": false,
+  "address": "пр. Жибек Жолы, 39",
+  "gis": "https://2gis.kz/almaty/firm/70000001090340522",
+  "opened": 2024,
+  "openedApprox": false,
+  "openedNote": "первый CU в Казахстане открыт в Алматы 6 марта 2024 г.",
+  "check": 2500,
+  "checkApprox": true,
+  "features": [],
+  "about": "Корейский магазин у дома на Арбате.",
+  "photos": [
+   "img/1617093727343-374698b1b08d.jpg",
+   "img/1588964895597-cfccd6e2dbf9.jpg",
+   "img/1534723452862-4c874018d66d.jpg"
+  ],
+  "menu": [
+   {
+    "name": "Рамен в стакане",
+    "price": 900
+   },
+   {
+    "name": "Кимбап",
+    "price": 1500
+   },
+   {
+    "name": "Токпокки",
+    "price": 1700
+   },
+   {
+    "name": "Банановое молоко",
+    "price": 750
+   },
+   {
+    "name": "Онигири",
+    "price": 800
+   },
+   {
+    "name": "Кофе американо",
+    "price": 700
+   }
+  ],
+  "lat": 43.263431,
+  "lon": 76.958105,
+  "district": "Медеуский"
  }
 ];

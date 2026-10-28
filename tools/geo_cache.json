@@ -1,0 +1,1837 @@
+{
+ "127-1": {
+  "district": "Алмалинский",
+  "lat": 43.249333,
+  "lon": 76.943367,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "abadan-alash": {
+  "district": "Бостандыкский",
+  "lat": 43.235759,
+  "lon": 76.882091,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "abay-kok-tobe": {
+  "district": "Медеуский",
+  "lat": 43.233753,
+  "lon": 76.975139,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "abo-burger": {
+  "district": "Бостандыкский",
+  "lat": 43.206545,
+  "lon": 76.897855,
+  "src": "nominatim"
+ },
+ "afisha": {
+  "district": "Алмалинский",
+  "lat": 43.250005,
+  "lon": 76.945935,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "ahi-doner": {
+  "district": "Бостандыкский",
+  "lat": 43.196812,
+  "lon": 76.88761,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "aiza-neo-bistro": {
+  "district": "Жетысуский",
+  "lat": 43.270426,
+  "lon": 76.939525,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "akzhol": {
+  "district": "Алмалинский",
+  "lat": 43.247633,
+  "lon": 76.865691,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "alani": {
+  "district": "Медеуский",
+  "hours": "24/7",
+  "lat": 43.239188,
+  "lon": 76.960275,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "alasha": {
+  "district": "Медеуский",
+  "lat": 43.202157,
+  "lon": 76.976295,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "alazani": {
+  "district": "Турксибский",
+  "lat": 43.30819,
+  "lon": 76.943285,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "all-saints": {
+  "district": "Алмалинский",
+  "lat": 43.248483,
+  "lon": 76.939318,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "ami": {
+  "district": "Медеуский",
+  "hours": "Fr-Sa 08:00-00:00; Mo-Th,Su 08:00-23:00",
+  "lat": 43.250112,
+  "lon": 76.948476,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "amici": {
+  "district": "Бостандыкский",
+  "lat": 43.208123,
+  "lon": 76.896439,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "apelsinovyy-gus": {
+  "district": "Бостандыкский",
+  "lat": 43.200951,
+  "lon": 76.89255,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "arabica-city-cafe": {
+  "district": "Бостандыкский",
+  "lat": 43.236427,
+  "lon": 76.937795,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "arabica-coffee-house": {
+  "district": "Алмалинский",
+  "lat": 43.263978,
+  "lon": 76.940687,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "aspandiyar": {
+  "district": "Бостандыкский",
+  "lat": 43.237043,
+  "lon": 76.88953,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ata-doner": {
+  "district": "Ауэзовский",
+  "hours": "24/7",
+  "lat": 43.204543,
+  "lon": 76.877893,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "atlas-cafe": {
+  "district": "Алмалинский",
+  "lat": 43.266416,
+  "lon": 76.935771,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "auyl": {
+  "district": "Медеуский",
+  "hours": "Mo-Fr 12:00-24:00; Sa 11:00-24:00; Su 11:00-23:00",
+  "lat": 43.162327,
+  "lon": 77.059845,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bahandi": {
+  "district": "Алмалинский",
+  "lat": 43.253691,
+  "lon": 76.945142,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "baharat": {
+  "district": "Алмалинский",
+  "lat": 43.245252,
+  "lon": 76.935293,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bao-sushi-noodles-bar": {
+  "district": "Алмалинский",
+  "lat": 43.252143,
+  "lon": 76.901719,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "barakat-burger": {
+  "district": "Жетысуский",
+  "lat": 43.317741,
+  "lon": 76.926496,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "barmaglot": {
+  "district": "Наурызбайский",
+  "lat": 43.178166,
+  "lon": 76.830238,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "basilic": {
+  "district": "Алмалинский",
+  "hours": "24/7",
+  "lat": 43.252869,
+  "lon": 76.938548,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "baursak-city": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-00:00",
+  "lat": 43.250884,
+  "lon": 76.919324,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "beefeater": {
+  "district": "Медеуский",
+  "lat": 43.251432,
+  "lon": 76.955428,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "beerday": {
+  "district": "Бостандыкский",
+  "lat": 43.205411,
+  "lon": 76.893795,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "bella-ciao": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 11:00-00:00",
+  "lat": 43.263322,
+  "lon": 76.932071,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bereket": {
+  "district": "Медеуский",
+  "lat": 43.232629,
+  "lon": 76.953672,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "big-apple-coffee-shop": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:30-22:00",
+  "lat": 43.244061,
+  "lon": 76.942548,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bistro-130": {
+  "district": "Медеуский",
+  "lat": 43.248935,
+  "lon": 76.951313,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "blanca": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 09:00-24:00",
+  "lat": 43.246293,
+  "lon": 76.942127,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bochka": {
+  "district": "Бостандыкский",
+  "lat": 43.233443,
+  "lon": 76.903512,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "bochonok": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Th 12:00-01:00, Fr 12:00-03:00, Sa 14:00-03:00, Su 14:00-01:00",
+  "lat": 43.231594,
+  "lon": 76.899507,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bon-bon": {
+  "district": "Алмалинский",
+  "lat": 43.248331,
+  "lon": 76.94199,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "bukhara-kz": {
+  "district": "Ауэзовский",
+  "lat": 43.232447,
+  "lon": 76.869302,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "burger-king": {
+  "district": "Алмалинский",
+  "lat": 43.252303,
+  "lon": 76.91306,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "cafeteria": {
+  "district": "Алмалинский",
+  "lat": 43.244147,
+  "lon": 76.944902,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "capito": {
+  "district": "Бостандыкский",
+  "lat": 43.199099,
+  "lon": 76.899268,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "casablanca": {
+  "district": "Турксибский",
+  "lat": 43.30819,
+  "lon": 76.943285,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "chalet": {
+  "district": "Медеуский",
+  "lat": 43.127968,
+  "lon": 77.080515,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "chechil": {
+  "district": "Бостандыкский",
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "chingu": {
+  "district": "Турксибский",
+  "lat": 43.325045,
+  "lon": 76.951664,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "cicada": {
+  "district": "Медеуский",
+  "lat": 43.213756,
+  "lon": 76.940302,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "cicek-mangal": {
+  "district": "Медеуский",
+  "lat": 43.232912,
+  "lon": 76.950325,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "coffee-boom": {
+  "district": "Бостандыкский",
+  "lat": 43.233832,
+  "lon": 76.88461,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "coffee-original": {
+  "district": "Медеуский",
+  "hours": "24/7",
+  "lat": 43.260354,
+  "lon": 76.948468,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "coffeedelia": {
+  "district": "Бостандыкский",
+  "lat": 43.200425,
+  "lon": 76.89227,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "coffeeroom": {
+  "district": "Медеуский",
+  "hours": "Mo-Fr 08:00-01:00, Sa,Su 09:00-01:00",
+  "lat": 43.239179,
+  "lon": 76.949785,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "coffeevarka": {
+  "district": "Бостандыкский",
+  "lat": 43.201663,
+  "lon": 76.910272,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "collab": {
+  "district": "Алмалинский",
+  "lat": 43.262252,
+  "lon": 76.944028,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "costa-coffee": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-24:00",
+  "lat": 43.202637,
+  "lon": 76.892107,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "cu-abaya": {
+  "district": "Бостандыкский",
+  "lat": 43.236335,
+  "lon": 76.881983,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "cu-bogenbay-batyra": {
+  "district": "Алмалинский",
+  "lat": 43.252218,
+  "lon": 76.935349,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "cu-zhibek-zholy": {
+  "district": "Медеуский",
+  "lat": 43.263431,
+  "lon": 76.958105,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "daredzhani": {
+  "district": "Медеуский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-00:00",
+  "lat": 43.245465,
+  "lon": 76.956233,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "dddoner": {
+  "district": "Бостандыкский",
+  "lat": 43.225402,
+  "lon": 76.932511,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "de-zhuang": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-00:00",
+  "lat": 43.207937,
+  "lon": 76.897447,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "degirmen": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:00-24:00",
+  "lat": 43.250166,
+  "lon": 76.92554,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "del-cappuccino": {
+  "district": "Бостандыкский",
+  "lat": 43.199869,
+  "lon": 76.901152,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "del-papa": {
+  "district": "Медеуский",
+  "lat": 43.222919,
+  "lon": 76.96323,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "do-star-coffee": {
+  "district": "Медеуский",
+  "lat": 43.246443,
+  "lon": 76.950913,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "dodo-pizza": {
+  "district": "Медеуский",
+  "hours": "09:00-24:00",
+  "lat": 43.263463,
+  "lon": 76.948808,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "dom-hogo": {
+  "district": "Ауэзовский",
+  "lat": 43.210231,
+  "lon": 76.852128,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "domashniy": {
+  "district": "Медеуский",
+  "lat": 43.250956,
+  "lon": 76.947723,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "doner-na-abaya": {
+  "district": "Бостандыкский",
+  "lat": 43.227415,
+  "lon": 76.905913,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "doner-na-makataeva": {
+  "district": "Алмалинский",
+  "lat": 43.262241,
+  "lon": 76.916348,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "doner-na-satpayeva": {
+  "district": "Алмалинский",
+  "lat": 43.2543,
+  "lon": 76.925621,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "donerzade": {
+  "district": "Алмалинский",
+  "lat": 43.2543,
+  "lon": 76.925621,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "drinkit": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 07:30-21:00",
+  "lat": 43.236682,
+  "lon": 76.915542,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "durum": {
+  "district": "Бостандыкский",
+  "lat": 43.227401,
+  "lon": 76.890348,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "east-cuisine": {
+  "district": "Медеуский",
+  "lat": 43.213756,
+  "lon": 76.940302,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "esentai-gourmet-coffee": {
+  "district": "Бостандыкский",
+  "lat": 43.218294,
+  "lon": 76.927449,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "esperanza-terrace": {
+  "district": "Алмалинский",
+  "lat": 43.265689,
+  "lon": 76.930892,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "eywa-terrace": {
+  "district": "Алмалинский",
+  "lat": 43.245267,
+  "lon": 76.927522,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ezo": {
+  "district": "Медеуский",
+  "lat": 43.253151,
+  "lon": 76.948056,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "fish-fried": {
+  "district": "Ауэзовский",
+  "lat": 43.215713,
+  "lon": 76.852208,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "flask-specialty-coffee": {
+  "district": "Алмалинский",
+  "lat": 43.244302,
+  "lon": 76.945487,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "french-42": {
+  "district": "Медеуский",
+  "lat": 43.25354,
+  "lon": 76.948034,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "friendly": {
+  "district": "Медеуский",
+  "lat": 43.23748,
+  "lon": 76.956839,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "friends-bar-terrace": {
+  "district": "Бостандыкский",
+  "lat": 43.233016,
+  "lon": 76.935302,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "gogra": {
+  "district": "Медеуский",
+  "lat": 43.157,
+  "lon": 77.056,
+  "osmChecked": true,
+  "src": "manual"
+ },
+ "grano": {
+  "district": "Алмалинский",
+  "lat": 43.257966,
+  "lon": 76.937401,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "hachapuri-hinkalevich": {
+  "district": "Бостандыкский",
+  "lat": 43.239395,
+  "lon": 76.907893,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "han-qauap": {
+  "district": "Бостандыкский",
+  "lat": 43.194953,
+  "lon": 76.906866,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "hanok": {
+  "district": "Бостандыкский",
+  "lat": 43.239474,
+  "lon": 76.931367,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "hanok-family": {
+  "district": "Медеуский",
+  "lat": 43.260966,
+  "lon": 76.960545,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "harbin": {
+  "district": "Медеуский",
+  "lat": 43.260966,
+  "lon": 76.960545,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "hardee-s": {
+  "district": "Жетысуский",
+  "lat": 43.270185,
+  "lon": 76.930775,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "harissa": {
+  "district": "Медеуский",
+  "lat": 43.250337,
+  "lon": 76.957301,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "hinkalnaya": {
+  "district": "Ауэзовский",
+  "lat": 43.212972,
+  "lon": 76.876689,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "horoshiy-god": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 09:00-23:00",
+  "lat": 43.246838,
+  "lon": 76.955683,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "ichi-specialty-coffee": {
+  "district": "Медеуский",
+  "lat": 43.249656,
+  "lon": 76.950592,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "iman-bbq-steak-house": {
+  "district": "Медеуский",
+  "lat": 43.279099,
+  "lon": 76.984135,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "jinau": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-00:00",
+  "lat": 43.200679,
+  "lon": 76.892163,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "julius": {
+  "district": "Алмалинский",
+  "hours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+  "lat": 43.250028,
+  "lon": 76.946794,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "jump-in-goat-coffee": {
+  "district": "Ауэзовский",
+  "lat": 43.227247,
+  "lon": 76.86316,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "karima": {
+  "district": "Алмалинский",
+  "lat": 43.245984,
+  "lon": 76.903603,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "kausar": {
+  "district": "Алмалинский",
+  "lat": 43.247764,
+  "lon": 76.937977,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "kefa": {
+  "district": "Алмалинский",
+  "lat": 43.251154,
+  "lon": 76.935264,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "kish-mish": {
+  "district": "Бостандыкский",
+  "lat": 43.237558,
+  "lon": 76.937947,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "kishlak": {
+  "district": "Бостандыкский",
+  "hours": "12:00-02:00",
+  "lat": 43.240769,
+  "lon": 76.934859,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "krasnodarskiy-paren": {
+  "district": "Бостандыкский",
+  "lat": 43.236201,
+  "lon": 76.884714,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "kuldzha-hogo": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-00:00",
+  "lat": 43.241293,
+  "lon": 76.889048,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "kulikov": {
+  "district": "Турксибский",
+  "lat": 43.348279,
+  "lon": 76.989112,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "kumano": {
+  "district": "Медеуский",
+  "lat": 43.251396,
+  "lon": 76.947673,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "la-skala": {
+  "district": "Медеуский",
+  "lat": 43.1284,
+  "lon": 77.0794,
+  "src": "manual"
+ },
+ "la-vanilla": {
+  "district": "Ауэзовский",
+  "lat": 43.213166,
+  "lon": 76.858302,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lagmanhana-1-sabro": {
+  "district": "Ауэзовский",
+  "lat": 43.233706,
+  "lon": 76.850357,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lagmanhana-alatau": {
+  "district": "Бостандыкский",
+  "lat": 43.176328,
+  "lon": 76.898168,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "lali-hinkali": {
+  "district": "Бостандыкский",
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lalu-cake": {
+  "district": "Алмалинский",
+  "lat": 43.249527,
+  "lon": 76.868021,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lanzhou": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 00:00-00:00",
+  "lat": 43.233521,
+  "lon": 76.878461,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "lapsha-bar-wok": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 12:00-02:00",
+  "lat": 43.217498,
+  "lon": 76.929948,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "late-night-show": {
+  "district": "Медеуский",
+  "lat": 43.250728,
+  "lon": 76.947753,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "laureate-grand-cafe": {
+  "district": "Медеуский",
+  "lat": 43.254141,
+  "lon": 76.956775,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lenore-pub": {
+  "district": "Бостандыкский",
+  "lat": 43.238085,
+  "lon": 76.889468,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "lepim-i-varim": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 10:00-24:00",
+  "lat": 43.202443,
+  "lon": 76.891798,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "leto": {
+  "district": "Бостандыкский",
+  "lat": 43.219806,
+  "lon": 76.921693,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "line-brew": {
+  "district": "Бостандыкский",
+  "lat": 43.241107,
+  "lon": 76.948169,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "line-brew-reserve": {
+  "district": "Медеуский",
+  "lat": 43.233335,
+  "lon": 76.956616,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "littles": {
+  "district": "Бостандыкский",
+  "lat": 43.208232,
+  "lon": 76.895805,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "luckee-yu": {
+  "district": "Медеуский",
+  "hours": "Fr-Sa 11:00-01:00; Mo-Th,Su 11:00-00:00",
+  "lat": 43.24557,
+  "lon": 76.956295,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "m-te": {
+  "district": "Медеуский",
+  "lat": 43.245794,
+  "lon": 76.957613,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "mad-murphy-s-irish-pub": {
+  "district": "Алмалинский",
+  "lat": 43.256883,
+  "lon": 76.945877,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "mado": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 09:00-00:00",
+  "lat": 43.233904,
+  "lon": 76.95824,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "magnum-cash-carry-aksuat": {
+  "district": "Жетысуский",
+  "lat": 43.361639,
+  "lon": 76.943072,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "magnum-hyper-han-shatyr": {
+  "district": "Алатауский",
+  "hours": "24/7",
+  "lat": 43.249692,
+  "lon": 76.823275,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "magnum-hyper-zhetysu-3": {
+  "district": "Ауэзовский",
+  "hours": "24/7",
+  "lat": 43.218521,
+  "lon": 76.842711,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "mai-qazan": {
+  "district": "Алмалинский",
+  "lat": 43.25123,
+  "lon": 76.887434,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "malenkiy-prints": {
+  "district": "Алмалинский",
+  "lat": 43.249218,
+  "lon": 76.871028,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "mamma-mia": {
+  "district": "Алмалинский",
+  "lat": 43.252117,
+  "lon": 76.899457,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "manga-japanese-restaurant": {
+  "district": "Алмалинский",
+  "lat": 43.249043,
+  "lon": 76.942636,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "mangal-fish": {
+  "district": "Медеуский",
+  "lat": 43.286384,
+  "lon": 76.994957,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "mangal-house": {
+  "district": "Жетысуский",
+  "lat": 43.286778,
+  "lon": 76.953391,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "marina-roscha": {
+  "district": "Медеуский",
+  "lat": 43.256673,
+  "lon": 76.95032,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "marmaris": {
+  "district": "Алмалинский",
+  "lat": 43.248645,
+  "lon": 76.942254,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "masisso": {
+  "district": "Турксибский",
+  "lat": 43.304962,
+  "lon": 76.939164,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "massimo-coffee-roasters": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:30-17:30",
+  "lat": 43.244237,
+  "lon": 76.937208,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "master-coffee": {
+  "district": "Бостандыкский",
+  "lat": 43.239978,
+  "lon": 76.93347,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "may-bistro": {
+  "district": "Бостандыкский",
+  "lat": 43.200946,
+  "lon": 76.885929,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "medeu-visit-center": {
+  "district": "Медеуский",
+  "lat": 43.1576,
+  "lon": 77.059,
+  "osmChecked": true,
+  "src": "manual"
+ },
+ "medovic": {
+  "district": "Бостандыкский",
+  "lat": 43.241628,
+  "lon": 76.936982,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "megafish": {
+  "district": "Ауэзовский",
+  "lat": 43.222627,
+  "lon": 76.855698,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "megata-doner": {
+  "district": "Алмалинский",
+  "lat": 43.268518,
+  "lon": 76.940196,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "miterra-lounge": {
+  "district": "Медеуский",
+  "lat": 43.253702,
+  "lon": 76.956743,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "munchen-pub": {
+  "district": "Алмалинский",
+  "lat": 43.255248,
+  "lon": 76.945423,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "musaka": {
+  "district": "Бостандыкский",
+  "lat": 43.208232,
+  "lon": 76.895805,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "myata-vyshka": {
+  "district": "Алмалинский",
+  "lat": 43.253519,
+  "lon": 76.90273,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "namaste": {
+  "district": "Алмалинский",
+  "lat": 43.258898,
+  "lon": 76.923322,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "naryn": {
+  "district": "Алмалинский",
+  "lat": 43.249218,
+  "lon": 76.866729,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "nashi-lyudi": {
+  "district": "Медеуский",
+  "lat": 43.251224,
+  "lon": 76.94771,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "navat": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 10:00-24:00",
+  "lat": 43.246372,
+  "lon": 76.95705,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "nedelka": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 07:30-22:00",
+  "lat": 43.244439,
+  "lon": 76.923113,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "nomad-grill": {
+  "district": "Бостандыкский",
+  "lat": 43.224822,
+  "lon": 76.909037,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "noni": {
+  "district": "Ауэзовский",
+  "lat": 43.214409,
+  "lon": 76.832324,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "noodles": {
+  "district": "Медеуский",
+  "lat": 43.261638,
+  "lon": 76.954838,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "nuala": {
+  "district": "Алмалинский",
+  "hours": "Su-Th 11:00-24:00, Fr-Sa 11:00-01:00",
+  "lat": 43.252797,
+  "lon": 76.943062,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "oblako-lounge-bar": {
+  "district": "Бостандыкский",
+  "lat": 43.230335,
+  "lon": 76.939038,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ocean-basket": {
+  "district": "Алмалинский",
+  "lat": 43.261043,
+  "lon": 76.942821,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ogonek": {
+  "district": "Алмалинский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-24:00",
+  "lat": 43.252799,
+  "lon": 76.944869,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "okadzaki": {
+  "district": "Жетысуский",
+  "lat": 43.27129,
+  "lon": 76.930636,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "olovo-cocktail-bar": {
+  "district": "Медеуский",
+  "lat": 43.254685,
+  "lon": 76.955936,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "orient-lagman": {
+  "district": "Ауэзовский",
+  "lat": 43.206661,
+  "lon": 76.856615,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "orta": {
+  "district": "Ауэзовский",
+  "lat": 43.215713,
+  "lon": 76.852208,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ozyurt": {
+  "district": "Медеуский",
+  "lat": 43.247545,
+  "lon": 76.949517,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "p-f-chang-s": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 12:00-22:00",
+  "lat": 43.212217,
+  "lon": 76.921318,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "paco-coffee-pastry": {
+  "district": "Алмалинский",
+  "hours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-21:00",
+  "lat": 43.259116,
+  "lon": 76.938876,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "palomar": {
+  "district": "Алмалинский",
+  "hours": "Mo-Th 17:00-01:00, Fr-Sa 17:00-03:00, Su 14:00-01:00",
+  "lat": 43.250382,
+  "lon": 76.942459,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "paul": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-22:00",
+  "lat": 43.218933,
+  "lon": 76.928281,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "paulaner-br-uhaus": {
+  "district": "Алмалинский",
+  "lat": 43.247894,
+  "lon": 76.916013,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "pelmen": {
+  "district": "Медеуский",
+  "lat": 43.214578,
+  "lon": 76.940278,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "perla-di-roma": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 10:00-23:00",
+  "lat": 43.247161,
+  "lon": 76.954953,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "petit-chocolate-coffee": {
+  "district": "Бостандыкский",
+  "lat": 43.241058,
+  "lon": 76.944597,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "pinta": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 09:00-02:00",
+  "lat": 43.264334,
+  "lon": 76.947552,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "praha": {
+  "district": "Медеуский",
+  "lat": 43.222919,
+  "lon": 76.96323,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "presso": {
+  "district": "Алмалинский",
+  "lat": 43.251664,
+  "lon": 76.900638,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "privychki": {
+  "district": "Алмалинский",
+  "lat": 43.246266,
+  "lon": 76.941605,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "pro-hinkali": {
+  "district": "Бостандыкский",
+  "lat": 43.233773,
+  "lon": 76.935256,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "qaganat": {
+  "district": "Алмалинский",
+  "lat": 43.239638,
+  "lon": 76.899774,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "qauap-food": {
+  "district": "Наурызбайский",
+  "lat": 43.19179,
+  "lon": 76.82926,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "qazy": {
+  "district": "Алмалинский",
+  "lat": 43.252292,
+  "lon": 76.915843,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "qrupa": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:00-21:00",
+  "lat": 43.257501,
+  "lon": 76.92491,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "qulpynai": {
+  "district": null,
+  "lat": 43.211774,
+  "lon": 76.764295,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "rafinad": {
+  "district": "Наурызбайский",
+  "lat": 43.212336,
+  "lon": 76.773728,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "red-beer-bar": {
+  "district": "Медеуский",
+  "lat": 43.255405,
+  "lon": 76.94793,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "riviera": {
+  "district": "Алмалинский",
+  "lat": 43.246788,
+  "lon": 76.92838,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "rumi": {
+  "district": "Алмалинский",
+  "lat": 43.245222,
+  "lon": 76.942679,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "sagamo": {
+  "district": "Алмалинский",
+  "lat": 43.255388,
+  "lon": 76.924134,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "salam-bro": {
+  "district": "Бостандыкский",
+  "lat": 43.235582,
+  "lon": 76.874665,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "samurai-sushi": {
+  "district": "Ауэзовский",
+  "lat": 43.213819,
+  "lon": 76.869845,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "sandyq": {
+  "district": "Алмалинский",
+  "lat": 43.263067,
+  "lon": 76.939809,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "sansara-lounge": {
+  "district": "Наурызбайский",
+  "lat": 43.179861,
+  "lon": 76.854601,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "saray-bar": {
+  "district": "Медеуский",
+  "hours": "08:00-24:00",
+  "lat": 43.12851,
+  "lon": 77.082353,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "satori": {
+  "district": "Алатауский",
+  "lat": 43.29365,
+  "lon": 76.886012,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "schuka-bistro": {
+  "district": "Алмалинский",
+  "lat": 43.249043,
+  "lon": 76.942636,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "se-se": {
+  "district": "Медеуский",
+  "lat": 43.265036,
+  "lon": 76.955701,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "seven": {
+  "district": "Бостандыкский",
+  "lat": 43.190349,
+  "lon": 76.907092,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "shafran": {
+  "district": "Бостандыкский",
+  "lat": 43.230686,
+  "lon": 76.935932,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "shashlychnyy-dvor": {
+  "district": "Алмалинский",
+  "lat": 43.245705,
+  "lon": 76.92501,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "shashlykoff": {
+  "district": "Алмалинский",
+  "lat": 43.254174,
+  "lon": 76.931232,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "shipudim": {
+  "district": "Жетысуский",
+  "hours": "24/7. Su 9:00-11:00 - Cleaning",
+  "lat": 43.270418,
+  "lon": 76.939848,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "six-coffee-wine": {
+  "district": "Ауэзовский",
+  "lat": 43.227897,
+  "lon": 76.863075,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "small-asia-park": {
+  "district": "Ауэзовский",
+  "hours": "Mo-Su 09:00-23:00",
+  "lat": 43.244419,
+  "lon": 76.836346,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "small-food-panfilova": {
+  "district": "Алмалинский",
+  "lat": 43.261516,
+  "lon": 76.943902,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "smug-burger-bbq-bar": {
+  "district": "Алмалинский",
+  "lat": 43.261118,
+  "lon": 76.933579,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "spiros": {
+  "district": "Медеуский",
+  "hours": "Fr-Sa 10:00-01:00; Mo-Th,Su 10:00-24:00",
+  "lat": 43.222154,
+  "lon": 76.962629,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "starbucks": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-24:00",
+  "lat": 43.218905,
+  "lon": 76.929306,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "stories": {
+  "district": "Алмалинский",
+  "lat": 43.261118,
+  "lon": 76.933579,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "suhoy-zakon": {
+  "district": "Бостандыкский",
+  "lat": 43.235263,
+  "lon": 76.904865,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "suli-da-guli": {
+  "district": "Бостандыкский",
+  "lat": 43.207379,
+  "lon": 76.898332,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "sumakh": {
+  "district": "Турксибский",
+  "lat": 43.357283,
+  "lon": 76.978896,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "svaneti": {
+  "district": "Медеуский",
+  "lat": 43.214828,
+  "lon": 76.931211,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "sybaga-ethno-restaurant": {
+  "district": "Наурызбайский",
+  "lat": 43.213703,
+  "lon": 76.79035,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tabanan": {
+  "district": "Бостандыкский",
+  "lat": 43.194874,
+  "lon": 76.909897,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tagam": {
+  "district": "Ауэзовский",
+  "lat": 43.217686,
+  "lon": 76.846351,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tal": {
+  "district": "Бостандыкский",
+  "lat": 43.210532,
+  "lon": 76.884276,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tangiers-lounge": {
+  "district": "Бостандыкский",
+  "lat": 43.236428,
+  "lon": 76.921729,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "tanuki": {
+  "district": "Медеуский",
+  "hours": "Mo-Su 12:00-24:00",
+  "lat": 43.224697,
+  "lon": 76.962521,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "tary": {
+  "district": "Бостандыкский",
+  "lat": 43.235682,
+  "lon": 76.921703,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tattisin": {
+  "district": "Алмалинский",
+  "lat": 43.242014,
+  "lon": 76.934808,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tave": {
+  "district": "Бостандыкский",
+  "lat": 43.229524,
+  "lon": 76.890643,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "teplitsa": {
+  "district": "Турксибский",
+  "lat": 43.332654,
+  "lon": 77.018275,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tereze": {
+  "district": "Медеуский",
+  "lat": 43.262121,
+  "lon": 76.951664,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "the-banka-bar": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-02:00",
+  "lat": 43.263989,
+  "lon": 76.941943,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "the-doner-na-uglyah": {
+  "district": "Бостандыкский",
+  "lat": 43.207379,
+  "lon": 76.898332,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "the-mangal-meat-bar": {
+  "district": "Алмалинский",
+  "lat": 43.254896,
+  "lon": 76.914655,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "toimart-barys-iv": {
+  "district": "Бостандыкский",
+  "lat": 43.225459,
+  "lon": 76.890904,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "toimart-zhandosova": {
+  "district": "Алатауский",
+  "lat": 43.341891,
+  "lon": 76.816623,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tok-burger": {
+  "district": "Алмалинский",
+  "lat": 43.244872,
+  "lon": 76.891266,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tok-poki": {
+  "district": "Медеуский",
+  "lat": 43.314845,
+  "lon": 77.023976,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tomchi": {
+  "district": "Алмалинский",
+  "lat": 43.268453,
+  "lon": 76.940068,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "top-barista": {
+  "district": "Бостандыкский",
+  "lat": 43.234087,
+  "lon": 76.919134,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "traktir-medved": {
+  "district": "Ауэзовский",
+  "lat": 43.232034,
+  "lon": 76.870158,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "traveler-s-coffee": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 08:00-24:00",
+  "lat": 43.244871,
+  "lon": 76.946621,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "turandot": {
+  "district": "Алмалинский",
+  "lat": 43.239052,
+  "lon": 76.890952,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "tyubeteyka": {
+  "district": "Бостандыкский",
+  "lat": 43.236296,
+  "lon": 76.921246,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "unapasta": {
+  "district": "Алмалинский",
+  "lat": 43.248354,
+  "lon": 76.941935,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "urbo-coffee": {
+  "district": "Алмалинский",
+  "lat": 43.263437,
+  "lon": 76.933202,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "urumchi": {
+  "district": "Алмалинский",
+  "lat": 43.2664,
+  "lon": 76.935294,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "vahtanguri": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 12:00-01:00",
+  "lat": 43.258657,
+  "lon": 76.922914,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "vanilla": {
+  "district": "Медеуский",
+  "lat": 43.248655,
+  "lon": 76.951386,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "villa-dei-fiori": {
+  "district": "Бостандыкский",
+  "lat": 43.211025,
+  "lon": 76.920168,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "vinil-bar": {
+  "district": "Медеуский",
+  "lat": 43.253691,
+  "lon": 76.955942,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "vista": {
+  "district": "Бостандыкский",
+  "lat": 43.219275,
+  "lon": 76.929277,
+  "src": "nominatim"
+ },
+ "wendy-s": {
+  "district": "Алмалинский",
+  "lat": 43.262044,
+  "lon": 76.941408,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "wok-wok": {
+  "district": "Алмалинский",
+  "hours": "Mo-Su 11:00-00:00",
+  "lat": 43.252449,
+  "lon": 76.941333,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "yug22": {
+  "district": "Медеуский",
+  "lat": 43.193343,
+  "lon": 76.96889,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "zebra-coffee": {
+  "district": "Бостандыкский",
+  "hours": "Mo-Su 08:00-23:00",
+  "lat": 43.232049,
+  "lon": 76.875629,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "zere": {
+  "district": "Бостандыкский",
+  "lat": 43.242044,
+  "lon": 76.947794,
+  "osmChecked": true,
+  "src": "osm"
+ },
+ "zhiguli": {
+  "district": "Алмалинский",
+  "lat": 43.255311,
+  "lon": 76.902979,
+  "osmChecked": true,
+  "src": "nominatim"
+ },
+ "ziyafet-steak-house": {
+  "district": "Бостандыкский",
+  "lat": 43.238872,
+  "lon": 76.942066,
+  "osmChecked": true,
+  "src": "osm"
+ }
+}

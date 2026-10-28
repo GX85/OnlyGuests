@@ -1,28 +1,52 @@
-# ИИ-агенты OnlyGuests: каждые 6 часов перепроверяют рейтинги 2ГИС и коммитят js/live.js в main.
-# Vercel пересобирает сайт после каждого такого коммита.
-# Нужен секрет GEMINI_API_KEY (бесплатный ключ Google AI Studio); DGIS_API_KEY — по желанию.
+# ИИ-агенты OnlyGuests на бесплатных моделях. Каждый агент коммитит результат в main,
+# после чего Vercel пересобирает сайт.
+#   каждые 6 часов  — «Искатель» и «Проверяющий»: рейтинги, число оценок, часы работы (js/live.js)
+#   каждый день     — «Аналитик»: выжимки отзывов (js/insights.js) и «Переводчик» (js/i18n-data.js)
+#   по понедельникам — «Разведчик»: новые места (js/scout.js + issue)
+#
+# Секреты (Settings → Secrets and variables → Actions), все бесплатные, достаточно одного-двух:
+#   OPENROUTER_API_KEY — бесплатные модели OpenRouter;  GEMINI_API_KEY — Gemini с поиском Google
+#   TAVILY_API_KEY или BRAVE_API_KEY — веб-поиск для моделей OpenRouter/Ollama
+#   DGIS_API_KEY — по желанию, официальный API 2ГИС
+# Переменная USE_OLLAMA = true — поднять Ollama прямо в GitHub Actions (модель OLLAMA_MODEL, по умолчанию qwen2.5:3b).
 name: AI agents
 
 on:
   schedule:
     - cron: "17 */6 * * *"
+    - cron: "41 2 * * *"
+    - cron: "23 4 * * 1"
   workflow_dispatch:
     inputs:
+      agents:
+        description: "Какие агенты запустить"
+        type: choice
+        default: ratings
+        options: [ratings, reviews, translate, scout, all]
       limit:
-        description: "Сколько заведений проверить за запуск"
+        description: "Сколько мест проверить за запуск"
         default: "40"
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
-  group: agents
+  group: agents-commit
   cancel-in-progress: false
 
 jobs:
-  update:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 90
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+      DGIS_API_KEY: ${{ secrets.DGIS_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,16 +54,44 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run agents
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          DGIS_API_KEY: ${{ secrets.DGIS_API_KEY }}
-        run: python3 tools/agent_update.py --limit "${{ github.event.inputs.limit || '40' }}"
-      - name: Commit fresh ratings
+      - name: Choose agents
+        id: pick
         run: |
-          git diff --quiet js/live.js && { echo "Без изменений"; exit 0; }
+          case "${{ github.event_name }}:${{ github.event.schedule }}:${{ github.event.inputs.agents }}" in
+            schedule:"41 2 * * *":*) echo "agents=reviews translate" >> "$GITHUB_OUTPUT" ;;
+            schedule:"23 4 * * 1":*) echo "agents=scout" >> "$GITHUB_OUTPUT" ;;
+            schedule:*) echo "agents=ratings" >> "$GITHUB_OUTPUT" ;;
+            *:all) echo "agents=ratings reviews translate scout" >> "$GITHUB_OUTPUT" ;;
+            *) echo "agents=${{ github.event.inputs.agents }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Start Ollama
+        if: vars.USE_OLLAMA == 'true'
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          (ollama serve > /tmp/ollama.log 2>&1 &)
+          until curl -s localhost:11434 >/dev/null; do sleep 1; done
+          ollama pull "${{ vars.OLLAMA_MODEL || 'qwen2.5:3b' }}"
+          echo "OLLAMA_HOST=http://localhost:11434" >> "$GITHUB_ENV"
+          echo "OLLAMA_MODEL=${{ vars.OLLAMA_MODEL || 'qwen2.5:3b' }}" >> "$GITHUB_ENV"
+      - name: Run agents
+        run: |
+          LIMIT="${{ github.event.inputs.limit || '40' }}"
+          for a in ${{ steps.pick.outputs.agents }}; do
+            echo "::group::$a"
+            case "$a" in
+              ratings)   python3 tools/agent_update.py --limit "$LIMIT" ;;
+              reviews)   python3 tools/agent_reviews.py --limit 15 ;;
+              translate) python3 tools/agent_translate.py ;;
+              scout)     python3 tools/agent_scout.py ;;
+            esac
+            echo "::endgroup::"
+          done
+          python3 tools/build_pages.py
+      - name: Commit results
+        run: |
+          git add js/live.js js/insights.js js/scout.js js/i18n-data.js place sitemap.xml index.html
+          git diff --cached --quiet && { echo "Без изменений"; exit 0; }
           git config user.name "OnlyGuests agents"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add js/live.js
-          git commit -m "Agents: refresh 2GIS ratings"
-          git push origin HEAD:main
+          git commit -m "Agents: ${{ steps.pick.outputs.agents }}"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
