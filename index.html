@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlyGuests — кафе и рестораны Алматы</title>
+  <meta name="description" content="OnlyGuests — справочник 100 кафе, кофеен и ресторанов Алматы: рейтинг 2ГИС, год открытия, меню и фото.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff5a36'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EOG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top__row">
+      <a class="logo" href="#" aria-label="OnlyGuests — на главную">
+        <span class="logo__mark">OG</span>
+        <span class="logo__text">Only<b>Guests</b></span>
+      </a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2v14a7 7 0 0 1 0-14Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__kicker">Алматы · справочник заведений</p>
+      <h1 class="hero__title">Куда пойти поесть<br>в Алматы</h1>
+      <p class="hero__lead">100 кафе, кофеен и ресторанов с рейтингом 2ГИС, годом открытия, меню и фотографиями.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <div class="controls">
+      <label class="search">
+        <span class="search__icon" aria-hidden="true">⌕</span>
+        <input id="q" type="search" placeholder="Название, кухня, блюдо или улица…" autocomplete="off">
+      </label>
+      <div class="chips" id="types" role="tablist" aria-label="Тип заведения"></div>
+      <div class="selects">
+        <label>Кухня
+          <select id="cuisine"></select>
+        </label>
+        <label>Сортировка
+          <select id="sort">
+            <option value="rating">По рейтингу</option>
+            <option value="votes">По числу оценок</option>
+            <option value="new">Сначала новые</option>
+            <option value="old">Сначала старые</option>
+            <option value="name">По названию</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте изменить запрос или фильтры.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p><b>OnlyGuests</b> — независимый справочник. Рейтинги и число оценок взяты из карточек 2ГИС (октябрь 2026) и со временем меняются — актуальные цифры по кнопке «Открыть в 2ГИС».</p>
+      <p>Год открытия указан, только если его удалось подтвердить в открытых источниках; «≈» — приблизительно. Меню — популярные позиции с ориентировочными ценами. Фотографии иллюстративные (Unsplash).</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="mTitle">
+    <button class="modal__close" id="mClose" type="button" aria-label="Закрыть">×</button>
+    <div class="modal__body" id="mBody"></div>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
