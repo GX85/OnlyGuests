@@ -25,7 +25,8 @@ PAUSE = float(os.environ.get("AGENT_PAUSE", "4"))  # бесплатные тар
 
 # порядок предпочтения среди бесплатных моделей OpenRouter
 OR_PREFER = ["nemotron-3-ultra", "laguna-s", "flint", "nemotron-3.5-lightning", "gemma-4-31b", "gemma-4-26b", "dots", "deepseek", "qwen", "llama-3.3-70b", "gpt-oss"]
-OR_SKIP = ("safety", "guard", "code", "embed", "-vl", "omni", "inkling", "lfm")
+OR_SKIP = ("safety", "guard", "embed", "lfm", "lyria", "preview")      # не чат-модели / слишком маленькие / нестабильные превью
+_or_exhausted = False        # суточный лимит бесплатных запросов OpenRouter исчерпан — до сброса не тратим время
 
 
 def http_json(url, body=None, headers=None, timeout=120):
@@ -43,7 +44,7 @@ def retrying(fn, tries=3):
             return fn()
         except urllib.error.HTTPError as e:
             body = e.read()[:300]
-            if e.code in (429, 500, 502, 503, 504) and attempt < tries - 1:
+            if e.code in (429, 500, 502, 503, 504) and attempt < tries - 1 and b"free-models-per-day" not in body:
                 time.sleep(20 * (attempt + 1))
                 continue
             raise RuntimeError("HTTP %s: %s" % (e.code, body))
@@ -66,15 +67,34 @@ def openrouter_models():
             except Exception as e:
                 print("OpenRouter: список моделей недоступен:", e)
                 data = []
-            free = [m["id"] for m in data if m["id"].endswith(":free")
-                    and not any(x in m["id"].lower() for x in OR_SKIP)
-                    and str((m.get("pricing") or {}).get("prompt", "0")) in ("0", "0.0")]
-            rank = lambda mid: next((i for i, k in enumerate(OR_PREFER) if k in mid), len(OR_PREFER))
-            _or_models = sorted(free, key=rank)[:6]
+            # любые бесплатные текстовые модели из актуального списка OpenRouter (их число меняется каждую неделю)
+            def is_text(m):
+                arch = m.get("architecture") or {}
+                return "text" in (arch.get("input_modalities") or ["text"]) and (arch.get("output_modalities") or ["text"]) == ["text"]
+            def is_free(m):
+                p = m.get("pricing") or {}
+                return str(p.get("prompt", "1")) in ("0", "0.0") and str(p.get("completion", "1")) in ("0", "0.0")
+            free = [m for m in data if is_free(m) and is_text(m) and not any(x in m["id"].lower() for x in OR_SKIP)]
+            rank = lambda m: (next((i for i, k in enumerate(OR_PREFER) if k in m["id"]), len(OR_PREFER)), -(m.get("context_length") or 0))
+            _or_models = [m["id"] for m in sorted(free, key=rank)][:8]
+            print("OpenRouter: бесплатных текстовых моделей %d, использую %s" % (len(free), ", ".join(_or_models[:4]) + (" …" if len(_or_models) > 4 else "")))
     return _or_models
 
 
 def chat_openrouter(prompt, model):
+    global _or_exhausted
+    if _or_exhausted:
+        raise RuntimeError("суточный лимит бесплатных запросов OpenRouter исчерпан")
+    try:
+        res = _chat_openrouter(prompt, model)
+    except RuntimeError as e:
+        if "free-models-per-day" in str(e) or "Insufficient credits" in str(e):
+            _or_exhausted = True
+        raise
+    return res
+
+
+def _chat_openrouter(prompt, model):
     res = retrying(lambda: http_json("https://openrouter.ai/api/v1/chat/completions",
         {"model": model, "messages": [{"role": "user", "content": prompt}], "temperature": 0},
         {"Authorization": "Bearer " + OPENROUTER_KEY, "HTTP-Referer": "https://onlyguests.vercel.app", "X-Title": "OnlyGuests"}))

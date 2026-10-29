@@ -90,6 +90,8 @@
         c.closed = !!l.closed;
       }
       if (l.hours) { c.hours = l.hours; c._hours = undefined; }
+      if (l.check) { c.check = l.check; c.checkApprox = false; }                     // средний чек от агентов
+      if (l.lat && l.lon) { c.lat = l.lat; c.lon = l.lon; if (l.district) c.district = l.district; if (l.address) c.address = l.address; } // уточнённое местоположение
       c.hist = l.hist || null;
     }
     if (INSIGHTS[c.id] && !INSIGHTS[c.id].empty) c.insight = INSIGHTS[c.id];

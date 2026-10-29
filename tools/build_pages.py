@@ -137,6 +137,12 @@ def main():
             c["votes"] = l.get("votes") or c["votes"]
         if l.get("hours"):
             c["hours"] = l["hours"]
+        if l.get("check"):
+            c["check"], c["checkApprox"] = l["check"], False
+        if l.get("lat") and l.get("lon"):
+            c["lat"], c["lon"] = l["lat"], l["lon"]
+            if l.get("address"):
+                c["address"] = l["address"]
         NAMES[c["id"]] = c["name"]
     ids = sorted(NAMES, key=lambda i: NAMES[i].lower())
     os.makedirs(os.path.join(ROOT, "place"), exist_ok=True)

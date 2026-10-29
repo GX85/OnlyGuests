@@ -33,6 +33,8 @@ async function loadCafes(origin) {
     if (!l) return;
     if (l.rating != null) { c.rating = l.rating; c.ratingApprox = false; if (l.votes) c.votes = l.votes; c.closed = !!l.closed; }
     if (l.hours) c.hours = l.hours;
+    if (l.check) { c.check = l.check; c.checkApprox = false; }
+    if (l.lat && l.lon) { c.lat = l.lat; c.lon = l.lon; if (l.district) c.district = l.district; if (l.address) c.address = l.address; }
   });
   if (cafes.length) { cache = cafes; cacheAt = Date.now(); }
   return cafes;

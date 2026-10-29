@@ -14,6 +14,8 @@ OUT = os.path.join(ROOT, "tools", "extra_places.json")
 GEO = os.path.join(ROOT, "tools", "geo_cache.json")
 DATA = os.path.join(ROOT, "js", "data.js")
 LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 500
+INCREMENTAL = "--incremental" in sys.argv          # еженедельный режим: уже добавленные места остаются, добавляются только новые
+ADD = int(sys.argv[sys.argv.index("--add") + 1]) if "--add" in sys.argv else 40
 HOURS_RE = re.compile(r"^(24/7|((Mo|Tu|We|Th|Fr|Sa|Su)(-(Mo|Tu|We|Th|Fr|Sa|Su))?(,(Mo|Tu|We|Th|Fr|Sa|Su)(-(Mo|Tu|We|Th|Fr|Sa|Su))?)* "
                       r"(\d\d:\d\d-\d\d:\d\d(,\d\d:\d\d-\d\d:\d\d)*|off)(; )?)+)$")
 DISTRICTS = {"Алмалин": "Алмалинский", "Ауэзов": "Ауэзовский", "Бостандык": "Бостандыкский", "Жетысу": "Жетысуский", "Медеу": "Медеуский",
@@ -188,10 +190,15 @@ def main():
     geo = json.load(open(GEO, encoding="utf-8"))
     known = [(g["lat"], g["lon"], g["district"]) for g in geo.values() if g.get("lat") and g.get("district")]
     have = [(norm(c["name"]), c.get("lat"), c.get("lon")) for c in base]
+    prev = json.load(open(OUT, encoding="utf-8")) if INCREMENTAL and os.path.exists(OUT) else []
+    prev_ids = {x.get("osm") for x in prev}
+    have += [(norm(x["name"]), x["lat"], x["lon"]) for x in prev]
 
     cands, skipped = [], Counter()
     for oid, p in osm.items():
-        name = (p["tags"].get("name:ru") or p["name"]).strip()
+        if oid in prev_ids:
+            continue
+        name = (p["tags"].get("name:ru") or p["name"]).strip().strip('"«»“”\'').strip()
         p["name"] = name
         key = norm(name)
         if len(key) < 2 or key.isdigit():
@@ -210,7 +217,11 @@ def main():
 
     # отбор: не больше 2 точек одной сети, квоты на «редкие» типы, остальное — по полноте данных
     cands.sort(key=lambda c: (-c["score"], c["name"]))
-    per_name, picked, per_type = Counter(), [], Counter()
+    per_name, picked, per_type = Counter(norm(x["name"]) for x in prev), [], Counter()
+    if INCREMENTAL:
+        LIMIT_ = ADD
+    else:
+        LIMIT_ = LIMIT
     QUOTA = {"Магазин": 45, "Кафе": 130, "Ресторан": 120, "Кофейня": 80, "Кондитерская": 35}
     FLOOR = ["Бистро", "Бар", "Донерная", "Бургерная", "Фастфуд"]       # этих типов берём как можно больше — их в справочнике мало
 
@@ -221,20 +232,20 @@ def main():
         return True
     for t in FLOOR:
         for c in [c for c in cands if c["type"] == t]:
-            if len(picked) >= LIMIT: break
+            if len(picked) >= LIMIT_: break
             take(c)
     done = {c["oid"] for c in picked}
     for c in cands:
-        if len(picked) >= LIMIT: break
+        if len(picked) >= LIMIT_: break
         if c["oid"] in done or per_type[c["type"]] >= QUOTA.get(c["type"], 999):
             continue
         take(c)
     for c in cands:                                                    # если квоты не набрали лимит — добираем без квот
-        if len(picked) >= LIMIT: break
+        if len(picked) >= LIMIT_: break
         if c["oid"] not in {x["oid"] for x in picked}:
             take(c)
 
-    out = []
+    out = list(prev)
     for c in sorted(picked, key=lambda c: (c["type"], c["name"].lower())):
         p, t = c["p"], c["p"]["tags"]
         rec = {"name": c["name"], "type": c["type"], "kitchen": c["kitchen"], "cuisine": c["cuisine"], "address": address(p["addr"]),
@@ -244,7 +255,7 @@ def main():
         if t.get("opening_hours") and HOURS_RE.match(t["opening_hours"]): rec["hours"] = t["opening_hours"]
         out.append(rec)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    print("выбрано:", len(out), dict(Counter(o["type"] for o in out)))
+    print("новых: %d, всего в расширенном каталоге: %d" % (len(picked), len(out)), dict(Counter(o["type"] for o in out)))
 
 
 if __name__ == "__main__":

@@ -39,7 +39,7 @@ def from_2gis(cafe):
     votes = rev.get("general_review_count_with_stars") or rev.get("general_review_count")
     if rating is None:
         return None
-    return {"rating": round(float(rating), 1), "votes": int(votes) if votes else None, "closed": False,
+    return {"rating": round(float(rating), 1), "votes": int(votes) if votes else None, "check": None, "closed": False,
             "hours": schedule_to_osm((items[0].get("schedule") or {})), "source": "2gis-api"}
 
 
@@ -66,16 +66,16 @@ def schedule_to_osm(sch):
 
 # ——— агенты ———
 FINDER = ("Ты агент справочника OnlyGuests. Найди карточку «{name}» ({type}) в Алматы по адресу {address} "
-          "в 2ГИС (2gis.kz). Ссылка: {gis}. Выпиши текущий рейтинг 2ГИС, число оценок и часы работы "
+          "в 2ГИС (2gis.kz). Ссылка: {gis}. Выпиши текущий рейтинг 2ГИС, число оценок, средний чек в тенге (строка «Средний чек» в карточке) и часы работы "
           "именно этого филиала. Часы запиши в формате OpenStreetMap, например \"Mo-Su 10:00-23:00\" "
           "или \"24/7\". Если заведение закрылось навсегда, укажи closed: true. "
           "Ответь одной строкой JSON без пояснений: "
           '{{"rating": 4.8, "votes": 1234, "hours": "Mo-Su 10:00-23:00", "closed": false}}. '
           "Если надёжных данных нет, ставь null.")
 VERIFIER = ("Ты агент-проверяющий. Независимо перепроверь по свежим данным 2gis.kz рейтинг "
-            "(по пятибалльной шкале) и число оценок у «{name}», Алматы, {address}. "
+            "(по пятибалльной шкале), число оценок и средний чек в тенге у «{name}», Алматы, {address}. "
             "Не путай с другими филиалами сети и с другими городами. Работает ли оно сейчас? "
-            'Ответ — только JSON: {{"rating": число или null, "votes": число или null, "closed": true/false}}.')
+            'Ответ — только JSON: {{"rating": число или null, "votes": число или null, "check": число или null, "closed": true/false}}.')
 
 
 def clean(a):
@@ -91,7 +91,14 @@ def clean(a):
         r = None
     h = a.get("hours")
     h = h.strip() if isinstance(h, str) and HOURS_RE.match(h.strip()) else None
-    return {"rating": r, "votes": v, "hours": h, "closed": a.get("closed") is True}
+    ck = a.get("check")
+    try:
+        ck = int(re.sub(r"\D", "", str(ck))) if ck not in (None, "") and re.search(r"\d", str(ck)) else None
+    except (TypeError, ValueError):
+        ck = None
+    if ck is not None and not (300 <= ck <= 150000):
+        ck = None
+    return {"rating": r, "votes": v, "check": ck, "hours": h, "closed": a.get("closed") is True}
 
 
 def from_agents(cafe, routes):
@@ -110,7 +117,11 @@ def from_agents(cafe, routes):
     if abs(a["rating"] - b["rating"]) > AGREE + 1e-9:
         return None, "агенты разошлись: %.1f и %.1f" % (a["rating"], b["rating"])
     best = max((a, b), key=lambda x: x["votes"] or 0)
-    return {"rating": best["rating"], "votes": best["votes"], "hours": a["hours"],
+    # средний чек принимаем, только если оба агента назвали близкие цифры (разница до 25 %)
+    check = None
+    if a["check"] and b["check"] and abs(a["check"] - b["check"]) <= 0.25 * max(a["check"], b["check"]):
+        check = int(round((a["check"] + b["check"]) / 2 / 100.0) * 100)
+    return {"rating": best["rating"], "votes": best["votes"], "check": check, "hours": a["hours"],
             "closed": a["closed"] and b["closed"], "source": "agents", "by": [r1, r2]}, None
 
 
@@ -132,7 +143,7 @@ def mock_routes():  # --mock: имитация двух агентов без с
     def fake(prompt, query, domains=None):
         m = re.search(r"«(.+?)»", prompt)
         h = sum(map(ord, m.group(1))) if m else 0
-        return '{"rating": %s, "votes": %d, "hours": "Mo-Su 10:00-23:00", "closed": false}' % ([4.9, 4.8, 4.7, 4.6][h % 4], 1000 + h % 500)
+        return '{"rating": %s, "votes": %d, "check": %d, "hours": "Mo-Su 10:00-23:00", "closed": false}' % ([4.9, 4.8, 4.7, 4.6][h % 4], 1000 + h % 500, 4000 + (h % 5) * 100)
     return [ai.WebRoute("mock-a", fake), ai.WebRoute("mock-b", fake)]
 
 
@@ -182,6 +193,11 @@ def main(argv):
             e["votes"] = new["votes"]
         if new.get("hours"):
             e["hours"] = new["hours"]
+        if new.get("check"):
+            if e.get("check") and e["check"] != new["check"]:
+                e["prevCheck"] = e["check"]
+            e["check"] = new["check"]
+            e["checkAt"] = e["checkedAt"]
         e["closed"] = bool(new.get("closed"))
         e["source"] = new["source"]
         e["confirmedAt"] = e["checkedAt"]
@@ -189,14 +205,16 @@ def main(argv):
         if not hist and c["rating"]:
             hist.append([c.get("baseDate", "2026-10-28"), c["rating"], c["votes"]])
         point = [today, e["rating"], e.get("votes")]
-        if hist[-1][0] == today:
+        if not hist:
+            hist.append(point)
+        elif hist[-1][0] == today:
             hist[-1] = point
         elif hist[-1][1:] != point[1:]:
             hist.append(point)
         del hist[:-HIST_MAX]
 
-    meta = {"updatedAt": ai.now_iso(), "checked": checked, "changed": changed, "total": len(cafes),
-            "model": "2ГИС API" if DGIS_KEY else ", ".join(r.name for r in routes[:2])}
+    meta = dict(ai.load_js("live.js", "LIVE_META") or {}, **{"updatedAt": ai.now_iso(), "checked": checked, "changed": changed, "total": len(cafes),
+            "model": "2ГИС API" if DGIS_KEY else ", ".join(r.name for r in routes[:2])})
     print("Итого: подтверждено %d, рейтинг изменился у %d из %d проверенных" % (checked, changed, len(queue)))
     if not dry:
         ai.save_js("live.js", "Свежие рейтинги от ИИ-агентов OnlyGuests (tools/agent_update.py). Обновляется автоматически.",

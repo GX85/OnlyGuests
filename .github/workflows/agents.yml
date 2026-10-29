@@ -1,8 +1,11 @@
 # ИИ-агенты OnlyGuests на бесплатных моделях. Каждый агент коммитит результат в main,
 # после чего Vercel пересобирает сайт.
-#   каждые 6 часов  — «Искатель» и «Проверяющий»: рейтинги, число оценок, часы работы (js/live.js)
-#   каждый день     — «Аналитик»: выжимки отзывов (js/insights.js) и «Переводчик» (js/i18n-data.js)
-#   по понедельникам — «Разведчик»: новые места (js/scout.js + issue)
+#   каждые 6 часов  — «Искатель» и «Проверяющий»: рейтинг, число оценок, средний чек, часы работы (js/live.js);
+#                      за запуск проверяется 100 мест (до 400 в сутки), места без оценки идут первыми
+#   каждый день     — «Картограф»: местоположение и адрес по OpenStreetMap, без ключей (js/live.js);
+#                      «Аналитик»: выжимки отзывов (js/insights.js) и «Переводчик» (js/i18n-data.js)
+#   по понедельникам — «Разведчик»: новые места из интернета (js/scout.js + issue) и
+#                      «Обходчик»: новые места из OpenStreetMap, добавляет их в каталог без ключей (tools/extra_places.json)
 #
 # Секреты (Settings → Secrets and variables → Actions), все бесплатные, достаточно одного-двух:
 #   OPENROUTER_API_KEY — бесплатные модели OpenRouter;  GEMINI_API_KEY — Gemini с поиском Google
@@ -16,17 +19,19 @@ on:
   schedule:
     - cron: "17 */6 * * *"
     - cron: "41 2 * * *"
+    - cron: "11 3 * * *"
     - cron: "23 4 * * 1"
+    - cron: "7 5 * * 1"
   workflow_dispatch:
     inputs:
       agents:
         description: "Какие агенты запустить"
         type: choice
         default: ratings
-        options: [ratings, reviews, translate, scout, all]
+        options: [ratings, geo, reviews, translate, scout, osm, all]
       limit:
         description: "Сколько мест проверить за запуск"
-        default: "40"
+        default: "100"
 
 permissions:
   contents: write
@@ -60,9 +65,11 @@ jobs:
         run: |
           case "${{ github.event_name }}:${{ github.event.schedule }}:${{ github.event.inputs.agents }}" in
             schedule:"41 2 * * *":*) echo "agents=reviews translate" >> "$GITHUB_OUTPUT" ;;
+            schedule:"11 3 * * *":*) echo "agents=geo" >> "$GITHUB_OUTPUT" ;;
             schedule:"23 4 * * 1":*) echo "agents=scout" >> "$GITHUB_OUTPUT" ;;
+            schedule:"7 5 * * 1":*) echo "agents=osm" >> "$GITHUB_OUTPUT" ;;
             schedule:*) echo "agents=ratings" >> "$GITHUB_OUTPUT" ;;
-            *:all) echo "agents=ratings reviews translate scout" >> "$GITHUB_OUTPUT" ;;
+            *:all) echo "agents=ratings geo reviews translate scout osm" >> "$GITHUB_OUTPUT" ;;
             *) echo "agents=${{ github.event.inputs.agents }}" >> "$GITHUB_OUTPUT" ;;
           esac
       - name: Start Ollama
@@ -76,11 +83,13 @@ jobs:
           echo "OLLAMA_MODEL=${{ vars.OLLAMA_MODEL || 'qwen2.5:3b' }}" >> "$GITHUB_ENV"
       - name: Run agents
         run: |
-          LIMIT="${{ github.event.inputs.limit || '40' }}"
+          LIMIT="${{ github.event.inputs.limit || '100' }}"
           for a in ${{ steps.pick.outputs.agents }}; do
             echo "::group::$a"
             case "$a" in
               ratings)   python3 tools/agent_update.py --limit "$LIMIT" ;;
+              geo)       python3 tools/agent_geo.py --limit 150 ;;
+              osm)       python3 -u tools/agent_osm.py --budget 45 --add 40 ;;
               reviews)   python3 tools/agent_reviews.py --limit 15 ;;
               translate) python3 tools/agent_translate.py ;;
               scout)     python3 tools/agent_scout.py ;;
@@ -90,7 +99,7 @@ jobs:
           python3 tools/build_pages.py
       - name: Commit results
         run: |
-          git add js/live.js js/insights.js js/scout.js js/i18n-data.js place sitemap.xml index.html
+          git add js/live.js js/insights.js js/scout.js js/i18n-data.js js/data.js tools/extra_places.json place sitemap.xml index.html
           git diff --cached --quiet && { echo "Без изменений"; exit 0; }
           git config user.name "OnlyGuests agents"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

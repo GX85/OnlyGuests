@@ -1,7 +1,7 @@
 # Выгрузка заведений Алматы из OpenStreetMap → tools/osm_places.json (источник для tools/expand_data.py).
 # Используем Nominatim (поиск по категории внутри рамки, не больше 50 ответов на запрос): город режется на ячейки,
 # а ячейки, где ответов ровно 50, делятся на четыре. Запросов не чаще 1 в секунду (правила OSM).
-# Запуск: python3 -u tools/fetch_osm.py   (около 10–20 минут; можно прервать и запустить снова — прогресс сохраняется)
+# Запуск: python3 -u tools/fetch_osm.py [--budget 45] [--fresh]   (около 10–20 минут; можно прервать и запустить снова — прогресс сохраняется)
 import json, os, sys, time, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,8 +28,11 @@ def call(q, box):
     return None
 
 
-def main():
-    res = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
+def main(argv):
+    budget = float(argv[argv.index("--budget") + 1]) * 60 if "--budget" in argv else None   # минут на весь обход
+    fresh = "--fresh" in argv                                                              # начать заново (еженедельный обход)
+    t0 = time.time()
+    res = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) and not fresh else {}
     done = set(res.pop("_done", []))
     # стартовая сетка 4×4
     cells = [(W + (E - W) * j / 4, S + (N - S) * i / 4, W + (E - W) * (j + 1) / 4, S + (N - S) * (i + 1) / 4) for i in range(4) for j in range(4)]
@@ -37,6 +40,10 @@ def main():
     for q in QUERIES:
         queue = list(cells)
         while queue:
+            if budget and time.time() - t0 > budget:
+                print("время вышло, сохраняю то, что успели собрать")
+                queue = []
+                break
             box = queue.pop()
             key = q + "|%.5f,%.5f,%.5f,%.5f" % box
             if key in done:
@@ -62,4 +69,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])
