@@ -469,3 +469,17 @@ button, input, select { font: inherit; color: inherit; }
   .ask__input { flex-basis: 100%; }
 }
 @media (max-width: 340px) { .logo__text { font-size: 17px; } .logo__mark { display: none; } }
+
+/* ——— Выбор OnlyGuests ——— */
+.choice {
+  display: inline-flex; align-items: center; gap: 6px; width: fit-content; margin: 0; padding: 3px 10px; border-radius: 999px;
+  background: linear-gradient(135deg, #e8c27a, #c9923a); color: #2b1b12; font-size: 12px; font-weight: 800; letter-spacing: .02em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35);
+}
+.choice--lg { margin-bottom: 8px; padding: 5px 14px; font-size: 14px; flex-wrap: wrap; }
+.choice small { font-weight: 600; opacity: .75; font-size: 12px; }
+
+/* ——— музыка ——— */
+.music-btn { font-size: 18px; line-height: 1; opacity: .65; transition: opacity .2s, background .2s; }
+.music-btn.is-on { opacity: 1; background: rgba(217, 176, 122, .22); border-color: rgba(217, 176, 122, .6); }
+@media (max-width: 460px) { .music-btn { font-size: 16px; } }

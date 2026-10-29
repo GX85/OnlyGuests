@@ -119,7 +119,14 @@
 
   function tagged(c, tag) { return !!(c.insight && c.insight.tags && c.insight.tags.indexOf(tag) >= 0); }
 
+  // «Выбор OnlyGuests»: заведения с очень высоким рейтингом и большим числом оценок (считается на лету по свежим данным)
+  var CHOICE = { rating: 4.9, votes: 1000, types: ["Ресторан", "Кафе", "Бистро", "Бар"] };
+  function isChoice(c) {
+    return CHOICE.types.indexOf(c.type) >= 0 && !c.closed && !c.ratingApprox && c.rating >= CHOICE.rating && (c.votes || 0) >= CHOICE.votes;
+  }
+
   var COLLECTIONS = {
+    choice: isChoice,
     date: function (c) {
       return tagged(c, "date") || (c.rating >= 4.7 && c.check >= 6000 && NO_DINE.indexOf(c.kitchen) < 0 &&
         ["Ресторан", "Бар", "Бистро"].indexOf(c.type) >= 0);
@@ -189,6 +196,7 @@
       pets: ["собак", "питом", "pet", "dog", " ит "]
     },
     collection: {
+      choice: ["выбор onlyguests", "выбор only", "лучшие места", "лучшее в", "best of", "onlyguests choice", "үздік таңдау"],
       date: ["свидан", "романт", "date", "кездесу"],
       view: ["вид", "горы", "панорам", "view", "mountain", "көрініс", " тау "],
       laptop: ["ноутбук", "поработ", "laptop", "work", "wi-fi", "wifi"],
@@ -265,7 +273,7 @@
   }
 
   return {
-    parseHours: parseHours, openState: openState, lateNight: lateNight, almatyNow: almatyNow,
+    isChoice: isChoice, CHOICE: CHOICE, parseHours: parseHours, openState: openState, lateNight: lateNight, almatyNow: almatyNow,
     distanceKm: distanceKm, COLLECTIONS: COLLECTIONS, parseQuery: parseQuery, isEmpty: isEmpty, search: search, DAYS: DAYS
   };
 });

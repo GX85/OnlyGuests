@@ -31,7 +31,7 @@ const TXT = {
     near: "📍 Ближайшие к вам:", bars: "🍸 Бары:", doner: "🌯 Донерные:", coffee: "☕ Кофейни:", shops: "🛒 Магазины:",
     more: "Ещё ▶", back: "◀ Назад", site: "Сайт", gis: "Открыть в 2ГИС", map: "📍 На карте", allSite: "Все результаты на сайте",
     sendLoc: "📍 Рядом со мной", needLoc: "Чтобы показать ближайшие, нажмите кнопку «Рядом со мной» или отправьте геопозицию 📍",
-    understood: "Понял так", bill: "чек", open24: "круглосуточно", openUntil: "открыто до {t}", closed: "закрыто", km: "{d} км",
+    choice: "Выбор OnlyGuests", understood: "Понял так", bill: "чек", open24: "круглосуточно", openUntil: "открыто до {t}", closed: "закрыто", km: "{d} км",
     hours: "Часы", menu: "В меню", noHours: "часы уточняйте в 2ГИС", partner: "Партнёр", ad: "реклама",
     btn: { near: "📍 Рядом со мной", top: "🏆 Топ", open: "🕒 Открыто", bars: "🍸 Бары", doner: "🌯 Донер", coffee: "☕ Кофе", shops: "🛒 Магазины", random: "🎲 Повезёт" }
   },
@@ -43,7 +43,7 @@ const TXT = {
     near: "📍 Сізге ең жақын:", bars: "🍸 Барлар:", doner: "🌯 Донерханалар:", coffee: "☕ Кофеханалар:", shops: "🛒 Дүкендер:",
     more: "Тағы ▶", back: "◀ Артқа", site: "Сайт", gis: "2ГИС-те ашу", map: "📍 Картада", allSite: "Барлық нәтиже сайтта",
     sendLoc: "📍 Маған жақын", needLoc: "Ең жақындарын көру үшін «Маған жақын» батырмасын басыңыз немесе геолокация жіберіңіз 📍",
-    understood: "Былай түсіндім", bill: "чек", open24: "тәулік бойы", openUntil: "{t} дейін ашық", closed: "жабық", km: "{d} км",
+    choice: "OnlyGuests таңдауы", understood: "Былай түсіндім", bill: "чек", open24: "тәулік бойы", openUntil: "{t} дейін ашық", closed: "жабық", km: "{d} км",
     hours: "Жұмыс уақыты", menu: "Мәзірде", noHours: "жұмыс уақытын 2ГИС-тен қараңыз", partner: "Серіктес", ad: "жарнама",
     btn: { near: "📍 Маған жақын", top: "🏆 Үздіктер", open: "🕒 Ашық", bars: "🍸 Барлар", doner: "🌯 Донер", coffee: "☕ Кофе", shops: "🛒 Дүкендер", random: "🎲 Сәттілік" }
   },
@@ -55,7 +55,7 @@ const TXT = {
     near: "📍 Nearest to you:", bars: "🍸 Bars:", doner: "🌯 Doner shops:", coffee: "☕ Coffee shops:", shops: "🛒 Stores:",
     more: "More ▶", back: "◀ Back", site: "Website", gis: "Open on 2GIS", map: "📍 On the map", allSite: "All results on the website",
     sendLoc: "📍 Near me", needLoc: "To see the nearest places tap Near me or send your location 📍",
-    understood: "I understood", bill: "bill", open24: "open 24/7", openUntil: "open until {t}", closed: "closed", km: "{d} km",
+    choice: "OnlyGuests Choice", understood: "I understood", bill: "bill", open24: "open 24/7", openUntil: "open until {t}", closed: "closed", km: "{d} km",
     hours: "Hours", menu: "On the menu", noHours: "see 2GIS for opening hours", partner: "Partner", ad: "ad",
     btn: { near: "📍 Near me", top: "🏆 Top", open: "🕒 Open now", bars: "🍸 Bars", doner: "🌯 Doner", coffee: "☕ Coffee", shops: "🛒 Stores", random: "🎲 Lucky" }
   }
@@ -95,7 +95,7 @@ function statusText(c, lang) {
 function line(c, lang, pos, why) {
   const open = statusText(c, lang);
   const km = pos && c.lat ? T(lang, "km", { d: OG.distanceKm(pos, c).toFixed(1) }) : "";
-  return "<b>" + esc(c.name) + "</b>" + (c.partner ? " · " + T(lang, "ad") : "") + " — " + esc(c.type) + ", " + esc(c.cuisine) + "\n" +
+  return (OG.isChoice(c) ? "✦ <i>" + T(lang, "choice") + "</i>\n" : "") + "<b>" + esc(c.name) + "</b>" + (c.partner ? " · " + T(lang, "ad") : "") + " — " + esc(c.type) + ", " + esc(c.cuisine) + "\n" +
     "★ " + c.rating.toFixed(1) + (c.votes ? " (" + num(c.votes) + ")" : "") + " · " + T(lang, "bill") + " " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸" +
     (open ? " · " + open : "") + (km ? " · " + km : "") + "\n📍 " + esc(c.address) + (why ? "\n💬 " + esc(why) : "");
 }

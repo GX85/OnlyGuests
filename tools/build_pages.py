@@ -29,6 +29,12 @@ def hours_ru(h):
     return out.replace("off", "выходной").replace("; ", "; ")
 
 
+def is_choice(c):
+    """«Выбор OnlyGuests»: то же правило, что в js/core.js."""
+    return (c["type"] in ("Ресторан", "Кафе", "Бистро", "Бар") and not c.get("closed") and not c.get("ratingApprox")
+            and c["rating"] >= 4.9 and (c.get("votes") or 0) >= 1000)
+
+
 def page(c, all_ids):
     name = c["name"]
     t = c["type"]
@@ -86,7 +92,7 @@ def page(c, all_ids):
   <article class="panel">
     <img class="place__img" src="../{c['photos'][0]}" alt="{e(name)}" width="1000" height="750">
     <div class="m">
-      <div class="m__head"><h1>{e(name)}</h1><p>{e(t)} · {e(c['cuisine'])} · Алматы</p></div>
+      <div class="m__head">{'<p class="choice choice--lg">✦ Выбор OnlyGuests <small>Рейтинг 4.9+ и больше 1000 оценок гостей в 2ГИС</small></p>' if is_choice(c) else ''}<h1>{e(name)}</h1><p>{e(t)} · {e(c['cuisine'])} · Алматы</p></div>
       <div class="facts">
         <div class="fact"><div class="fact__label">Рейтинг 2ГИС</div><div class="fact__value"><span class="star">★</span> {rating}</div><div class="fact__note">{votes}</div></div>
         <div class="fact"><div class="fact__label">Год открытия</div><div class="fact__value">{e(str(c['opened'])) if c.get('opened') else 'нет данных'}</div><div class="fact__note">{e(c.get('openedNote') or 'в открытых источниках не нашли')}</div></div>

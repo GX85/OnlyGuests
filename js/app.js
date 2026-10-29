@@ -12,7 +12,7 @@
     "mediterranean", "european", "russian", "seafood", "steak", "grill", "pub", "cocktail", "burger", "doner", "pizza", "breakfast",
     "coffee", "bakery", "canteen", "store", "konbini"];
   var FEATURES = ["kids", "namaz", "halal", "veranda", "music", "allday", "pets"];
-  var COLLS = ["date", "breakfast", "view", "laptop", "lunch", "kids", "night", "cheap"];
+  var COLLS = ["choice", "date", "breakfast", "view", "laptop", "lunch", "kids", "night", "cheap"];
   var DISTRICTS = ["Алмалинский", "Ауэзовский", "Бостандыкский", "Жетысуский", "Медеуский", "Наурызбайский", "Турксибский", "Алатауский"];
   var PIN = { "Ресторан": "#9c5a2c", "Кафе": "#c9853f", "Бистро": "#c9853f", "Кофейня": "#6b4226", "Бар": "#7a3e6e",
     "Донерная": "#d06a2a", "Бургерная": "#d06a2a", "Фастфуд": "#d06a2a", "Магазин": "#5f7d36", "Кондитерская": "#b5577a" };
@@ -273,6 +273,7 @@
             c.partner ? '<span class="card__partner">' + esc(t("card.partner")) + "</span>" : "") +
         "</div>" +
         '<div class="card__body">' +
+          (OG.isChoice(c) ? '<div class="choice" title="' + esc(t("choice.note")) + '">✦ ' + esc(t("choice.badge")) + "</div>" : "") +
           '<h2 class="card__name">' + esc(c.name) + "</h2>" +
           '<div class="card__cuisine">' + esc(tr(c.cuisine)) + "</div>" +
           '<div class="card__meta"><span>' + esc(t("card.check")) + " <b>" + checkText(c) + "</b></span><span>" + votesText(c) + "</span><span>" +
@@ -448,7 +449,8 @@
         '<p class="photo-note">' + esc(t("m.photoNote")) + "</p>" +
       "</div>" +
       '<div class="m">' +
-        '<div class="m__head"><h2 id="mTitle">' + esc(c.name) + (c.partner ? ' <span class="badge">' + esc(t("card.partner")) + "</span>" : "") + "</h2><p>" +
+        '<div class="m__head">' + (OG.isChoice(c) ? '<p class="choice choice--lg">✦ ' + esc(t("choice.badge")) + " <small>" + esc(t("choice.note")) + "</small></p>" : "") +
+          '<h2 id="mTitle">' + esc(c.name) + (c.partner ? ' <span class="badge">' + esc(t("card.partner")) + "</span>" : "") + "</h2><p>" +
           esc(typeName(c.type)) + " · " + esc(tr(c.cuisine)) + "</p></div>" +
         '<div class="actions actions--tight">' +
           '<button class="btn btn--ghost btn--sm" type="button" data-act="fav" aria-pressed="' + on("fav") + '">♥ ' + esc(t("card.fav")) + "</button>" +
