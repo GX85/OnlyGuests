@@ -4,6 +4,7 @@ window.I18N = {
   ru: {
     title: "OnlyGuests — кафе, бары и магазины Алматы",
     "nav.contact": "Написать разработчику",
+    "ad.tag": "Реклама", "ad.title": "Лучший бесплатный Agent Hub Focus",
     "nav.theme": "Сменить тему", "nav.music": "Спокойная музыка (пианино): включить или выключить",
     "hero.kicker": "Алматы · справочник заведений",
     "hero.title": "Где пить кофе<br><i>и ужинать</i> в Алматы",
@@ -117,6 +118,7 @@ window.I18N = {
   kk: {
     title: "OnlyGuests — Алматының кафелері, барлары мен дүкендері",
     "nav.contact": "Әзірлеушіге жазу",
+    "ad.tag": "Жарнама", "ad.title": "Үздік тегін Agent Hub Focus",
     "nav.theme": "Тақырыпты ауыстыру", "nav.music": "Тыныш пианино музыкасы: қосу немесе өшіру",
     "hero.kicker": "Алматы · мекемелер анықтамалығы",
     "hero.title": "Алматыда қайда<br><i>кофе ішіп, тамақтануға</i> болады",
@@ -230,6 +232,7 @@ window.I18N = {
   en: {
     title: "OnlyGuests — cafés, bars and stores in Almaty",
     "nav.contact": "Contact the developer",
+    "ad.tag": "Ad", "ad.title": "The best free Agent Hub: Focus",
     "nav.theme": "Toggle theme", "nav.music": "Calm piano music: turn on or off",
     "hero.kicker": "Almaty · venue guide",
     "hero.title": "Where to drink coffee<br><i>and dine</i> in Almaty",
