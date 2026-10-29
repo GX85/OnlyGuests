@@ -82,20 +82,50 @@ async function pollinationsOnce(prompt, ms) {
   } finally { to.done(); }
 }
 
-// Все доступные источники спрашиваем одновременно и берём первый годный ответ: так задержка равна
-// самой быстрой модели, а 429 или тайм-аут одной из них не ломает ответ.
-// Функция Vercel живёт до 30 с, поэтому общий бюджет по умолчанию 20 с.
-async function chat(prompt, { timeout = 20000, validate = () => true } = {}) {
-  const tasks = [];
-  const wrap = (p) => p.then((r) => { if (!validate(r.text)) throw new Error("invalid"); return r; });
-  if (process.env.OPENROUTER_API_KEY) for (const m of (await openrouterModels()).slice(0, 4)) tasks.push(wrap(openrouterOnce(m, prompt, timeout)));
-  if (process.env.GEMINI_API_KEY) tasks.push(wrap(geminiOnce(prompt, timeout)));
-  if (!process.env.NO_POLLINATIONS) tasks.push(wrap(pollinationsOnce(prompt, timeout)));
-  if (!tasks.length) return null;
-  try { return await Promise.any(tasks); } catch (e) {
-    chat.errors = ((e && e.errors) || []).map((x) => String(x && x.message || x).slice(0, 80));
-    return null;
+// Бесплатные тарифы имеют небольшой дневной лимит, поэтому источники подключаются по очереди («хеджирование»):
+// сначала лучший, следующий запускается только если предыдущий ответил ошибкой (429 и т. п.) или молчит дольше
+// stagger мс. Берём первый годный ответ. Одинаковые запросы кэшируются на час.
+// Функция Vercel живёт до 30 с, поэтому тайм-аут каждого источника ограничен.
+const cache = new Map();
+
+async function chat(prompt, { timeout = 16000, stagger = 5000, validate = () => true } = {}) {
+  const hit = cache.get(prompt);
+  if (hit && Date.now() - hit.at < 3600e3 && validate(hit.r.text)) return hit.r;
+
+  const sources = [];
+  const or = process.env.OPENROUTER_API_KEY ? (await openrouterModels()).slice(0, 4) : [];
+  // порядок: Gemini (если есть ключ) → Pollinations (без лимита по ключу) → бесплатные модели OpenRouter
+  // (у ключа без пополнения всего 50 запросов в сутки, поэтому он идёт после)
+  if (process.env.GEMINI_API_KEY) sources.push(() => geminiOnce(prompt, timeout));
+  if (!process.env.NO_POLLINATIONS) sources.push(() => pollinationsOnce(prompt, timeout));
+  for (const m of or.slice(0, 3)) sources.push(() => openrouterOnce(m, prompt, timeout));
+  if (!sources.length) return null;
+
+  const errors = [];
+  const result = await new Promise((resolve) => {
+    let next = 0, failed = 0, won = false;
+    const launch = () => {
+      if (won || next >= sources.length) return;
+      const run = sources[next++];
+      const timer = setTimeout(launch, stagger);
+      run().then((r) => {
+        if (!validate(r.text)) throw new Error("invalid");
+        if (!won) { won = true; clearTimeout(timer); resolve(r); }
+      }).catch((e) => {
+        errors.push(String((e && e.message) || e).slice(0, 80));
+        clearTimeout(timer);
+        if (++failed === sources.length) resolve(null);
+        else launch();
+      });
+    };
+    launch();
+  });
+  chat.errors = errors;
+  if (result) {
+    if (cache.size > 200) cache.clear();
+    cache.set(prompt, { at: Date.now(), r: result });
   }
+  return result;
 }
 
 function parseJSON(text) {
