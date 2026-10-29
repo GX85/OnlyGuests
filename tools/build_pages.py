@@ -78,11 +78,12 @@ def page(c, all_ids):
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1b12'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-weight='700' font-size='30' text-anchor='middle' fill='%23d9b07a'%3EOG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
+<div class="fogbg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 <header class="top"><div class="wrap top__row">
   <a class="logo" href="../"><img class="logo__mark" src="../img/art/vangogh-oleanders-logo.jpg" alt="" width="44" height="44"><span class="logo__text">Only<i>Guests</i></span></a>
   <div class="top__actions"><a class="top__link" href="../#{c['id']}">Открыть в справочнике</a></div>
