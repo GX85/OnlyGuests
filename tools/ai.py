@@ -24,7 +24,8 @@ BRAVE_KEY = os.environ.get("BRAVE_API_KEY", "")
 PAUSE = float(os.environ.get("AGENT_PAUSE", "4"))  # бесплатные тарифы ограничивают частоту запросов
 
 # порядок предпочтения среди бесплатных моделей OpenRouter
-OR_PREFER = ["deepseek", "qwen3", "llama-3.3-70b", "llama-4", "gemini", "mistral-small", "gemma-3-27b", "gpt-oss"]
+OR_PREFER = ["nemotron-3-ultra", "laguna-s", "flint", "nemotron-3.5-lightning", "gemma-4-31b", "gemma-4-26b", "dots", "deepseek", "qwen", "llama-3.3-70b", "gpt-oss"]
+OR_SKIP = ("safety", "guard", "code", "embed", "-vl", "omni", "inkling", "lfm")
 
 
 def http_json(url, body=None, headers=None, timeout=120):
@@ -66,6 +67,7 @@ def openrouter_models():
                 print("OpenRouter: список моделей недоступен:", e)
                 data = []
             free = [m["id"] for m in data if m["id"].endswith(":free")
+                    and not any(x in m["id"].lower() for x in OR_SKIP)
                     and str((m.get("pricing") or {}).get("prompt", "0")) in ("0", "0.0")]
             rank = lambda mid: next((i for i, k in enumerate(OR_PREFER) if k in mid), len(OR_PREFER))
             _or_models = sorted(free, key=rank)[:6]

@@ -4,7 +4,9 @@
 // Без ключей работает бесплатная модель Pollinations (без регистрации).
 "use strict";
 
-const PREFER = ["deepseek", "qwen3", "llama-3.3-70b", "llama-4", "gemini", "mistral-small", "gemma-3-27b", "gpt-oss"];
+// порядок предпочтения среди бесплатных моделей OpenRouter (список у них меняется, поэтому ищем по подстроке)
+const PREFER = ["nemotron-3-ultra", "laguna-s", "flint", "nemotron-3.5-lightning", "gemma-4-31b", "gemma-4-26b", "dots", "deepseek", "qwen", "llama-3.3-70b", "llama-4", "gpt-oss"];
+const SKIP = /safety|guard|code|coder|embed|vl\b|omni|inkling|lfm/i;   // не чат-модели общего назначения или недоступные во всех регионах
 let freeModels = null, freeModelsAt = 0;
 
 async function openrouterModels() {
@@ -14,7 +16,7 @@ async function openrouterModels() {
     const r = await fetch("https://openrouter.ai/api/v1/models");
     const data = (await r.json()).data || [];
     const rank = (id) => { const i = PREFER.findIndex((k) => id.includes(k)); return i < 0 ? PREFER.length : i; };
-    freeModels = data.filter((m) => m.id.endsWith(":free")).map((m) => m.id).sort((a, b) => rank(a) - rank(b)).slice(0, 4);
+    freeModels = data.filter((m) => m.id.endsWith(":free") && !SKIP.test(m.id)).map((m) => m.id).sort((a, b) => rank(a) - rank(b)).slice(0, 5);
     freeModelsAt = Date.now();
   } catch (e) {
     freeModels = freeModels || [];
@@ -29,61 +31,68 @@ function withTimeout(ms) {
 }
 
 // Возвращает { text, model } или null
-async function chat(prompt, { timeout = 18000 } = {}) {
-  const key = process.env.OPENROUTER_API_KEY;
-  if (key) {
-    for (const model of await openrouterModels()) {
-      const to = withTimeout(timeout);
-      try {
-        const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-          method: "POST", signal: to.signal,
-          headers: { "Content-Type": "application/json", Authorization: "Bearer " + key,
-            "HTTP-Referer": "https://onlyguests.vercel.app", "X-Title": "OnlyGuests" },
-          body: JSON.stringify({ model, temperature: 0.2, messages: [{ role: "user", content: prompt }] })
-        });
-        if (!r.ok) continue;
-        const j = await r.json();
-        const text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
-        if (text) return { text, model };
-      } catch (e) { /* пробуем следующую модель */ } finally { to.done(); }
-    }
-  }
-  const gkey = process.env.GEMINI_API_KEY;
-  if (gkey) {
-    const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-    const to = withTimeout(timeout);
-    try {
-      const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + encodeURIComponent(gkey), {
-        method: "POST", signal: to.signal, headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2 } })
-      });
-      if (r.ok) {
-        const j = await r.json();
-        const text = ((j.candidates || [])[0] || {}).content?.parts?.map((p) => p.text || "").join("");
-        if (text) return { text, model };
-      }
-    } catch (e) { /* нет ответа */ } finally { to.done(); }
-  }
-  // Запасной вариант без ключа: бесплатная модель Pollinations (без доступа в интернет, но для выбора из списка достаточно).
-  // Бесплатный тариф иногда отвечает 429/5xx, поэтому одна повторная попытка.
-  if (!process.env.NO_POLLINATIONS) {
-    for (let attempt = 0; attempt < 2; attempt++) {
-      const to = withTimeout(timeout);
-      try {
-        const r = await fetch("https://text.pollinations.ai/openai", {
-          method: "POST", signal: to.signal, headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ model: "openai-fast", temperature: 0.2, messages: [{ role: "user", content: prompt }] })
-        });
-        if (r.ok) {
-          const j = await r.json();
-          const text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
-          if (text) return { text, model: "pollinations/openai-fast" };
-        }
-      } catch (e) { /* нет ответа */ } finally { to.done(); }
-      await new Promise((res) => setTimeout(res, 1500));
-    }
-  }
-  return null;
+// Общий бюджет времени (функция Vercel живёт до 30 с): бесплатные модели иногда отвечают медленно или
+// с ошибкой 429, поэтому несколько моделей OpenRouter спрашиваем параллельно и берём первый годный ответ.
+// validate(text) — проверка, что ответ нам подходит (например, это JSON с нужными полями).
+async function openrouterOnce(model, prompt, ms) {
+  const to = withTimeout(ms);
+  try {
+    const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST", signal: to.signal,
+      headers: { "Content-Type": "application/json", Authorization: "Bearer " + process.env.OPENROUTER_API_KEY,
+        "HTTP-Referer": "https://onlyguests.vercel.app", "X-Title": "OnlyGuests" },
+      body: JSON.stringify({ model, temperature: 0.2, messages: [{ role: "user", content: prompt }] })
+    });
+    if (!r.ok) throw new Error("http " + r.status);
+    const j = await r.json();
+    const text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+    if (!text) throw new Error("empty");
+    return { text, model };
+  } finally { to.done(); }
+}
+
+async function geminiOnce(prompt, ms) {
+  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  const to = withTimeout(ms);
+  try {
+    const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + encodeURIComponent(process.env.GEMINI_API_KEY), {
+      method: "POST", signal: to.signal, headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2 } })
+    });
+    if (!r.ok) throw new Error("http " + r.status);
+    const j = await r.json();
+    const text = ((j.candidates || [])[0] || {}).content?.parts?.map((p) => p.text || "").join("");
+    if (!text) throw new Error("empty");
+    return { text, model };
+  } finally { to.done(); }
+}
+
+async function pollinationsOnce(prompt, ms) {
+  const to = withTimeout(ms);
+  try {
+    const r = await fetch("https://text.pollinations.ai/openai", {
+      method: "POST", signal: to.signal, headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ model: "openai-fast", temperature: 0.2, messages: [{ role: "user", content: prompt }] })
+    });
+    if (!r.ok) throw new Error("http " + r.status);
+    const j = await r.json();
+    const text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+    if (!text) throw new Error("empty");
+    return { text, model: "pollinations/openai-fast" };
+  } finally { to.done(); }
+}
+
+// Все доступные источники спрашиваем одновременно и берём первый годный ответ: так задержка равна
+// самой быстрой модели, а 429 или тайм-аут одной из них не ломает ответ.
+// Функция Vercel живёт до 30 с, поэтому общий бюджет по умолчанию 20 с.
+async function chat(prompt, { timeout = 20000, validate = () => true } = {}) {
+  const tasks = [];
+  const wrap = (p) => p.then((r) => { if (!validate(r.text)) throw new Error("invalid"); return r; });
+  if (process.env.OPENROUTER_API_KEY) for (const m of (await openrouterModels()).slice(0, 4)) tasks.push(wrap(openrouterOnce(m, prompt, timeout)));
+  if (process.env.GEMINI_API_KEY) tasks.push(wrap(geminiOnce(prompt, timeout)));
+  if (!process.env.NO_POLLINATIONS) tasks.push(wrap(pollinationsOnce(prompt, timeout)));
+  if (!tasks.length) return null;
+  try { return await Promise.any(tasks); } catch (e) { return null; }
 }
 
 function parseJSON(text) {
@@ -110,7 +119,7 @@ async function pick(query, lang, candidates, understood, opts) {
     "Кандидаты уже отфильтрованы системой по запросу: всегда выбирай лучшие из них, даже если совпадение неполное (тогда честно укажи в why, чего не хватает). Список picks не должен быть пустым. Не выдумывай места и факты. Ответь на " + (LANG_NAME[lang] || "русском") + " языке. " +
     'Формат — только JSON: {"text": "1–2 предложения для гостя", "picks": [{"id": "id из списка", "why": "почему подходит, до 12 слов"}]}.\n\n' +
     "Кандидаты:\n" + JSON.stringify(candidates);
-  const res = await chat(prompt, opts || {});
+  const res = await chat(prompt, Object.assign({ validate: (t) => { const j = parseJSON(t); return !!(j && Array.isArray(j.picks) && j.picks.length); } }, opts || {}));
   if (!res) return null;
   const j = parseJSON(res.text);
   if (!j || !Array.isArray(j.picks)) return null;
