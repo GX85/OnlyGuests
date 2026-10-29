@@ -891,8 +891,8 @@
     [].forEach.call(document.querySelectorAll("[data-i18n-aria]"), function (el) { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
     [].forEach.call(document.querySelectorAll("[data-lang]"), function (b) { b.setAttribute("aria-pressed", b.dataset.lang === LANG); });
     $("askExamples").innerHTML = t("ask.examples").split(" · ").map(function (x) {
-      return '<button class="linkbtn" type="button" data-ex>' + esc(x) + "</button>";
-    }).join(" · ");
+      return '<button class="chip chip--ex" type="button" data-ex>' + esc(x) + "</button>";
+    }).join("");
     $("partnerList").innerHTML = t("partner.list").map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("");
     buildControls();
     renderStats();

@@ -336,7 +336,8 @@ button, input, select { font: inherit; color: inherit; }
 .ask + .controls { margin-top: 0; }
 .ask__row { display: flex; gap: 10px; flex-wrap: wrap; }
 .ask__input { flex: 1 1 260px; min-width: 0; }
-.ask__examples { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.ask__examples { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; }
+.chip--ex { font-weight: 500; font-size: 13px; line-height: 1.25; text-align: left; white-space: normal; max-width: 100%; }
 .ask__out:empty { display: none; }
 .ask__out { display: grid; gap: 10px; margin-top: 8px; }
 .ask__out p { margin: 0; }
@@ -450,3 +451,21 @@ button, input, select { font: inherit; color: inherit; }
 .allplaces summary { cursor: pointer; font-weight: 700; color: var(--text); }
 .allplaces nav { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px; font-size: 13px; }
 .allplaces a { color: var(--muted); }
+
+/* ——— узкие экраны и крупный шрифт в браузере: шапка не должна вылезать ——— */
+.top__row { gap: 10px; }
+.logo { min-width: 0; flex: 0 1 auto; }
+.logo__text { white-space: nowrap; }
+.top__actions { flex: 0 0 auto; min-width: 0; }
+.theme-btn { flex: none; }
+@media (max-width: 460px) {
+  .logo { gap: 8px; }
+  .logo__mark { width: 38px; height: 38px; }
+  .logo__text { font-size: 20px; }
+  .lang button { padding: 6px 6px; font-size: 11px; }
+  .theme-btn { width: 38px; height: 38px; }
+  .top__actions { gap: 6px; }
+  .ask__row .btn { flex: 1 1 100%; justify-content: center; }
+  .ask__input { flex-basis: 100%; }
+}
+@media (max-width: 340px) { .logo__text { font-size: 17px; } .logo__mark { display: none; } }
