@@ -261,11 +261,11 @@
   }
 
   // ——— карточки ———
-  function card(c) {
+  function card(c, i) {
     var o = openText(c), d = distText(c);
     return '<div class="cardw">' +
       '<button class="card" type="button" data-id="' + esc(c.id) + '">' +
-        '<div class="card__media">' +
+        '<div class="card__media">' + OGClawd.card(i || 0) +
           '<img src="' + esc(c.photos[0]) + '" alt="" loading="lazy" decoding="async">' +
           '<span class="card__type">' + esc(typeName(c.type)) + (c.partner ? " · " + esc(t("card.ad")) : "") + "</span>" +
           '<span class="card__rating" title="' + esc(t("m.rating")) + '"><span class="star">★</span>' + ratingText(c) + trendBadge(c) + "</span>" +
@@ -295,6 +295,7 @@
   function render() {
     var list = filtered();
     grid.innerHTML = list.map(card).join("");
+    OGClawd.observe(grid);
     $("empty").hidden = list.length > 0;
     $("count").textContent = t("count", { n: list.length, w: plural(list.length, "w.place") }) +
       (list.length !== CAFES.length ? t("count.of", { total: CAFES.length }) : "");
@@ -932,8 +933,10 @@
     setTheme(cur === "dark" ? "light" : "dark");
   });
 
+  OGClawd.t = function (k) { return t(k); };
   initControls();
   applyI18n();
+  OGClawd.mountHero($("heroMascot"), $("clawdBubble"));
   // ?q=… (из Telegram-бота и поиска Google) — сразу спрашиваем помощника
   var q0 = (location.search.match(/[?&]q=([^&]+)/) || [])[1];
   if (q0) {
