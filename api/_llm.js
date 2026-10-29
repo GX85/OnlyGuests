@@ -1,6 +1,7 @@
 // Общий клиент бесплатных моделей для функций Vercel (файлы с «_» не становятся отдельными эндпоинтами).
 // OPENROUTER_API_KEY — бесплатные модели OpenRouter (id с «:free»), список можно задать в OPENROUTER_MODEL через запятую.
 // GEMINI_API_KEY — запасной вариант, бесплатный тариф Gemini.
+// Без ключей работает бесплатная модель Pollinations (без регистрации).
 "use strict";
 
 const PREFER = ["deepseek", "qwen3", "llama-3.3-70b", "llama-4", "gemini", "mistral-small", "gemma-3-27b", "gpt-oss"];
@@ -63,6 +64,25 @@ async function chat(prompt, { timeout = 18000 } = {}) {
       }
     } catch (e) { /* нет ответа */ } finally { to.done(); }
   }
+  // Запасной вариант без ключа: бесплатная модель Pollinations (без доступа в интернет, но для выбора из списка достаточно).
+  // Бесплатный тариф иногда отвечает 429/5xx, поэтому одна повторная попытка.
+  if (!process.env.NO_POLLINATIONS) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const to = withTimeout(timeout);
+      try {
+        const r = await fetch("https://text.pollinations.ai/openai", {
+          method: "POST", signal: to.signal, headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ model: "openai-fast", temperature: 0.2, messages: [{ role: "user", content: prompt }] })
+        });
+        if (r.ok) {
+          const j = await r.json();
+          const text = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+          if (text) return { text, model: "pollinations/openai-fast" };
+        }
+      } catch (e) { /* нет ответа */ } finally { to.done(); }
+      await new Promise((res) => setTimeout(res, 1500));
+    }
+  }
   return null;
 }
 
@@ -75,22 +95,22 @@ function parseJSON(text) {
 }
 
 function configured() {
-  return !!(process.env.OPENROUTER_API_KEY || process.env.GEMINI_API_KEY);
+  return !process.env.NO_POLLINATIONS || !!(process.env.OPENROUTER_API_KEY || process.env.GEMINI_API_KEY);
 }
 
 const LANG_NAME = { ru: "русском", kk: "казахском", en: "английском" };
 
 // Просит модель выбрать до 3 мест из кандидатов. Возвращает { text, picks: [{id, why}], model } или null
-async function pick(query, lang, candidates, understood) {
+async function pick(query, lang, candidates, understood, opts) {
   const ids = new Set(candidates.map((c) => c.id));
   const prompt =
     "Ты ИИ-помощник справочника OnlyGuests (кафе, бары, рестораны и магазины Алматы). " +
     "Гость спрашивает: «" + query + "». " + (understood && understood.length ? "Система поняла условия так: " + understood.join(", ") + ". " : "") +
     "Выбери до 3 лучших мест ТОЛЬКО из списка кандидатов ниже (rating — рейтинг 2ГИС, check — средний чек в тенге, open — открыто ли сейчас, km — расстояние до гостя). " +
-    "Не выдумывай места и факты. Ответь на " + (LANG_NAME[lang] || "русском") + " языке. " +
+    "Кандидаты уже отфильтрованы системой по запросу: всегда выбирай лучшие из них, даже если совпадение неполное (тогда честно укажи в why, чего не хватает). Список picks не должен быть пустым. Не выдумывай места и факты. Ответь на " + (LANG_NAME[lang] || "русском") + " языке. " +
     'Формат — только JSON: {"text": "1–2 предложения для гостя", "picks": [{"id": "id из списка", "why": "почему подходит, до 12 слов"}]}.\n\n' +
     "Кандидаты:\n" + JSON.stringify(candidates);
-  const res = await chat(prompt);
+  const res = await chat(prompt, opts || {});
   if (!res) return null;
   const j = parseJSON(res.text);
   if (!j || !Array.isArray(j.picks)) return null;

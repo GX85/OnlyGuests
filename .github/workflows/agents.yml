@@ -8,6 +8,7 @@
 #   OPENROUTER_API_KEY — бесплатные модели OpenRouter;  GEMINI_API_KEY — Gemini с поиском Google
 #   TAVILY_API_KEY или BRAVE_API_KEY — веб-поиск для моделей OpenRouter/Ollama
 #   DGIS_API_KEY — по желанию, официальный API 2ГИС
+# Без ключей работает только «Переводчик» (бесплатная модель Pollinations); рейтингам, отзывам и разведчику нужен поиск или Gemini.
 # Переменная USE_OLLAMA = true — поднять Ollama прямо в GitHub Actions (модель OLLAMA_MODEL, по умолчанию qwen2.5:3b).
 name: AI agents
 

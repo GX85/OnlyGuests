@@ -5,6 +5,7 @@
 #                         в OPENROUTER_MODEL, иначе берётся лучшая бесплатная из списка OpenRouter.
 #   OLLAMA_HOST         — локальная Ollama (например http://localhost:11434), модель OLLAMA_MODEL.
 #   GEMINI_API_KEY      — бесплатный тариф Gemini; умеет сам искать в Google.
+#   (ничего)            — запасная модель Pollinations без ключа: переводы и выбор мест, но не веб-поиск.
 # Веб-поиск для моделей без доступа в интернет (бесплатные тарифы):
 #   TAVILY_API_KEY или BRAVE_API_KEY.
 #
@@ -95,6 +96,13 @@ def chat_gemini(prompt, search=False):
     return "".join(p.get("text", "") for p in res["candidates"][0]["content"]["parts"])
 
 
+def chat_pollinations(prompt):
+    """Бесплатная модель без ключа (text.pollinations.ai). Без доступа в интернет: годится для перевода и выбора из списка."""
+    res = retrying(lambda: http_json("https://text.pollinations.ai/openai",
+        {"model": "openai-fast", "messages": [{"role": "user", "content": prompt}], "temperature": 0}, timeout=120))
+    return res["choices"][0]["message"]["content"]
+
+
 class Model:
     def __init__(self, name, fn):
         self.name, self.fn = name, fn
@@ -113,6 +121,8 @@ def chat_models():
         out.append(Model("ollama:" + OLLAMA_MODEL, chat_ollama))
     if GEMINI_KEY:
         out.append(Model("gemini:" + GEMINI_MODEL, lambda p: chat_gemini(p)))
+    if not os.environ.get("NO_POLLINATIONS"):
+        out.append(Model("pollinations:openai-fast", chat_pollinations))  # запасной, ключ не нужен
     return out
 
 

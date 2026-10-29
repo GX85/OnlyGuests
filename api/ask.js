@@ -1,6 +1,6 @@
 // ИИ-помощник «Куда пойти?»: сайт присылает запрос и до 30 кандидатов, отобранных локально,
 // бесплатная модель OpenRouter выбирает 3 места и объясняет выбор.
-// Без OPENROUTER_API_KEY / GEMINI_API_KEY возвращает 503, и сайт показывает свой подбор.
+// Без ключей отвечает бесплатная модель Pollinations; если модели недоступны, сайт показывает свой подбор.
 "use strict";
 const llm = require("./_llm");
 
@@ -25,6 +25,11 @@ function body(req) {
 
 module.exports = async (req, res) => {
   res.setHeader("Cache-Control", "no-store");
+  // CORS: помощником можно пользоваться и со встроенных копий сайта (например, из артефакта)
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") { res.statusCode = 204; return res.end(); }
   if (req.method !== "POST") { res.statusCode = 405; return res.end(); }
   if (!llm.configured()) { res.statusCode = 503; return res.end(JSON.stringify({ error: "no model key" })); }
   const ip = String(req.headers["x-forwarded-for"] || "").split(",")[0] || "?";

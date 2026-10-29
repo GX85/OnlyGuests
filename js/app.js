@@ -593,12 +593,13 @@
     if (leafletLoading) { loadLeaflet.q.push(cb); return; }
     leafletLoading = true;
     loadLeaflet.q = [cb];
+    // Leaflet лежит в репозитории (vendor/): карта не зависит от CDN
     var css = document.createElement("link");
     css.rel = "stylesheet";
-    css.href = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";
+    css.href = "vendor/leaflet.css";
     document.head.appendChild(css);
     var s = document.createElement("script");
-    s.src = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";
+    s.src = "vendor/leaflet.js";
     s.onload = function () { loadLeaflet.q.forEach(function (f) { f(true); }); };
     s.onerror = function () { loadLeaflet.q.forEach(function (f) { f(false); }); leafletLoading = false; };
     document.head.appendChild(s);
@@ -616,11 +617,16 @@
     loadLeaflet(function (ok) {
       if (!ok) { $("mapNote").textContent = t("map.fail"); return; }
       if (!mapObj) {
-        mapObj = L.map("map", { scrollWheelZoom: true }).setView([43.238, 76.92], 12);
-        var tiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        mapObj = L.map("map", { scrollWheelZoom: true, minZoom: 10, maxZoom: 18 }).setView([43.238, 76.92], 12);
+        // 1) автономная подложка из репозитория (работает без интернета и в артефакте)
+        if (window.BASEMAP) {
+          L.imageOverlay(window.BASEMAP.src, window.BASEMAP.bounds, { opacity: 1, interactive: false, zIndex: 1 }).addTo(mapObj);
+          mapObj.setMaxBounds([[window.BASEMAP.bounds[0][0] - 0.05, window.BASEMAP.bounds[0][1] - 0.08], [window.BASEMAP.bounds[1][0] + 0.05, window.BASEMAP.bounds[1][1] + 0.08]]);
+        }
+        // 2) поверх — чёткие плитки OpenStreetMap, если они доступны
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19, zIndex: 2, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapObj);
-        tiles.on("tileerror", function () { $("mapNote").hidden = false; $("mapNote").textContent = t("map.fail"); });
         mapLayer = L.layerGroup().addTo(mapObj);
         $("map").addEventListener("click", function (e) {
           var b = e.target.closest("[data-open]");
