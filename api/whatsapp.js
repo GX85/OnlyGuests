@@ -70,6 +70,7 @@ const T = (lang, k, vars) => {
 };
 const q = (o) => Object.assign({ kitchens: [], types: [], feats: [], collections: [], district: null, maxCheck: null, near: false, openNow: false }, o);
 const num = (n) => Number(n).toLocaleString("ru-RU").replace(/ /g, " ");
+const rt = (c) => (c.rating ? c.rating.toFixed(1) : "—"); // у мест из OpenStreetMap оценки пока нет
 const cut = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 const ranked = (list) => list.slice().sort((a, b) =>
   (b.rating * 10 + Math.log10((b.votes || 50) + 1) * 2 + (b.partner ? 1.5 : 0)) - (a.rating * 10 + Math.log10((a.votes || 50) + 1) * 2 + (a.partner ? 1.5 : 0)));
@@ -106,7 +107,7 @@ function status(c, lang) {
 function row(c, lang, pos) {
   const km = pos && c.lat ? " · " + T(lang, "km", { d: OG.distanceKm(pos, c).toFixed(1) }) : "";
   return { id: "d:" + c.id, title: cut((OG.isChoice(c) ? "✦ " : "") + c.name, 24),
-    description: cut("★" + c.rating.toFixed(1) + " · " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸ · " + c.type + km, 72) };
+    description: cut("★" + rt(c) + " · " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸ · " + c.type + km, 72) };
 }
 function moreRow(lang, id) { return { id, title: cut(T(lang, "more"), 24) }; }
 
@@ -114,7 +115,7 @@ async function results(ctx, title, list, offset, prefix, intro) {
   const slice = list.slice(offset, offset + ROWS);
   const rows = slice.map((c) => row(c, ctx.lang, ctx.pos));
   if (prefix && offset + ROWS < list.length) rows.push(moreRow(ctx.lang, prefix + (offset + ROWS)));
-  const lines = slice.slice(0, 3).map((c, i) => (offset + i + 1) + ". " + c.name + " — ★" + c.rating.toFixed(1) + (status(c, ctx.lang) ? ", " + status(c, ctx.lang) : "")).join("\n");
+  const lines = slice.slice(0, 3).map((c, i) => (offset + i + 1) + ". " + c.name + " — ★" + rt(c) + (status(c, ctx.lang) ? ", " + status(c, ctx.lang) : "")).join("\n");
   return sendList(ctx.to, ctx.lang, title, (intro ? intro + "\n\n" : "") + lines, rows);
 }
 
@@ -124,7 +125,7 @@ async function details(ctx, c) {
   const hours = c.hours ? (c.hours === "24/7" || c.features.includes("allday") ? T(lang, "open24") : c.hours) : (c.features.includes("allday") ? T(lang, "open24") : T(lang, "noHours"));
   const menu = c.menu.slice(0, 4).map((m) => m.name + " " + num(m.price) + " ₸").join(", ");
   const caption = (OG.isChoice(c) ? "✦ _" + T(lang, "choice") + "_\n" : "") + "*" + c.name + "* — " + c.type + ", " + c.cuisine + "\n" +
-    "★ " + c.rating.toFixed(1) + (c.votes ? " (" + num(c.votes) + ")" : "") + " · " + T(lang, "bill") + " " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸\n" +
+    "★ " + rt(c) + (c.votes ? " (" + num(c.votes) + ")" : "") + " · " + T(lang, "bill") + " " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸\n" +
     "📍 " + c.address + (c.district ? ", " + c.district : "") + "\n🕒 " + hours + (st ? " (" + st + ")" : "") + "\n\n" + c.about + "\n\n🍽 " + T(lang, "menu") + ": " + menu +
     "\n\n" + T(lang, "gis") + ": " + c.gis + "\n" + T(lang, "site") + ": " + origin + "/place/" + c.id;
   const img = await wa({ to, type: "image", image: { link: origin + "/" + c.photos[0], caption: caption.slice(0, 1000) } });

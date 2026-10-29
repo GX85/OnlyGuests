@@ -75,6 +75,7 @@ function T(lang, key, vars) {
 }
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 const num = (n) => Number(n).toLocaleString("ru-RU").replace(/ /g, " ");
+const rt = (c) => (c.rating ? c.rating.toFixed(1) : "—"); // у мест из OpenStreetMap оценки пока нет
 const q = (o) => Object.assign({ kitchens: [], types: [], feats: [], collections: [], district: null, maxCheck: null, near: false, openNow: false }, o);
 
 async function tg(method, payload) {
@@ -96,7 +97,7 @@ function line(c, lang, pos, why) {
   const open = statusText(c, lang);
   const km = pos && c.lat ? T(lang, "km", { d: OG.distanceKm(pos, c).toFixed(1) }) : "";
   return (OG.isChoice(c) ? "✦ <i>" + T(lang, "choice") + "</i>\n" : "") + "<b>" + esc(c.name) + "</b>" + (c.partner ? " · " + T(lang, "ad") : "") + " — " + esc(c.type) + ", " + esc(c.cuisine) + "\n" +
-    "★ " + c.rating.toFixed(1) + (c.votes ? " (" + num(c.votes) + ")" : "") + " · " + T(lang, "bill") + " " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸" +
+    "★ " + rt(c) + (c.votes ? " (" + num(c.votes) + ")" : "") + " · " + T(lang, "bill") + " " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸" +
     (open ? " · " + open : "") + (km ? " · " + km : "") + "\n📍 " + esc(c.address) + (why ? "\n💬 " + esc(why) : "");
 }
 function ranked(list) {
@@ -211,7 +212,7 @@ async function runText(ctx, text) {
 
 function inlineResult(c, lang, origin) {
   return {
-    type: "article", id: c.id, title: c.name + " · ★ " + c.rating.toFixed(1),
+    type: "article", id: c.id, title: c.name + " · ★ " + rt(c),
     description: c.type + " · " + (c.checkApprox ? "≈" : "") + num(c.check) + " ₸ · " + c.address,
     thumbnail_url: origin + "/" + c.photos[0],
     input_message_content: { message_text: line(c, lang) + "\n\n" + origin + "/place/" + c.id, parse_mode: "HTML", disable_web_page_preview: false }

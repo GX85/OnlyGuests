@@ -1,7 +1,7 @@
 # SEO-страницы OnlyGuests: отдельная страница у каждого места (place/<id>.html), sitemap.xml и robots.txt,
 # а в index.html — список ссылок на все места (между метками places:start / places:end).
 # Учитывает свежие рейтинги агентов из js/live.js. Запуск: python3 tools/build_pages.py
-import html, json, os, re, sys
+import html, json, os, re, sys, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai
 
@@ -38,12 +38,15 @@ def is_choice(c):
 def page(c, all_ids):
     name = c["name"]
     t = c["type"]
-    rating = "%s%.1f" % ("≈" if c["ratingApprox"] else "", c["rating"])
-    votes = (num(c["votes"]) + " оценок") if c.get("votes") else "число оценок уточняется"
+    rating = ("%s%.1f" % ("≈" if c["ratingApprox"] else "", c["rating"])) if c["rating"] else "—"
+    votes = (num(c["votes"]) + " оценок") if c.get("votes") else ("оценки гостей смотрите на картах" if not c["rating"] else "число оценок уточняется")
+    q = urllib.parse.quote(c["name"])
+    yandex = "https://yandex.kz/maps/162/almaty/search/" + q
+    google = "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(c["name"] + " Алматы")
     check = ("≈" if c["checkApprox"] else "") + num(c["check"]) + " ₸"
     title = "%s — %s, %s · Алматы | OnlyGuests" % (name, t.lower(), c["cuisine"].lower())
-    desc = "%s в Алматы: рейтинг 2ГИС %s (%s), средний чек %s, %s. Адрес: %s.%s" % (
-        name, rating, votes, check, c["cuisine"].lower(), c["address"],
+    desc = "%s в Алматы: %sсредний чек %s, %s. Адрес: %s.%s" % (
+        name, ("рейтинг 2ГИС %s (%s), " % (rating, votes)) if c["rating"] else "", check, c["cuisine"].lower(), c["address"],
         " Часы: " + hours_ru(c["hours"]) + "." if c.get("hours") else "")
     ld = {"@context": "https://schema.org", "@type": SCHEMA_TYPE.get(t, "Restaurant"), "name": name,
           "url": SITE + "/place/" + c["id"], "image": [SITE + "/" + p for p in c["photos"]],
@@ -95,7 +98,7 @@ def page(c, all_ids):
     <div class="m">
       <div class="m__head">{'<p class="choice choice--lg">✦ Выбор OnlyGuests <small>Рейтинг 4.9+ и больше 1000 оценок гостей в 2ГИС</small></p>' if is_choice(c) else ''}<h1>{e(name)}</h1><p>{e(t)} · {e(c['cuisine'])} · Алматы</p></div>
       <div class="facts">
-        <div class="fact"><div class="fact__label">Рейтинг 2ГИС</div><div class="fact__value"><span class="star">★</span> {rating}</div><div class="fact__note">{votes}</div></div>
+        <div class="fact"><div class="fact__label">Рейтинг</div><div class="fact__value"><span class="star">★</span> {rating}</div><div class="fact__note">{votes}</div></div>
         <div class="fact"><div class="fact__label">Год открытия</div><div class="fact__value">{e(str(c['opened'])) if c.get('opened') else 'нет данных'}</div><div class="fact__note">{e(c.get('openedNote') or 'в открытых источниках не нашли')}</div></div>
         <div class="fact"><div class="fact__label">Средний чек</div><div class="fact__value">{check}</div><div class="fact__note">{'оценка по типу заведения' if c['checkApprox'] else 'по данным 2ГИС'}</div></div>
       </div>
@@ -107,7 +110,9 @@ def page(c, all_ids):
         <p class="menu-note">Популярные позиции, цены ориентировочные. Актуальное меню и цены — в 2ГИС.</p></div>
       <div class="actions">
         <a class="btn" href="../#{c['id']}">Открыть в OnlyGuests</a>
-        <a class="btn btn--ghost" href="{e(c['gis'])}" rel="noopener" target="_blank">Открыть в 2ГИС ↗</a>
+        <a class="btn btn--ghost" href="{e(c['gis'])}" rel="noopener" target="_blank">2ГИС ↗</a>
+        <a class="btn btn--ghost" href="{e(yandex)}" rel="noopener" target="_blank">Яндекс Карты ↗</a>
+        <a class="btn btn--ghost" href="{e(google)}" rel="noopener" target="_blank">Google Maps ↗</a>
       </div>
       <div class="m__section"><h2>Рядом в справочнике</h2><p class="m__about">{' · '.join('<a href="%s">%s</a>' % (x, e(NAMES[x])) for x in nearby)}</p></div>
     </div>

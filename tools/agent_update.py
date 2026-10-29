@@ -119,6 +119,8 @@ def ai_prompt(t, fmt):
 
 
 def plausible(cur, new):
+    if not cur["rating"]:          # у места из OpenStreetMap оценки ещё не было — сравнивать не с чем
+        return None if 1 <= new["rating"] <= 5 else "рейтинг вне 1–5"
     if abs(new["rating"] - cur["rating"]) > MAX_JUMP:
         return "слишком резкий скачок %.1f → %.1f" % (cur["rating"], new["rating"])
     if cur.get("votes") and new.get("votes") and new["votes"] < cur["votes"] * 0.8:
@@ -148,7 +150,8 @@ def main(argv):
 
     known = {c["id"] for c in cafes}
     live = {k: v for k, v in live.items() if k in known}
-    queue = sorted(cafes, key=lambda c: (live.get(c["id"], {}).get("checkedAt") or ""))[:limit]
+    # сначала места без оценки (из OpenStreetMap), потом те, что дольше всех не проверяли
+    queue = sorted(cafes, key=lambda c: (bool(c["rating"]) or bool(live.get(c["id"], {}).get("rating")), live.get(c["id"], {}).get("checkedAt") or ""))[:limit]
     today = ai.now_iso()[:10]
 
     changed = checked = 0
@@ -169,7 +172,7 @@ def main(argv):
             print("  отклонено:", bad)
             continue
         checked += 1
-        if new["rating"] != cur["rating"]:
+        if cur["rating"] and new["rating"] != cur["rating"]:
             e["prev"] = cur["rating"]
             e["changedAt"] = e["checkedAt"]
             changed += 1
@@ -183,7 +186,7 @@ def main(argv):
         e["source"] = new["source"]
         e["confirmedAt"] = e["checkedAt"]
         hist = e.setdefault("hist", [])
-        if not hist:
+        if not hist and c["rating"]:
             hist.append([c.get("baseDate", "2026-10-28"), c["rating"], c["votes"]])
         point = [today, e["rating"], e.get("votes")]
         if hist[-1][0] == today:

@@ -58,6 +58,8 @@ PHOTO_PLAN = {
  "doner":    ["grill","burger","cafeint"],
  "store":    ["produce","goods","storeint"],
  "konbini":  ["noodles","goods","storeint"],
+ "bistro":   ["salad","breakfast","cafeint"],
+ "mixed":    ["salad","meat","interior"],
 }
 
 # Меню-шаблоны: цены даны для «среднего» чека ~6000 ₸, дальше масштабируются по чеку заведения.
@@ -89,6 +91,8 @@ MENU = {
  "cocktail": [("Авторский коктейль",5500),("Негрони",4500),("Апероль шприц",4200),("Джин-тоник",3800),("Начос с соусами",3200),("Бургер",4600)],
  "doner": [("Донер классический",1500),("Донер сырный",1800),("Дюрюм",1900),("Донер-тарелка",2600),("Картофель фри",800),("Айран",500)],
  "store": [("Хлеб пшеничный",250),("Молоко 1 л",650),("Яйца, 10 шт.",900),("Курица охлаждённая, 1 кг",1900),("Сыр, 200 г",1400),("Вода 1,5 л",280),("Бананы, 1 кг",900)],
+ "bistro": [("Комплексный обед",2400),("Суп дня",1300),("Паста с курицей",2800),("Сэндвич с индейкой",2200),("Салат с тунцом",2400),("Американо",900)],
+ "mixed": [("Суп дня",1600),("Салат овощной",1800),("Горячее блюдо дня",3200),("Паста с курицей",3000),("Десерт дня",1500),("Чай / кофе",900)],
  "konbini": [("Рамен в стакане",900),("Кимбап",1500),("Токпокки",1700),("Банановое молоко",750),("Онигири",800),("Кофе американо",700)],
 }
 
@@ -406,7 +410,7 @@ for v in V:
 
 # Ориентировочный чек, если 2ГИС его не показал (помечается как оценка)
 EST = {"cocktail":9000,"doner":2000,"store":6000,"konbini":2500,"coffee":2500,"bakery":2500,"breakfast":4000,"burger":2500,"pizza":3000,"canteen":2000,"steak":15000,
-       "pub":7000,"seafood":10000,"mediterranean":12000,"european":8000,"grill":5000}
+       "pub":7000,"bistro":2800,"mixed":4500,"seafood":10000,"mediterranean":12000,"european":8000,"grill":5000}
 for v in V:
     v["checkApprox"] = v["check"] is None
     if v["check"] is None:
@@ -481,10 +485,41 @@ for i, v in enumerate(V):
     if s in PARTNERS:
         out[-1]["partner"] = True
 
+# ——— расширенный каталог: места из OpenStreetMap (tools/extra_places.json, собирает tools/expand_data.py) ———
+# Оценок у них пока нет (rating = 0): их подтягивают агенты рейтингов или владельцы. Ссылки на 2ГИС — поиск по названию.
+import urllib.parse
+_extra_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "extra_places.json")
+EXTRA = json.load(open(_extra_path, encoding="utf-8")) if os.path.exists(_extra_path) else []
+for x in EXTRA:
+    i = len(out)
+    s = slug(x["name"]) or f"place-{i}"
+    base, n = s, 2
+    while s in seen:
+        s = f"{base}-{n}"; n += 1
+    seen.add(s)
+    check_approx = not x.get("check")
+    v = {"kitchen": x["kitchen"], "check": x.get("check") or EST.get(x["kitchen"], 5000), "checkApprox": check_approx, "sig": []}
+    dist = x.get("district")
+    about = x["type"] + ". Адрес и часы — по данным OpenStreetMap; оценки гостей смотрите в 2ГИС, Яндекс Картах или Google Maps."
+    rec = {
+        "id": s, "name": x["name"], "type": x["type"], "cuisine": x["cuisine"], "kitchen": x["kitchen"],
+        "rating": 0, "votes": None, "ratingApprox": False, "address": x["address"],
+        "gis": "https://2gis.kz/almaty/search/" + urllib.parse.quote(x["name"]),
+        "opened": None, "openedApprox": False, "openedNote": None, "check": v["check"], "checkApprox": check_approx,
+        "features": x.get("features", []), "about": about,
+        "photos": [U + p + ".jpg" for p in photos(i, x["kitchen"])], "menu": menu(v), "src": "osm",
+        "lat": x["lat"], "lon": x["lon"]}
+    if dist:
+        rec["district"] = dist
+    if x.get("hours"):
+        rec["hours"] = x["hours"]
+    out.append(rec)
+
 js = "// OnlyGuests — данные о %d заведениях Алматы.\n" % len(out) + \
-     "// Рейтинги и число оценок — по карточкам 2ГИС на октябрь 2026 г. (могут меняться).\n" \
+     "// Первые заведения: рейтинги и число оценок — по карточкам 2ГИС на октябрь 2026 г. (могут меняться).\n" \
+     "// Заведения с src: \"osm\" добавлены из OpenStreetMap (rating: 0 — оценки пока нет).\n" \
      "// opened — год открытия, если его удалось подтвердить источником; openedNote — пояснение.\n" \
      "// menu — популярные позиции с ориентировочными ценами (₸); фото — иллюстративные (Unsplash).\n" \
-     "window.CAFES = " + json.dumps(out, ensure_ascii=False, indent=1) + ";\n"
+     "window.CAFES = [\n" + ",\n".join(json.dumps(o, ensure_ascii=False, separators=(",", ":")) for o in out) + "\n];\n"
 open(sys.argv[1], "w").write(js)
-print(len(out), "places;", sum(1 for o in out if o["opened"]), "with year")
+print(len(out), "places;", sum(1 for o in out if o["opened"]), "with year;", len(EXTRA), "from OSM")

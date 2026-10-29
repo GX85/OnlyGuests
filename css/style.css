@@ -643,111 +643,14 @@ h1, h2, h3, .logo__text, .card__name, .fact__value, .stat b, .panel__title, .con
   .top { background: var(--hero-bg); backdrop-filter: none; }
 }
 
-/* ═══════════ Claw'd — маскот (js/clawd.js) ═══════════ */
-.clawd { display: block; width: 54px; height: auto; overflow: visible; }
-.clawd * { transform-box: fill-box; }
-.clawd:not(.on) *, .clawd:not(.on) { animation-play-state: paused; }
-.clawd-track { position: absolute; left: 8px; right: 70px; bottom: 4px; height: 48px; pointer-events: none; z-index: 2; }
-.clawd-track .clawd { position: absolute; left: 0; bottom: 0; }
-.card__partner, .card__closed { left: 70px; }
-.cl-eyes { transform-origin: 50% 50%; animation: cl-blink 4.4s infinite; }
-@keyframes cl-blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
-.cl-all { transform-origin: 50% 100%; }
-.cl-armL { transform-origin: 100% 100%; } .cl-armR { transform-origin: 0% 100%; }
-
-/* 1. машет рукой */
-.k-wave .cl-armR { animation: cl-wave 1.7s ease-in-out infinite; }
-@keyframes cl-wave { 0%, 100% { transform: rotate(0); } 12% { transform: rotate(-75deg); } 28% { transform: rotate(-40deg); } 44% { transform: rotate(-75deg); } 60% { transform: rotate(-40deg); } 76% { transform: rotate(-75deg); } 90% { transform: rotate(0); } }
-/* 2. прыгает */
-.k-jump .cl-all { animation: cl-jump 1.2s cubic-bezier(.3, .7, .4, 1) infinite; }
-@keyframes cl-jump { 0%, 100% { transform: translateY(0) scale(1.1, .88); } 18% { transform: translateY(0) scale(.94, 1.08); } 50% { transform: translateY(-6px) scale(1, 1); } 82% { transform: translateY(0) scale(1.1, .88); } }
-.k-jump .cl-armL { animation: cl-armup 1.2s ease-in-out infinite; } .k-jump .cl-armR { animation: cl-armup-r 1.2s ease-in-out infinite; }
-@keyframes cl-armup { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(60deg); } } @keyframes cl-armup-r { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-60deg); } }
-/* 3. танцует */
-.k-dance .cl-all { animation: cl-sway .8s ease-in-out infinite alternate; }
-@keyframes cl-sway { from { transform: rotate(-8deg) translateY(0); } to { transform: rotate(8deg) translateY(-1px); } }
-.k-dance .cl-armL { animation: cl-armup .8s ease-in-out infinite alternate; } .k-dance .cl-armR { animation: cl-armup-r .8s ease-in-out infinite alternate-reverse; }
-/* 4. поворачивается */
-.k-turn .cl-all { transform-origin: 50% 50%; animation: cl-turn 2.8s ease-in-out infinite; }
-@keyframes cl-turn { 0%, 35% { transform: scaleX(1); } 48% { transform: scaleX(.06); } 52% { transform: scaleX(.06); } 65%, 85% { transform: scaleX(-1); } 98%, 100% { transform: scaleX(1); } }
-/* 5. выглядывает */
-.k-peek { overflow: hidden; }
-.k-peek .cl-all { animation: cl-peek 3.4s ease-in-out infinite; }
-@keyframes cl-peek { 0%, 8% { transform: translateY(130%); } 24%, 62% { transform: translateY(0); } 78%, 100% { transform: translateY(130%); } }
-.k-peek .cl-eyes { animation: cl-look 3.4s ease-in-out infinite; }
-@keyframes cl-look { 0%, 28% { transform: translateX(0); } 36%, 44% { transform: translateX(-1.1px); } 52%, 60% { transform: translateX(1.1px); } 100% { transform: translateX(0); } }
-/* 6. пьёт кофе */
-.k-coffee .cl-armR { animation: cl-sip 3s ease-in-out infinite; }
-.k-coffee .cl-cup { animation: cl-cup 3s ease-in-out infinite; }
-.k-coffee .cl-steam { animation: cl-steam 1.4s ease-in-out infinite alternate; }
-@keyframes cl-sip { 0%, 15%, 100% { transform: rotate(0); } 40%, 65% { transform: rotate(-70deg); } 85% { transform: rotate(0); } }
-@keyframes cl-cup { 0%, 15%, 100% { transform: translate(0, 0) rotate(0); } 40%, 65% { transform: translate(-3.4px, -3.6px) rotate(-18deg); } 85% { transform: translate(0, 0) rotate(0); } }
-@keyframes cl-steam { from { transform: translateY(0); opacity: .8; } to { transform: translateY(-1.2px); opacity: .25; } }
-/* 7. спит */
-.k-sleep .cl-eyes { animation: none; transform: scaleY(.12); }
-.k-sleep .cl-all { animation: cl-breathe 3.2s ease-in-out infinite; }
-@keyframes cl-breathe { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.04, 1.07) translateY(-.3px); } }
-.cl-z { opacity: 0; animation: cl-zfloat 3.2s ease-out infinite; transform-box: view-box; }
-.cl-z2 { animation-delay: 1s; } .cl-z3 { animation-delay: 2s; }
-@keyframes cl-zfloat { 0% { opacity: 0; transform: translate(0, 2px); } 25% { opacity: 1; } 100% { opacity: 0; transform: translate(2px, -4px); } }
-/* 8. жонглирует */
-.cl-ball { animation: cl-toss 1.5s linear infinite; } .cl-b2 { animation-delay: -.5s; } .cl-b3 { animation-delay: -1s; }
-@keyframes cl-toss { 0% { transform: translate(-1px, 2px); } 25% { transform: translate(3px, -3px); } 50% { transform: translate(7px, 2px); } 75% { transform: translate(3px, -3px); } 100% { transform: translate(-1px, 2px); } }
-.k-juggle .cl-armL { animation: cl-armup .75s ease-in-out infinite alternate; } .k-juggle .cl-armR { animation: cl-armup-r .75s ease-in-out infinite alternate-reverse; }
-/* 9. слушает музыку */
-.k-music .cl-all { animation: cl-bob .56s ease-in-out infinite alternate; }
-@keyframes cl-bob { from { transform: translateY(0) rotate(-3deg); } to { transform: translateY(-1.4px) rotate(3deg); } }
-.cl-note { opacity: 0; animation: cl-notefloat 2.4s ease-out infinite; transform-box: view-box; } .cl-n2 { animation-delay: 1.1s; }
-@keyframes cl-notefloat { 0% { opacity: 0; transform: translate(0, 3px); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(2px, -5px) rotate(14deg); } }
-/* 10. качает мышцы */
-.k-flex .cl-armL { animation: cl-flexl .5s ease-in-out infinite alternate; } .k-flex .cl-armR { animation: cl-flexr .5s ease-in-out infinite alternate; }
-@keyframes cl-flexl { from { transform: rotate(10deg); } to { transform: rotate(75deg); } } @keyframes cl-flexr { from { transform: rotate(-75deg); } to { transform: rotate(-10deg); } }
-.k-flex .cl-all { animation: cl-puff 1s ease-in-out infinite; }
-@keyframes cl-puff { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06, 1.04); } }
-.cl-spark { animation: cl-twinkle .9s steps(2) infinite; } @keyframes cl-twinkle { 0% { opacity: 1; } 50% { opacity: 0; } }
-/* 11. удивляется */
-.k-surprise .cl-all { animation: cl-startle 3s ease-out infinite; }
-@keyframes cl-startle { 0%, 14% { transform: translateY(0) scale(1); } 20% { transform: translateY(-5px) scale(.94, 1.1); } 30% { transform: translateY(0) scale(1.1, .88); } 40%, 100% { transform: translateY(0) scale(1); } }
-.cl-bang { transform-origin: 50% 100%; animation: cl-pop 3s ease-out infinite; }
-@keyframes cl-pop { 0%, 14% { transform: scale(0); opacity: 0; } 24% { transform: scale(1.25); opacity: 1; } 34%, 74% { transform: scale(1); opacity: 1; } 90%, 100% { transform: scale(0); opacity: 0; } }
-.k-surprise .cl-armL { animation: cl-armup 3s ease-out infinite; } .k-surprise .cl-armR { animation: cl-armup-r 3s ease-out infinite; }
-/* 12. гуляет по карточке */
-.k-walk { animation: cl-stroll 7s ease-in-out infinite; }
-@keyframes cl-stroll { 0%, 6% { left: 0; } 46%, 52% { left: calc(100% - 54px); } 94%, 100% { left: 0; } }
-.k-walk .cl-all { transform-origin: 50% 50%; animation: cl-facing 7s steps(1) infinite; }
-@keyframes cl-facing { 0% { transform: scaleX(1); } 49% { transform: scaleX(1); } 50% { transform: scaleX(-1); } 100% { transform: scaleX(-1); } }
-.k-walk .cl-legA { animation: cl-step .26s steps(1) infinite alternate; } .k-walk .cl-legB { animation: cl-step .26s steps(1) infinite alternate-reverse; }
-@keyframes cl-step { from { transform: translateY(0); } to { transform: translateY(-1.3px); } }
-/* ожидание: дышит и моргает */
-.k-idle .cl-all { animation: cl-breathe 3.6s ease-in-out infinite; }
-
-/* лендинг: большой Claw'd выходит, машет и танцует */
-.hero__mascot { position: absolute; right: max(18px, 6vw); bottom: 100px; z-index: 3; width: 138px; cursor: pointer; border-radius: 20px; -webkit-tap-highlight-color: transparent; }
-.hero__mascot .clawd { width: 138px; filter: drop-shadow(0 8px 14px rgba(0, 0, 0, .35)); }
-.hero__mascot:focus-visible { outline: 3px solid #d9b07a; outline-offset: 4px; }
-.clawd-bubble {
-  position: absolute; right: 8px; bottom: calc(100% - 6px); width: max-content; max-width: min(260px, 70vw); padding: 10px 14px; border-radius: 18px;
-  background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .3); color: #fff; font-size: 14px; line-height: 1.35;
-  backdrop-filter: blur(16px) saturate(170%); -webkit-backdrop-filter: blur(16px) saturate(170%); box-shadow: 0 10px 28px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .3);
-}
-.clawd-bubble[hidden] { display: none; }
-.clawd-bubble::after { content: ""; position: absolute; right: 36px; bottom: -7px; width: 14px; height: 14px; background: inherit; border-right: 1px solid rgba(255, 255, 255, .3); border-bottom: 1px solid rgba(255, 255, 255, .3); transform: rotate(45deg); border-radius: 0 0 4px 0; backdrop-filter: inherit; }
-.clawd-bubble.pop { animation: cl-bubble .35s cubic-bezier(.3, 1.4, .5, 1); }
-@keyframes cl-bubble { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-.k-walkin { animation: cl-walkin 3.2s cubic-bezier(.3, .6, .4, 1) both; }
-@keyframes cl-walkin { from { transform: translateX(calc(-100vw + 140px)); } to { transform: translateX(0); } }
-.k-walkin .cl-legA { animation: cl-step .22s steps(1) infinite alternate; } .k-walkin .cl-legB { animation: cl-step .22s steps(1) infinite alternate-reverse; }
-.k-walkin .cl-all { animation: cl-sway 0.44s ease-in-out infinite alternate; }
-@media (max-width: 760px) { .hero__mascot { width: 96px; bottom: 96px; right: 14px; } .hero__mascot .clawd { width: 96px; } }
-@media (max-width: 460px) { .hero__mascot { bottom: 70px; } }
-
-@media (prefers-reduced-motion: reduce) {
-  .clawd *, .clawd, .clawd-bubble { animation: none !important; }
-  .k-walkin { transform: none; }
-  .cl-z, .cl-note, .cl-bang { opacity: 1; }
-}
-@media (min-width: 761px) {
-  .hero__mascot { top: 150px; bottom: auto; right: max(48px, 9vw); }
-  .hero__mascot .clawd-bubble { top: calc(100% + 4px); bottom: auto; right: -6px; }
-  .hero__mascot .clawd-bubble::after { top: -7px; bottom: auto; transform: rotate(225deg); }
-}
+/* ═══════════ мини-плеер музыки (js/music.js) ═══════════ */
+.mplayer { position: fixed; left: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; gap: 8px;
+  max-width: min(260px, calc(100vw - 96px)); padding: 6px 6px 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--text);
+  background: var(--glass-strong, var(--surface)); border: 1px solid var(--glass-edge, var(--line)); box-shadow: var(--glass-shadow, var(--shadow));
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4); }
+.mplayer[hidden] { display: none; }
+.mplayer__note { color: var(--accent, #d9a05b); }
+.mplayer__name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mplayer__next { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line, rgba(128,128,128,.3)); background: transparent; color: inherit; font-size: 13px; line-height: 1; cursor: pointer; }
+.mplayer__next:hover { background: rgba(128,128,128,.18); }
+@media (max-width: 760px) { .mplayer { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); } }

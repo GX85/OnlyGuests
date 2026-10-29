@@ -10,7 +10,7 @@
 
   var KITCHENS = ["kazakh", "uzbek", "uyghur", "georgian", "italian", "japanese", "chinese", "panasian", "korean", "indian", "turkish",
     "mediterranean", "european", "russian", "seafood", "steak", "grill", "pub", "cocktail", "burger", "doner", "pizza", "breakfast",
-    "coffee", "bakery", "canteen", "store", "konbini"];
+    "coffee", "bakery", "canteen", "bistro", "mixed", "store", "konbini"];
   var FEATURES = ["kids", "namaz", "halal", "veranda", "music", "allday", "pets"];
   var COLLS = ["choice", "date", "breakfast", "view", "laptop", "lunch", "kids", "night", "cheap"];
   var DISTRICTS = ["Алмалинский", "Ауэзовский", "Бостандыкский", "Жетысуский", "Медеуский", "Наурызбайский", "Турксибский", "Алатауский"];
@@ -97,7 +97,7 @@
   });
 
   // ——— форматирование ———
-  function ratingText(c) { return (c.ratingApprox ? "≈ " : "") + c.rating.toFixed(1); }
+  function ratingText(c) { return c.rating ? (c.ratingApprox ? "≈ " : "") + c.rating.toFixed(1) : "—"; }
   function votesText(c) { return c.votes ? num(c.votes) + " " + plural(c.votes, "w.vote") : t("card.noVotes"); }
   function checkText(c) { return (c.checkApprox ? "≈ " : "") + num(c.check) + " ₸"; }
   function openedText(c) { return c.opened ? (c.openedApprox ? "≈ " : "") + c.opened : t("opened.none"); }
@@ -265,7 +265,7 @@
     var o = openText(c), d = distText(c);
     return '<div class="cardw">' +
       '<button class="card" type="button" data-id="' + esc(c.id) + '">' +
-        '<div class="card__media">' + OGClawd.card(i || 0) +
+        '<div class="card__media">' +
           '<img src="' + esc(c.photos[0]) + '" alt="" loading="lazy" decoding="async">' +
           '<span class="card__type">' + esc(typeName(c.type)) + (c.partner ? " · " + esc(t("card.ad")) : "") + "</span>" +
           '<span class="card__rating" title="' + esc(t("m.rating")) + '"><span class="star">★</span>' + ratingText(c) + trendBadge(c) + "</span>" +
@@ -295,7 +295,6 @@
   function render() {
     var list = filtered();
     grid.innerHTML = list.map(card).join("");
-    OGClawd.observe(grid);
     $("empty").hidden = list.length > 0;
     $("count").textContent = t("count", { n: list.length, w: plural(list.length, "w.place") }) +
       (list.length !== CAFES.length ? t("count.of", { total: CAFES.length }) : "");
@@ -304,7 +303,8 @@
 
   function renderStats() {
     var votes = CAFES.reduce(function (s, c) { return s + (c.votes || 0); }, 0);
-    var avg = CAFES.reduce(function (s, c) { return s + c.rating; }, 0) / CAFES.length;
+    var rated = CAFES.filter(function (c) { return c.rating; });
+    var avg = rated.reduce(function (s, c) { return s + c.rating; }, 0) / (rated.length || 1);
     var top = CAFES.filter(function (c) { return c.rating >= 4.8; }).length;
     $("stats").innerHTML = [
       [CAFES.length, t("stats.places")], [avg.toFixed(2) + " ★", t("stats.avg")], [top, t("stats.top")], [num(votes), t("stats.votes")]
@@ -460,7 +460,7 @@
         "</div>" +
         '<div class="facts">' +
           '<div class="fact"><div class="fact__label">' + esc(t("m.rating")) + '</div><div class="fact__value"><span class="star">★</span> ' + ratingText(c) +
-            trendBadge(c) + '</div><div class="fact__note">' + votesText(c) + (c.ratingApprox ? esc(t("m.approx")) : "") +
+            trendBadge(c) + '</div><div class="fact__note">' + (c.rating ? votesText(c) + (c.ratingApprox ? esc(t("m.approx")) : "") : esc(t("m.unrated"))) +
             (c.checkedAt ? "<br>" + esc(t("m.checked", { d: dateText(c.checkedAt) })) : "") + "</div></div>" +
           '<div class="fact"><div class="fact__label">' + esc(t("m.year")) + '</div><div class="fact__value">' + openedText(c) +
             '</div><div class="fact__note">' + esc(c.openedNote ? tr(c.openedNote) : t("m.yearNone")) + "</div></div>" +
@@ -478,6 +478,8 @@
           '<p class="menu-note">' + esc(t(isStore ? "m.goodsNote" : "m.menuNote")) + "</p></div>" +
         '<div class="actions">' +
           '<a class="btn" href="' + esc(c.gis) + '" target="_blank" rel="noopener">' + esc(t("m.open2gis")) + "</a>" +
+          '<a class="btn btn--ghost" href="' + esc(yandexLink(c)) + '" target="_blank" rel="noopener">' + esc(t("m.openYandex")) + "</a>" +
+          '<a class="btn btn--ghost" href="' + esc(googleLink(c)) + '" target="_blank" rel="noopener">' + esc(t("m.openGoogle")) + "</a>" +
           (c.lat ? '<button class="btn btn--ghost" type="button" data-onmap="' + esc(c.id) + '">' + esc(t("m.onMap")) + "</button>" : "") +
           '<button class="btn btn--ghost" type="button" id="mShare">' + esc(t("m.share")) + "</button>" +
           '<a class="btn btn--ghost" href="' + reportLink(c) + '" target="_blank" rel="noopener">' + esc(t("m.report")) + "</a>" +
@@ -485,6 +487,10 @@
         "</div>" +
       "</div>";
   }
+
+  // ссылки на то же место в других картах: поиск по названию (коды 162 — Алматы в Яндекс Картах)
+  function yandexLink(c) { return "https://yandex.kz/maps/162/almaty/search/" + encodeURIComponent(c.name + (c.lat ? "" : " " + c.address)); }
+  function googleLink(c) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(c.name + " Алматы " + (c.lat ? "" : c.address)); }
 
   function reportLink(c) {
     var text = "OnlyGuests: неточность у «" + c.name + "» (" + c.address + "): ";
@@ -933,10 +939,8 @@
     setTheme(cur === "dark" ? "light" : "dark");
   });
 
-  OGClawd.t = function (k) { return t(k); };
   initControls();
   applyI18n();
-  OGClawd.mountHero($("heroMascot"), $("clawdBubble"));
   // ?q=… (из Telegram-бота и поиска Google) — сразу спрашиваем помощника
   var q0 = (location.search.match(/[?&]q=([^&]+)/) || [])[1];
   if (q0) {
