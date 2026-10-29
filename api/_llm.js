@@ -92,7 +92,10 @@ async function chat(prompt, { timeout = 20000, validate = () => true } = {}) {
   if (process.env.GEMINI_API_KEY) tasks.push(wrap(geminiOnce(prompt, timeout)));
   if (!process.env.NO_POLLINATIONS) tasks.push(wrap(pollinationsOnce(prompt, timeout)));
   if (!tasks.length) return null;
-  try { return await Promise.any(tasks); } catch (e) { return null; }
+  try { return await Promise.any(tasks); } catch (e) {
+    chat.errors = ((e && e.errors) || []).map((x) => String(x && x.message || x).slice(0, 80));
+    return null;
+  }
 }
 
 function parseJSON(text) {
@@ -128,4 +131,4 @@ async function pick(query, lang, candidates, understood, opts) {
   return { text: String(j.text || "").slice(0, 400), picks, model: res.model };
 }
 
-module.exports = { chat, pick, parseJSON, configured };
+module.exports = { chat, pick, parseJSON, configured, lastErrors: () => chat.errors || [], hasOpenRouter: () => !!process.env.OPENROUTER_API_KEY };

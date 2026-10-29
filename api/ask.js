@@ -50,7 +50,7 @@ module.exports = async (req, res) => {
 
   const understood = Array.isArray(b.understood) ? b.understood.slice(0, 10).map((x) => String(x).slice(0, 40)) : [];
   const out = await llm.pick(q, lang, candidates, understood);
-  if (!out) { res.statusCode = 502; return res.end(JSON.stringify({ error: "model unavailable" })); }
+  if (!out) { res.statusCode = 502; return res.end(JSON.stringify({ error: "model unavailable", openrouter: llm.hasOpenRouter(), detail: llm.lastErrors() })); }
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.end(JSON.stringify(out));
 };
