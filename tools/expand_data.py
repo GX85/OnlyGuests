@@ -74,6 +74,20 @@ CHECK = {"coffee": 2500, "bakery": 2500, "bistro": 2800, "mixed": 4500, "canteen
          "cocktail": 9000, "grill": 5000, "european": 8000, "seafood": 10000, "steak": 15000}
 
 
+JUNK = re.compile(r"бассейн|иные причины|мелочей|азық|продукты|аптека|\bип\b|баня|сауна|склад|общежитие|школа|детский сад|университет|колледж|больница|"
+                  r"поликлиника|мечеть|церковь|банк\b|банкомат|заправк|азс\b|шиномонтаж|автомойка|парикмахер|салон красоты|ломбард", re.I)
+
+
+def is_junk(name):
+    if JUNK.search(name):
+        return True
+    if re.fullmatch(r"[а-яёәғқңөұүһі\s\-]+", name) and name[0].islower():     # «алатау», «атилла», «в таинты»: так называют не заведения
+        return True
+    if re.fullmatch(r"[A-Za-z]{1,2}|\d+[\W\d]*", name):
+        return True
+    return False
+
+
 def classify(p):
     t, name, cat = p["tags"], p["name"], p["cat"]
     kind = p["type"]
@@ -198,10 +212,10 @@ def main():
     for oid, p in osm.items():
         if oid in prev_ids:
             continue
-        name = (p["tags"].get("name:ru") or p["name"]).strip().strip('"«»“”\'').strip()
+        name = (p["tags"].get("name:ru") or p["name"]).strip().strip('"«»“”\'#').replace("_", " ").strip()
         p["name"] = name
         key = norm(name)
-        if len(key) < 2 or key.isdigit():
+        if len(key) < 2 or key.isdigit() or is_junk(name):
             skipped["junk"] += 1
             continue
         if any(h[0] == key and (h[1] is None or dist_m((p["lat"], p["lon"]), (h[1], h[2])) < 700) for h in have):
