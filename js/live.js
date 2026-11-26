@@ -1,5 +1,5 @@
 // Свежие рейтинги от ИИ-агентов OnlyGuests (tools/agent_update.py). Обновляется автоматически.
-window.LIVE_META = {"geoAt": "2026-11-25T12:45:36Z", "geoChecked": 150, "geoMoved": 0};
+window.LIVE_META = {"geoAt": "2026-11-26T12:20:19Z", "geoChecked": 150, "geoMoved": 0};
 window.LIVE = {
  "101-dump": {
   "geoAt": "2026-11-23T12:19:53Z"
@@ -48,13 +48,13 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:22:32Z"
  },
  "akku": {
-  "geoAt": "2026-11-20T11:26:20Z"
+  "geoAt": "2026-11-26T12:18:14Z"
  },
  "aksay-nan": {
   "geoAt": "2026-11-22T11:12:57Z"
  },
  "akunin": {
-  "geoAt": "2026-11-20T11:26:21Z"
+  "geoAt": "2026-11-26T12:18:16Z"
  },
  "akzhol": {
   "geoAt": "2026-11-22T11:12:31Z"
@@ -76,13 +76,13 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:45:17Z"
  },
  "aldiyar": {
-  "geoAt": "2026-11-20T11:26:23Z"
+  "geoAt": "2026-11-26T12:18:17Z"
  },
  "alem": {
   "geoAt": "2026-11-24T13:34:05Z"
  },
  "alga": {
-  "geoAt": "2026-11-20T11:28:17Z"
+  "geoAt": "2026-11-26T12:20:14Z"
  },
  "alibaba-kebab-house": {
   "geoAt": "2026-11-24T13:35:51Z"
@@ -115,7 +115,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:19:57Z"
  },
  "alye-parusa": {
-  "geoAt": "2026-11-20T11:28:18Z"
+  "geoAt": "2026-11-26T12:20:15Z"
  },
  "amber-bar-and-beer": {
   "geoAt": "2026-11-23T12:19:59Z"
@@ -142,7 +142,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:56:46Z"
  },
  "apelsinovyy-gus-2": {
-  "geoAt": "2026-11-20T11:26:24Z"
+  "geoAt": "2026-11-26T12:18:19Z"
  },
  "aqsay-doner": {
   "geoAt": "2026-11-21T10:55:55Z"
@@ -217,16 +217,16 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:36:37Z"
  },
  "aynabay-holl": {
-  "geoAt": "2026-11-20T11:26:18Z"
+  "geoAt": "2026-11-26T12:18:13Z"
  },
  "bahandi": {
   "geoAt": "2026-11-21T10:55:24Z"
  },
  "bahandi-2": {
-  "geoAt": "2026-11-20T11:27:49Z"
+  "geoAt": "2026-11-26T12:19:46Z"
  },
  "bahandi-3": {
-  "geoAt": "2026-11-20T11:27:50Z"
+  "geoAt": "2026-11-26T12:19:47Z"
  },
  "bahandi-burger": {
   "geoAt": "2026-11-21T10:55:37Z"
@@ -311,13 +311,13 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:12:22Z"
  },
  "begemot": {
-  "geoAt": "2026-11-20T11:28:19Z"
+  "geoAt": "2026-11-26T12:20:16Z"
  },
  "bekker-i-ko": {
   "geoAt": "2026-11-24T13:34:12Z"
  },
  "belissimo-pizza": {
-  "geoAt": "2026-11-20T11:27:16Z"
+  "geoAt": "2026-11-26T12:19:13Z"
  },
  "bella-ciao": {
   "geoAt": "2026-11-22T11:10:41Z"
@@ -467,10 +467,10 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:20:13Z"
  },
  "chacha": {
-  "geoAt": "2026-11-20T11:27:52Z"
+  "geoAt": "2026-11-26T12:19:49Z"
  },
  "chachapuri": {
-  "geoAt": "2026-11-20T11:27:14Z"
+  "geoAt": "2026-11-26T12:19:11Z"
  },
  "chafanka": {
   "geoAt": "2026-11-24T13:36:30Z"
@@ -509,19 +509,19 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:22:23Z"
  },
  "chicken-chaki": {
-  "geoAt": "2026-11-20T11:27:53Z"
+  "geoAt": "2026-11-26T12:19:50Z"
  },
  "chicken-point": {
   "geoAt": "2026-11-23T12:19:01Z"
  },
  "chicken-republic": {
-  "geoAt": "2026-11-20T11:27:17Z"
+  "geoAt": "2026-11-26T12:19:14Z"
  },
  "chicker-z": {
   "geoAt": "2026-11-23T12:22:38Z"
  },
  "chikenfood": {
-  "geoAt": "2026-11-20T11:27:54Z"
+  "geoAt": "2026-11-26T12:19:51Z"
  },
  "china-town": {
   "geoAt": "2026-11-23T12:20:16Z"
@@ -530,7 +530,7 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:09:59Z"
  },
  "chisko": {
-  "geoAt": "2026-11-20T11:27:18Z"
+  "geoAt": "2026-11-26T12:19:16Z"
  },
  "chunky-cookies": {
   "geoAt": "2026-11-24T13:33:30Z"
@@ -554,7 +554,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:33:44Z"
  },
  "coco": {
-  "geoAt": "2026-11-20T11:27:20Z"
+  "geoAt": "2026-11-26T12:19:17Z"
  },
  "coco-fresh-tea-juice": {
   "geoAt": "2026-11-24T13:36:42Z"
@@ -622,7 +622,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:20:19Z"
  },
  "como": {
-  "geoAt": "2026-11-20T11:27:21Z"
+  "geoAt": "2026-11-26T12:19:19Z"
  },
  "como-chicken": {
   "geoAt": "2026-11-21T10:55:32Z"
@@ -679,19 +679,19 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:27Z"
  },
  "danosh-plov": {
-  "geoAt": "2026-11-20T11:27:56Z"
+  "geoAt": "2026-11-26T12:19:53Z"
  },
  "daredzhani": {
   "geoAt": "2026-11-21T10:54:23Z"
  },
  "daredzhani-2": {
-  "geoAt": "2026-11-20T11:26:26Z"
+  "geoAt": "2026-11-26T12:18:20Z"
  },
  "daredzhani-3": {
-  "geoAt": "2026-11-20T11:26:27Z"
+  "geoAt": "2026-11-26T12:18:21Z"
  },
  "dastarhan": {
-  "geoAt": "2026-11-20T11:26:28Z"
+  "geoAt": "2026-11-26T12:18:23Z"
  },
  "dastarkhan-food": {
   "geoAt": "2026-11-25T12:45:31Z"
@@ -727,7 +727,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:36:46Z"
  },
  "delpapa": {
-  "geoAt": "2026-11-20T11:27:23Z"
+  "geoAt": "2026-11-26T12:19:20Z"
  },
  "demdi": {
   "geoAt": "2026-11-20T11:28:27Z"
@@ -757,10 +757,10 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:16Z"
  },
  "dodo-pitstsa": {
-  "geoAt": "2026-11-20T11:27:43Z"
+  "geoAt": "2026-11-26T12:19:40Z"
  },
  "dodo-pitstsa-2": {
-  "geoAt": "2026-11-20T11:27:44Z"
+  "geoAt": "2026-11-26T12:19:41Z"
  },
  "dodo-pizza": {
   "geoAt": "2026-11-21T10:55:29Z"
@@ -919,7 +919,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:45:36Z"
  },
  "finik": {
-  "geoAt": "2026-11-19T11:32:40Z"
+  "geoAt": "2026-11-26T12:16:44Z"
  },
  "fish-fried": {
   "geoAt": "2026-11-22T11:10:28Z"
@@ -940,7 +940,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:20:24Z"
  },
  "fort-vernyi": {
-  "geoAt": "2026-11-19T11:32:42Z"
+  "geoAt": "2026-11-26T12:16:45Z"
  },
  "fortune-gss": {
   "geoAt": "2026-11-24T13:33:49Z"
@@ -961,7 +961,7 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:12:07Z"
  },
  "friuli": {
-  "geoAt": "2026-11-20T11:27:10Z"
+  "geoAt": "2026-11-26T12:19:07Z"
  },
  "fud-solyushn": {
   "geoAt": "2026-11-24T13:35:50Z"
@@ -970,7 +970,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:55:51Z"
  },
  "g-naydin-turkish-restaurant": {
-  "geoAt": "2026-11-19T11:32:46Z"
+  "geoAt": "2026-11-26T12:16:49Z"
  },
  "gallery-lounge-bar": {
   "geoAt": "2026-11-23T12:20:27Z"
@@ -982,7 +982,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:33:51Z"
  },
  "georgian-restaurant": {
-  "geoAt": "2026-11-19T11:32:43Z"
+  "geoAt": "2026-11-26T12:16:47Z"
  },
  "ginger-loft-cafe": {
   "geoAt": "2026-11-25T12:42:17Z"
@@ -991,10 +991,10 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:33Z"
  },
  "gippo-2": {
-  "geoAt": "2026-11-20T11:27:57Z"
+  "geoAt": "2026-11-26T12:19:55Z"
  },
  "gippo-magnum-3": {
-  "geoAt": "2026-11-20T11:28:23Z"
+  "geoAt": "2026-11-26T12:20:19Z"
  },
  "gogra": {
   "district": "Медеуский",
@@ -1019,7 +1019,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:20:28Z"
  },
  "grill-pub-chestnyy": {
-  "geoAt": "2026-11-19T11:32:44Z"
+  "geoAt": "2026-11-26T12:16:48Z"
  },
  "grizzly": {
   "geoAt": "2026-11-23T12:20:30Z"
@@ -1031,10 +1031,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:25Z"
  },
  "hachapuri-hinkalevich-2": {
-  "geoAt": "2026-11-20T11:27:13Z"
+  "geoAt": "2026-11-26T12:19:10Z"
  },
  "halal-slice": {
-  "geoAt": "2026-11-20T11:27:25Z"
+  "geoAt": "2026-11-26T12:19:22Z"
  },
  "halifat": {
   "geoAt": "2026-11-21T10:56:26Z"
@@ -1060,7 +1060,7 @@ window.LIVE = {
   "movedAt": "2026-10-30T09:55:34Z"
  },
  "harbin-2": {
-  "geoAt": "2026-11-20T11:27:11Z"
+  "geoAt": "2026-11-26T12:19:08Z"
  },
  "hardee-s": {
   "geoAt": "2026-11-21T10:55:28Z"
@@ -1081,7 +1081,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:34Z"
  },
  "hfc-hrust-fried-chicken": {
-  "geoAt": "2026-11-20T11:27:59Z"
+  "geoAt": "2026-11-26T12:19:56Z"
  },
  "hinkalnaya": {
   "geoAt": "2026-11-21T10:54:32Z"
@@ -1123,7 +1123,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:44:21Z"
  },
  "hot-point-2": {
-  "geoAt": "2026-11-20T11:28:00Z"
+  "geoAt": "2026-11-26T12:19:57Z"
  },
  "house-of-fuller-s": {
   "geoAt": "2026-11-23T12:20:36Z"
@@ -1132,7 +1132,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:35:33Z"
  },
  "i-m-2": {
-  "geoAt": "2026-11-20T11:28:01Z"
+  "geoAt": "2026-11-26T12:19:58Z"
  },
  "ichi-specialty-coffee": {
   "geoAt": "2026-11-21T10:57:11Z"
@@ -1153,7 +1153,7 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:13:04Z"
  },
  "j-z-peking-duck": {
-  "geoAt": "2026-11-19T11:32:47Z"
+  "geoAt": "2026-11-26T12:16:51Z"
  },
  "jinau": {
   "geoAt": "2026-11-22T11:11:15Z"
@@ -1177,7 +1177,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:44:25Z"
  },
  "k-r-i": {
-  "geoAt": "2026-11-19T11:32:58Z"
+  "geoAt": "2026-11-26T12:17:02Z"
  },
  "kafe-plyus": {
   "geoAt": "2026-11-25T12:45:12Z"
@@ -1195,7 +1195,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:18Z"
  },
  "kannam-chicken": {
-  "geoAt": "2026-11-20T11:27:26Z"
+  "geoAt": "2026-11-26T12:19:23Z"
  },
  "kannam-chicken-2": {
   "geoAt": "2026-11-23T12:19:04Z"
@@ -1210,7 +1210,7 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:11:09Z"
  },
  "kazahaul": {
-  "geoAt": "2026-11-20T11:26:37Z"
+  "geoAt": "2026-11-26T12:18:32Z"
  },
  "kaznu-cafe": {
   "geoAt": "2026-11-25T12:42:24Z"
@@ -1228,22 +1228,22 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:38Z"
  },
  "kenrai-lounge": {
-  "geoAt": "2026-11-19T11:32:48Z"
+  "geoAt": "2026-11-26T12:16:52Z"
  },
  "kervan-doner": {
   "geoAt": "2026-11-24T13:36:05Z"
  },
  "kfc": {
-  "geoAt": "2026-11-20T11:27:27Z"
+  "geoAt": "2026-11-26T12:19:25Z"
  },
  "kfc-2": {
-  "geoAt": "2026-11-20T11:27:29Z"
+  "geoAt": "2026-11-26T12:19:26Z"
  },
  "khandoner": {
   "geoAt": "2026-11-24T13:36:07Z"
  },
  "kim-chi": {
-  "geoAt": "2026-11-19T11:32:50Z"
+  "geoAt": "2026-11-26T12:16:53Z"
  },
  "kimchi": {
   "geoAt": "2026-11-25T12:43:19Z"
@@ -1264,25 +1264,25 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:44:27Z"
  },
  "kochi": {
-  "geoAt": "2026-11-19T11:32:51Z"
+  "geoAt": "2026-11-26T12:16:55Z"
  },
  "kolkovna": {
-  "geoAt": "2026-11-19T11:32:52Z"
+  "geoAt": "2026-11-26T12:16:56Z"
  },
  "kompot": {
   "geoAt": "2026-11-24T13:35:11Z"
  },
  "konya-gunaydin": {
-  "geoAt": "2026-11-19T11:32:54Z"
+  "geoAt": "2026-11-26T12:16:58Z"
  },
  "korean-street-food": {
   "geoAt": "2026-11-24T13:34:39Z"
  },
  "korean-street-food-2": {
-  "geoAt": "2026-11-19T11:32:55Z"
+  "geoAt": "2026-11-26T12:16:59Z"
  },
  "koreyskaya-kofeynya-bonjuk": {
-  "geoAt": "2026-11-20T11:26:39Z"
+  "geoAt": "2026-11-26T12:18:33Z"
  },
  "kowloon": {
   "geoAt": "2026-11-23T12:20:37Z"
@@ -1301,7 +1301,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:33:31Z"
  },
  "kuanysh": {
-  "geoAt": "2026-11-19T11:32:56Z"
+  "geoAt": "2026-11-26T12:17:01Z"
  },
  "kuldzha-hogo": {
   "geoAt": "2026-11-21T10:57:43Z"
@@ -1340,10 +1340,10 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:24Z"
  },
  "laffa-2": {
-  "geoAt": "2026-11-20T11:26:42Z"
+  "geoAt": "2026-11-26T12:18:36Z"
  },
  "lagman-na-arbate": {
-  "geoAt": "2026-11-20T11:26:40Z"
+  "geoAt": "2026-11-26T12:18:35Z"
  },
  "lagmanhana": {
   "geoAt": "2026-11-24T13:35:12Z"
@@ -1382,7 +1382,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:41Z"
  },
  "lanzhou-3": {
-  "geoAt": "2026-11-20T11:27:30Z"
+  "geoAt": "2026-11-26T12:19:27Z"
  },
  "lapsha-bar-wok": {
   "geoAt": "2026-11-21T10:54:52Z"
@@ -1439,16 +1439,16 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:44Z"
  },
  "luckee-yu-2": {
-  "geoAt": "2026-11-19T11:32:59Z"
+  "geoAt": "2026-11-26T12:17:03Z"
  },
  "luckee-yu-2049": {
-  "geoAt": "2026-11-20T11:25:11Z"
+  "geoAt": "2026-11-26T12:17:05Z"
  },
  "lugo": {
   "geoAt": "2026-11-23T12:20:44Z"
  },
  "lukum-vostok": {
-  "geoAt": "2026-11-20T11:25:13Z"
+  "geoAt": "2026-11-26T12:17:06Z"
  },
  "lustra": {
   "geoAt": "2026-11-23T12:20:46Z"
@@ -1487,7 +1487,7 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:13:18Z"
  },
  "maharaja": {
-  "geoAt": "2026-11-20T11:25:15Z"
+  "geoAt": "2026-11-26T12:17:08Z"
  },
  "mai-qazan": {
   "geoAt": "2026-11-22T11:12:26Z"
@@ -1499,7 +1499,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:32Z"
  },
  "make-love-pizza": {
-  "geoAt": "2026-11-20T11:27:31Z"
+  "geoAt": "2026-11-26T12:19:29Z"
  },
  "malenkiy-prints": {
   "geoAt": "2026-11-22T11:09:56Z"
@@ -1508,22 +1508,22 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:34Z"
  },
  "mama-s-fresh-pasta": {
-  "geoAt": "2026-11-20T11:28:02Z"
+  "geoAt": "2026-11-26T12:20:00Z"
  },
  "mamamiya-ciao-pizza": {
-  "geoAt": "2026-11-20T11:26:43Z"
+  "geoAt": "2026-11-26T12:18:38Z"
  },
  "mamma-mia": {
   "geoAt": "2026-11-21T10:54:38Z"
  },
  "mamma-mia-2": {
-  "geoAt": "2026-11-20T11:27:33Z"
+  "geoAt": "2026-11-26T12:19:30Z"
  },
  "manga-japanese-restaurant": {
   "geoAt": "2026-11-21T10:54:47Z"
  },
  "manga-sushi": {
-  "geoAt": "2026-11-20T11:25:16Z"
+  "geoAt": "2026-11-26T12:17:09Z"
  },
  "mangal-doner": {
   "geoAt": "2026-11-21T10:56:12Z"
@@ -1550,10 +1550,10 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:29Z"
  },
  "marmaris-3": {
-  "geoAt": "2026-11-20T11:25:17Z"
+  "geoAt": "2026-11-26T12:17:11Z"
  },
  "marshal": {
-  "geoAt": "2026-11-20T11:28:04Z"
+  "geoAt": "2026-11-26T12:20:01Z"
  },
  "masisso": {
   "geoAt": "2026-11-21T10:57:42Z"
@@ -1562,7 +1562,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:31Z"
  },
  "masisso-3": {
-  "geoAt": "2026-11-20T11:25:19Z"
+  "geoAt": "2026-11-26T12:17:12Z"
  },
  "massimo-coffee-roasters": {
   "geoAt": "2026-11-21T10:57:07Z"
@@ -1613,7 +1613,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:36Z"
  },
  "mendal": {
-  "geoAt": "2026-11-20T11:26:45Z"
+  "geoAt": "2026-11-26T12:18:39Z"
  },
  "mezza-luna": {
   "geoAt": "2026-11-24T13:34:43Z"
@@ -1622,7 +1622,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:38Z"
  },
  "mimi": {
-  "geoAt": "2026-11-20T11:26:46Z"
+  "geoAt": "2026-11-26T12:18:41Z"
  },
  "miterra-lounge": {
   "geoAt": "2026-11-22T11:12:21Z"
@@ -1676,7 +1676,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:22Z"
  },
  "muzkafe": {
-  "geoAt": "2026-11-20T11:26:47Z"
+  "geoAt": "2026-11-26T12:18:42Z"
  },
  "myaso-testo-luk": {
   "geoAt": "2026-11-24T13:35:15Z"
@@ -1694,7 +1694,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:40Z"
  },
  "nanduk-2": {
-  "geoAt": "2026-11-20T11:27:34Z"
+  "geoAt": "2026-11-26T12:19:32Z"
  },
  "napitki-the-bar": {
   "geoAt": "2026-11-23T12:21:56Z"
@@ -1721,10 +1721,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:01Z"
  },
  "navat-2": {
-  "geoAt": "2026-11-20T11:25:20Z"
+  "geoAt": "2026-11-26T12:17:14Z"
  },
  "navat-3": {
-  "geoAt": "2026-11-20T11:26:48Z"
+  "geoAt": "2026-11-26T12:18:44Z"
  },
  "nedelka": {
   "geoAt": "2026-11-21T10:56:43Z"
@@ -1739,7 +1739,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:21:57Z"
  },
  "night-star-cafe": {
-  "geoAt": "2026-11-20T11:25:21Z"
+  "geoAt": "2026-11-26T12:17:15Z"
  },
  "nikulin": {
   "geoAt": "2026-11-23T12:20:51Z"
@@ -1748,7 +1748,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:33:57Z"
  },
  "nomad": {
-  "geoAt": "2026-11-20T11:25:23Z"
+  "geoAt": "2026-11-26T12:17:17Z"
  },
  "nomad-grill": {
   "geoAt": "2026-11-22T11:09:58Z"
@@ -1785,16 +1785,16 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:09:42Z"
  },
  "okadzaki-2": {
-  "geoAt": "2026-11-20T11:25:24Z"
+  "geoAt": "2026-11-26T12:17:18Z"
  },
  "okadzaki-kz": {
   "geoAt": "2026-11-25T12:42:43Z"
  },
  "okadzaki-kz-2": {
-  "geoAt": "2026-11-20T11:25:26Z"
+  "geoAt": "2026-11-26T12:17:20Z"
  },
  "olivier-restaurant-bar": {
-  "geoAt": "2026-11-20T11:25:27Z"
+  "geoAt": "2026-11-26T12:17:21Z"
  },
  "olovo-cocktail-bar": {
   "geoAt": "2026-11-22T11:12:01Z"
@@ -1826,7 +1826,7 @@ window.LIVE = {
   "movedAt": "2026-10-30T09:55:52Z"
  },
  "ozyurt-2": {
-  "geoAt": "2026-11-20T11:25:28Z"
+  "geoAt": "2026-11-26T12:17:22Z"
  },
  "p-f-chang-s": {
   "geoAt": "2026-11-21T10:54:45Z"
@@ -1838,7 +1838,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:56:32Z"
  },
  "panda-lamian": {
-  "geoAt": "2026-11-20T11:25:30Z"
+  "geoAt": "2026-11-26T12:17:24Z"
  },
  "papa-john-s": {
   "geoAt": "2026-11-23T12:19:07Z"
@@ -1850,34 +1850,34 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:46Z"
  },
  "paradise-2": {
-  "geoAt": "2026-11-20T11:25:32Z"
+  "geoAt": "2026-11-26T12:17:25Z"
  },
  "parok3-vapeshop": {
   "geoAt": "2026-11-22T11:13:06Z"
  },
  "pasta-la-vista": {
-  "geoAt": "2026-11-20T11:25:33Z"
+  "geoAt": "2026-11-26T12:17:26Z"
  },
  "pasta-pizza-express": {
-  "geoAt": "2026-11-20T11:27:35Z"
+  "geoAt": "2026-11-26T12:19:33Z"
  },
  "paul": {
   "geoAt": "2026-11-21T10:57:22Z"
  },
  "paul-2": {
-  "geoAt": "2026-11-20T11:25:34Z"
+  "geoAt": "2026-11-26T12:17:28Z"
  },
  "paul-3": {
-  "geoAt": "2026-11-20T11:25:36Z"
+  "geoAt": "2026-11-26T12:17:29Z"
  },
  "paulaner-br-uhaus": {
   "geoAt": "2026-11-21T10:55:06Z"
  },
  "paulaner-brauhaus-almaty": {
-  "geoAt": "2026-11-20T11:25:37Z"
+  "geoAt": "2026-11-26T12:17:30Z"
  },
  "pavlin-mavlin": {
-  "geoAt": "2026-11-20T11:26:49Z"
+  "geoAt": "2026-11-26T12:18:45Z"
  },
  "pegas": {
   "geoAt": "2026-11-23T12:20:55Z"
@@ -1913,10 +1913,10 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:48Z"
  },
  "pinseria": {
-  "geoAt": "2026-11-20T11:25:39Z"
+  "geoAt": "2026-11-26T12:17:32Z"
  },
  "pinseria-esentai-city-restoran": {
-  "geoAt": "2026-11-20T11:25:41Z"
+  "geoAt": "2026-11-26T12:17:34Z"
  },
  "pinta": {
   "geoAt": "2026-11-21T10:55:07Z"
@@ -1931,7 +1931,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:22:07Z"
  },
  "pinta-premium": {
-  "geoAt": "2026-11-20T11:25:42Z"
+  "geoAt": "2026-11-26T12:17:36Z"
  },
  "pirogovaya": {
   "geoAt": "2026-11-25T12:43:34Z"
@@ -1952,16 +1952,16 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:20:58Z"
  },
  "pivovaroff": {
-  "geoAt": "2026-11-20T11:26:51Z"
+  "geoAt": "2026-11-26T12:18:47Z"
  },
  "pizza-italiano": {
-  "geoAt": "2026-11-20T11:27:37Z"
+  "geoAt": "2026-11-26T12:19:34Z"
  },
  "pizza-land": {
   "geoAt": "2026-11-23T12:19:08Z"
  },
  "pizza-milana": {
-  "geoAt": "2026-11-20T11:27:39Z"
+  "geoAt": "2026-11-26T12:19:36Z"
  },
  "pizza-pizza": {
   "geoAt": "2026-11-23T12:19:10Z"
@@ -1970,7 +1970,7 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:34:49Z"
  },
  "planeta-sushi": {
-  "geoAt": "2026-11-20T11:27:46Z"
+  "geoAt": "2026-11-26T12:19:43Z"
  },
  "plov-v-korobochke": {
   "geoAt": "2026-11-20T11:28:33Z"
@@ -2007,13 +2007,13 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:42:47Z"
  },
  "pub-spil": {
-  "geoAt": "2026-11-20T11:25:43Z"
+  "geoAt": "2026-11-26T12:17:37Z"
  },
  "publika": {
   "geoAt": "2026-11-23T12:22:08Z"
  },
  "pyatnitsa": {
-  "geoAt": "2026-11-20T11:26:52Z"
+  "geoAt": "2026-11-26T12:18:48Z"
  },
  "q-coffee-shop": {
   "geoAt": "2026-11-25T12:43:46Z"
@@ -2022,16 +2022,16 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:44:35Z"
  },
  "qa-anat": {
-  "geoAt": "2026-11-20T11:25:45Z"
+  "geoAt": "2026-11-26T12:17:39Z"
  },
  "qaganat": {
   "geoAt": "2026-11-21T10:54:19Z"
  },
  "qaganat-2": {
-  "geoAt": "2026-11-20T11:28:06Z"
+  "geoAt": "2026-11-26T12:20:03Z"
  },
  "qaganat-3": {
-  "geoAt": "2026-11-20T11:28:07Z"
+  "geoAt": "2026-11-26T12:20:04Z"
  },
  "qauap-food": {
   "geoAt": "2026-11-22T11:11:23Z"
@@ -2040,7 +2040,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:10Z"
  },
  "qingdao": {
-  "geoAt": "2026-11-20T11:25:46Z"
+  "geoAt": "2026-11-26T12:17:40Z"
  },
  "qrupa": {
   "geoAt": "2026-11-21T10:57:33Z"
@@ -2061,10 +2061,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:56:48Z"
  },
  "ramen77": {
-  "geoAt": "2026-11-20T11:27:40Z"
+  "geoAt": "2026-11-26T12:19:37Z"
  },
  "raw": {
-  "geoAt": "2026-11-20T11:25:48Z"
+  "geoAt": "2026-11-26T12:17:41Z"
  },
  "rayskiy-sad-rozalinda": {
   "geoAt": "2026-11-25T12:43:35Z"
@@ -2094,16 +2094,16 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:21:07Z"
  },
  "river-hall": {
-  "geoAt": "2026-11-20T11:25:49Z"
+  "geoAt": "2026-11-26T12:17:43Z"
  },
  "riviera": {
   "geoAt": "2026-11-22T11:10:55Z"
  },
  "rock-crystal": {
-  "geoAt": "2026-11-20T11:25:51Z"
+  "geoAt": "2026-11-26T12:17:44Z"
  },
  "roni-napolitana": {
-  "geoAt": "2026-11-20T11:28:08Z"
+  "geoAt": "2026-11-26T12:20:05Z"
  },
  "roni-napolitana-2": {
   "geoAt": "2026-11-23T12:19:14Z"
@@ -2115,7 +2115,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:22:09Z"
  },
  "royal-restoran": {
-  "geoAt": "2026-11-20T11:26:54Z"
+  "geoAt": "2026-11-26T12:18:49Z"
  },
  "rumi": {
   "district": "Алмалинский",
@@ -2143,13 +2143,13 @@ window.LIVE = {
   "geoAt": "2026-11-24T13:35:39Z"
  },
  "salon-vkusa": {
-  "geoAt": "2026-11-20T11:26:55Z"
+  "geoAt": "2026-11-26T12:18:51Z"
  },
  "samal": {
-  "geoAt": "2026-11-20T11:25:52Z"
+  "geoAt": "2026-11-26T12:17:46Z"
  },
  "samran": {
-  "geoAt": "2026-11-20T11:28:09Z"
+  "geoAt": "2026-11-26T12:20:07Z"
  },
  "samsa": {
   "geoAt": "2026-11-20T11:28:34Z"
@@ -2176,10 +2176,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:49Z"
  },
  "satori-2": {
-  "geoAt": "2026-11-20T11:25:54Z"
+  "geoAt": "2026-11-26T12:17:47Z"
  },
  "schaste": {
-  "geoAt": "2026-11-20T11:26:58Z"
+  "geoAt": "2026-11-26T12:18:53Z"
  },
  "schuka-bistro": {
   "geoAt": "2026-11-22T11:12:40Z"
@@ -2218,7 +2218,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:21:11Z"
  },
  "shanyraq": {
-  "geoAt": "2026-11-20T11:25:55Z"
+  "geoAt": "2026-11-26T12:17:49Z"
  },
  "shashaykoff": {
   "geoAt": "2026-11-24T13:35:25Z"
@@ -2254,7 +2254,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:21:12Z"
  },
  "simitci": {
-  "geoAt": "2026-11-20T11:28:11Z"
+  "geoAt": "2026-11-26T12:20:08Z"
  },
  "sir-francis-drake": {
   "geoAt": "2026-11-23T12:21:13Z"
@@ -2338,25 +2338,25 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:26Z"
  },
  "suli-da-guli-2": {
-  "geoAt": "2026-11-20T11:25:56Z"
+  "geoAt": "2026-11-26T12:17:50Z"
  },
  "sultan": {
-  "geoAt": "2026-11-20T11:26:57Z"
+  "geoAt": "2026-11-26T12:18:52Z"
  },
  "sumakh": {
   "geoAt": "2026-11-22T11:10:34Z"
  },
  "sunset-art-kitchen": {
-  "geoAt": "2026-11-20T11:25:57Z"
+  "geoAt": "2026-11-26T12:17:52Z"
  },
  "super-lagman": {
   "geoAt": "2026-11-20T11:28:38Z"
  },
  "sushi-n-roll": {
-  "geoAt": "2026-11-20T11:25:58Z"
+  "geoAt": "2026-11-26T12:17:53Z"
  },
  "sushi-n-roll-2": {
-  "geoAt": "2026-11-20T11:27:42Z"
+  "geoAt": "2026-11-26T12:19:39Z"
  },
  "sushi-room": {
   "geoAt": "2026-11-23T12:21:20Z"
@@ -2383,7 +2383,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:49Z"
  },
  "takara-sushi": {
-  "geoAt": "2026-11-20T11:26:00Z"
+  "geoAt": "2026-11-26T12:17:55Z"
  },
  "takeaway": {
   "geoAt": "2026-11-25T12:42:50Z"
@@ -2392,22 +2392,22 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:09:51Z"
  },
  "tal-cafe-restaurant": {
-  "geoAt": "2026-11-20T11:26:01Z"
+  "geoAt": "2026-11-26T12:17:56Z"
  },
  "tamada": {
-  "geoAt": "2026-11-20T11:26:59Z"
+  "geoAt": "2026-11-26T12:18:55Z"
  },
  "tamaq": {
-  "geoAt": "2026-11-20T11:26:03Z"
+  "geoAt": "2026-11-26T12:17:58Z"
  },
  "tandoori": {
-  "geoAt": "2026-11-20T11:26:04Z"
+  "geoAt": "2026-11-26T12:18:00Z"
  },
  "tandyr-nan": {
   "geoAt": "2026-11-24T13:35:20Z"
  },
  "tandyrnaya": {
-  "geoAt": "2026-11-20T11:27:47Z"
+  "geoAt": "2026-11-26T12:19:44Z"
  },
  "tangiers-lounge": {
   "geoAt": "2026-11-22T11:11:54Z"
@@ -2419,13 +2419,13 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:46Z"
  },
  "tanuki-2": {
-  "geoAt": "2026-11-20T11:27:00Z"
+  "geoAt": "2026-11-26T12:18:56Z"
  },
  "taraz": {
-  "geoAt": "2026-11-20T11:27:02Z"
+  "geoAt": "2026-11-26T12:18:58Z"
  },
  "tarhun": {
-  "geoAt": "2026-11-20T11:26:06Z"
+  "geoAt": "2026-11-26T12:18:01Z"
  },
  "tary": {
   "geoAt": "2026-11-21T10:54:21Z"
@@ -2443,7 +2443,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:55:19Z"
  },
  "teplitsa-2": {
-  "geoAt": "2026-11-20T11:27:03Z"
+  "geoAt": "2026-11-26T12:18:59Z"
  },
  "tereze": {
   "geoAt": "2026-11-21T10:57:14Z"
@@ -2473,13 +2473,13 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:55:13Z"
  },
  "the-pakwaan-village-restaurant": {
-  "geoAt": "2026-11-20T11:26:07Z"
+  "geoAt": "2026-11-26T12:18:02Z"
  },
  "time-cafe-relax": {
   "geoAt": "2026-11-25T12:42:52Z"
  },
  "tirol": {
-  "geoAt": "2026-11-20T11:26:09Z"
+  "geoAt": "2026-11-26T12:18:04Z"
  },
  "toimart": {
   "geoAt": "2026-11-22T11:13:13Z"
@@ -2500,10 +2500,10 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:11:36Z"
  },
  "toki-poki": {
-  "geoAt": "2026-11-20T11:26:11Z"
+  "geoAt": "2026-11-26T12:18:05Z"
  },
  "tolstyy-dzhimmi": {
-  "geoAt": "2026-11-20T11:27:04Z"
+  "geoAt": "2026-11-26T12:19:01Z"
  },
  "tomchi": {
   "geoAt": "2026-11-22T11:11:20Z"
@@ -2515,13 +2515,13 @@ window.LIVE = {
   "geoAt": "2026-11-22T11:11:03Z"
  },
  "toq": {
-  "geoAt": "2026-11-20T11:28:13Z"
+  "geoAt": "2026-11-26T12:20:09Z"
  },
  "traktir-medved": {
   "geoAt": "2026-11-21T10:57:41Z"
  },
  "trattoria": {
-  "geoAt": "2026-11-20T11:26:12Z"
+  "geoAt": "2026-11-26T12:18:07Z"
  },
  "traveler-s-coffee": {
   "geoAt": "2026-11-21T10:57:02Z"
@@ -2545,16 +2545,16 @@ window.LIVE = {
   "geoAt": "2026-11-20T11:28:41Z"
  },
  "tulpar": {
-  "geoAt": "2026-11-20T11:27:06Z"
+  "geoAt": "2026-11-26T12:19:02Z"
  },
  "turan": {
-  "geoAt": "2026-11-20T11:26:14Z"
+  "geoAt": "2026-11-26T12:18:08Z"
  },
  "turandot": {
   "geoAt": "2026-11-21T10:54:41Z"
  },
  "turandot-2": {
-  "geoAt": "2026-11-20T11:26:15Z"
+  "geoAt": "2026-11-26T12:18:10Z"
  },
  "turetskiy-doner": {
   "geoAt": "2026-11-24T13:36:28Z"
@@ -2572,10 +2572,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:54:12Z"
  },
  "tyubeteyka-2": {
-  "geoAt": "2026-11-20T11:27:08Z"
+  "geoAt": "2026-11-26T12:19:05Z"
  },
  "tyubeteyka-3": {
-  "geoAt": "2026-11-20T11:27:09Z"
+  "geoAt": "2026-11-26T12:19:06Z"
  },
  "u-alima": {
   "geoAt": "2026-11-25T12:43:38Z"
@@ -2638,7 +2638,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:45:01Z"
  },
  "vasya-blin": {
-  "geoAt": "2026-11-20T11:28:21Z"
+  "geoAt": "2026-11-26T12:20:18Z"
  },
  "victory-mexican-and-wild": {
   "geoAt": "2026-11-23T12:21:31Z"
@@ -2659,7 +2659,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:45:03Z"
  },
  "visit": {
-  "geoAt": "2026-11-20T11:28:14Z"
+  "geoAt": "2026-11-26T12:20:11Z"
  },
  "vista": {
   "geoAt": "2026-11-21T10:56:29Z"
@@ -2680,7 +2680,7 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:55:25Z"
  },
  "wendy-s-2": {
-  "geoAt": "2026-11-20T11:28:15Z"
+  "geoAt": "2026-11-26T12:20:12Z"
  },
  "wendy-s-3": {
   "geoAt": "2026-11-22T11:12:51Z"
@@ -2704,7 +2704,7 @@ window.LIVE = {
   "geoAt": "2026-11-25T12:43:01Z"
  },
  "yakuza": {
-  "geoAt": "2026-11-20T11:26:17Z"
+  "geoAt": "2026-11-26T12:18:11Z"
  },
  "yaposha": {
   "geoAt": "2026-11-23T12:19:15Z"
@@ -2731,7 +2731,7 @@ window.LIVE = {
   "geoAt": "2026-11-23T12:21:48Z"
  },
  "zdes-i-seychas": {
-  "geoAt": "2026-11-20T11:26:35Z"
+  "geoAt": "2026-11-26T12:18:30Z"
  },
  "zebra-coffee": {
   "geoAt": "2026-11-21T10:56:54Z"
@@ -2749,10 +2749,10 @@ window.LIVE = {
   "geoAt": "2026-11-21T10:56:22Z"
  },
  "zhalyn": {
-  "geoAt": "2026-11-20T11:26:31Z"
+  "geoAt": "2026-11-26T12:18:26Z"
  },
  "zhaylau": {
-  "geoAt": "2026-11-20T11:26:30Z"
+  "geoAt": "2026-11-26T12:18:24Z"
  },
  "zheka-s-doner": {
   "geoAt": "2026-11-24T13:36:18Z"
@@ -2781,10 +2781,10 @@ window.LIVE = {
   "movedAt": "2026-10-31T09:33:24Z"
  },
  "zhiguli-2": {
-  "geoAt": "2026-11-20T11:26:33Z"
+  "geoAt": "2026-11-26T12:18:27Z"
  },
  "zhuldyz": {
-  "geoAt": "2026-11-20T11:26:34Z"
+  "geoAt": "2026-11-26T12:18:29Z"
  },
  "zhuzha": {
   "geoAt": "2026-11-22T11:13:14Z"
